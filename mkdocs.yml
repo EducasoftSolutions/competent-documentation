@@ -1,0 +1,74 @@
+site_name: "Competent — Uživatelská příručka"
+site_description: Oficiální dokumentace LMS Competent od Educasoftu
+site_author: Educasoft
+site_url: https://docs.competent.cz/
+
+repo_name: competent-docs
+repo_url: https://docs.competent.cz/
+
+theme:
+  name: material
+  language: cs
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Přepnout na tmavý režim
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Přepnout na světlý režim
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/school
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: cs
+  - glightbox
+
+nav:
+  - Úvod: index.md
+  - Tutoriály:
+      - tutorials/index.md
+  - Návody:
+      - how-to/index.md
+  - Reference:
+      - reference/index.md
+  - Koncepty:
+      - concepts/index.md
+
+extra:
+  generator: false
