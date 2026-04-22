@@ -55,8 +55,7 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - search:
-      lang: cs
+  - search
   - glightbox
 
 nav:
