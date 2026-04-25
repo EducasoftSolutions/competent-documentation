@@ -75,6 +75,9 @@ plugins:
           - pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
           - pro-administratory/how-to/aktivity/presun-objektu.md
           - pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
+          - pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
+          - pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
+          - pro-administratory/how-to/aktivity/prirazovani-stitku.md
           - pro-administratory/reference/index.md
           - pro-administratory/reference/chybove-zpravy.md
           - pro-administratory/reference/obrazovka-aktivity.md
@@ -100,6 +103,9 @@ nav:
               - Vytvoření nového objektu: pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
               - Přesun objektu: pro-administratory/how-to/aktivity/presun-objektu.md
               - Vytvoření SCORM aktivity: pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
+              - Vyhledávání v aktivitách: pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
+              - Filtry a vyhledávání: pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
+              - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
       - Reference:
           - pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
