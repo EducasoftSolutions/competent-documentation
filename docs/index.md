@@ -1,10 +1,10 @@
 # Vítejte v dokumentaci Competent
 
-Competent je systém pro správu vzdělávání a rozvoje zaměstnanců. Tato dokumentace Vám pomůže systém rychle poznat, zvládnout každodenní úkoly a porozumět tomu, jak jednotlivé funkce fungují.
+Competent je systém pro správu vzdělávání a rozvoje zaměstnanců. Dokumentace je rozdělena do tří hlavních oblastí:
 
-Obsah je uspořádán do čtyř oblastí podle toho, co právě potřebujete:
+- **[Pro administrátory](pro-administratory/index.md)** — Návody, reference a koncepty pro administrátory. Naučíte se spravovat aktivity, uživatele, hodnocení a nastavení systému.
+- **[Pro studenty](pro-studenty/index.md)** — Dokumentace pro koncové uživatele — studenty, kteří používají Competent k absolvování vzdělávání.
+- **[Slovník](slovnik/index.md)** — Vysvětlení klíčových pojmů, které v Competent potkáte.
 
-- **[Tutoriály](tutorials/index.md)** — Pokud s Competent teprve začínáte, začněte zde. Postupné průvodce Vás od prvního přihlášení dovedou k prvnímu výsledku.
-- **[Návody](how-to/index.md)** — Znáte systém a potřebujete rychle splnit konkrétní úkol? Návody jsou stručné kroky přímo k cíli.
-- **[Reference](reference/index.md)** — Přehledy, tabulky a seznamy všech nastavení, parametrů a hodnot pro rychlé dohledání.
-- **[Koncepty](concepts/index.md)** — Chcete pochopit, proč systém funguje tak, jak funguje? Koncepty vysvětlují principy a logiku Competent do hloubky.
+!!! note "Používáte samostatný studentský portál?"
+    Pokud Vaše organizace používá samostatný portál pro studenty, jejich dokumentace je dostupná na adrese [docs-studenti.competent.cz](https://docs-studenti.competent.cz).

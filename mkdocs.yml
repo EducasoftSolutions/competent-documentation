@@ -41,7 +41,11 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -57,17 +61,56 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+  - llmstxt:
+      full_output: llms-full.txt
+      markdown_description: |
+        Tato dokumentace popisuje administrátorský portál LMS Competent.
+        Zahrnuje návody pro administrátory, referenci nastavení a konceptuální přehled.
+      sections:
+        Úvod:
+          - index.md
+        Pro administrátory:
+          - pro-administratory/index.md
+          - pro-administratory/how-to/index.md
+          - pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
+          - pro-administratory/how-to/aktivity/presun-objektu.md
+          - pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
+          - pro-administratory/reference/index.md
+          - pro-administratory/reference/chybove-zpravy.md
+          - pro-administratory/reference/obrazovka-aktivity.md
+          - pro-administratory/reference/detail-aktivity.md
+          - pro-administratory/concepts/index.md
+          - pro-administratory/concepts/aktivita.md
+          - pro-administratory/concepts/role.md
+        Pro studenty:
+          - pro-studenty/index.md
+        Slovník:
+          - slovnik/index.md
+
+hooks:
+  - hooks/copy_source.py
 
 nav:
   - Úvod: index.md
-  - Tutoriály:
-      - tutorials/index.md
-  - Návody:
-      - how-to/index.md
-  - Reference:
-      - reference/index.md
-  - Koncepty:
-      - concepts/index.md
+  - Pro administrátory:
+      - pro-administratory/index.md
+      - Návody:
+          - pro-administratory/how-to/index.md
+          - Aktivity:
+              - Vytvoření nového objektu: pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
+              - Přesun objektu: pro-administratory/how-to/aktivity/presun-objektu.md
+              - Vytvoření SCORM aktivity: pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
+      - Reference:
+          - pro-administratory/reference/index.md
+          - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
+          - Detail aktivity: pro-administratory/reference/detail-aktivity.md
+          - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
+      - Koncepty:
+          - pro-administratory/concepts/index.md
+          - Aktivita: pro-administratory/concepts/aktivita.md
+          - Role a oprávnění: pro-administratory/concepts/role.md
+  - Pro studenty: pro-studenty/index.md
+  - Slovník: slovnik/index.md
 
 extra:
   generator: false
