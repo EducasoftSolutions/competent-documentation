@@ -5,6 +5,7 @@ site_url: https://educasoftsolutions.github.io/competent-documentation/
 
 repo_name: EducasoftSolutions/competent-documentation
 repo_url: https://github.com/EducasoftSolutions/competent-documentation
+edit_uri: edit/main/docs/
 
 theme:
   name: material
