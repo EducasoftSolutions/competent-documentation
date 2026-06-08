@@ -1,10 +1,10 @@
 site_name: "Competent – Uživatelská příručka"
 site_description: Oficiální dokumentace LMS Competent od Educasoftu
 site_author: Educasoft
-site_url: https://docs.competent.cz/
+site_url: https://educasoftsolutions.github.io/competent-documentation/
 
-repo_name: competent-docs
-repo_url: https://docs.competent.cz/
+repo_name: EducasoftSolutions/competent-documentation
+repo_url: https://github.com/EducasoftSolutions/competent-documentation
 
 theme:
   name: material

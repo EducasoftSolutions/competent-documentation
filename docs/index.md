@@ -7,4 +7,4 @@ Competent je systém pro správu vzdělávání a rozvoje zaměstnanců. Dokumen
 - **[Slovník](slovnik/index.md)** – Vysvětlení klíčových pojmů, které v Competent potkáte.
 
 !!! note "Používáte samostatný studentský portál?"
-    Pokud Vaše organizace používá samostatný portál pro studenty, jejich dokumentace je dostupná na adrese [docs-studenti.competent.cz](https://docs-studenti.competent.cz).
+    Pokud Vaše organizace používá samostatný portál pro studenty, jejich dokumentace je dostupná v [samostatném studentském portálu](https://educasoftsolutions.github.io/portal-documentation/).
