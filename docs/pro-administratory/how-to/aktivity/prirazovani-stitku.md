@@ -2,7 +2,7 @@
 
 Štítky pomáhají třídit aktivity podle volně zvolených kategorií (například „GDPR", „Onboarding", „Povinné") a usnadňují [filtrování aktivit podle štítků](vyhledavani-v-aktivitach.md). Tento návod popisuje, jak štítek aktivitě přiřadit, jak ho zase odebrat a jak se v bočním panelu orientovat, pokud máte v systému velký počet štítků.
 
-Štítky se vytvářejí v nastavení administrace (viz [Vytvoření štítku — připravujeme](#)). V této stránce předpokládáme, že potřebné štítky už máte k dispozici.
+Štítky se vytvářejí v nastavení administrace (viz [Vytvoření a správa štítků](../nastaveni/stitky.md)). V této stránce předpokládáme, že potřebné štítky už máte k dispozici.
 
 ## Předpoklady
 
@@ -16,7 +16,7 @@
 3. V pravé části detailu najděte sekci **Štítky**. Pokud je aktivita bez štítků, je sekce zatím prázdná.
 4. Klikněte na **ikonu editace** (tužka) vedle nadpisu **Štítky**. Otevře se boční panel s nadpisem **Použitelné štítky**, ve kterém vidíte štítky, které je možné aktivitě přiřadit.
 5. V bočním panelu klikněte na štítek, který chcete přiřadit. Štítek se ihned objeví v sekci **Štítky** v detailu aktivity.
-6. Stejným způsobem můžete přiřadit libovolný počet dalších štítků — počet štítků na jedné aktivitě není omezen.
+6. Stejným způsobem můžete přiřadit libovolný počet dalších štítků – počet štítků na jedné aktivitě není omezen.
 7. Až budete s přiřazováním hotoví, klikněte v sekci **Štítky** na tlačítko **Hotovo**, případně boční panel zavřete křížkem v jeho pravém horním rohu.
 
 ![Přiřazení dvou štítků k aktivitě otevřením bočního panelu a kliknutím na štítky.](_media/prirazovani-stitku/flow-01-pridani-stitku.gif)
@@ -39,21 +39,21 @@ Pokud máte v systému větší množství štítků, najdete konkrétní štít
 3. Přímo v sekci **Štítky** v detailu aktivity (tedy **nikoli** v bočním panelu) klikněte na štítek, který chcete odebrat. Štítek z aktivity zmizí.
 4. Až budete hotoví, klikněte na **Hotovo**.
 
-Odebrání odstraní pouze přiřazení štítku k této konkrétní aktivitě — samotný štítek nadále existuje a je k dispozici jiným aktivitám.
+Odebrání odstraní pouze přiřazení štítku k této konkrétní aktivitě – samotný štítek nadále existuje a je k dispozici jiným aktivitám.
 
 ![Odebrání štítku z aktivity kliknutím na štítek v sekci Štítky.](_media/prirazovani-stitku/flow-03-odebrani-stitku.gif)
 
 ## Pozor na
 
 - **Vyhledávání v bočním panelu rozlišuje velikost písmen a diakritiku.** Hledání „gdpr" nenajde štítek **GDPR** a hledání „povinne" nenajde štítek **Povinné**. Zadávejte název štítku přesně tak, jak je v systému uložen. Chování se liší od hlavního vyhledávacího pole v seznamu aktivit.
-- **Po smazání textu ve vyhledávacím poli se zobrazí i již přiřazené štítky.** V bočním panelu se po vymazání filtru mohou objevit štítky, které aktivitě už přiřazené jsou — to je záměrné chování.
-- **Smazání štítku v nastavení odebere přiřazení bez upozornění.** Pokud administrátor smaže štítek v [Vytvoření štítku — připravujeme](#) administrace, štítek zmizí ze všech aktivit, kterým byl přiřazen, a to bez jakékoli notifikace. Pokud chcete zachovat přiřazení k aktivitám, štítek nemažte — místo toho ho přejmenujte nebo nepoužívejte.
+- **Po smazání textu ve vyhledávacím poli se zobrazí i již přiřazené štítky.** V bočním panelu se po vymazání filtru mohou objevit štítky, které aktivitě už přiřazené jsou – to je záměrné chování.
+- **Smazání štítku v nastavení odebere přiřazení bez upozornění.** Pokud administrátor smaže štítek v [nastavení administrace](../nastaveni/stitky.md), štítek zmizí ze všech aktivit, kterým byl přiřazen, a to bez jakékoli notifikace. Pokud chcete zachovat přiřazení k aktivitám, štítek nemažte – místo toho ho přejmenujte nebo nepoužívejte.
 - **Štítky jsou jen pro aktivity.** Sady ani dokumenty štítky nemají.
 
 ## Související
 
-- [Obrazovka Aktivity](../../reference/obrazovka-aktivity.md) — popis obrazovky se seznamem aktivit, ze které otevřete detail konkrétní aktivity.
-- [Detail aktivity](../../reference/detail-aktivity.md) — popis všech sekcí a záložek detailu.
-- [Filtrování aktivit podle štítků](vyhledavani-v-aktivitach.md) — jak v seznamu aktivit najít všechny aktivity označené konkrétním štítkem.
-- [Vytvoření štítku — připravujeme](#) — jak založit nový štítek v nastavení administrace.
-- [Slovník: Štítky — připravujeme](#)
+- [Obrazovka Aktivity](../../reference/obrazovka-aktivity.md) – popis obrazovky se seznamem aktivit, ze které otevřete detail konkrétní aktivity.
+- [Detail aktivity](../../reference/detail-aktivity.md) – popis všech sekcí a záložek detailu.
+- [Filtrování aktivit podle štítků](vyhledavani-v-aktivitach.md) – jak v seznamu aktivit najít všechny aktivity označené konkrétním štítkem.
+- [Vytvoření a správa štítků](../nastaveni/stitky.md) – jak založit nový štítek v nastavení administrace.
+- [Štítek](../../concepts/stitky.md)

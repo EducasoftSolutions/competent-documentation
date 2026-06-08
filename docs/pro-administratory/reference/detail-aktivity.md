@@ -27,26 +27,26 @@ Stavová lišta se nachází vpravo od lišty tabů a obsahuje:
 
 ---
 
-## Taby — přehled
+## Taby: přehled
 
 Detail aktivity obsahuje čtyři základní taby, které jsou dostupné pro všechny aktivity:
 
 | Tab | Popis |
 |---|---|
-| **Uživatelé** | Přehled uživatelů přiřazených k aktivitě — jejich stavy, výsledky a správa přiřazení. |
+| **Uživatelé** | Přehled uživatelů přiřazených k aktivitě – jejich stavy, výsledky a správa přiřazení. |
 | **Detaily** | Formulář s vlastnostmi aktivity: identifikace, typ, kapacita, nastavení opakování, notifikace a další. |
 | **Dokumenty** | Přílohy a studijní materiály spojené s aktivitou. |
 | **Podmínky** | Konfigurace podmínek přístupu k aktivitě (např. předpoklady splnění). |
 
 Po otevření Detail aktivity je výchozím aktivním tabem **Uživatelé**.
 
-Některé aktivity mohou mít zobrazeny další taby — viz [Další taby (podle typu aktivity)](#dalsi-taby-podle-typu-aktivity) níže.
+Některé aktivity mohou mít zobrazeny další taby – viz [Další taby (podle typu aktivity)](#dalsi-taby-podle-typu-aktivity) níže.
 
 ---
 
 ## Tab Uživatelé
 
-Tab Uživatelé zobrazuje seznam uživatelů, jimž byla aktivita přiřazena — včetně současných, minulých i budoucích přiřazení. U každého záznamu jsou dostupné informace o datu přiřazení, výsledku a stavu.
+Tab Uživatelé zobrazuje seznam uživatelů, jimž byla aktivita přiřazena – včetně současných, minulých i budoucích přiřazení. U každého záznamu jsou dostupné informace o datu přiřazení, výsledku a stavu.
 
 ### Sloupce gridu
 
@@ -64,23 +64,23 @@ V patičce tabulky je zobrazen **celkový počet záznamů** (Celkem položek: N
 
 Nad gridem je umístěna lišta nástrojů s následujícími funkcemi:
 
-- **Filtry** — k dispozici přímo v hlavičkách sloupců (viz výše).
-- **Znovunačtení dat** — obnoví seznam uživatelských přiřazení ze serveru.
-- **Hromadné akce** — umožní vybrat více uživatelských přiřazení najednou a provést hromadnou operaci: změnu dat plnění, odebrání uživatelských přístupů nebo odeslání zprávy. Potvrzovací modál má název **Hromadná změna stavu**.
-- **Export do Excelu** — otevře modál **Souhrnný report přístupů uživatelů** a nabídne ke stažení aktuálně zobrazený seznam uživatelů.
-- **Přiřazení nových uživatelů** — otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) — viz [Přiřazení uživatelů — připravujeme](#) a [Periodické nastavení — připravujeme](#).
+- **Filtry** – k dispozici přímo v hlavičkách sloupců (viz výše).
+- **Znovunačtení dat** – obnoví seznam uživatelských přiřazení ze serveru.
+- **Hromadné akce** – umožní vybrat více uživatelských přiřazení najednou a provést hromadnou operaci: změnu dat plnění, odebrání uživatelských přístupů nebo odeslání zprávy. Potvrzovací modál má název **Hromadná změna stavu**.
+- **Export do Excelu** – otevře modál **Souhrnný report přístupů uživatelů** a nabídne ke stažení aktuálně zobrazený seznam uživatelů.
+- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů (připravujeme)](#) a [Periodické nastavení (připravujeme)](#).
 
 ### Akce na řádku uživatelského přiřazení
 
 Každý řádek v gridu umožňuje následující operace:
 
-- **Data přiřazení** — nastavení dat: začátek, optimální začátek, optimální konec, vyžadovaný konec a konec přístupu.
-- **Stáhnout certifikát** — stažení certifikátu o splnění aktivity.
-- **Historie přístupů** — zobrazení záznamu o přístupech uživatele k aktivitě.
-- **Hodnotit** — otevře modální okno s pokusy uživatele (viz [Pokusy uživatele — připravujeme](#)).
-- **Stav přiřazení** — zobrazení a změna stavu přiřazení.
-- **Editace přiřazení** — dostupná pouze u aktivit se schématem **Bez termínu**.
-- **Odebrání uživatelského přístupu** — odebere přístup uživatele k aktivitě.
+- **Data přiřazení** – nastavení dat: začátek, optimální začátek, optimální konec, vyžadovaný konec a konec přístupu.
+- **Stáhnout certifikát** – stažení certifikátu o splnění aktivity.
+- **Historie přístupů** – zobrazení záznamu o přístupech uživatele k aktivitě.
+- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele (připravujeme)](#)).
+- **Stav přiřazení** – zobrazení a změna stavu přiřazení.
+- **Editace přiřazení** – dostupná pouze u aktivit se schématem **Bez termínu**.
+- **Odebrání uživatelského přístupu** – odebere přístup uživatele k aktivitě.
 
 ---
 
@@ -117,7 +117,7 @@ Tab Detaily obsahuje formulář pro správu vlastností aktivity. Pole jsou logi
 
 | Pole | Popis |
 |---|---|
-| **Nastavení opakování** | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení — připravujeme](#). |
+| **Nastavení opakování** | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení (připravujeme)](#). |
 | **Opakování** | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování). |
 | **Počet dnů přístupu** | Délka přístupu uživatele k aktivitě ve dnech. |
 | **Počet dnů automatického prodloužení** | Počet dnů, o které se přístup automaticky prodlouží. |
@@ -137,7 +137,7 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 | Pole | Popis |
 |---|---|
 | **Nová notifikace** | Přidá nový záznam notifikace k aktivitě. |
-| **Událost** | Trigger, na jehož základě se notifikace odešle. Kompletní výčet triggerů viz [Notifikační triggery — připravujeme](#). |
+| **Událost** | Událost, na jejímž základě se notifikace odešle. Jak notifikace fungují, popisuje [E-mailové notifikace](../concepts/emailove-notifikace.md). |
 | **Šablona** | Šablona zprávy, která se použije pro danou notifikaci. |
 
 ### Ostatní pole
@@ -147,20 +147,20 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 | **Recenze** | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**. |
 | **Vytvořeno** | Datum vytvoření aktivity (jen pro čtení). |
 | **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení). |
-| **Štítky** | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků — připravujeme](#)). |
-| **Workflow** | Panel Workflow. Viz [Workflow aktivity — připravujeme](#). |
+| **Štítky** | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků (připravujeme)](#)). |
+| **Workflow** | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#). |
 
 ---
 
 ## Tab Dokumenty
 
-Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě — připravujeme](#).
+Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě (připravujeme)](#).
 
 ---
 
 ## Tab Podmínky
 
-Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě — například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu — připravujeme](#).
+Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu (připravujeme)](#).
 
 ---
 
@@ -174,14 +174,14 @@ U některých typů aktivit se mohou vedle čtyř základních tabů zobrazit ta
 | **Termíny** | Pravděpodobně u aktivit se schématem **S termíny**. |
 
 !!! warning "Podmínky zobrazení"
-    Přesné podmínky zobrazení tabů iTrivio a Termíny závisí na konfiguraci aktivity. Obsah těchto tabů není v současné dokumentaci popsán — doplníme po dokončení testovacích scénářů.
+    Přesné podmínky zobrazení tabů iTrivio a Termíny závisí na konfiguraci aktivity. Obsah těchto tabů není v současné dokumentaci popsán – doplníme po dokončení testovacích scénářů.
 
 ---
 
 ## Pozor na
 
 !!! note "Různé chování tabu Uživatelé podle schématu"
-    Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů — připravujeme](#).
+    Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů (připravujeme)](#).
 
 Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Podmínky). U aktivit s Typem spouštění iTrivio a u aktivit se schématem **S termíny** se mohou zobrazit další taby (iTrivio, Termíny). Přesný výčet podmínek pro zobrazení těchto tabů bude doplněn v samostatné referenci po dokončení testování.
 
@@ -192,11 +192,11 @@ Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Pod
 - [Obrazovka Aktivity](obrazovka-aktivity.md)
 - [Vytvoření nového objektu](../how-to/aktivity/vytvoreni-noveho-objektu.md)
 - [Vytvoření SCORM aktivity](../how-to/aktivity/vytvoreni-scorm-aktivity.md)
-- [Přiřazení uživatelů — připravujeme](#)
-- [Periodické nastavení — připravujeme](#)
-- [Pokusy uživatele — připravujeme](#)
-- [Dokumenty v aktivitě — připravujeme](#)
-- [Podmínky přístupu — připravujeme](#)
-- [Notifikační triggery — připravujeme](#)
-- [Detail sady — připravujeme](#)
-- [Sdílené aktivity — připravujeme](#)
+- [Přiřazení uživatelů (připravujeme)](#)
+- [Periodické nastavení (připravujeme)](#)
+- [Pokusy uživatele (připravujeme)](#)
+- [Dokumenty v aktivitě (připravujeme)](#)
+- [Podmínky přístupu (připravujeme)](#)
+- [E-mailové notifikace](../concepts/emailove-notifikace.md)
+- [Detail sady (připravujeme)](#)
+- [Sdílené aktivity (připravujeme)](#)

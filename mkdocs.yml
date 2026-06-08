@@ -1,4 +1,4 @@
-site_name: "Competent — Uživatelská příručka"
+site_name: "Competent – Uživatelská příručka"
 site_description: Oficiální dokumentace LMS Competent od Educasoftu
 site_author: Educasoft
 site_url: https://docs.competent.cz/
@@ -78,16 +78,28 @@ plugins:
           - pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
           - pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
           - pro-administratory/how-to/aktivity/prirazovani-stitku.md
+          - pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
+          - pro-administratory/how-to/lide/vytvoreni-uzivatele.md
+          - pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
           - pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu.md
+          - pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny.md
+          - pro-administratory/how-to/lide/import-uzivatelu.md
+          - pro-administratory/how-to/lide/prirazeni-role-uzivateli.md
           - pro-administratory/how-to/nastaveni/stitky.md
+          - pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - pro-administratory/reference/index.md
           - pro-administratory/reference/chybove-zpravy.md
           - pro-administratory/reference/obrazovka-aktivity.md
           - pro-administratory/reference/detail-aktivity.md
+          - pro-administratory/reference/detail-skupiny.md
+          - pro-administratory/reference/prehled-roli-a-opravneni.md
+          - pro-administratory/reference/obrazovka-sablony-emailu.md
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
           - pro-administratory/concepts/role.md
           - pro-administratory/concepts/stitky.md
+          - pro-administratory/concepts/skupina.md
+          - pro-administratory/concepts/emailove-notifikace.md
         Pro studenty:
           - pro-studenty/index.md
         Slovník:
@@ -109,20 +121,32 @@ nav:
               - Vyhledávání v aktivitách: pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
               - Filtry a vyhledávání: pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
               - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
+              - Nastavení práv k aktivitě: pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
           - Lidé:
+              - Vytvoření uživatele: pro-administratory/how-to/lide/vytvoreni-uzivatele.md
+              - Vytvoření uživatelské skupiny: pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
               - Vyhledávání a řazení uživatelů: pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu.md
+              - Přiřazení uživatele do skupiny: pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny.md
+              - Import uživatelů: pro-administratory/how-to/lide/import-uzivatelu.md
+              - Přiřazení role uživateli: pro-administratory/how-to/lide/prirazeni-role-uzivateli.md
           - Nastavení:
               - Vytvoření a správa štítků: pro-administratory/how-to/nastaveni/stitky.md
+              - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
       - Reference:
           - pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
           - Detail aktivity: pro-administratory/reference/detail-aktivity.md
+          - Detail skupiny: pro-administratory/reference/detail-skupiny.md
+          - Přehled rolí a oprávnění: pro-administratory/reference/prehled-roli-a-opravneni.md
+          - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
           - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
       - Koncepty:
           - pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
           - Role a oprávnění: pro-administratory/concepts/role.md
           - Štítek: pro-administratory/concepts/stitky.md
+          - Uživatelská skupina: pro-administratory/concepts/skupina.md
+          - E-mailové notifikace: pro-administratory/concepts/emailove-notifikace.md
   - Pro studenty: pro-studenty/index.md
   - Slovník: slovnik/index.md
 

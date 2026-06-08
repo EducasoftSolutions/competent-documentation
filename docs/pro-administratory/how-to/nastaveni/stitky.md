@@ -5,7 +5,7 @@ Na této stránce najdete postup, jak v sekci **Nastavení > Štítky** vytvoři
 ## Předpoklady
 
 - Máte přístup do administrace Competent a v sekci **Nastavení** vidíte záložku **Štítky**.
-- Pro úpravu seznamu štítků není potřeba žádný předchozí stav — postup popisuje i situaci, kdy zatím žádný štítek neexistuje.
+- Pro úpravu seznamu štítků není potřeba žádný předchozí stav – postup popisuje i situaci, kdy zatím žádný štítek neexistuje.
 
 ## Vytvoření štítku
 
@@ -19,7 +19,7 @@ V hlavním menu klikněte na **Nastavení** a poté v záhlaví obrazovky na zá
 
 Pokud již nějaké štítky existují, klikněte na **zelené tlačítko +** v záhlaví seznamu.
 
-Pokud je seznam prázdný, zobrazí se uprostřed plochy text „Zatím nebyl vytvořen žádný štítek." a tlačítko **Vytvořit nový štítek** — kliknutím na něj otevřete stejné modální okno.
+Pokud je seznam prázdný, zobrazí se uprostřed plochy text „Zatím nebyl vytvořen žádný štítek." a tlačítko **Vytvořit nový štítek** – kliknutím na něj otevřete stejné modální okno.
 
 ### 3. Zadejte název štítku
 
@@ -58,14 +58,14 @@ V seznamu štítků klikněte na **ikonu koše** vedle štítku, který chcete o
 
 Klikněte na tlačítko **Odebrat**. Štítek je z aplikace okamžitě odstraněn a zmizí ze seznamu.
 
-Pokud jste klikli na ikonu koše omylem, klikněte na **Zrušit** — štítek zůstane zachován.
+Pokud jste klikli na ikonu koše omylem, klikněte na **Zrušit** – štítek zůstane zachován.
 
 ## Pozor na
 
-- **Smazání štítku je nevratné.** V uživatelském rozhraní není dostupný způsob, jak odstraněný štítek obnovit. Pokud má být přiřazení k aktivitám zachováno, štítek raději nemažte — postačí ho přejmenovat, případně přestat používat.
+- **Smazání štítku je nevratné.** V uživatelském rozhraní není dostupný způsob, jak odstraněný štítek obnovit. Pokud má být přiřazení k aktivitám zachováno, štítek raději nemažte – postačí ho přejmenovat, případně přestat používat.
 - **Smazaný štítek se automaticky odebere ze všech aktivit, kterým byl přiřazen.** Aktivity samy zůstanou beze změny obsahu, pouze z nich daný štítek zmizí. Potvrzovací okno přitom nezobrazuje, kolika aktivit se odstranění dotkne.
-- **Vícejazyčný název.** Pokud Competent provozujete ve vícejazyčném prostředí, lze do pole **Název** zadat hodnoty pro více jazyků současně oddělené svislítkem (`|`) v pořadí, ve kterém jsou jazyky v systému nastavené. Detaily o vícejazyčném prostředí viz [Jazyková podpora — připravujeme](#).
-- **Seznam štítků je vždy řazen abecedně podle názvu.** Manuálně položky přesouvat nelze — pořadí v seznamu vychází vždy z abecedního porovnání.
+- **Vícejazyčný název.** Pokud Competent provozujete ve vícejazyčném prostředí, lze do pole **Název** zadat hodnoty pro více jazyků současně oddělené svislítkem (`|`) v pořadí, ve kterém jsou jazyky v systému nastavené. Detaily o vícejazyčném prostředí viz [Jazyková podpora (připravujeme)](#).
+- **Seznam štítků je vždy řazen abecedně podle názvu.** Manuálně položky přesouvat nelze – pořadí v seznamu vychází vždy z abecedního porovnání.
 
 ## Související stránky
 

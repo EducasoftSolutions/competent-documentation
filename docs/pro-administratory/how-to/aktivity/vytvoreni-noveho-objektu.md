@@ -48,8 +48,8 @@ U e-learningové aktivity je za názvem v závorce uveden podtyp: _(Elearning)_.
 ## Pozor na
 
 - Do uzlu **root** a do **Složek** lze vkládat libovolný typ objektu (Složka, Aktivita, Sada, Termínová sada).
-- Do **Termínové sady** lze vkládat pouze aktivity — nelze do ní vložit Sadu ani další Termínovou sadu.
-- **Import/Export** v nabídce není typ objektu — otevírá nástroj **Import/Export**, ne dialog pro vytvoření.
+- Do **Termínové sady** lze vkládat pouze aktivity – nelze do ní vložit Sadu ani další Termínovou sadu.
+- **Import/Export** v nabídce není typ objektu – otevírá nástroj **Import/Export**, ne dialog pro vytvoření.
 
 ## Související stránky
 

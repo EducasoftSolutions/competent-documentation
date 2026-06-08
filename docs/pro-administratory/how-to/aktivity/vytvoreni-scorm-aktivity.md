@@ -44,7 +44,7 @@ Přepněte na záložku **Detaily**. Najděte pole **Typ spouštění** a z rozb
 
 ![Rozbalovací seznam Typ spouštění s vybranou hodnotou Scorm kurz](_media/vytvoreni-scorm-aktivity/dropdown-launch-type.png)
 
-Po výběru **Scorm kurz** se zároveň automaticky nastaví pole **Typ vyhodnocení** na **Prošel/Neprošel** — toto pole nemusíte vyplňovat ručně.
+Po výběru **Scorm kurz** se zároveň automaticky nastaví pole **Typ vyhodnocení** na **Prošel/Neprošel** – toto pole nemusíte vyplňovat ručně.
 
 ### 4. Nahrajte SCORM balíček
 
@@ -71,9 +71,9 @@ Změny potvrďte tlačítkem **Uložit**.
 
 ## Pozor na
 
-- **Verze SCORM** — Competent podporuje pouze SCORM 1.2. Balíčky SCORM 2004 nebudou fungovat.
-- **Aktualizace obsahu** — při výměně SCORM ZIPu klikněte na link **Změna verze**. Bez změny verze mohou stará studentská data způsobovat chyby.
-- **Detekce chyb** — administrátor může globálně zapnout volbu **Detekovat chyby SCORM kurzů**, která se snaží automaticky opravit a restartovat problematické spuštění.
+- **Verze SCORM** – Competent podporuje pouze SCORM 1.2. Balíčky SCORM 2004 nebudou fungovat.
+- **Aktualizace obsahu** – při výměně SCORM ZIPu klikněte na link **Změna verze**. Bez změny verze mohou stará studentská data způsobovat chyby.
+- **Detekce chyb** – administrátor může globálně zapnout volbu **Detekovat chyby SCORM kurzů**, která se snaží automaticky opravit a restartovat problematické spuštění.
 
 ## Související stránky
 

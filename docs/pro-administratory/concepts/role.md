@@ -1,7 +1,7 @@
 # Role a oprávnění
 
 Competent řídí přístup uživatelů prostřednictvím **rolí**. Role není jen
-označení uživatele — je to pojmenovaná sada oprávnění, která systém
+označení uživatele – je to pojmenovaná sada oprávnění, která systém
 vyhodnocuje při každé akci. Klíčem k pochopení celého modelu je
 rozlišení mezi **globální rolí** a **objektovou rolí**: první platí pro
 celý systém, druhá platí pouze ve vztahu ke konkrétnímu záznamu.
@@ -16,7 +16,7 @@ role administrátora nebo role s právem přepínat do jiného účtu.
 
 Uživatel s globální rolí smí provádět všechny akce, které daná role
 obsahuje, kdekoliv v systému. Proto je přidělování globálních rolí
-vyhrazeno administrátorům — každý uživatel, který ji obdrží, získá
+vyhrazeno administrátorům – každý uživatel, který ji obdrží, získá
 odpovídající rozsah oprávnění plošně.
 
 !!! warning "Globální role nezná hranice objektu"
@@ -28,13 +28,13 @@ odpovídající rozsah oprávnění plošně.
 
 ## Objektové role
 
-Objektová role popisuje vztah mezi uživatelem a konkrétním objektem —
+Objektová role popisuje vztah mezi uživatelem a konkrétním objektem –
 například aktivitou, skupinou uživatelů nebo dokumentem. Teprve spolu
 s touto vazbou má role smysl: „Anna je lektorka *této* aktivity"
 je jiný výrok než „Anna je lektorka".
 
 Díky tomu lze nastavit, aby jedna osoba měla práva lektora u jedné
-aktivity a práva pouhého účastníka u jiné — bez jakékoliv globální změny
+aktivity a práva pouhého účastníka u jiné – bez jakékoliv globální změny
 jejího účtu.
 
 Objektové role se přiřazují přímo u daného záznamu, zpravidla
@@ -61,7 +61,7 @@ rozlišuje tyto základní kategorie:
 | **Spustit** | Spustit aktivitu (e-learning modul) |
 
 Mezi oprávněními existují závislosti: například **Upravit vyžaduje Číst**.
-Systém tuto závislost vynucuje automaticky — roli, která má právo
+Systém tuto závislost vynucuje automaticky – roli, která má právo
 upravovat, musí mít uděleno i právo číst.
 
 Globální oprávnění (např. správa šablon notifikací, editace navigace)
@@ -75,7 +75,7 @@ Objekty v Competent tvoří hierarchii: skupiny uživatelů mohou být
 zanořeny, aktivity se zařazují do sad a podobně. Objektové role se v této
 hierarchii **dědí směrem dolů**: pokud je uživatel přiřazen v určité
 roli k nadřazenému objektu, platí jeho oprávnění i pro objekty
-zanořené pod ním — pokud to role výslovně nevylučuje.
+zanořené pod ním – pokud to role výslovně nevylučuje.
 
 Pravidlo pro vyhodnocení přístupu lze shrnout takto:
 
@@ -87,12 +87,12 @@ která dané oprávnění obsahuje.
 
 ## Systémové role: Vlastník a Účastník
 
-Competent přiřazuje dvě speciální role automaticky — bez zásahu
+Competent přiřazuje dvě speciální role automaticky – bez zásahu
 administrátora.
 
 **Vlastník (owner)** se stane uživatel v okamžiku, kdy objekt vytvoří.
 Vlastník má nad daným objektem plná práva a navíc může ostatním
-uživatelům přiřazovat objektové role — i tehdy, pokud by jinak neměl
+uživatelům přiřazovat objektové role – i tehdy, pokud by jinak neměl
 právo správy rolí.
 
 **Účastník (participant)** je role, kterou systém přidělí uživateli
@@ -105,26 +105,26 @@ v nastavení a systém je spravuje sám.
 
 ---
 
-## Delegování — kdo smí přiřazovat role
+## Delegování: kdo smí přiřazovat role
 
 Přiřazovat role mohou uživatelé ve třech situacích:
 
 1. Uživatel má globální oprávnění pro správu rolí (typicky
    administrátor).
-2. Uživatel je **vlastníkem** daného objektu — v takovém případě smí
+2. Uživatel je **vlastníkem** daného objektu – v takovém případě smí
    k tomuto objektu přiřazovat libovolnou objektovou roli.
 3. Role vyšší úrovně (např. administrátor oddělení) má v systému
    nastaveno oprávnění přiřazovat určité podřízené role (např. role
    lektora nebo vedoucího).
 
 U některých zákazníků se objektové role přidělují automaticky podle
-organizační struktury — manažeři tak bez manuálního nastavení získají
+organizační struktury – manažeři tak bez manuálního nastavení získají
 oprávnění vůči svým podřízeným.
 
 ---
 
 ## Související stránky
 
-- [Jak přiřadit roli uživateli — připravujeme](#)
-- [Jak nastavit práva k aktivitě — připravujeme](#)
-- [Přehled oprávnění — připravujeme](#)
+- [Jak přiřadit roli uživateli](../how-to/lide/prirazeni-role-uzivateli.md)
+- [Jak nastavit práva k aktivitě](../how-to/aktivity/nastaveni-prav-k-aktivite.md)
+- [Přehled rolí a oprávnění](../reference/prehled-roli-a-opravneni.md)

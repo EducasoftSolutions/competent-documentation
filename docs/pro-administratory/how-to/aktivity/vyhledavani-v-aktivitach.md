@@ -20,7 +20,7 @@ V administraci Competent můžete v obrazovce aktivit rychle nalézt konkrétní
    Zobrazí se **vyhledávací pole**.
 
 2. Začněte psát hledaný výraz.
-   Seznam aktivit se filtruje okamžitě s každým napsaným znakem — není třeba stiskat Enter.
+   Seznam aktivit se filtruje okamžitě s každým napsaným znakem – není třeba stiskat Enter.
    Vyhledávání porovnává zadaný text s **názvem aktivity** a je necitlivé na velikost písmen i na diakritiku.
 
 3. Pokud chcete vyhledávání zrušit, klikněte na **× ikonu** vedle vyhledávacího pole.
@@ -48,7 +48,7 @@ V administraci Competent můžete v obrazovce aktivit rychle nalézt konkrétní
 5. Chcete-li zrušit výběr všech štítků najednou, klikněte na **× ikonu** (ikonu koše) ve vyhledávací oblasti.
 
 !!! tip "Hledání ve štítcích"
-    Boční panel obsahuje vlastní vyhledávací pole pro filtrování seznamu štítků. Vyhledávání ve štítcích je citlivé na velikost písmen a diakritiku — zadávejte hledaný výraz přesně.
+    Boční panel obsahuje vlastní vyhledávací pole pro filtrování seznamu štítků. Vyhledávání ve štítcích je citlivé na velikost písmen a diakritiku – zadávejte hledaný výraz přesně.
 
 ---
 
@@ -71,9 +71,9 @@ Po nastavení filtru ověřte výsledek:
 ## Pozor na
 
 - **Štítky se přiřazují pouze aktivitám**, ne složkám ani sadám. Při filtrování podle štítků se složky zobrazí vždy bez ohledu na zvolené štítky.
-- Vyhledávání prochází **pouze zobrazené položky** — nezohledňuje položky ve skrytých podsložkách.
+- Vyhledávání prochází **pouze zobrazené položky** – nezohledňuje položky ve skrytých podsložkách.
 - Textové vyhledávání porovnává pouze **název aktivity**; custom ID, popis ani jiné atributy se při vyhledávání nezohledňují.
-- Vyhledávání ve štítcích v bočním panelu je **citlivé na velikost písmen a diakritiku** — toto chování se liší od hlavního vyhledávacího pole, které je na obojí necitlivé.
+- Vyhledávání ve štítcích v bočním panelu je **citlivé na velikost písmen a diakritiku** – toto chování se liší od hlavního vyhledávacího pole, které je na obojí necitlivé.
 
 ---
 
@@ -82,5 +82,5 @@ Po nastavení filtru ověřte výsledek:
 - [Obrazovka aktivit](../../reference/obrazovka-aktivity.md)
 - [Filtry zobrazení](filtry-a-vyhledavani.md)
 - [Přiřazení štítků k aktivitě](prirazovani-stitku.md)
-- [Vytvoření štítku — připravujeme](#)
-- [Slovník: Štítky — připravujeme](#)
+- [Vytvoření a správa štítků](../nastaveni/stitky.md)
+- [Štítek](../../concepts/stitky.md)

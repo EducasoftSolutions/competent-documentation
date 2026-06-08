@@ -20,7 +20,7 @@ V horní části panelu zobrazení je **přepínač** se dvěma možnostmi:
 | Volba | Popis |
 |---|---|
 | **Stromové zobrazení** (výchozí) | V seznamu aktivit jsou viditelné položky aktuální složky. K ostatním složkám se navigujete prostřednictvím stromu složek. |
-| **Ploché zobrazení** | V seznamu aktivit jsou viditelné všechny položky aktuální složky i jejích podsložek najednou, rekurzivně. Složky se v plochém zobrazení nezobrazují — jsou vidět pouze aktivity a sady. |
+| **Ploché zobrazení** | V seznamu aktivit jsou viditelné všechny položky aktuální složky i jejích podsložek najednou, rekurzivně. Složky se v plochém zobrazení nezobrazují – jsou vidět pouze aktivity a sady. |
 
 Kliknutím na požadovanou volbu se zobrazení přepne.
 
@@ -39,17 +39,17 @@ Panel zobrazení obsahuje přepínače viditelnosti pro tyto typy položek:
 U každého typu jsou k dispozici tlačítka **Skrýt** a **Zobrazit**. Kliknutím na příslušné tlačítko okamžitě změníte viditelnost daného typu v seznamu aktivit.
 
 !!! note "Složky v plochém zobrazení"
-    Pokud je aktivní **ploché zobrazení**, jsou složky skryty vždy — tlačítko **Zobrazit** pro složky v tomto režimu nemá efekt.
+    Pokud je aktivní **ploché zobrazení**, jsou složky skryty vždy – tlačítko **Zobrazit** pro složky v tomto režimu nemá efekt.
 
 ### 4. Skryjte nebo zobrazte podtypy aktivit
 
-Pod přepínačem viditelnosti aktivit je **rozbalitelný seznam podtypů** (například Elearning, Školení). Konkrétní podtypy závisejí na konfiguraci vašeho systému. Každý podtyp má vlastní tlačítka **Skrýt** / **Zobrazit** — skrytí podtypu odebere ze seznamu aktivit všechny aktivity daného podtypu.
+Pod přepínačem viditelnosti aktivit je **rozbalitelný seznam podtypů** (například Elearning, Školení). Konkrétní podtypy závisejí na konfiguraci vašeho systému. Každý podtyp má vlastní tlačítka **Skrýt** / **Zobrazit** – skrytí podtypu odebere ze seznamu aktivit všechny aktivity daného podtypu.
 
 Výchozí stav: všechny podtypy jsou zobrazené.
 
 ### 5. Resetujte zobrazení na výchozí nastavení
 
-Pokud se aktuální nastavení liší od výchozího stavu, zobrazí se v panelu zobrazení **ikona ×** s tooltipem **Resetovat zobrazení**. Kliknutím na ni vrátíte všechny volby na výchozí hodnoty (viz tabulka výše — hodnocení zůstane po resetu skryté, protože skrytý je jeho výchozí stav).
+Pokud se aktuální nastavení liší od výchozího stavu, zobrazí se v panelu zobrazení **ikona ×** s tooltipem **Resetovat zobrazení**. Kliknutím na ni vrátíte všechny volby na výchozí hodnoty (viz tabulka výše – hodnocení zůstane po resetu skryté, protože skrytý je jeho výchozí stav).
 
 Pokud je již nastavení ve výchozím stavu, ikona × se nezobrazí.
 
@@ -65,7 +65,7 @@ Po provedených změnách zkontrolujte seznam aktivit:
 ## Pozor na
 
 - **Filtr zobrazení, textové vyhledávání a štítky se kombinují:** položka se zobrazí pouze tehdy, pokud prošla všemi aktivními filtry současně. Skrytý typ se nezobrazí ani při zadání přesného názvu do vyhledávání.
-- **Pořadí položek v panelu zobrazení** se může lišit dle konfigurace systému — spoléhejte na popisky, ne na pozici v panelu.
+- **Pořadí položek v panelu zobrazení** se může lišit dle konfigurace systému – spoléhejte na popisky, ne na pozici v panelu.
 
 ## Související stránky
 

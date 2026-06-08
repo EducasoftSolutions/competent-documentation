@@ -1,9 +1,9 @@
 # Chybové zprávy
 
-Chybová zpráva se zobrazí vždy, když systém nemůže provést požadovanou operaci — například z důvodu nedostatečných oprávnění, chybějících dat nebo neplatného stavu záznamu. Zprávy se zpravidla zobrazují v modálním okně, které je možné zavřít; kliknutím na řádek chyby zobrazíte její detail.
+Chybová zpráva se zobrazí vždy, když systém nemůže provést požadovanou operaci – například z důvodu nedostatečných oprávnění, chybějících dat nebo neplatného stavu záznamu. Zprávy se zpravidla zobrazují v modálním okně, které je možné zavřít; kliknutím na řádek chyby zobrazíte její detail.
 
 !!! note "Obrázek"
-    Ukázka modálního okna s chybovou hláškou — [připravujeme](#).
+    Ukázka modálního okna s chybovou hláškou – [připravujeme](#).
 
 ---
 
@@ -17,8 +17,8 @@ Chybová zpráva se zobrazí vždy, když systém nemůže provést požadovanou
 | `Insufficient Permissions` (Nedostatečná práva) | Přihlášený uživatel nemá dostatečná oprávnění k provedení dané operace. Operace nebyla provedena. | Ověřte roli a přístupová práva uživatele. Pokud operaci potřebuje provádět, požádejte správce systému o přidělení příslušné role. |
 | `Objekt nebyl nalezen` | Požadovaný záznam nebyl v databázi nalezen. Pravděpodobně byl odstraněn jiným uživatelem nebo v jiné záložce prohlížeče. | Obnovte stránku (**Ctrl+F5**) a načtěte seznam znovu. |
 | `Není možné upravit tento přístup` | Přístup uživatele byl přidělen v rámci nadřazené sady. Přímá úprava na úrovni aktivity není povolena. | Přistupte ke správě přístupu přes nadřazenou sadu, nikoli přes detail aktivity. |
-| `Špatné vstupní parametry` | Vstupní data neprošla validací. Nejčastějším příkladem je překročení maximálního počtu povolených pokusů nastavených v detailu aktivity — systém odmítne uložit další pokus uživatele. | Zkontrolujte nastavení maximálního počtu pokusů v **Detailu aktivity**. Pokud je limit záměrný, upozorněte uživatele. |
-| `Špatný požadavek` | Uživatel se pokusil přistoupit k objektu, který byl mezitím odstraněn systémem nebo jiným uživatelem. Stav nastává v souběžném víceuživatelském provozu. | Obnovte stránku (**Ctrl+F5**). Záznam byl pravděpodobně odstraněn — vyhledejte jej v příslušném seznamu, nebo jej v případě potřeby vytvořte znovu. |
+| `Špatné vstupní parametry` | Vstupní data neprošla validací. Nejčastějším příkladem je překročení maximálního počtu povolených pokusů nastavených v detailu aktivity – systém odmítne uložit další pokus uživatele. | Zkontrolujte nastavení maximálního počtu pokusů v **Detailu aktivity**. Pokud je limit záměrný, upozorněte uživatele. |
+| `Špatný požadavek` | Uživatel se pokusil přistoupit k objektu, který byl mezitím odstraněn systémem nebo jiným uživatelem. Stav nastává v souběžném víceuživatelském provozu. | Obnovte stránku (**Ctrl+F5**). Záznam byl pravděpodobně odstraněn – vyhledejte jej v příslušném seznamu, nebo jej v případě potřeby vytvořte znovu. |
 
 ---
 
@@ -33,6 +33,6 @@ Většina zpráv se zobrazuje v modálním okně nad aktuální obrazovkou. Okno
 
 ## Související stránky
 
-- [Správa rolí a oprávnění — připravujeme](#)
-- [Detail aktivity — připravujeme](#)
-- [Sady aktivit — připravujeme](#)
+- [Přehled rolí a oprávnění](prehled-roli-a-opravneni.md)
+- [Detail aktivity (připravujeme)](#)
+- [Sady aktivit (připravujeme)](#)

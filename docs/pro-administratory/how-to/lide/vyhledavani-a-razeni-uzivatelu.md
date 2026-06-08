@@ -5,7 +5,7 @@ V obrazovce **Lidé** najdete všechny uživatele evidované v Competent. Když 
 ## Předpoklady
 
 - Máte přístup do administrace Competent a vidíte v hlavním menu položku **Lidé**.
-- V systému jsou uživatelé, mezi kterými chcete vyhledávat — v tabu **Uživatel** je viditelný seznam.
+- V systému jsou uživatelé, mezi kterými chcete vyhledávat – v tabu **Uživatel** je viditelný seznam.
 
 ## Otevření seznamu uživatelů
 
@@ -21,11 +21,11 @@ Seznam je při prvním otevření seřazený podle sloupce **Příjmení** vzest
 
 V záhlaví obrazovky (vpravo nahoře nad seznamem) klikněte na ikonu lupy (**Vyhledávání**). Pod záhlavím každého sloupce se zobrazí textové pole, do kterého můžete zadat hledaný řetězec.
 
-![Aktivované vyhledávání — textová pole pod záhlavími sloupců](_media/vyhledavani-a-razeni-uzivatelu/02-vyhledavani-aktivovane.png)
+![Aktivované vyhledávání – textová pole pod záhlavími sloupců](_media/vyhledavani-a-razeni-uzivatelu/02-vyhledavani-aktivovane.png)
 
 ### 2. Zadejte hledaný řetězec
 
-Klikněte do pole pod sloupcem, ve kterém chcete vyhledávat (například **Příjmení**), a začněte psát. Stačí zadat jen část hledaného slova — seznam se filtruje podle každého řetězce, který se v daném sloupci vyskytuje. Vyhledávání ignoruje rozdíl mezi velkými a malými písmeny i diakritiku.
+Klikněte do pole pod sloupcem, ve kterém chcete vyhledávat (například **Příjmení**), a začněte psát. Stačí zadat jen část hledaného slova – seznam se filtruje podle každého řetězce, který se v daném sloupci vyskytuje. Vyhledávání ignoruje rozdíl mezi velkými a malými písmeny i diakritiku.
 
 Obsah seznamu se aktualizuje okamžitě s každým zadaným znakem; samostatné tlačítko pro spuštění vyhledávání není potřeba.
 
@@ -33,11 +33,11 @@ Obsah seznamu se aktualizuje okamžitě s každým zadaným znakem; samostatné 
 
 Po dokončení uvidíte v seznamu pouze řádky odpovídající zadanému kritériu. Ve spodním řádku tabulky se zobrazuje počet zobrazených položek vůči celkovému počtu (například „Celkem položek: 31 (Zobrazuji položky: 2)").
 
-![Výsledek vyhledávání řetězce „nov" — zobrazeny dva řádky](_media/vyhledavani-a-razeni-uzivatelu/03-search-nov-vysledek.png)
+![Výsledek vyhledávání řetězce „nov" – zobrazeny dva řádky](_media/vyhledavani-a-razeni-uzivatelu/03-search-nov-vysledek.png)
 
 ### 3. Kombinujte vyhledávání napříč sloupci (volitelné)
 
-Vyhledávání lze kombinovat napříč více sloupci — zápisem do více polí současně systém zužuje výsledek na řádky vyhovující všem zadaným kritériím.
+Vyhledávání lze kombinovat napříč více sloupci – zápisem do více polí současně systém zužuje výsledek na řádky vyhovující všem zadaným kritériím.
 
 ### 4. Vymažte filtr
 
@@ -73,7 +73,7 @@ Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; př
 
 ## Související stránky
 
-- [Vytvoření uživatele — připravujeme](#)
-- [Hromadné akce — připravujeme](#)
-- [Zobrazení sloupců — připravujeme](#)
-- [Detail uživatele — připravujeme](#)
+- [Vytvoření uživatele](vytvoreni-uzivatele.md)
+- [Hromadné akce (připravujeme)](#)
+- [Zobrazení sloupců (připravujeme)](#)
+- [Detail uživatele (připravujeme)](#)

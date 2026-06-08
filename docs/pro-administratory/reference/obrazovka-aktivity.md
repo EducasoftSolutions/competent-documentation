@@ -6,7 +6,7 @@ Obrazovka **Aktivity** je centrálním místem pro správu výukových objektů 
 
 ## Strom aktivit
 
-Strom aktivit v levém panelu zobrazuje hierarchii všech složek, sad, termínových sad a aktivit. Nejvyšší položkou hierarchie je **root** — kořenová složka obsahující všechny ostatní položky.
+Strom aktivit v levém panelu zobrazuje hierarchii všech složek, sad, termínových sad a aktivit. Nejvyšší položkou hierarchie je **root** – kořenová složka obsahující všechny ostatní položky.
 
 Každá položka ve stromu má tyto aktivní části:
 
@@ -17,7 +17,7 @@ Každá položka ve stromu má tyto aktivní části:
 | Název | Kliknutí otevře obsah dané složky nebo sady v pravém panelu. Kliknutí na aktivitu otevře [Detail aktivity](detail-aktivity.md). |
 | Kontextové menu | Zobrazí se po najetí myší na položku; viz [Kontextové menu položek](#kontextove-menu-polozek). |
 
-Pod stromem se nachází tlačítko pro **obnovení dat** — načte aktuální stav stromu ze serveru.
+Pod stromem se nachází tlačítko pro **obnovení dat** – načte aktuální stav stromu ze serveru.
 
 ### Povolené typy objektů v kontejnerech
 
@@ -29,7 +29,7 @@ Každý kontejner přijímá pouze určité typy potomků:
 | Složka | Složka, Aktivita, Sada, Termínová sada |
 | Sada | Aktivita, Sada, Termínová sada |
 | Termínová sada | Pouze Aktivita |
-| Aktivita | Aktivita není kontejner — nic neobsahuje |
+| Aktivita | Aktivita není kontejner – nic neobsahuje |
 
 ---
 
@@ -37,7 +37,7 @@ Každý kontejner přijímá pouze určité typy potomků:
 
 Pravý panel zobrazuje obsah aktuálně otevřené složky nebo sady. Nad ním je **informační pruh** s názvem a ikonou aktuální položky, navigačním odkazem na cestu ke složce (breadcrumb) a akčními ikonami.
 
-### Informační pruh — akční ikony
+### Informační pruh: akční ikony
 
 Čtyři ikony v pravém horním rohu informačního pruhu:
 
@@ -66,9 +66,9 @@ Kliknutí na **složku, sadu nebo termínovou sadu** přejde o úroveň níže d
 
 ## Vyhledávání
 
-Vyhledávací lišta se zobrazí po kliknutí na ikonu vyhledávání v informačním pruhu. Vyhledávání probíhá **pouze v aktuální složce nebo sadě**, případně v jejich podsložkách a pod-sadách — pokud je zapnuto **Hromadné zobrazení** (viz [Filtrování](#filtrovani)). Výsledky se aktualizují okamžitě při změně textu v poli.
+Vyhledávací lišta se zobrazí po kliknutí na ikonu vyhledávání v informačním pruhu. Vyhledávání probíhá **pouze v aktuální složce nebo sadě**, případně v jejich podsložkách a pod-sadách – pokud je zapnuto **Hromadné zobrazení** (viz [Filtrování](#filtrovani)). Výsledky se aktualizují okamžitě při změně textu v poli.
 
-Druhý prvek vyhledávací lišty je **Filtrovat štítky** — otevře vedlejší panel pro výběr štítků. Vybrané štítky se přesunou do vyhledávací lišty jako aktivní filtr. Kliknutím na vybraný štítek ve vyhledávací liště jej odeberete; ikonkou koše celý výběr štítků zrušíte.
+Druhý prvek vyhledávací lišty je **Filtrovat štítky** – otevře vedlejší panel pro výběr štítků. Vybrané štítky se přesunou do vyhledávací lišty jako aktivní filtr. Kliknutím na vybraný štítek ve vyhledávací liště jej odeberete; ikonkou koše celý výběr štítků zrušíte.
 
 ---
 
@@ -76,9 +76,9 @@ Druhý prvek vyhledávací lišty je **Filtrovat štítky** — otevře vedlejš
 
 Okno filtrování nabízí tři skupiny voleb:
 
-1. **Hromadné zobrazení** — výchozí stav pravého panelu zobrazuje pouze přímé položky aktuální složky nebo sady. Po přepnutí na Hromadné zobrazení se zobrazí **všechny položky ve všech podsložkách a pod-sadách**. V tomto režimu jsou složky skryty.
-2. **Zobrazení aktivit** — skryje nebo zobrazí všechny aktivity, případně pouze aktivity určitého subtypu.
-3. **Zobrazení strukturních prvků** — skryje nebo zobrazí složky, sady nebo termínové sady.
+1. **Hromadné zobrazení** – výchozí stav pravého panelu zobrazuje pouze přímé položky aktuální složky nebo sady. Po přepnutí na Hromadné zobrazení se zobrazí **všechny položky ve všech podsložkách a pod-sadách**. V tomto režimu jsou složky skryty.
+2. **Zobrazení aktivit** – skryje nebo zobrazí všechny aktivity, případně pouze aktivity určitého subtypu.
+3. **Zobrazení strukturních prvků** – skryje nebo zobrazí složky, sady nebo termínové sady.
 
 Všechny aktivní filtry lze zrušit najednou ikonkou křížku.
 
@@ -94,7 +94,7 @@ Kliknutím na typ v nabídce se vytvoří nový prvek jako přímý potomek polo
 
 | Typ | Podmenu |
 |---|---|
-| Složka | — |
+| Složka | – |
 | Aktivita | Elearning, Školení |
 | Sada | Sada |
 | Termínová sada | Komplexní Sada |
@@ -112,13 +112,13 @@ Tři volby dostupné pro většinu položek:
 | Smazat | Smaže položku po potvrzení konfirmačního dialogu. |
 
 !!! note "Kořenová položka root"
-    U položky **root** jsou k dispozici: **menu pro vytvoření nové položky** (plná nabídka typů — Složka, Aktivita, Sada, Termínová sada), **Přejmenovat** a **Práva**. Volba **Smazat** není dostupná, protože kořenovou položku nelze odstranit.
+    U položky **root** jsou k dispozici: **menu pro vytvoření nové položky** (plná nabídka typů – Složka, Aktivita, Sada, Termínová sada), **Přejmenovat** a **Práva**. Volba **Smazat** není dostupná, protože kořenovou položku nelze odstranit.
 
 ---
 
 ## Modál Práva přístupu pro ...
 
-Modál se otevře kliknutím na ikonu práv u libovolné položky — buď ve stromu aktivit, nebo ve složkovém zobrazení. Zobrazuje souhrnný přehled práv nad daným objektem, včetně přímo přiřazených, zděděných a systémových práv.
+Modál se otevře kliknutím na ikonu práv u libovolné položky – buď ve stromu aktivit, nebo ve složkovém zobrazení. Zobrazuje souhrnný přehled práv nad daným objektem, včetně přímo přiřazených, zděděných a systémových práv.
 
 ### Struktura modálu
 
@@ -141,8 +141,8 @@ Role jsou odlišeny závorkami podle způsobu přiřazení:
 
 ### Přidávání a úprava práv
 
-- **Přidání skupiny nebo uživatele** — kliknutím na ikonu přidání se otevře vedlejší panel **Výběr skupinové role** (nebo **Výběr uživatelské role**).
-- **Úprava přiřazené role** — ikona editace na řádku skupiny nebo uživatele otevře editor rolí.
+- **Přidání skupiny nebo uživatele** – kliknutím na ikonu přidání se otevře vedlejší panel **Výběr skupinové role** (nebo **Výběr uživatelské role**).
+- **Úprava přiřazené role** – ikona editace na řádku skupiny nebo uživatele otevře editor rolí.
 
 ---
 
@@ -152,6 +152,6 @@ Role jsou odlišeny závorkami podle způsobu přiřazení:
 - [Přesun objektu](../how-to/aktivity/presun-objektu.md)
 - [Vytvoření SCORM aktivity](../how-to/aktivity/vytvoreni-scorm-aktivity.md)
 - [Detail aktivity](detail-aktivity.md)
-- [Detail sady — připravujeme](#)
-- [Sdílené aktivity — připravujeme](#)
-- [Termín aktivity — připravujeme](#)
+- [Detail sady (připravujeme)](#)
+- [Sdílené aktivity (připravujeme)](#)
+- [Termín aktivity (připravujeme)](#)
