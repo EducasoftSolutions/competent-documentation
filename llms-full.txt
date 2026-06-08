@@ -1,0 +1,2221 @@
+# Competent – Uživatelská příručka
+
+> Oficiální dokumentace LMS Competent od Educasoftu
+
+Tato dokumentace popisuje administrátorský portál LMS Competent.
+Zahrnuje návody pro administrátory, referenci nastavení a konceptuální přehled.
+
+
+# Úvod
+
+# Vítejte v dokumentaci Competent
+
+Competent je systém pro správu vzdělávání a rozvoje zaměstnanců. Dokumentace je rozdělena do tří hlavních oblastí:
+
+- **[Pro administrátory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/index.md)** – Návody, reference a koncepty pro administrátory. Naučíte se spravovat aktivity, uživatele, hodnocení a nastavení systému.
+- **[Pro studenty](https://educasoftsolutions.github.io/competent-documentation/pro-studenty/index.md)** – Dokumentace pro koncové uživatele – studenty, kteří používají Competent k absolvování vzdělávání.
+- **[Slovník](https://educasoftsolutions.github.io/competent-documentation/slovnik/index.md)** – Vysvětlení klíčových pojmů, které v Competent potkáte.
+
+Používáte samostatný studentský portál?
+
+Pokud Vaše organizace používá samostatný portál pro studenty, jejich dokumentace je dostupná na adrese [docs-studenti.competent.cz](https://docs-studenti.competent.cz).
+# Pro administrátory
+
+# Pro administrátory
+
+Tato sekce popisuje administrátorské rozhraní Competent – jak spravovat aktivity, uživatele, skupiny, hodnocení, místa a další nastavení systému.
+
+Obsah je uspořádán do tří oblastí podle toho, co právě potřebujete:
+
+- **[Návody](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/index.md)** – Znáte systém a potřebujete rychle splnit konkrétní úkol? Návody jsou stručné kroky přímo k cíli.
+- **[Reference](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/index.md)** – Přehledy, tabulky a seznamy všech nastavení, parametrů a hodnot pro rychlé dohledání.
+- **[Koncepty](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md)** – Chcete pochopit, proč systém funguje tak, jak funguje? Koncepty vysvětlují principy a logiku Competent do hloubky.
+
+# Návody
+
+Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rychle splnit konkrétní úkol. Každý návod odpovídá na otázku „Jak udělám X?" – bez zbytečného úvodu rovnou přejde ke krokům. Pokud hledáte vysvětlení, proč věci fungují tak, jak fungují, nahlédněte do sekce [Koncepty](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md).
+
+# Vytvoření nového objektu
+
+V administraci Competent zakládáte nové objekty (složku, aktivitu, sadu, termínovou sadu) ze stromu aktivit. Nový objekt se vloží do právě otevřené složky a okamžitě se zobrazí ve stromu i v pravém panelu se seznamem obsahu.
+
+## Než začnete
+
+- Jste přihlášeni jako administrátor (nebo máte roli s oprávněním spravovat aktivity).
+- V levém menu je otevřena sekce **AKTIVITY**.
+- Zobrazení je přepnuto do stromu aktivit (ikona stromu).
+
+## Postup
+
+### 1. Otevřete nabídku pro vytvoření
+
+Ve stromu klikněte na zelené tlačítko **+** na uzlu **root** (tooltip „Vytvoř novou položku"). Otevře se rozbalovací nabídka s pěti možnostmi:
+
+- **Složka**
+- **Aktivita**
+- **Sada**
+- **Termínová sada**
+- **Import/Export**
+
+### 2. Vyberte typ objektu
+
+Najeďte myší na požadovanou položku. U položek **Aktivita**, **Sada** a **Termínová sada** se rozbalí podmenu:
+
+- **Aktivita** → **Elearning** / **Školení**
+- **Sada** → **Sada**
+- **Termínová sada** → **Komplexní Sada**
+
+Příklad: pro vytvoření e-learningové aktivity najeďte na **Aktivita** a z podmenu vyberte **Elearning**.
+
+### 3. Zadejte název
+
+Po výběru se otevře modální okno **Nový objekt** s polem pro zadání názvu (například „Vyplňte název nové aktivity" nebo „Vyplňte název nové složky" podle zvoleného typu). Zadejte název a potvrďte tlačítkem **Vytvořit**. Tlačítko **Zrušit** akci stornuje.
+
+### 4. Ověření
+
+Nový objekt se okamžitě zobrazí:
+
+- ve stromu aktivit v levém panelu,
+- v seznamu obsahu právě otevřené složky v pravé části.
+
+U e-learningové aktivity je za názvem v závorce uveden podtyp: *(Elearning)*.
+
+## Pozor na
+
+- Do uzlu **root** a do **Složek** lze vkládat libovolný typ objektu (Složka, Aktivita, Sada, Termínová sada).
+- Do **Termínové sady** lze vkládat pouze aktivity – nelze do ní vložit Sadu ani další Termínovou sadu.
+- **Import/Export** v nabídce není typ objektu – otevírá nástroj **Import/Export**, ne dialog pro vytvoření.
+
+## Související stránky
+
+- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
+- [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
+
+# Přesun objektu
+
+V administraci Competent můžete přesouvat objekty (aktivity, sady, termínové sady, složky) ve stromu aktivit pomocí dialogu **Přesunout do…**. Každý objekt má kontextové menu s volbami pro přesun, přejmenování a smazání.
+
+## Než začnete
+
+- Jste přihlášeni jako administrátor (nebo máte roli s oprávněním spravovat aktivity).
+- V levém menu je otevřena sekce **AKTIVITY**, zobrazení je přepnuto do stromu.
+- Cílová složka, kam chcete objekt přesunout, už ve stromu existuje (pokud ne, nejprve ji založte – viz [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)).
+
+## Postup
+
+### 1. Otevřete kontextové menu objektu
+
+Najeďte myší na řádek s objektem v pravém seznamu. Vpravo se zobrazí trojice ikon – klikněte na **ikonu tří vodorovných čárek** (hamburger menu).
+
+Kontextové menu obsahuje tři volby:
+
+- **Přesunout do…**
+- **Přejmenovat**
+- **Smazat**
+
+Vyberte **Přesunout do…**.
+
+### 2. Vyberte cílovou složku
+
+Vpravo se otevře panel **Přesunout do…** se stromovou navigací. Panel obsahuje:
+
+- pole pro hledání (ikona lupy),
+- šipku pro návrat o úroveň výš (breadcrumb),
+- seznam složek, kam je možné objekt přesunout.
+
+Procházejte panel a přejděte do požadované složky. Vedle každé složky se zobrazuje tlačítko **Přesunout sem** – klikněte na něj u cílové složky.
+
+### 3. Ověření
+
+Panel **Přesunout do…** se zavře a objekt zmizí z původního umístění. Kliknete-li ve stromu na cílovou složku, objekt se zobrazí mezi jejím obsahem.
+
+## Pozor na
+
+### Co lze přesunout kam
+
+Ne každá kombinace přesunu je povolena. Níže je přehled toho, jaké typy objektů jednotlivé kontejnery přijímají:
+
+| Cílový kontejner        | Povolené typy objektů                   |
+| ----------------------- | --------------------------------------- |
+| **root** (kořen stromu) | Složka, Aktivita, Sada, Termínová sada  |
+| **Složka**              | Složka, Aktivita, Sada, Termínová sada  |
+| **Sada**                | Aktivita, Sada, Termínová sada          |
+| **Termínová sada**      | Pouze Aktivita                          |
+| **Aktivita**            | Není kontejner – nelze do ní nic vložit |
+
+Termínová sada
+
+Termínová sada je speciální kontejner určený pouze pro aktivity. Sady ani další termínové sady do ní vložit nelze.
+
+V panelu přesunu se zobrazují pouze cíle, do nichž je přesun povolen. Pokud systém kombinaci nepřipustí, cíl se v panelu nezobrazí nebo systém přesun odmítne s chybovou hláškou.
+
+## Související stránky
+
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
+
+# Vytvoření SCORM aktivity
+
+SCORM kurz v Competentu není samostatný typ aktivity, ale způsob jejího spuštění (launch type). Založíte běžnou e-learningovou aktivitu a v jejím detailu nastavíte **Typ spouštění** na **Scorm kurz**. Poté nahrajete ZIP balíček s SCORM kurzem.
+
+## Než začnete
+
+- Jste přihlášeni jako administrátor (nebo máte roli s oprávněním spravovat aktivity).
+- Máte připravený SCORM balíček ve formátu **ZIP**, který splňuje specifikaci **SCORM 1.2**. Novější verze SCORM (2004) aktuálně nejsou podporovány.
+- Víte, do které složky má aktivita patřit.
+
+## Postup
+
+### 1. Vytvořte e-learningovou aktivitu
+
+Ve stromu aktivit klikněte v cílové složce na tlačítko **+** a zvolte **Aktivita → Elearning**. Vyplňte název (například „Školení BOZP") a potvrďte tlačítkem **Vytvořit**.
+
+Podrobně viz [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md).
+
+### 2. Otevřete detail aktivity
+
+Klikněte na název aktivity v seznamu. Otevře se detailní zobrazení se záložkami:
+
+- **Uživatelé**
+- **Detaily**
+- **Dokumenty**
+- **Podmínky**
+
+### 3. Nastavte Typ spouštění
+
+Přepněte na záložku **Detaily**. Najděte pole **Typ spouštění** a z rozbalovacího seznamu vyberte **Scorm kurz**. Přehled dostupných voleb:
+
+| Volba             | Kdy použít                                |
+| ----------------- | ----------------------------------------- |
+| Žádný             | Organizační entita, aktivita se nespouští |
+| Nahrání souborů   | Student nahrává soubory k ohodnocení      |
+| PDF soubor        | Zobrazí se v integrovaném PDF prohlížeči  |
+| Url adresa        | Přesměrování na externí URL               |
+| Video             | YouTube / Vimeo / jiný provozovatel       |
+| Vložený kód       | Embed kód pro vyskakovací okno            |
+| Formulář          | JSON definice formuláře                   |
+| iTrivio           | iTrivio kurz                              |
+| **Scorm kurz**    | **SCORM 1.2 balíček**                     |
+| Složené hodnocení | Dostupné pouze pro typ hodnocení „Body"   |
+
+Po výběru **Scorm kurz** se zároveň automaticky nastaví pole **Typ vyhodnocení** na **Prošel/Neprošel** – toto pole nemusíte vyplňovat ručně.
+
+### 4. Nahrajte SCORM balíček
+
+Po výběru **Scorm kurz** se zobrazí pole **SCORM obsah** s možností vybrat soubor z počítače. Vyberte ZIP balíček a potvrďte. Systém validuje manifest a strukturu balíčku:
+
+- Pokud soubor není ZIP, zobrazí se hláška **„Přidaný soubor není ZIP soubor!"**
+- Pokud ZIP neobsahuje platný SCORM 1.2 manifest, nahrávání se odmítne.
+
+Pod uploadem je zaškrtávací volba **Používat uložená SCORM data**. Zaškrtněte ji, pokud chcete, aby kurz zaznamenával a využíval data o studentském průchodu (výchozí a doporučené nastavení).
+
+### 5. Uložte aktivitu
+
+Změny potvrďte tlačítkem **Uložit**.
+
+## Ověření
+
+- Na záložce **Detaily** zůstane **Typ spouštění** nastavený na **Scorm kurz**.
+- U pole **SCORM obsah** se zobrazí jméno nahraného ZIP balíčku.
+- Pole **Verze obsahu** obsahuje vygenerované číslo verze.
+
+## Pozor na
+
+- **Verze SCORM** – Competent podporuje pouze SCORM 1.2. Balíčky SCORM 2004 nebudou fungovat.
+- **Aktualizace obsahu** – při výměně SCORM ZIPu klikněte na link **Změna verze**. Bez změny verze mohou stará studentská data způsobovat chyby.
+- **Detekce chyb** – administrátor může globálně zapnout volbu **Detekovat chyby SCORM kurzů**, která se snaží automaticky opravit a restartovat problematické spuštění.
+
+## Související stránky
+
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
+- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
+
+# Jak vyhledat aktivity v administraci
+
+V administraci Competent můžete v obrazovce aktivit rychle nalézt konkrétní aktivitu nebo sadu pomocí dvou nástrojů: **textového vyhledávání** (podle názvu) a **filtru podle štítků**. Oba nástroje fungují samostatně i v kombinaci a výsledky se aktualizují okamžitě.
+
+______________________________________________________________________
+
+## Než začnete
+
+- Jste přihlášeni jako administrátor (nebo máte roli s oprávněním spravovat aktivity).
+- V levém menu je otevřena sekce **AKTIVITY**.
+- Máte otevřenu složku nebo sadu, ve které chcete vyhledávat.
+
+______________________________________________________________________
+
+## Postup
+
+### Textové vyhledávání
+
+1. Klikněte na **ikonu lupy** v záhlaví obrazovky aktivit. Zobrazí se **vyhledávací pole**.
+1. Začněte psát hledaný výraz. Seznam aktivit se filtruje okamžitě s každým napsaným znakem – není třeba stiskat Enter. Vyhledávání porovnává zadaný text s **názvem aktivity** a je necitlivé na velikost písmen i na diakritiku.
+1. Pokud chcete vyhledávání zrušit, klikněte na **× ikonu** vedle vyhledávacího pole. Filtr se vymaže a seznam se vrátí do původního stavu.
+
+Rozsah vyhledávání
+
+Vyhledávání prochází položky, které jsou **aktuálně zobrazeny** v seznamu aktivit.
+
+______________________________________________________________________
+
+### Filtr podle štítků
+
+1. Klikněte na **Filtrovat štítky** v záhlaví obrazovky aktivit. Otevře se **boční panel** s přehledem všech dostupných štítků.
+1. Klikněte na požadovaný štítek v bočním panelu. Štítek se přesune do vyhledávací oblasti v záhlaví a seznam aktivit se okamžitě vyfiltruje.
+1. Chcete-li přidat další štítky, klikejte na ně v bočním panelu. Pokud je v filtru více štítků, zobrazí se aktivity odpovídající **alespoň jednomu** z nich (logika OR).
+1. Chcete-li odebrat jeden štítek, klikněte na něj přímo v záhlaví (ve vyhledávací oblasti). Štítek se vrátí do bočního panelu a filtr se aktualizuje.
+1. Chcete-li zrušit výběr všech štítků najednou, klikněte na **× ikonu** (ikonu koše) ve vyhledávací oblasti.
+
+Hledání ve štítcích
+
+Boční panel obsahuje vlastní vyhledávací pole pro filtrování seznamu štítků. Vyhledávání ve štítcích je citlivé na velikost písmen a diakritiku – zadávejte hledaný výraz přesně.
+
+______________________________________________________________________
+
+### Kombinace textu a štítků
+
+Textové vyhledávání a filtr podle štítků lze použít současně. Výsledkem je průnik: zobrazí se pouze aktivity, které **zároveň** odpovídají zadanému textu a mají alespoň jeden ze zvolených štítků (logika AND pro text + OR pro štítky).
+
+______________________________________________________________________
+
+## Ověření
+
+Po nastavení filtru ověřte výsledek:
+
+- Seznam aktivit zobrazuje pouze položky odpovídající kritériím.
+- Aktivní štítky jsou viditelné jako **štítky** ve vyhledávací oblasti v záhlaví.
+- Pokud filtr nevrátí žádnou položku, zobrazí se zpráva „nebyly nalezeny žádné výsledky".
+
+______________________________________________________________________
+
+## Pozor na
+
+- **Štítky se přiřazují pouze aktivitám**, ne složkám ani sadám. Při filtrování podle štítků se složky zobrazí vždy bez ohledu na zvolené štítky.
+- Vyhledávání prochází **pouze zobrazené položky** – nezohledňuje položky ve skrytých podsložkách.
+- Textové vyhledávání porovnává pouze **název aktivity**; custom ID, popis ani jiné atributy se při vyhledávání nezohledňují.
+- Vyhledávání ve štítcích v bočním panelu je **citlivé na velikost písmen a diakritiku** – toto chování se liší od hlavního vyhledávacího pole, které je na obojí necitlivé.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
+- [Filtry zobrazení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/filtry-a-vyhledavani/index.md)
+- [Přiřazení štítků k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)
+- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md)
+- [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
+
+# Jak filtrovat a přizpůsobit zobrazení aktivit
+
+V administraci Competent si můžete v obrazovce aktivit přizpůsobit, které typy a podtypy položek se zobrazují a jakým způsobem jsou uspořádány. Panel zobrazení umožňuje skrýt nepotřebné typy položek, přepnout mezi stromovým a plochým pohledem na obsah složky a kdykoli se jedním kliknutím vrátit na výchozí nastavení.
+
+## Než začnete
+
+- Jste přihlášeni jako administrátor (nebo máte roli s oprávněním spravovat aktivity).
+- V horním hlavním menu je otevřena sekce **Aktivity**.
+
+## Postup
+
+### 1. Otevřete panel zobrazení
+
+V záhlaví obrazovky aktivit klikněte na **ikonu oka** (vpravo u vyhledávacího pole). Otevře se **panel zobrazení** s volbami pro typ zobrazení a viditelnost jednotlivých typů položek.
+
+### 2. Přepněte typ zobrazení
+
+V horní části panelu zobrazení je **přepínač** se dvěma možnostmi:
+
+| Volba                            | Popis                                                                                                                                                                                   |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stromové zobrazení** (výchozí) | V seznamu aktivit jsou viditelné položky aktuální složky. K ostatním složkám se navigujete prostřednictvím stromu složek.                                                               |
+| **Ploché zobrazení**             | V seznamu aktivit jsou viditelné všechny položky aktuální složky i jejích podsložek najednou, rekurzivně. Složky se v plochém zobrazení nezobrazují – jsou vidět pouze aktivity a sady. |
+
+Kliknutím na požadovanou volbu se zobrazení přepne.
+
+### 3. Skryjte nebo zobrazte typy položek
+
+Panel zobrazení obsahuje přepínače viditelnosti pro tyto typy položek:
+
+| Typ položky    | Výchozí stav                             |
+| -------------- | ---------------------------------------- |
+| Aktivity       | Zobrazené                                |
+| Sady           | Zobrazené                                |
+| Termínové sady | Zobrazené                                |
+| Složky         | Zobrazené (pouze ve stromovém zobrazení) |
+| Hodnocení      | Skryté                                   |
+
+U každého typu jsou k dispozici tlačítka **Skrýt** a **Zobrazit**. Kliknutím na příslušné tlačítko okamžitě změníte viditelnost daného typu v seznamu aktivit.
+
+Složky v plochém zobrazení
+
+Pokud je aktivní **ploché zobrazení**, jsou složky skryty vždy – tlačítko **Zobrazit** pro složky v tomto režimu nemá efekt.
+
+### 4. Skryjte nebo zobrazte podtypy aktivit
+
+Pod přepínačem viditelnosti aktivit je **rozbalitelný seznam podtypů** (například Elearning, Školení). Konkrétní podtypy závisejí na konfiguraci vašeho systému. Každý podtyp má vlastní tlačítka **Skrýt** / **Zobrazit** – skrytí podtypu odebere ze seznamu aktivit všechny aktivity daného podtypu.
+
+Výchozí stav: všechny podtypy jsou zobrazené.
+
+### 5. Resetujte zobrazení na výchozí nastavení
+
+Pokud se aktuální nastavení liší od výchozího stavu, zobrazí se v panelu zobrazení **ikona ×** s tooltipem **Resetovat zobrazení**. Kliknutím na ni vrátíte všechny volby na výchozí hodnoty (viz tabulka výše – hodnocení zůstane po resetu skryté, protože skrytý je jeho výchozí stav).
+
+Pokud je již nastavení ve výchozím stavu, ikona × se nezobrazí.
+
+## Ověření
+
+Po provedených změnách zkontrolujte seznam aktivit:
+
+- Typy položek označené jako **Zobrazit** se v seznamu objevují.
+- Typy označené jako **Skrýt** v seznamu chybí.
+- Při plochém zobrazení vidíte položky ze všech podsložek a složky se v seznamu nezobrazují.
+- Pokud je nastavení výchozí, ikona × v panelu zobrazení chybí.
+
+## Pozor na
+
+- **Filtr zobrazení, textové vyhledávání a štítky se kombinují:** položka se zobrazí pouze tehdy, pokud prošla všemi aktivními filtry současně. Skrytý typ se nezobrazí ani při zadání přesného názvu do vyhledávání.
+- **Pořadí položek v panelu zobrazení** se může lišit dle konfigurace systému – spoléhejte na popisky, ne na pozici v panelu.
+
+## Související stránky
+
+- [Textové vyhledávání a filtr štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md)
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
+
+# Přiřazení a odebrání štítků aktivity
+
+Štítky pomáhají třídit aktivity podle volně zvolených kategorií (například „GDPR", „Onboarding", „Povinné") a usnadňují [filtrování aktivit podle štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md). Tento návod popisuje, jak štítek aktivitě přiřadit, jak ho zase odebrat a jak se v bočním panelu orientovat, pokud máte v systému velký počet štítků.
+
+Štítky se vytvářejí v nastavení administrace (viz [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md)). V této stránce předpokládáme, že potřebné štítky už máte k dispozici.
+
+## Předpoklady
+
+- Máte přístup k editaci aktivit v administraci.
+- V systému jsou už založené štítky, které chcete přiřadit. Pokud žádné štítky nemáte, založte je nejprve v nastavení administrace.
+
+## Přiřazení štítku k aktivitě
+
+1. V administraci otevřete **Aktivity** a v seznamu klikněte na aktivitu, ke které chcete štítek přiřadit. Otevře se její detail.
+1. Přepněte se na záložku **Detaily**.
+1. V pravé části detailu najděte sekci **Štítky**. Pokud je aktivita bez štítků, je sekce zatím prázdná.
+1. Klikněte na **ikonu editace** (tužka) vedle nadpisu **Štítky**. Otevře se boční panel s nadpisem **Použitelné štítky**, ve kterém vidíte štítky, které je možné aktivitě přiřadit.
+1. V bočním panelu klikněte na štítek, který chcete přiřadit. Štítek se ihned objeví v sekci **Štítky** v detailu aktivity.
+1. Stejným způsobem můžete přiřadit libovolný počet dalších štítků – počet štítků na jedné aktivitě není omezen.
+1. Až budete s přiřazováním hotoví, klikněte v sekci **Štítky** na tlačítko **Hotovo**, případně boční panel zavřete křížkem v jeho pravém horním rohu.
+
+## Vyhledání štítku v bočním panelu
+
+Pokud máte v systému větší množství štítků, najdete konkrétní štítek rychleji pomocí vyhledávání přímo v bočním panelu.
+
+1. Otevřete boční panel **Použitelné štítky** (postup viz krok 1–4 výše).
+1. Klikněte na **ikonu lupy** v horní části panelu. Vedle ní se objeví vyhledávací pole.
+1. Začněte psát část názvu štítku. Seznam štítků se průběžně filtruje na štítky, jejichž název obsahuje napsaný řetězec.
+1. Smazáním textu (například klávesou Backspace) seznam štítků obnovíte do původního stavu.
+
+## Odebrání štítku z aktivity
+
+1. V detailu aktivity přepněte na záložku **Detaily** a najděte sekci **Štítky**.
+1. Klikněte na **ikonu editace** (tužka) vedle nadpisu **Štítky**. Otevře se boční panel.
+1. Přímo v sekci **Štítky** v detailu aktivity (tedy **nikoli** v bočním panelu) klikněte na štítek, který chcete odebrat. Štítek z aktivity zmizí.
+1. Až budete hotoví, klikněte na **Hotovo**.
+
+Odebrání odstraní pouze přiřazení štítku k této konkrétní aktivitě – samotný štítek nadále existuje a je k dispozici jiným aktivitám.
+
+## Pozor na
+
+- **Vyhledávání v bočním panelu rozlišuje velikost písmen a diakritiku.** Hledání „gdpr" nenajde štítek **GDPR** a hledání „povinne" nenajde štítek **Povinné**. Zadávejte název štítku přesně tak, jak je v systému uložen. Chování se liší od hlavního vyhledávacího pole v seznamu aktivit.
+- **Po smazání textu ve vyhledávacím poli se zobrazí i již přiřazené štítky.** V bočním panelu se po vymazání filtru mohou objevit štítky, které aktivitě už přiřazené jsou – to je záměrné chování.
+- **Smazání štítku v nastavení odebere přiřazení bez upozornění.** Pokud administrátor smaže štítek v [nastavení administrace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md), štítek zmizí ze všech aktivit, kterým byl přiřazen, a to bez jakékoli notifikace. Pokud chcete zachovat přiřazení k aktivitám, štítek nemažte – místo toho ho přejmenujte nebo nepoužívejte.
+- **Štítky jsou jen pro aktivity.** Sady ani dokumenty štítky nemají.
+
+## Související
+
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md) – popis obrazovky se seznamem aktivit, ze které otevřete detail konkrétní aktivity.
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md) – popis všech sekcí a záložek detailu.
+- [Filtrování aktivit podle štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md) – jak v seznamu aktivit najít všechny aktivity označené konkrétním štítkem.
+- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md) – jak založit nový štítek v nastavení administrace.
+- [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
+
+# Nastavení práv k aktivitě
+
+Práva přístupu k aktivitě určují, které skupiny a uživatelé aktivitu vidí a co s ní mohou dělat. Tento návod popisuje, jak skupině udělit přístup k aktivitě prostřednictvím dialogu **Práva přístupu pro…**, který otevřete z akce **Práva** ve stromu aktivit.
+
+## Předpoklady
+
+- Máte přístup do administrace a oprávnění spravovat práva dané aktivity (typicky administrátor nebo vlastník aktivity).
+- V systému existuje aktivita a skupina nebo uživatel, kterému přístup udělíte.
+
+Pokud aktivitu teprve zakládáte, řiďte se samostatným návodem k vytvoření aktivity.
+
+## Postup
+
+### 1. Otevřete akci Práva ve stromu aktivit
+
+Přejděte do administrace aktivit do zobrazení stromu. Najeďte na řádek aktivity a klikněte na ikonu nabídky na konci řádku. V nabídce zvolte **Práva**.
+
+Práva jsou akce ve stromu, ne záložka v detailu
+
+Dialog s právy otevřete z akce **Práva** na řádku aktivity ve stromu aktivit. Nejde o záložku v detailu aktivity.
+
+### 2. Prohlédněte si dialog Práva přístupu
+
+Otevře se dialog **Práva přístupu pro…**; pod titulkem je uveden název aktivity. Dialog obsahuje dvě záložky, **Skupiny** a **Uživatelé**, přepínače **Zobrazit zděděná práva** a **Zobrazit účastníky** a tlačítko **+** pro přidání. U nové aktivity bývá seznam prázdný se zprávou „Pro aktuální nastavení filtrů zde nejsou žádné záznamy k zobrazení."
+
+### 3. Přidejte skupinu a zvolte roli
+
+Klikněte na tlačítko **+**. Vpravo se otevře boční panel **Dostupné skupiny**. Na záložce **Skupiny** vyberte skupinu, které chcete udělit přístup (například **Demo tým**). V rozbalovacím seznamu **-- Zvolte roli --** vyberte roli **Zobrazení v katalogu**.
+
+V demu lze aktivitě přiřadit role **Zobrazení v katalogu** (aktivita je viditelná v katalogu) a **Možnost zažádat v katalogu** (uživatel může požádat o přístup). Další role bývají dostupné u instalací s vlastními rolemi.
+
+### 4. Potvrďte přiřazení
+
+Klikněte na tlačítko **Přiřadit role vybraným skupinám**. Skupina se zařadí do dialogu s přidělenou rolí.
+
+Celý postup od akce **Práva** po přiřazení role skupině ukazuje následující animace:
+
+Dialog uzavřete tlačítkem **Hotovo**.
+
+## Odebrání přiřazené role
+
+1. Otevřete dialog **Práva přístupu pro…** z akce **Práva** u aktivity.
+1. Rozklikněte řádek skupiny nebo uživatele. V panelu **Přiřazená práva** klikněte na přidělenou roli, čímž ji odeberete.
+1. Po odebrání se záznam ze seznamu odstraní. Dialog uzavřete tlačítkem **Hotovo**.
+
+## Jak číst závorky u rolí
+
+U přidělených rolí používá aplikace ustálenou konvenci:
+
+- **Role bez závorek** je přiřazená ručně (například **Zobrazení v katalogu**).
+- **[Role v hranatých závorkách]** je systémová role, kterou přiděluje systém automaticky (například **[Vlastník aktivity]** nebo **[Účastník]**). Tyto role nelze ručně přiřadit ani odebrat.
+- **(Role v kulatých závorkách)** je zděděná z nadřazeného objektu ve stromu. Zděděné role zobrazíte přepínačem **Zobrazit zděděná práva**.
+
+Účastníky aktivity zobrazíte přepínačem **Zobrazit účastníky**.
+
+## Pozor na
+
+- Roli ve sloupci **Role** lze v rozbalovacím seznamu vybrat až po výběru skupiny. Tlačítko **Přiřadit role vybraným skupinám** je do té doby neaktivní.
+- Systémové role v **[hranatých závorkách]** a zděděné role v **(kulatých závorkách)** slouží jen pro přehled. Ručně upravujete pouze role bez závorek.
+
+## Související stránky
+
+- [Role a oprávnění (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
+# Vytvoření uživatele v administraci
+
+Nového uživatele vytvoříte v obrazovce **Lidé**, kde se evidují všichni uživatelé systému Competent. Tento návod vás provede vyplněním formuláře, povinnými poli a volitelným zařazením uživatele do skupiny.
+
+## Předpoklady
+
+- Máte přístup do administrace Competent a oprávnění vytvářet uživatele.
+- V hlavním menu vidíte položku **Lidé**.
+- Existující skupina není potřeba – zařazení do skupiny je volitelné.
+
+## Postup
+
+### 1. Otevřete formulář nového uživatele
+
+V hlavním menu administrace klikněte na **Lidé**. Zůstaňte v tabu **Uživatel**, který je zvolený jako výchozí. V pravém horním rohu nad seznamem klikněte na tlačítko **Nový uživatel**.
+
+### 2. Seznamte se s formulářem
+
+Otevře se okno **Nový uživatel** s formulářem. Pole jsou uspořádána v tomto pořadí: **Subtyp**, **E-mail**, **Přihlašovací jméno**, **Heslo**, **Jazyk**, přepínač **Účet deaktivován**, **Jméno**, **Příjmení** a **Uživatelské skupiny**.
+
+Povinná pole, která musíte vyplnit, jsou **E-mail**, **Přihlašovací jméno**, **Heslo**, **Jméno**, **Příjmení** a **Jazyk**.
+
+### 3. Zvolte subtyp
+
+V poli **Subtyp** vyberte typ uživatele. Subtyp se volí jako první, protože určuje, jaká pole formulář zobrazí. Ve výchozím stavu je předvybrán subtyp **Uživatel**. Některé subtypy mohou přidat další povinná pole.
+
+### 4. Vyplňte údaje uživatele
+
+Vyplňte jednotlivá pole:
+
+- **E-mail** – e-mailová adresa uživatele. Musí být v systému unikátní.
+- **Přihlašovací jméno** – jméno, kterým se uživatel přihlašuje. Musí být v systému unikátní.
+- **Heslo** – vstupní heslo uživatele. Heslo se ukládá zabezpečeně a nikdy se nezobrazuje v čitelné podobě.
+- **Jazyk** – jazyk rozhraní uživatele. Vyberte hodnotu z nabídky (tlačítko **Zvolit**).
+- **Jméno** a **Příjmení** – křestní jméno a příjmení uživatele.
+
+Přepínačem **Účet deaktivován** můžete účet rovnou založit jako neaktivní – uživatel se nepřihlásí, dokud účet neaktivujete.
+
+### 5. Volitelně zařaďte uživatele do skupiny
+
+Přes pole **Uživatelské skupiny** můžete uživatele rovnou zařadit do jedné nebo více skupin. Po kliknutí na tlačítko u tohoto pole se otevře boční panel **Dostupné skupiny**, ve kterém vyberete skupiny a roli, kterou v nich uživatel získá. Ve výchozím stavu je nabízena role **Účastník**.
+
+Podrobnosti o uživatelských skupinách a rolích členů najdete v konceptu [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md).
+
+### 6. Vytvořte uživatele
+
+Vyplnění formuláře potvrďte tlačítkem **Vytvořit**. Nový uživatel se uloží a objeví se v seznamu. Pokud ho chcete v seznamu rychle najít, využijte vyhledávání podle sloupce **Příjmení**.
+
+Celý postup vytvoření uživatele shrnuje následující animace:
+
+Tím je postup dokončen.
+
+## Pozor na
+
+- **E-mail a přihlašovací jméno musí být unikátní.** Pokud zadáte hodnotu, která už v systému existuje, systém vytvoření nepovolí a upozorní vás. V takovém případě zvolte jinou hodnotu.
+- **Jazyk je povinný.** Dokud jazyk nevyberete, formulář vytvoření nedokončí a u pole se zobrazí upozornění, že je povinné.
+- **Některé instalace mohou vyžadovat zařazení do skupiny.** V některých nastaveních Competent může být zařazení uživatele alespoň do jedné skupiny povinné – v takovém případě formulář bez skupiny vytvoření nedovolí.
+- **Zda systém uživatele po vytvoření informuje e-mailem, závisí na nastavení vaší instalace.**
+
+## Související stránky
+
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Vyhledávání a řazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+
+# Vytvoření uživatelské skupiny v administraci
+
+Novou uživatelskou skupinu vytvoříte v obrazovce **Lidé** v zobrazení **Skupiny**. Formulář pro vytvoření je minimalistický – stačí vyplnit název. Tento návod vás provede celým postupem.
+
+## Předpoklady
+
+- Máte globální oprávnění vytvářet uživatelské skupiny.
+- V hlavním menu vidíte položku **Lidé**.
+
+Stanete se vlastníkem skupiny
+
+Vytvořením skupiny se automaticky stáváte jejím vlastníkem se všemi právy nad skupinou.
+
+## Postup
+
+### 1. Otevřete zobrazení Skupiny
+
+V hlavním menu administrace klikněte na **Lidé** a přepněte se do zobrazení **Skupiny**. V pravém horním rohu nad seznamem klikněte na tlačítko **Nová uživatelská skupina**.
+
+### 2. Seznamte se s formulářem
+
+Otevře se okno **Nová uživatelská skupina** s pouhými dvěma poli: **Subtyp** a **Jméno**.
+
+Pole **Subtyp** je předvybráno (ve výchozí instalaci je k dispozici jediná hodnota **Uživatelská skupina**). Subtyp se nastavuje pouze při vytváření a později ho už nelze měnit.
+
+### 3. Zadejte název skupiny
+
+Do pole **Jméno** zadejte název nové skupiny. Toto pole je povinné.
+
+### 4. Vytvořte skupinu
+
+Vyplnění potvrďte tlačítkem **Vytvořit**. Nová skupina se uloží a objeví se v seznamu skupin.
+
+Celý postup vytvoření skupiny shrnuje následující animace:
+
+Tím je postup dokončen.
+
+## Pozor na
+
+- **Subtyp nelze později změnit.** Subtyp se volí pouze při vytváření skupiny. Jeho pozdější změna není v rozhraní podporována.
+- **Další údaje doplníte později.** Popis a další parametry skupiny nejsou součástí vytváření – doplníte je až v detailu skupiny.
+
+## Související stránky
+
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+
+# Vyhledávání a řazení uživatelů v administraci
+
+V obrazovce **Lidé** najdete všechny uživatele evidované v Competent. Když je uživatelů hodně, využijte vestavěné nástroje: vyhledávání podle textu (zadáním do pole pod záhlavím konkrétního sloupce) a řazení (kliknutím na záhlaví sloupce). Tento návod vás provede oběma postupy.
+
+## Předpoklady
+
+- Máte přístup do administrace Competent a vidíte v hlavním menu položku **Lidé**.
+- V systému jsou uživatelé, mezi kterými chcete vyhledávat – v tabu **Uživatel** je viditelný seznam.
+
+## Otevření seznamu uživatelů
+
+V hlavním menu administrace klikněte na **Lidé**. Otevře se obrazovka se seznamem uživatelů. V horní liště vidíte taby pro různé pohledy (například **Uživatel**, **Skupiny**, **Role**); pro vyhledávání a řazení uživatelů zůstaňte v tabu **Uživatel**, který je zvolený jako výchozí.
+
+Seznam je při prvním otevření seřazený podle sloupce **Příjmení** vzestupně (A–Z). Výchozí zobrazené sloupce jsou **Jméno**, **Příjmení**, **E-mail**, **Skupiny** a **Účastnické skupiny**.
+
+## Vyhledávání podle textu
+
+### 1. Aktivujte vyhledávání
+
+V záhlaví obrazovky (vpravo nahoře nad seznamem) klikněte na ikonu lupy (**Vyhledávání**). Pod záhlavím každého sloupce se zobrazí textové pole, do kterého můžete zadat hledaný řetězec.
+
+### 2. Zadejte hledaný řetězec
+
+Klikněte do pole pod sloupcem, ve kterém chcete vyhledávat (například **Příjmení**), a začněte psát. Stačí zadat jen část hledaného slova – seznam se filtruje podle každého řetězce, který se v daném sloupci vyskytuje. Vyhledávání ignoruje rozdíl mezi velkými a malými písmeny i diakritiku.
+
+Obsah seznamu se aktualizuje okamžitě s každým zadaným znakem; samostatné tlačítko pro spuštění vyhledávání není potřeba.
+
+Po dokončení uvidíte v seznamu pouze řádky odpovídající zadanému kritériu. Ve spodním řádku tabulky se zobrazuje počet zobrazených položek vůči celkovému počtu (například „Celkem položek: 31 (Zobrazuji položky: 2)").
+
+### 3. Kombinujte vyhledávání napříč sloupci (volitelné)
+
+Vyhledávání lze kombinovat napříč více sloupci – zápisem do více polí současně systém zužuje výsledek na řádky vyhovující všem zadaným kritériím.
+
+### 4. Vymažte filtr
+
+Obsah pole vymažete kliknutím na křížek na pravém okraji pole nebo smazáním zadaného textu. Po vymazání se obnoví celý seznam.
+
+## Řazení podle sloupce
+
+### 1. Klikněte na záhlaví sloupce
+
+Klikněte na záhlaví sloupce, podle kterého chcete řadit (například **E-mail**). Tabulka se přeřadí vzestupně podle hodnot v daném sloupci a vedle názvu sloupce se zobrazí šipka označující směr řazení.
+
+### 2. Otočte směr řazení
+
+Opětovným kliknutím na stejné záhlaví obrátíte směr řazení (sestupně, Z–A). Šipka u názvu sloupce se podle toho otočí.
+
+### 3. Změňte řazení podle jiného sloupce
+
+Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; předchozí sloupec se přestane řadit. Řadit lze vždy pouze podle jednoho sloupce.
+
+Řazení respektuje českou abecedu, takže znaky s diakritikou (Á, Č, Š, Ž) se zařazují na správné místo.
+
+## Pozor na
+
+- **Některé sloupce nemusí být řaditelné.** Pokud po kliknutí na záhlaví sloupce nedojde k žádné změně pořadí ani se neobjeví šipka, sloupec řazení nepodporuje. V takovém případě tabulku seřaďte podle jiného sloupce.
+- **Řazení se po vyhledávání zachová.** Když nejprve nastavíte řazení a poté zadáte vyhledávací řetězec, výsledné řádky zůstanou seřazené podle původně zvoleného sloupce.
+- **Vyhledávací pole platí pouze pro daný sloupec.** Řetězec zadaný v poli pod **Příjmením** se neporovnává s obsahem sloupců **Jméno** ani **E-mail**.
+
+## Související stránky
+
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Hromadné akce (připravujeme)](#)
+- [Zobrazení sloupců (připravujeme)](#)
+- [Detail uživatele (připravujeme)](#)
+
+# Přiřazení uživatele do skupiny
+
+Existujícího uživatele přidáte do existující uživatelské skupiny dvěma způsoby: z detailu skupiny, nebo z detailu konkrétního uživatele. V obou případech jde o **přiřazení role** ve skupině – přidání člena a přidělení jeho role je jedna a tatáž akce. Výchozí rolí členství je **Účastník**.
+
+## Předpoklady
+
+- Máte přístup do administrace Competent a do obrazovky **Lidé**.
+- V systému existuje alespoň jedna uživatelská skupina a alespoň jeden uživatel, kterého chcete přiřadit.
+
+Pokud skupina nebo uživatel dosud neexistují, vytvořte je nejdříve podle samostatných návodů (viz [Související stránky](#souvisejici-stranky)).
+
+## Přiřazení z detailu skupiny
+
+Toto je nejčastější způsob, když chcete do jedné skupiny přidat jednoho nebo více členů.
+
+### 1. Otevřete tab Uživatelé ve skupině
+
+V detailu skupiny zůstaňte na tabu **Uživatelé ve skupině**. V gridu vidíte stávající členy ve sloupcích **Uživatelé**, **Email** a **Role**.
+
+### 2. Otevřete boční panel pro přidání člena
+
+Nad gridem vpravo klikněte na zelené tlačítko **+**. Otevře se boční panel s taby **Uživatelé** a **Uživatelské skupiny** a se sekcí role.
+
+### 3. Vyberte uživatele a roli
+
+Na tabu **Uživatelé** vyhledejte uživatele v poli **Hledat jméno či email** a klikněte na jeho jméno. Můžete vybrat i více uživatelů najednou. Role **Účastník** je předvybraná, takže ji stačí ponechat.
+
+Výběr podle skupiny
+
+Na tabu **Uživatelské skupiny** můžete předvybrat uživatele podle jejich příslušnosti k jiné skupině. Pomocí tlačítek **Vše** a **Nic** rychle označíte nebo odznačíte celý seznam.
+
+### 4. Potvrďte přiřazení
+
+Klikněte na tlačítko **Přiřadit role vybraným uživatelům**. Uživatel se objeví v gridu členů s rolí **Účastník**.
+
+Celý postup shrnuje následující animace:
+
+Tím je postup dokončen.
+
+### Odebrání člena
+
+Člena odeberete kliknutím na ikonu koše u jeho řádku v gridu. Systém zobrazí potvrzovací dialog **Smazání – Uživatel**; akci potvrďte tlačítkem **Potvrdit**.
+
+## Přiřazení z detailu uživatele
+
+Druhý směr použijete, když chcete jednoho uživatele přiřadit do jedné nebo více skupin.
+
+### 1. Otevřete tab Skupiny v detailu uživatele
+
+V obrazovce **Lidé** otevřete v zobrazení **Uživatelé** detail požadovaného uživatele a přepněte se na tab **Skupiny**. Vidíte skupiny, ve kterých je uživatel členem, a jejich role. Pomocí přepínače **Zobrazit:** můžete filtrovat zobrazení na **Pouze účastníky**, **Pouze lokální role**, nebo **Vše**.
+
+### 2. Otevřete boční panel s nabídkou skupin
+
+Klikněte na editační ikonu (tužku). Otevře se boční panel s nabídkou dostupných skupin a s předvybranou rolí **Účastník**.
+
+### 3. Vyberte skupiny a potvrďte
+
+Vyberte jednu nebo více skupin, ponechte roli **Účastník** (nebo zvolte jinou) a klikněte na tlačítko **Přiřadit role vybraným skupinám**. Uživatel se tím stane členem zvolených skupin.
+
+## Pozor na
+
+- **Přidání člena je přiřazení role.** V rozhraní nenajdete samostatné tlačítko „Přidat" – členství vždy potvrzujete tlačítkem **Přiřadit role vybraným uživatelům** (z detailu skupiny), respektive **Přiřadit role vybraným skupinám** (z detailu uživatele).
+- **Výchozí role je Účastník.** Ve výchozí instalaci je **Účastník** jediná role členství, kterou přiřadíte ručně. V bočním panelu jsou navíc volby **Zobrazení v katalogu** a **Možnost zažádat v katalogu**.
+- **Zděděné role nelze odebrat z potomka.** Pokud má člen roli zděděnou z nadřazené skupiny, nelze ji z této skupiny odebrat – odebrat jdou jen role přidělené lokálně. Zděděné role jsou v gridu označené hvězdičkou.
+- **Systémové role.** Role přiřazené systémem se zobrazují v hranatých závorkách a nelze je přiřadit ani odebrat ručně. Role **Účastník** je ve skupině manuální, na jiných místech (například u aktivity) může být systémová.
+- **Existující kombinaci systém nezakládá znovu.** Pokud už uživatel danou roli ve skupině má, přiřazení se přeskočí.
+
+## Související stránky
+
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Přiřazení dle skupin (připravujeme)](#)
+
+# Import uživatelů
+
+Více uživatelů najednou založíte hromadným importem ze souboru XLS(X). Import spustíte z obrazovky **Lidé** přes okno **Import/Export**, ve kterém vyberete typ objektu, nahrajete připravený soubor a spustíte zpracování. Tento návod popisuje import samotných uživatelů.
+
+## Předpoklady
+
+- Máte přístup do administrace Competent a do obrazovky **Lidé**.
+- Máte připravený soubor XLS(X), nebo si stáhnete ukázkový soubor přímo z okna **Import/Export**.
+
+K importu vám stačí Microsoft Excel nebo kompatibilní tabulkový editor; nic dalšího není potřeba instalovat.
+
+## Postup
+
+### 1. Otevřete okno Import/Export
+
+V obrazovce **Lidé** klikněte na ikonu **Import/Export** v záhlaví obrazovky.
+
+### 2. Vyberte typ objektu
+
+Otevře se okno **Import/Export**. Zkontrolujte, že je aktivní tab **Uživatelé** – ten slouží k importu uživatelů. Pro hromadné přiřazení uživatelů do skupin slouží tab **Vztahy uživatel-skupina**.
+
+### 3. Stáhněte si ukázkový soubor
+
+Pokud vzor ještě nemáte, klikněte na odkaz **Zde** u textu o stažení ukázkového souboru pro import. Systém připraví ukázkový soubor odpovídající nastavení vašeho Competentu, který si poté stáhnete.
+
+Sloupce se liší podle nastavení
+
+Stáhněte si ukázkový soubor odkazem **Zde** – povinné a nepovinné sloupce jsou ve vzoru barevně odlišené. Text v závorce v záhlaví sloupce je technický identifikátor – neměňte jej, upravujte jen text mimo závorku.
+
+### 4. Vyberte soubor a spusťte import
+
+Klikněte na **Vybrat soubor** a vyberte připravený soubor XLS(X). Po jeho výběru se zpřístupní tlačítko **Importovat**, kterým import spustíte.
+
+### 5. Zkontrolujte výsledek
+
+Po dokončení importu se zobrazí souhrn úspěšných a chybných řádků a přehled uživatelů se obnoví.
+
+Otevření okna a výběr tabu **Uživatelé** shrnuje následující animace:
+
+Tím je postup dokončen.
+
+## Pozor na
+
+- **Formát je XLS(X), ne CSV.** Import přijímá soubory Microsoft Excel s příponou `.xls` nebo `.xlsx`.
+- **Vždy vycházejte z aktuálního vzoru.** Ukázkový soubor respektuje nastavení konkrétní instance; pro každý subtyp obsahuje samostatný list, protože subtypy mají vlastní parametry.
+- **Neměňte text v závorkách v záhlaví.** Text v závorce je technický identifikátor sloupce. Pokud jej změníte, import nemusí sloupec správně rozpoznat.
+
+## Související stránky
+
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+
+# Přiřazení globální role uživateli
+
+Globální role platí v celém systému a uživateli rozšiřují možnosti napříč aplikací. Tento návod popisuje, jak konkrétnímu uživateli přidělit nebo odebrat globální roli v detailu uživatele, v pohledu **Nastavení**. Přidělení globální role je administrátorská akce a vyžaduje odpovídající oprávnění.
+
+## Předpoklady
+
+- Máte administrátorský přístup do Competent a do detailu uživatele.
+- V systému existuje uživatel, kterému chcete roli přidělit.
+
+Pokud uživatele teprve zakládáte, použijte návod [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md).
+
+## Postup
+
+### 1. Otevřete pohled Nastavení v detailu uživatele
+
+V seznamu **Lidé** otevřete detail uživatele. V pravém horním rohu záhlaví detailu klikněte na ikonu ozubeného kola (pohled **Nastavení**). Zobrazí se sekce **Globální role**.
+
+Nezaměňte s přejmenováním
+
+Ikona vedle jména uživatele otevírá pouze přejmenování (pole Křestní jméno a Příjmení). Pohled **Nastavení** s globálními rolemi otevřete ikonou v pravém horním rohu záhlaví, nikoliv ikonou u jména.
+
+### 2. Přepněte sekci do režimu úprav
+
+U nadpisu **Globální role** klikněte na ikonu tužky. Sekce přejde do režimu úprav (zobrazí se tlačítka **Zrušit** a **Uložit**) a vpravo se otevře boční panel **Role** s nabídkou přiřaditelných rolí.
+
+V demu nabízí panel dvě globální role:
+
+- **Admin pohled** – zpřístupní skryté a archivované záznamy v celém systému.
+- **Přepínání účtů** – umožní přihlásit se za jiného uživatele.
+
+### 3. Přidejte roli a uložte
+
+V bočním panelu klikněte na roli, kterou chcete přidat (například **Admin pohled**). Role se ihned zařadí do sekce **Globální role**. Výběr potvrdíte uložením sekce: klikněte na tlačítko **Uložit**.
+
+Celý postup od otevření pohledu Nastavení po uložení role ukazuje následující animace:
+
+## Odebrání globální role
+
+Odebrání probíhá ve stejné sekci:
+
+1. U nadpisu **Globální role** klikněte na ikonu tužky.
+1. V seznamu přiřazených rolí klikněte na roli, kterou chcete odebrat. Tím ji označíte k odebrání.
+1. Klikněte na tlačítko **Uložit**.
+
+Po uložení už role v sekci **Globální role** není uvedena.
+
+## Pozor na
+
+- Změny v sekci se projeví až po kliknutí na **Uložit**. Pokud režim úprav opustíte bez uložení (například tlačítkem **Zrušit**), zůstane původní stav zachován.
+- Nabídka rolí v bočním panelu **Role** se může u jednotlivých instalací lišit. Standardně jsou k dispozici role **Admin pohled** a **Přepínání účtů**.
+
+## Související stránky
+
+- [Role a oprávnění (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+
+# Vytvoření a správa štítků
+
+Na této stránce najdete postup, jak v sekci **Nastavení > Štítky** vytvořit nový štítek, upravit název existujícího a smazat štítek, který už není potřeba. Pro samotné přiřazení štítku k aktivitě viz [Přiřazení štítku k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md). Co je štítek a jak souvisí s ostatními entitami popisuje [Co je štítek (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md).
+
+## Předpoklady
+
+- Máte přístup do administrace Competent a v sekci **Nastavení** vidíte záložku **Štítky**.
+- Pro úpravu seznamu štítků není potřeba žádný předchozí stav – postup popisuje i situaci, kdy zatím žádný štítek neexistuje.
+
+## Vytvoření štítku
+
+### 1. Otevřete záložku Štítky v Nastavení
+
+V hlavním menu klikněte na **Nastavení** a poté v záhlaví obrazovky na záložku **Štítky**. Zobrazí se seznam štítků seřazený abecedně.
+
+### 2. Otevřete modální okno pro vytvoření štítku
+
+Pokud již nějaké štítky existují, klikněte na **zelené tlačítko +** v záhlaví seznamu.
+
+Pokud je seznam prázdný, zobrazí se uprostřed plochy text „Zatím nebyl vytvořen žádný štítek." a tlačítko **Vytvořit nový štítek** – kliknutím na něj otevřete stejné modální okno.
+
+### 3. Zadejte název štítku
+
+V modálním okně **Nový štítek** vyplňte pole **Název** a klikněte na tlačítko **Vytvořit štítek**.
+
+Modální okno se zavře a nový štítek se objeví v seznamu na své abecední pozici.
+
+Tip
+
+Pokud chcete vytváření přerušit, klikněte na **Zrušit** nebo na ikonu křížku v záhlaví modálního okna.
+
+## Úprava štítku
+
+### 1. Otevřete modální okno pro úpravu
+
+V seznamu štítků klikněte na řádek se štítkem, jehož název chcete změnit. Zobrazí se modální okno **Editovat štítek** s předvyplněným polem **Název**.
+
+### 2. Uložte změnu
+
+Upravte hodnotu pole **Název** a klikněte na tlačítko **Uložit změny**. Modální okno se zavře a v seznamu se zobrazí nový název na příslušné abecední pozici.
+
+Pokud chcete změnu zahodit, klikněte na **Zrušit**.
+
+## Smazání štítku
+
+### 1. Vyvolejte potvrzovací okno
+
+V seznamu štítků klikněte na **ikonu koše** vedle štítku, který chcete odstranit. Zobrazí se inline potvrzovací okno s tlačítky **Zrušit** a **Odebrat**.
+
+### 2. Potvrďte smazání
+
+Klikněte na tlačítko **Odebrat**. Štítek je z aplikace okamžitě odstraněn a zmizí ze seznamu.
+
+Pokud jste klikli na ikonu koše omylem, klikněte na **Zrušit** – štítek zůstane zachován.
+
+## Pozor na
+
+- **Smazání štítku je nevratné.** V uživatelském rozhraní není dostupný způsob, jak odstraněný štítek obnovit. Pokud má být přiřazení k aktivitám zachováno, štítek raději nemažte – postačí ho přejmenovat, případně přestat používat.
+- **Smazaný štítek se automaticky odebere ze všech aktivit, kterým byl přiřazen.** Aktivity samy zůstanou beze změny obsahu, pouze z nich daný štítek zmizí. Potvrzovací okno přitom nezobrazuje, kolika aktivit se odstranění dotkne.
+- **Vícejazyčný název.** Pokud Competent provozujete ve vícejazyčném prostředí, lze do pole **Název** zadat hodnoty pro více jazyků současně oddělené svislítkem (`|`) v pořadí, ve kterém jsou jazyky v systému nastavené. Detaily o vícejazyčném prostředí viz [Jazyková podpora (připravujeme)](#).
+- **Seznam štítků je vždy řazen abecedně podle názvu.** Manuálně položky přesouvat nelze – pořadí v seznamu vychází vždy z abecedního porovnání.
+
+## Související stránky
+
+- [Přiřazení štítku k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)
+- [Co je štítek (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
+
+# Úprava šablony e-mailu
+
+Na této stránce najdete postup, jak v sekci **Nastavení** upravit obsah e-mailové šablony: otevřít existující skupinu šablon, upravit předmět a tělo e-mailu ve WYSIWYG editoru, vložit do těla proměnnou a přepínat mezi jazykovými variantami. Popis samotné obrazovky a jejích polí najdete v referenci [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md). Jak e-mailové notifikace fungují jako celek vysvětluje [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md).
+
+## Předpoklady
+
+- Máte administrátorský přístup do Competent a oprávnění upravovat e-mailové šablony. Bez tohoto oprávnění se záložka **Šablony Emailů** v Nastavení nezobrazí.
+- V Nastavení existuje alespoň jedna skupina šablon, kterou chcete upravit.
+
+## Postup
+
+### 1. Otevřete záložku Šablony Emailů
+
+V hlavním menu klikněte na **Nastavení**. Nastavení se otevírá na jedné ze svých záložek (například **Místa**), proto v záhlaví obrazovky klikněte na záložku **Šablony Emailů**. Zobrazí se seznam skupin šablon.
+
+### 2. Otevřete skupinu šablon
+
+V seznamu klikněte na řádek skupiny, kterou chcete upravit. Otevře se modální okno **Editovat skupinu šablon** v režimu pro čtení. Přehled všech polí okna najdete v referenci [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md).
+
+### 3. Přepněte do režimu úprav
+
+Klikněte na tlačítko **Upravit šablonu**. Pole se zpřístupní k editaci: **Předmět emailu** a **Popis** se změní na textová pole a u **Tělo emailu** se zobrazí WYSIWYG editor s formátovacím panelem. Pod editorem se objeví nápověda **Povolené proměnné pro tělo e-mailu:**.
+
+### 4. Vložte do těla proměnnou
+
+Do těla e-mailu můžete vkládat proměnné ve tvaru `${nazev}`, které se při odeslání nahradí konkrétními hodnotami (například jménem uživatele nebo názvem aktivity).
+
+V editoru **Tělo emailu** klikněte na místo, kam chcete proměnnou vložit. V nápovědě **Povolené proměnné pro tělo e-mailu:** vyberte záložku se skupinou proměnných (například **Aktivita**) a klikněte na konkrétní proměnnou. Na pozici kurzoru se vloží zápis `${nazev}`, například `${activityName}`.
+
+Tip
+
+Úplný seznam dostupných proměnných najdete přímo v editoru pod tělem e-mailu, rozdělený do záložek podle oblasti (Uživatel, Aktivita, Zpráva a další).
+
+### 5. Upravte obsah pro další jazyk
+
+Šablona je vícejazyčná. Každý jazyk je samostatná varianta s vlastním předmětem a tělem.
+
+Správu jazyků (přidání a odebrání) provádějte **v režimu pro čtení** – tedy před vstupem do úprav nebo po jejich uložení či zrušení. Tlačítka **Přidat jazyk** a **Odebrat Jazyk** jsou aktivní pouze mimo editaci.
+
+Chcete-li upravit jiný jazyk, postupujte takto:
+
+1. Pokud jste v režimu úprav, klikněte na **Zrušit** (nebo nejprve uložte aktuální jazyk tlačítkem **Uložit**).
+1. V režimu pro čtení vyberte požadovaný jazyk rozbalovacím polem **Jazyk**.
+1. Teprve pak klikněte na **Upravit šablonu** a upravte obsah.
+
+Warning
+
+Pokud přepnete rozbalovací pole **Jazyk** přímo uvnitř editace (v režimu úprav), uložený obsah druhého jazyka se nenačte. Vždy nejprve opusťte editaci a jazyk přepněte v režimu pro čtení.
+
+### 6. Uložte změny
+
+Po dokončení úprav klikněte na tlačítko **Uložit**. Okno se vrátí do režimu pro čtení a uložený obsah se zobrazí. Pokud chcete úpravy zahodit, klikněte místo toho na **Zrušit**. Modální okno zavřete tlačítkem **Zavřít**.
+
+Tím je postup dokončen.
+
+## Pozor na
+
+- Obsah upravujete pro každý jazyk zvlášť. Pokud změníte text jen v jednom jazyce, ostatní jazykové varianty zůstanou beze změny.
+- Tlačítka **Přidat jazyk** a **Odebrat Jazyk** jsou dostupná pouze v režimu pro čtení (mimo editaci). Chcete-li přepnout na jiný jazyk a upravit ho, nejprve opusťte editaci (**Uložit** nebo **Zrušit**), přepněte jazyk rozbalovacím polem a pak teprve vstupte do úprav. Přepnutí jazyka uvnitř editace nenačte uložený obsah druhé varianty.
+- Režim pro čtení zobrazuje formátování těla e-mailu, ale proměnné `${...}` ponechává v původním tvaru. Nejde tedy o náhled odeslaného e-mailu, skutečné hodnoty se doplní až při odeslání.
+- U typu **Agregovaná** šablona obsahuje navíc **Hlavičku** a **Patičku**, které obalují opakované tělo. U typu **Základní** upravujete pouze tělo.
+
+## Související stránky
+
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+
+# Reference
+
+Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, seznamy polí a parametrů obrazovek, přehledy stavů a hodnot. Slouží k rychlému vyhledání konkrétní informace, nikoli k učení. Otevřete je tehdy, když přesně víte, co hledáte, a potřebujete ověřit hodnotu, název nebo popis.
+
+## Obsah sekce
+
+- [Chybové zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/chybove-zpravy/index.md) – Přehled nejčastějších chybových hlášek v LMS Competent s popisem příčiny a doporučeným řešením.
+
+Sekce se rozrůstá
+
+V dalších vlnách přibudou referenční přehledy pro jednotlivé obrazovky administrace – Aktivity, Lidé, Nastavení a další.
+
+# Chybové zprávy
+
+Chybová zpráva se zobrazí vždy, když systém nemůže provést požadovanou operaci – například z důvodu nedostatečných oprávnění, chybějících dat nebo neplatného stavu záznamu. Zprávy se zpravidla zobrazují v modálním okně, které je možné zavřít; kliknutím na řádek chyby zobrazíte její detail.
+
+Obrázek
+
+Ukázka modálního okna s chybovou hláškou – [připravujeme](#).
+
+______________________________________________________________________
+
+## Přehled chybových zpráv
+
+| Chybová zpráva                                   | Popis                                                                                                                                                                                  | Doporučené řešení                                                                                                                                                                             |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Cannot delete access`                           | Přístup uživatele k aktivitě nebo sadě nelze odstranit.                                                                                                                                | Ověřte, zda má přihlášený účet oprávnění ke správě přístupů. Pokud je přístup děděn z nadřazené sady, odeberte jej na úrovni sady.                                                            |
+| `Cannot read property 'activities' of undefined` | Aplikace se pokusila číst seznam aktivit z objektu, který neexistuje nebo nebyl načten.                                                                                                | Obnovte stránku (**Ctrl+F5**). Pokud chyba přetrvává, odhlaste se a přihlaste znovu.                                                                                                          |
+| `Cannot read property 'push' of undefined`       | U aktivity byl ručně změněn způsob časování poté, co již existoval alespoň jeden termín. Skrytý termín zůstává navázán a způsobuje tuto chybu.                                         | Proveďte jeden z těchto kroků: (1) aktivitu odstraňte, (2) vraťte nastavení časování v **Detailu aktivity → Nastavení** do původního stavu, nebo (3) odeberte napojení uživatele na aktivitu. |
+| `Insufficient Permissions` (Nedostatečná práva)  | Přihlášený uživatel nemá dostatečná oprávnění k provedení dané operace. Operace nebyla provedena.                                                                                      | Ověřte roli a přístupová práva uživatele. Pokud operaci potřebuje provádět, požádejte správce systému o přidělení příslušné role.                                                             |
+| `Objekt nebyl nalezen`                           | Požadovaný záznam nebyl v databázi nalezen. Pravděpodobně byl odstraněn jiným uživatelem nebo v jiné záložce prohlížeče.                                                               | Obnovte stránku (**Ctrl+F5**) a načtěte seznam znovu.                                                                                                                                         |
+| `Není možné upravit tento přístup`               | Přístup uživatele byl přidělen v rámci nadřazené sady. Přímá úprava na úrovni aktivity není povolena.                                                                                  | Přistupte ke správě přístupu přes nadřazenou sadu, nikoli přes detail aktivity.                                                                                                               |
+| `Špatné vstupní parametry`                       | Vstupní data neprošla validací. Nejčastějším příkladem je překročení maximálního počtu povolených pokusů nastavených v detailu aktivity – systém odmítne uložit další pokus uživatele. | Zkontrolujte nastavení maximálního počtu pokusů v **Detailu aktivity**. Pokud je limit záměrný, upozorněte uživatele.                                                                         |
+| `Špatný požadavek`                               | Uživatel se pokusil přistoupit k objektu, který byl mezitím odstraněn systémem nebo jiným uživatelem. Stav nastává v souběžném víceuživatelském provozu.                               | Obnovte stránku (**Ctrl+F5**). Záznam byl pravděpodobně odstraněn – vyhledejte jej v příslušném seznamu, nebo jej v případě potřeby vytvořte znovu.                                           |
+
+______________________________________________________________________
+
+## Kde se chybové zprávy zobrazují
+
+Většina zpráv se zobrazuje v modálním okně nad aktuální obrazovkou. Okno lze zavřít kliknutím na tlačítko pro zavření nebo klávesou **Esc**. Kliknutím na řádek se zkráceným textem chyby zobrazíte její plný detail.
+
+Chyba při nahrávání souboru
+
+Pokud chyba nastane během nahrávání souboru, zobrazí se zpráva přímo v dialogu nahrávání. Překontrolujte oprávnění přihlášeného uživatele a velikost nahrávaného souboru.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Detail aktivity (připravujeme)](#)
+- [Sady aktivit (připravujeme)](#)
+
+# Obrazovka Aktivity
+
+Obrazovka **Aktivity** je centrálním místem pro správu výukových objektů v administraci Competent. Zobrazí se po kliknutí na položku **Aktivity** v horním hlavním menu administrace. Obrazovka je rozdělena na **levý panel** (Strom aktivit) a **pravý panel** (obsah aktuální složky nebo sady).
+
+______________________________________________________________________
+
+## Strom aktivit
+
+Strom aktivit v levém panelu zobrazuje hierarchii všech složek, sad, termínových sad a aktivit. Nejvyšší položkou hierarchie je **root** – kořenová složka obsahující všechny ostatní položky.
+
+Každá položka ve stromu má tyto aktivní části:
+
+| Část položky      | Funkce                                                                                                                                                                                                                          |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rozbalovací ikona | Rozbalí nebo sbalí potomky položky.                                                                                                                                                                                             |
+| Ikona typu        | Vizuálně odlišuje typ položky; slouží zároveň jako úchyt pro přetažení (drag and drop) při přesunu.                                                                                                                             |
+| Název             | Kliknutí otevře obsah dané složky nebo sady v pravém panelu. Kliknutí na aktivitu otevře [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md). |
+| Kontextové menu   | Zobrazí se po najetí myší na položku; viz [Kontextové menu položek](#kontextove-menu-polozek).                                                                                                                                  |
+
+Pod stromem se nachází tlačítko pro **obnovení dat** – načte aktuální stav stromu ze serveru.
+
+### Povolené typy objektů v kontejnerech
+
+Každý kontejner přijímá pouze určité typy potomků:
+
+| Cílový kontejner | Povolené typy objektů uvnitř             |
+| ---------------- | ---------------------------------------- |
+| root             | Složka, Aktivita, Sada, Termínová sada   |
+| Složka           | Složka, Aktivita, Sada, Termínová sada   |
+| Sada             | Aktivita, Sada, Termínová sada           |
+| Termínová sada   | Pouze Aktivita                           |
+| Aktivita         | Aktivita není kontejner – nic neobsahuje |
+
+______________________________________________________________________
+
+## Složkové zobrazení
+
+Pravý panel zobrazuje obsah aktuálně otevřené složky nebo sady. Nad ním je **informační pruh** s názvem a ikonou aktuální položky, navigačním odkazem na cestu ke složce (breadcrumb) a akčními ikonami.
+
+### Informační pruh: akční ikony
+
+Čtyři ikony v pravém horním rohu informačního pruhu:
+
+| Ikona                  | Funkce                                                                                                                                                                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Přidání nového objektu | Otevře nabídku pro výběr typu nového prvku. Podrobně viz [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md). |
+| Vyhledávání            | Otevře vyhledávací lištu pro aktuální složku nebo sadu; viz [Vyhledávání](#vyhledavani).                                                                                                                                |
+| Filtrování             | Otevře okno s volbami pro filtrování obsahu; viz [Filtrování](#filtrovani).                                                                                                                                             |
+| Zobrazení stromu       | Skryje nebo znovu zobrazí Strom aktivit.                                                                                                                                                                                |
+
+Pokud je aktivní jakýkoli filtr, ikona filtrování se vizuálně změní (indikátor aktivity filtru).
+
+### Obsah složky nebo sady
+
+Seznam položek v pravém panelu zobrazuje přímé potomky aktuální složky nebo sady. Při najetí myší na řádek se vpravo zobrazí tři akční ikony:
+
+| Ikona   | Funkce                                                                                                                  | Dostupnost               |
+| ------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Editace | Otevře Detail aktivity nebo detail sady.                                                                                | U složek se nezobrazuje. |
+| Práva   | Otevře modál **Práva přístupu pro ...** pro daný objekt; viz [Modál Práva přístupu pro ...](#modal-prava-pristupu-pro). | Všechny typy.            |
+| Menu    | Otevře kontextové menu; viz [Kontextové menu položek](#kontextove-menu-polozek).                                        | Všechny typy.            |
+
+Kliknutí na **složku, sadu nebo termínovou sadu** přejde o úroveň níže do jejího obsahu. Kliknutí na **aktivitu** otevře [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
+
+______________________________________________________________________
+
+## Vyhledávání
+
+Vyhledávací lišta se zobrazí po kliknutí na ikonu vyhledávání v informačním pruhu. Vyhledávání probíhá **pouze v aktuální složce nebo sadě**, případně v jejich podsložkách a pod-sadách – pokud je zapnuto **Hromadné zobrazení** (viz [Filtrování](#filtrovani)). Výsledky se aktualizují okamžitě při změně textu v poli.
+
+Druhý prvek vyhledávací lišty je **Filtrovat štítky** – otevře vedlejší panel pro výběr štítků. Vybrané štítky se přesunou do vyhledávací lišty jako aktivní filtr. Kliknutím na vybraný štítek ve vyhledávací liště jej odeberete; ikonkou koše celý výběr štítků zrušíte.
+
+______________________________________________________________________
+
+## Filtrování
+
+Okno filtrování nabízí tři skupiny voleb:
+
+1. **Hromadné zobrazení** – výchozí stav pravého panelu zobrazuje pouze přímé položky aktuální složky nebo sady. Po přepnutí na Hromadné zobrazení se zobrazí **všechny položky ve všech podsložkách a pod-sadách**. V tomto režimu jsou složky skryty.
+1. **Zobrazení aktivit** – skryje nebo zobrazí všechny aktivity, případně pouze aktivity určitého subtypu.
+1. **Zobrazení strukturních prvků** – skryje nebo zobrazí složky, sady nebo termínové sady.
+
+Všechny aktivní filtry lze zrušit najednou ikonkou křížku.
+
+______________________________________________________________________
+
+## Kontextové menu položek
+
+Kontextové menu každé položky stromu kombinuje dvě skupiny voleb: **menu pro vytvoření nové položky** a **menu pro úpravu aktuální položky**.
+
+### Menu pro vytvoření nové položky
+
+Kliknutím na typ v nabídce se vytvoří nový prvek jako přímý potomek položky, pro kterou bylo menu otevřeno:
+
+| Typ            | Podmenu            |
+| -------------- | ------------------ |
+| Složka         | –                  |
+| Aktivita       | Elearning, Školení |
+| Sada           | Sada               |
+| Termínová sada | Komplexní Sada     |
+
+Podrobný postup vytváření nových objektů viz [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md).
+
+### Menu pro úpravu aktuální položky
+
+Tři volby dostupné pro většinu položek:
+
+| Volba           | Funkce                                                                                                                                                                                                |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Přesunout do... | Otevře panel pro výběr cílového umístění v hierarchii. Viz [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md). |
+| Přejmenovat     | Umožní upravit název položky. Název lze lokalizovat do více jazyků.                                                                                                                                   |
+| Smazat          | Smaže položku po potvrzení konfirmačního dialogu.                                                                                                                                                     |
+
+Kořenová položka root
+
+U položky **root** jsou k dispozici: **menu pro vytvoření nové položky** (plná nabídka typů – Složka, Aktivita, Sada, Termínová sada), **Přejmenovat** a **Práva**. Volba **Smazat** není dostupná, protože kořenovou položku nelze odstranit.
+
+______________________________________________________________________
+
+## Modál Práva přístupu pro ...
+
+Modál se otevře kliknutím na ikonu práv u libovolné položky – buď ve stromu aktivit, nebo ve složkovém zobrazení. Zobrazuje souhrnný přehled práv nad daným objektem, včetně přímo přiřazených, zděděných a systémových práv.
+
+### Struktura modálu
+
+Modál je rozdělený na dva taby:
+
+- **Skupiny** (výchozí otevřený tab)
+- **Uživatelé**
+
+V každém tabu jsou data zobrazena v tabulce se třemi sloupci: název skupiny nebo uživatele, přiřazené role, tlačítko editace.
+
+### Konvence zobrazení rolí
+
+Role jsou odlišeny závorkami podle způsobu přiřazení:
+
+| Zobrazení             | Význam                                            |
+| --------------------- | ------------------------------------------------- |
+| Bez závorek           | Role přiřazená přímo tomuto objektu.              |
+| V kulatých závorkách  | Role zděděná z nadřazené složky nebo sady.        |
+| V hranatých závorkách | Systémová role (například `[Vlastník aktivity]`). |
+
+### Přidávání a úprava práv
+
+- **Přidání skupiny nebo uživatele** – kliknutím na ikonu přidání se otevře vedlejší panel **Výběr skupinové role** (nebo **Výběr uživatelské role**).
+- **Úprava přiřazené role** – ikona editace na řádku skupiny nebo uživatele otevře editor rolí.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
+- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
+- [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Detail sady (připravujeme)](#)
+- [Sdílené aktivity (připravujeme)](#)
+- [Termín aktivity (připravujeme)](#)
+
+# Detail aktivity
+
+Detail aktivity je obrazovka, která zobrazuje veškeré informace o konkrétní aktivitě: její základní vlastnosti, přiřazené uživatele, dokumenty a podmínky přístupu. Obrazovka je rozdělena na **hlavičku** se stavovou lištou a sadu **tabů**, přičemž každý tab pokrývá odlišnou oblast správy aktivity.
+
+______________________________________________________________________
+
+## Hlavička obrazovky
+
+### Název a navigace
+
+V levém horním rohu obrazovky je zobrazen **název aktuální aktivity**. Vlevo od názvu je umístěno tlačítko **Strom aktivit**, které Vás navrátí zpět na obrazovku Aktivity (přehled stromové struktury), odkud byl Detail aktivity otevřen.
+
+### Taby
+
+Pod názvem aktivity je zobrazena lišta s taby. Kliknutím na záložku přepínáte mezi jednotlivými oblastmi správy aktivity.
+
+### Stavová lišta
+
+Stavová lišta se nachází vpravo od lišty tabů a obsahuje:
+
+| Prvek                     | Popis                                                                                                                                                                                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Stav**                  | Zobrazuje aktuální stav aktivity (např. **Spuštěno**, **Ukončeno**, **Archivováno**). Výčet všech dostupných stavů: Skryto / Předregistrace / Registrace / Před spuštěním / Spuštěno / Spuštěno (R) / Viditelné / Hodnocení / Ukončeno / Archivováno. |
+| **Primární akce stavu**   | Tlačítko pro nejběžnější přechod ze současného stavu (např. **Ukončit**).                                                                                                                                                                             |
+| **Dropdown dalších akcí** | Rozbalovací nabídka dalších přechodů stavu dostupných z aktuálního stavu (např. Ukončit, Hodnotit).                                                                                                                                                   |
+| **Aktuální verze**        | Tlačítko nebo ikona, která navrátí zobrazení na aktivní verzi aktivity, pokud aktuálně prohlížíte historickou verzi.                                                                                                                                  |
+
+______________________________________________________________________
+
+## Taby: přehled
+
+Detail aktivity obsahuje čtyři základní taby, které jsou dostupné pro všechny aktivity:
+
+| Tab           | Popis                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------ |
+| **Uživatelé** | Přehled uživatelů přiřazených k aktivitě – jejich stavy, výsledky a správa přiřazení.                  |
+| **Detaily**   | Formulář s vlastnostmi aktivity: identifikace, typ, kapacita, nastavení opakování, notifikace a další. |
+| **Dokumenty** | Přílohy a studijní materiály spojené s aktivitou.                                                      |
+| **Podmínky**  | Konfigurace podmínek přístupu k aktivitě (např. předpoklady splnění).                                  |
+
+Po otevření Detail aktivity je výchozím aktivním tabem **Uživatelé**.
+
+Některé aktivity mohou mít zobrazeny další taby – viz [Další taby (podle typu aktivity)](#dalsi-taby-podle-typu-aktivity) níže.
+
+______________________________________________________________________
+
+## Tab Uživatelé
+
+Tab Uživatelé zobrazuje seznam uživatelů, jimž byla aktivita přiřazena – včetně současných, minulých i budoucích přiřazení. U každého záznamu jsou dostupné informace o datu přiřazení, výsledku a stavu.
+
+### Sloupce gridu
+
+| Sloupec                | Popis a hodnoty filtru                                                                                                                                                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Uživatel**           | Jméno uživatele. Sloupec lze filtrovat textovým polem a řadit.                                                                                                                                                                       |
+| **Aktuální výsledek**  | Výsledek plnění aktivity. Hodnoty filtru: **Nesplněno**, **Splněno**, **Prozatím nesplněno**.                                                                                                                                        |
+| **Aktuální stav**      | Aktuální stav přiřazení. Hodnoty filtru: **Budoucí**, **Zajímám se**, **Rezervovaný**, **Registrovaný**, **Spuštěno**, **V hodnocení**, **Dokončeno**, **Zrušeno**, **Objednáno**, **Archivováno**, **Nemá termín**, **Expirováno**. |
+| **Budoucí stav**       | Plánovaný budoucí stav přiřazení. Stejné hodnoty filtru jako sloupec Aktuální stav.                                                                                                                                                  |
+| **Účastnické skupiny** | Skupiny, do nichž uživatel patří v kontextu tohoto přiřazení.                                                                                                                                                                        |
+
+V patičce tabulky je zobrazen **celkový počet záznamů** (Celkem položek: N).
+
+### Nástroje pro práci se seznamem
+
+Nad gridem je umístěna lišta nástrojů s následujícími funkcemi:
+
+- **Filtry** – k dispozici přímo v hlavičkách sloupců (viz výše).
+- **Znovunačtení dat** – obnoví seznam uživatelských přiřazení ze serveru.
+- **Hromadné akce** – umožní vybrat více uživatelských přiřazení najednou a provést hromadnou operaci: změnu dat plnění, odebrání uživatelských přístupů nebo odeslání zprávy. Potvrzovací modál má název **Hromadná změna stavu**.
+- **Export do Excelu** – otevře modál **Souhrnný report přístupů uživatelů** a nabídne ke stažení aktuálně zobrazený seznam uživatelů.
+- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů (připravujeme)](#) a [Periodické nastavení (připravujeme)](#).
+
+### Akce na řádku uživatelského přiřazení
+
+Každý řádek v gridu umožňuje následující operace:
+
+- **Data přiřazení** – nastavení dat: začátek, optimální začátek, optimální konec, vyžadovaný konec a konec přístupu.
+- **Stáhnout certifikát** – stažení certifikátu o splnění aktivity.
+- **Historie přístupů** – zobrazení záznamu o přístupech uživatele k aktivitě.
+- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele (připravujeme)](#)).
+- **Stav přiřazení** – zobrazení a změna stavu přiřazení.
+- **Editace přiřazení** – dostupná pouze u aktivit se schématem **Bez termínu**.
+- **Odebrání uživatelského přístupu** – odebere přístup uživatele k aktivitě.
+
+______________________________________________________________________
+
+## Tab Detaily
+
+Tab Detaily obsahuje formulář pro správu vlastností aktivity. Pole jsou logicky seskupena do několika oblastí.
+
+### Základní identifikace
+
+| Pole              | Popis                                                     |
+| ----------------- | --------------------------------------------------------- |
+| **Název**         | Název aktivity (povinné pole).                            |
+| **Popis**         | Volný text s popisem obsahu nebo účelu aktivity.          |
+| **Specifické ID** | Vlastní identifikátor aktivity, viditelný v administraci. |
+| **Externí ID**    | Identifikátor pro integraci s externími systémy.          |
+
+### Typ a vyhodnocení
+
+| Pole                | Popis                                                                                                                                                                                                                                                                                                                             |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Typ spouštění**   | Určuje způsob spuštění aktivity (např. Scorm kurz, PDF soubor, Url adresa, Video, Vložený kód, Formulář, iTrivio, Nahrání souborů, Žádný a další). Podrobnosti viz [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md). |
+| **Typ vyhodnocení** | Určuje metodu vyhodnocení výsledku aktivity (např. Body).                                                                                                                                                                                                                                                                         |
+
+### Kapacita a účast
+
+| Pole                                    | Popis                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Kapacita**                            | Maximální počet účastníků. Hodnota **Neomezeno** znamená, že kapacita není omezena.  |
+| **Spuštění i po splnění**               | Pokud je zapnuto, uživatel může aktivitu spustit znovu i po jejím splnění.           |
+| **Počet pokusů**                        | Počet pokusů dostupných pro vyhodnocení. Musí být číslo větší než 0.                 |
+| **Povolit splnit po vypršení přístupu** | Pokud je zapnuto, uživatel může aktivitu dokončit i po uplynutí data konce přístupu. |
+
+### Čas a opakování
+
+| Pole                                          | Popis                                                                                                          |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Nastavení opakování**                       | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení (připravujeme)](#). |
+| **Opakování**                                 | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování).                                           |
+| **Počet dnů přístupu**                        | Délka přístupu uživatele k aktivitě ve dnech.                                                                  |
+| **Počet dnů automatického prodloužení**       | Počet dnů, o které se přístup automaticky prodlouží.                                                           |
+| **Počet opakování automatického prodloužení** | Kolikrát se automatické prodloužení přístupu uplatní.                                                          |
+
+### Verze aktivity
+
+| Pole               | Popis                                                                                                                                                                                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Verze aktivity** | Zobrazuje číslo aktuální verze obsahu aktivity.                                                                                                                                                                                                      |
+| **Nová verze**     | Umožní zvýšit číslo verze obsahu, například při výměně SCORM balíčku. Podrobnosti viz [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md). |
+
+### Notifikace
+
+Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv spojených s aktivitou.
+
+| Pole                | Popis                                                                                                                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nová notifikace** | Přidá nový záznam notifikace k aktivitě.                                                                                                                                                                                         |
+| **Událost**         | Událost, na jejímž základě se notifikace odešle. Jak notifikace fungují, popisuje [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md). |
+| **Šablona**         | Šablona zprávy, která se použije pro danou notifikaci.                                                                                                                                                                           |
+
+### Ostatní pole
+
+| Pole                | Popis                                                                                                                |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Recenze**         | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**. |
+| **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                            |
+| **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                       |
+| **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků (připravujeme)](#)).                                  |
+| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                           |
+
+______________________________________________________________________
+
+## Tab Dokumenty
+
+Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě (připravujeme)](#).
+
+______________________________________________________________________
+
+## Tab Podmínky
+
+Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu (připravujeme)](#).
+
+______________________________________________________________________
+
+## Další taby (podle typu aktivity)
+
+U některých typů aktivit se mohou vedle čtyř základních tabů zobrazit také tyto taby:
+
+| Tab         | Kdy se zobrazuje                                                 |
+| ----------- | ---------------------------------------------------------------- |
+| **iTrivio** | Pravděpodobně u aktivit s Typem spouštění nastaveným na iTrivio. |
+| **Termíny** | Pravděpodobně u aktivit se schématem **S termíny**.              |
+
+Podmínky zobrazení
+
+Přesné podmínky zobrazení tabů iTrivio a Termíny závisí na konfiguraci aktivity. Obsah těchto tabů není v současné dokumentaci popsán – doplníme po dokončení testovacích scénářů.
+
+______________________________________________________________________
+
+## Pozor na
+
+Různé chování tabu Uživatelé podle schématu
+
+Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů (připravujeme)](#).
+
+Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Podmínky). U aktivit s Typem spouštění iTrivio a u aktivit se schématem **S termíny** se mohou zobrazit další taby (iTrivio, Termíny). Přesný výčet podmínek pro zobrazení těchto tabů bude doplněn v samostatné referenci po dokončení testování.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
+- [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
+- [Přiřazení uživatelů (připravujeme)](#)
+- [Periodické nastavení (připravujeme)](#)
+- [Pokusy uživatele (připravujeme)](#)
+- [Dokumenty v aktivitě (připravujeme)](#)
+- [Podmínky přístupu (připravujeme)](#)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+- [Detail sady (připravujeme)](#)
+- [Sdílené aktivity (připravujeme)](#)
+
+# Detail skupiny
+
+Obrazovka **Detail skupiny** zobrazuje veškeré informace o konkrétní uživatelské skupině: seznam členů a jejich rolí, textový popis skupiny a hierarchické vazby na jiné skupiny. Slouží jako centrální místo pro správu členství – přidávání, editaci a odebírání členů.
+
+Do Detailu skupiny se dostanete z přehledu **Lidé → tab Skupiny** kliknutím na ikonu řádku (tooltip „Detail uživatelské skupiny").
+
+______________________________________________________________________
+
+## Záhlaví
+
+Záhlaví obrazovky zobrazuje **název skupiny**. Název je editovatelný přímo v záhlaví – kliknutím na ikonu tužky vedle názvu jej můžete upravit a uložit.
+
+Pod záhlavím je umístěna lišta tabů pro přechod mezi jednotlivými oblastmi správy skupiny.
+
+______________________________________________________________________
+
+## Taby
+
+Detail skupiny obsahuje tři taby:
+
+| Tab                      | Obsah                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Uživatelé ve skupině** | Grid členů skupiny s jejich rolemi; přidávání, editace a odebírání členů; filtry zobrazení rolí. |
+| **Popis**                | Textový popis skupiny a parametry dle subtypu skupiny.                                           |
+| **Vazby**                | Hierarchie skupin: podřízené a nadřazené skupiny.                                                |
+
+Po otevření Detailu skupiny je výchozím aktivním tabem **Uživatelé ve skupině**.
+
+V záhlaví obrazovky jsou dále dostupné ikona **nastavení** (ozubené kolo) a ikona **obnovení dat**.
+
+______________________________________________________________________
+
+## Tab Uživatelé ve skupině
+
+Tab **Uživatelé ve skupině** zobrazuje grid všech členů skupiny s jejich rolemi.
+
+### Sloupce gridu
+
+| Sloupec       | Popis                                                                                                                                                                                                                          |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Uživatelé** | Jméno uživatele. Výchozí řazení je abecedně vzestupně (A → Z).                                                                                                                                                                 |
+| **Email**     | E-mailová adresa uživatele.                                                                                                                                                                                                    |
+| **Role**      | Přiřazené role zobrazené jako chipy. Zděděné role (převzaté z nadřazené skupiny v hierarchii) jsou označeny hvězdičkou `*`. Systémové role přiřazené automaticky systémem jsou zobrazeny v hranatých závorkách `[název role]`. |
+
+### Filtry zobrazení rolí
+
+Nad gridem jsou dostupné tři přepínače pro řízení toho, které záznamy jsou v gridu zobrazeny:
+
+| Filtr                     | Popis                                                                      |
+| ------------------------- | -------------------------------------------------------------------------- |
+| **Zobrazit účastníky**    | Zobrazí členy s rolí Účastník. Ve výchozím stavu zapnuto.                  |
+| **Zobrazit ostatní role** | Zobrazí členy, kteří mají přiřazeny jiné než Účastnické role.              |
+| **Zobrazit zděděné role** | Zobrazí členy, jejichž role jsou zděděny z nadřazené skupiny v hierarchii. |
+
+### Akce v gridu
+
+| Akce                | Ikona       | Popis                                                                                                                                                                                                                                           |
+| ------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Přidat člena        | **+**       | Otevře boční panel pro výběr uživatelů a přiřazení rolí. Podrobnosti viz [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md). |
+| Editovat role člena | ikona tužky | Otevře boční panel pro úpravu rolí daného člena.                                                                                                                                                                                                |
+| Odebrat člena       | ikona koše  | Odebere člena ze skupiny. Dostupné pouze pro lokálně přiřazené role – člena, jehož přiřazení pochází výhradně ze zděděných rolí, nelze odebrat z tohoto pohledu.                                                                                |
+
+______________________________________________________________________
+
+## Tab Popis
+
+Tab **Popis** zobrazuje textový popis skupiny a parametry specifické pro subtyp skupiny.
+
+______________________________________________________________________
+
+## Tab Vazby
+
+Tab **Vazby** spravuje hierarchické vztahy mezi skupinami. Obsahuje dva podtaby:
+
+| Podtab        | Popis                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------- |
+| **Podřízení** | Skupiny, které jsou podřízeny aktuální skupině (aktuální skupina je jejich nadřazená). |
+| **Nadřízení** | Skupiny, jimž je aktuální skupina podřízena (její nadřazené skupiny).                  |
+
+Skupiny lze přidávat tlačítkem **+** a odebírat ikonou koše. Členství zděděná prostřednictvím hierarchie skupin se promítají do rolí členů jako zděděné role (označené `*` v gridu).
+
+______________________________________________________________________
+
+## Pozor na
+
+Zděděné role nelze odebrat z pohledu potomka
+
+Role převzaté z nadřazené skupiny (označené `*` v gridu) nelze odebrat z Detailu podřízené skupiny. Zděděné členství lze ukončit pouze úpravou hierarchie ve skupině, ze které je role zděděna, nebo ve skupině, kde bylo členství původně přiřazeno.
+
+Sloupce Účastníků a Uživatelů
+
+Hodnoty „Účastníků" (počet členů s rolí Účastník) a „Uživatelů" (celkový počet členů) jsou dostupné v přehledu **Lidé → tab Skupiny** jako sloupce přehledové tabulky. Na obrazovce Detail skupiny se tyto souhrnné počty nezobrazují – členové jsou evidováni v gridu tabu Uživatelé ve skupině.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
+- [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Detail uživatele (připravujeme)](#)
+
+# Přehled rolí a oprávnění
+
+Tato stránka je referenční katalog rolí a kategorií oprávnění v systému Competent. Vysvětluje, které role lze přiřadit ručně, které přiděluje systém automaticky a co vyjadřují závorky u názvů rolí v dialogu práv. Model fungování rolí (globální vs. objektové, dědění, delegování) je popsán na stránce [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Přiřaditelné role
+
+Přiřaditelné role jsou role, které administrátor přiděluje ručně – uživateli nebo skupině. Systém je nabídne při přiřazování v příslušném panelu.
+
+| Role                           | Kde se přiřazuje                     | Co role zajišťuje                                              |
+| ------------------------------ | ------------------------------------ | -------------------------------------------------------------- |
+| **Účastník (člen skupiny)**    | detail skupiny nebo detail uživatele | členství uživatele v uživatelské skupině                       |
+| **Zobrazení v katalogu**       | dialog Práva přístupu u aktivity     | aktivita je viditelná danému uživateli nebo skupině v katalogu |
+| **Možnost zažádat v katalogu** | dialog Práva přístupu u aktivity     | uživatel může odeslat žádost o přístup k aktivitě přes katalog |
+| **Admin pohled**               | globální role uživatele              | uživatel vidí skryté a archivované záznamy v celém systému     |
+| **Přepínání účtů**             | globální role uživatele              | uživatel se může přihlásit za jiného uživatele                 |
+
+Role **Admin pohled** a **Přepínání účtů** jsou globální: platí v celém systému a přidělují se přes pohled **Nastavení** v detailu uživatele. Role **Zobrazení v katalogu** a **Možnost zažádat v katalogu** jsou objektové: platí jen pro konkrétní aktivitu a přidělují se přes dialog **Práva přístupu pro...** ve stromu aktivit. Podrobné postupy viz [Přiřazení role uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md) a [Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md).
+
+Vlastní role (nad rámec výše uvedených) si každá organizace zakládá v sekci **Nastavení → Role** – viz [Kde se definují vlastní role](#kde-se-definuji-vlastni-role) níže.
+
+______________________________________________________________________
+
+## Systémové role
+
+Systémové role přiděluje Competent automaticky. Nelze je přiřadit ani odebrat ručně. V dialogu práv aktivity se zobrazují v **[hranatých závorkách]**.
+
+| Role                   | Kdy ji systém přidělí                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| **Vlastník** (objektu) | uživateli, který objekt vytvořil – platí pro aktivitu, skupinu, dokument a další typy objektů |
+| **Účastník** (objektu) | uživateli připojenému k objektu – registrací na aktivitu, zařazením do skupiny apod.          |
+
+Vlastník má nad svým objektem plná práva a může ostatním přiřazovat objektové role, i pokud nemá globální oprávnění správy rolí. Podrobnosti o modelu viz [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Vizuální konvence závorek v dialogu práv
+
+Dialog **Práva přístupu pro...** označuje různé typy rolí závorkami:
+
+| Zápis                    | Typ role             | Popis                                                                                            |
+| ------------------------ | -------------------- | ------------------------------------------------------------------------------------------------ |
+| `[Název role]`           | systémová role       | Přidělena automaticky systémem; nelze ručně odebrat                                              |
+| `(Název role)`           | zděděná role         | Zděděna z nadřazeného objektu ve stromu; zobrazí se po zapnutí filtru **Zobrazit zděděná práva** |
+| Název role (bez závorek) | ručně přiřazená role | Přiřazena administrátorem nebo vlastníkem objektu                                                |
+
+______________________________________________________________________
+
+## Kategorie oprávnění
+
+Každá role je tvořena sadou oprávnění. Systém rozlišuje tyto kategorie akcí:
+
+| Kategorie       | Co oprávnění pokrývá                                                |
+| --------------- | ------------------------------------------------------------------- |
+| **Zobrazit**    | Zobrazit záznam v přehledu                                          |
+| **Číst**        | Zobrazit detail záznamu (včetně skrytého nebo archivovaného obsahu) |
+| **Vytvořit**    | Vytvořit nový záznam daného typu                                    |
+| **Upravit**     | Upravit existující záznam                                           |
+| **Smazat**      | Smazat záznam                                                       |
+| **Změnit stav** | Změnit stav záznamu (např. publikovat aktivitu)                     |
+| **Registrovat** | Přihlásit uživatele na aktivitu                                     |
+| **Spustit**     | Spustit aktivitu (e-learningový modul)                              |
+
+U aktivit jsou dostupné navíc akce **Zájem** a **Rezervace**.
+
+### Závislost oprávnění: akce vyžadují Číst
+
+Akční oprávnění (Upravit, Smazat, Změnit stav, Registrovat, Spustit) vyžadují, aby role obsahovala také oprávnění **Číst**. Systém tuto závislost vynucuje automaticky – roli, která má právo upravovat záznam, musí mít uděleno i právo číst.
+
+Globální oprávnění
+
+Část oprávnění je celosystémová a nemá vazbu na konkrétní objekt – například správa šablon notifikací nebo editace navigace. Tato oprávnění se nastavují jako součást globální role.
+
+______________________________________________________________________
+
+## Kde se definují vlastní role
+
+Vlastní role (neinterní, zákazníkem zakládané) se spravují v části **Nastavení → Role**.
+
+- Tlačítkem **Vytvořit roli** administrátor vytvoří novou roli a nastaví pro ni matici oprávnění a vazby. Vyžaduje oprávnění správy rolí.
+- Systémové (interní) role jsou v tomto přehledu skryty za přepínačem **Zobrazit systémové role** a nelze je smazat.
+- Podrobný postup zakládání vlastní role bude popsán v návodu [Vytvoření vlastní role (připravujeme)](#).
+
+**Lidé → Role** je čistě přehledový panel (strom role → skupina → uživatelé) a slouží pouze ke čtení – definice rolí ani přiřazení zde nelze měnit.
+
+______________________________________________________________________
+
+## Pozor na
+
+Anonymní přístup
+
+U aktivit lze udělit i přístup bez přihlášení (anonymní přístup). Jeho nastavení se v některých verzích teprve sjednocuje; pokud tuto možnost potřebujete, ověřte si její dostupnost přímo v prostředí.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Přiřazení role uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md)
+- [Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+
+# Obrazovka Šablony Emailů
+
+Tab **Šablony Emailů** v sekci **Nastavení** zobrazuje přehled skupin e-mailových šablon a umožňuje jejich správu. Tato stránka popisuje prvky a pole obrazovky – postup úpravy obsahu šablon naleznete v [Úpravě šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md).
+
+______________________________________________________________________
+
+## Seznam skupin šablon
+
+Po přechodu na tab **Šablony Emailů** (Nastavení → Šablony Emailů) se zobrazí tabulka se všemi skupinami e-mailových šablon. Tabulka nemá vyhledávací pole ani filtry.
+
+### Sloupce seznamu
+
+| Sloupec       | Popis                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------- |
+| Název skupiny | Název skupiny šablon. Kliknutím na řádek se otevře modal **Editovat skupinu šablon**.         |
+| Jazyky        | Jazykové varianty, ve kterých skupina existuje (například „CS, EN").                          |
+| Typ           | Typ šablony: **Základní** nebo **Agregovaná**.                                                |
+| Akce          | Ikona koše – smaže celou skupinu včetně všech jejích jazykových variant po potvrzení dialogu. |
+
+### Přidání nové skupiny a prázdný stav
+
+Tlačítko **„+"** v pravém horním rohu seznamu otevře modal **Nová skupina šablon** pro vytvoření nové skupiny.
+
+Pokud zatím žádná skupina neexistuje, zobrazí se text „Zatím nebyly vytvořeny žádné šablony emailu" s odkazem **Vytvořit novou šablonu**.
+
+______________________________________________________________________
+
+## Modal Editovat skupinu šablon
+
+Kliknutím na řádek skupiny v seznamu se otevře modal **Editovat skupinu šablon**. Modal zobrazuje aktuálně uložené hodnoty skupiny a umožňuje přecházet mezi jazykovými variantami.
+
+### Pole modálu
+
+| Pole                 | Popis                                                                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Název skupiny šablon | Název identifikující skupinu šablon v seznamu.                                                                                              |
+| Typ šablony          | Přepínač s hodnotami **Základní** a **Agregovaná**. U agregované šablony jsou navíc k dispozici pole **Hlavička** a **Patička** (viz níže). |
+| Jazyk                | Rozbalovací seznam jazykových variant skupiny. Přepnutím jazyka se načte obsah dané varianty (Předmět emailu, Popis, Tělo emailu).          |
+| Přidat jazyk         | Tlačítko pro přidání nové jazykové varianty skupiny. Dostupné v režimu prohlížení (mimo editaci).                                           |
+| Odebrat Jazyk        | Tlačítko pro odebrání aktuálně vybrané jazykové varianty. Dostupné v režimu prohlížení (mimo editaci).                                      |
+| Předmět emailu       | Předmět e-mailu pro danou jazykovou variantu. Může obsahovat proměnné ve tvaru `${nazev}`.                                                  |
+| Popis                | Interní popis skupiny šablon.                                                                                                               |
+| Tělo emailu          | Obsah e-mailu pro danou jazykovou variantu. Edituje se ve WYSIWYG editoru. Může obsahovat proměnné ve tvaru `${nazev}`.                     |
+| Hlavička             | Záhlaví obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                            |
+| Patička              | Zápatí obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                             |
+
+### Nápověda proměnných
+
+Pod polem **Tělo emailu** je nápověda **„Povolené proměnné pro tělo e-mailu:"**, která zobrazuje dostupné proměnné seřazené do záložek podle skupin.
+
+Kliknutím na proměnnou se vloží na pozici kurzoru v poli Tělo emailu ve tvaru `${nazev}` (například `${firstName}`, `${login}`, `${activityName}`, `${link}`). Úplný seznam proměnných je dostupný přímo v editoru; dostupné proměnné se liší podle skupiny.
+
+### Tlačítka modálu
+
+| Tlačítko        | Dostupnost       | Funkce                                                                                                                       |
+| --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Upravit šablonu | Režim prohlížení | Přepne modal do režimu editace; zpřístupní pole Předmět emailu a Tělo emailu (a Hlavičku + Patičku u agregované) pro úpravu. |
+| Uložit          | Režim editace    | Uloží provedené změny.                                                                                                       |
+| Zrušit          | Režim editace    | Zahodí neuložené změny a vrátí se do režimu prohlížení.                                                                      |
+| Zavřít          | Vždy             | Zavře modal bez uložení.                                                                                                     |
+
+______________________________________________________________________
+
+## Oprávnění
+
+Tab **Šablony Emailů** se zobrazí pouze uživatelům s oprávněním pro správu e-mailových šablon. Uživatelům bez tohoto oprávnění se tab v sekci Nastavení nezobrazí.
+
+______________________________________________________________________
+
+## Pozor na
+
+Smazání skupiny
+
+Kliknutím na ikonu koše se odstraní celá skupina šablon včetně všech jazykových variant. Před smazáním systém zobrazí potvrzovací dialog.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+
+# Koncepty
+
+Tato sekce vysvětluje principy a mentální modely, na nichž Competent stojí. Nenajdete zde klikací návody – ty jsou v sekci Návody. Najdete zde odpovědi na otázku „proč to funguje právě takto", které Vám pomohou nastavit systém správně a předcházet chybám při správě obsahu a přístupu uživatelů.
+
+## Obsah sekce
+
+- **[Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)** – Aktivita jako šablona vzdělávacího obsahu: čtyři typy, tři schémata časování a dva oddělené životní cykly (katalogový stav vs. průchod uživatele).
+- **[Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)** – Jak Competent řídí přístup: globální vs. objektové role, typologie oprávnění, dědění ve stromě objektů a systémové role Vlastník a Účastník.
+
+# Aktivita: model a životní cyklus
+
+Aktivita je základní organizační jednotka vzdělávacího obsahu v systému Competent. Tato stránka vysvětluje, jaké typy aktivit existují, jak jsou vzájemně uspořádány v hierarchii a jakými stavy každá aktivita v průběhu svého životního cyklu prochází. Je určena administrátorům, kteří chtějí pochopit model před tím, než začnou obsah vytvářet nebo konfigurovat.
+
+______________________________________________________________________
+
+## Čtyři typy aktivit
+
+Při vytváření nové položky Vám systém Competent nabídne čtyři typy. Každý typ plní jinou roli v organizaci vzdělávacího obsahu:
+
+### Aktivita
+
+Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp, který určuje charakter obsahu: k dispozici jsou subtypy **Elearning** a **Školení** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+
+### Sada
+
+Sada je kontejner, který sdružuje aktivity a další Sady. Slouží k vytváření víceúrovňových vzdělávacích programů. Sadu lze vnořit do jiné Sady, a tak vybudovat libovolně hlubokou hierarchii.
+
+### Termínová sada
+
+Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, kde se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+
+### Hodnocení
+
+Hodnocení je hodnoticí formulář stojící mimo standardní stromovou strukturu. Nevytváří se přes strom obsahu, ale v samostatné části systému. Podrobnosti najdete v sekci [Disambiguace pojmu *Hodnocení*](#disambiguace-pojmu-hodnoceni) níže.
+
+______________________________________________________________________
+
+## Hierarchie a vnořování
+
+Typy nejsou zaměnitelné – každý typ má pevně daná pravidla, co může obsahovat a kde může být umístěn:
+
+| Typ            | Může obsahovat        | Typické umístění                         |
+| -------------- | --------------------- | ---------------------------------------- |
+| Aktivita       | nic (je to list)      | uvnitř Sady nebo Termínové sady          |
+| Sada           | Aktivity a další Sady | uvnitř jiné Sady nebo na kořenové úrovni |
+| Termínová sada | pouze Aktivity        | uvnitř jiné Sady nebo na kořenové úrovni |
+| Hodnocení      | nic (je to list)      | samostatná sekce Hodnocení               |
+
+Graficky lze vztahy znázornit takto:
+
+```
+graph TD
+    SADA["Sada"]
+    TERMINOVA_SADA["Termínová sada"]
+    AKTIVITA_A["Aktivita"]
+    AKTIVITA_B["Aktivita"]
+    AKTIVITA_C["Aktivita"]
+    JINA_SADA["Sada (vnořená)"]
+
+    SADA --> AKTIVITA_A
+    SADA --> JINA_SADA
+    SADA --> TERMINOVA_SADA
+    TERMINOVA_SADA --> AKTIVITA_B
+    JINA_SADA --> AKTIVITA_C
+```
+
+Termínová sada záměrně neumožňuje vkládání dalších Sad nebo Termínových sad. Toto omezení je produktovým pravidlem: Termínová sada organizuje Aktivity kolem konkrétních termínů a kapacit, nikoliv jako obecný hierarchický kontejner.
+
+______________________________________________________________________
+
+## Životní cyklus aktivity: 10 stavů
+
+Každá aktivita prochází v průběhu svého existence stavem, který určuje, jak je viditelná a přístupná pro uživatele. Systém rozlišuje celkem 10 stavů:
+
+| #   | Stav               | Význam                                                                                                     |
+| --- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| 1   | **Skryto**         | Aktivita existuje v systému, ale není dostupná pro žádné uživatele                                         |
+| 2   | **Předregistrace** | Aktivita je avizována uživatelům, přihlášení ještě není možné                                              |
+| 3   | **Registrace**     | Registrace je otevřena; uživatelé se mohou přihlásit                                                       |
+| 4   | **Před spuštěním** | Registrace je uzavřena; čeká se na zahájení aktivity                                                       |
+| 5   | **Viditelné**      | Aktivita je viditelná v katalogu                                                                           |
+| 6   | **Spuštěno**       | Aktivita probíhá; nové registrace již nejsou možné                                                         |
+| 7   | **Spuštěno (R)**   | Aktivita probíhá a registrace je stále otevřena – „(R)" označuje, že registrace (*Registration*) pokračuje |
+| 8   | **Hodnocení**      | Aktivita skončila; probíhá vyhodnocování pokusů                                                            |
+| 9   | **Ukončeno**       | Aktivita je finálně uzavřena                                                                               |
+| 10  | **Archivováno**    | Aktivita je archivována; nezobrazuje se v běžných přehledech                                               |
+
+Jednotlivé stavy představují sémantické fáze životního cyklu aktivity. Podrobnosti o přechodech viz [Stavy aktivity (připravujeme)](#).
+
+## Disambiguace pojmu *Hodnocení*
+
+Disambiguace pojmu *Hodnocení*
+
+Slovo **Hodnocení** se v systému Competent vyskytuje ve třech různých významech:
+
+1. **Sekce Hodnocení** – samostatná navigační oblast v systému, kde se spravují hodnoticí formuláře.
+1. **Typ aktivity Hodnocení** – hodnoticí formulář jako objekt (vytváří se v sekci Hodnocení, nikoliv ve stromové struktuře aktivit).
+1. **Stav aktivity Hodnocení** – fáze životního cyklu aktivity (řádek 8 v tabulce výše), kdy probíhá vyhodnocování výsledků.
+
+V textu dokumentace je vždy upřesněno, o který z těchto tří významů jde.
+
+______________________________________________________________________
+
+## Co aktivita není
+
+**Aktivita není „kurz" v administrátorském kontextu.** Slovo „kurz" se v systému Competent vyskytuje pouze v portálovém (studentském) rozhraní – například v sekci „Katalog kurzů". V administrátorském rozhraní se pro všechny typy vzdělávacích objektů používá zastřešující pojem „aktivita".
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Subtypy aktivit (připravujeme)](#)
+- [Stavy aktivity (připravujeme)](#)
+- [Schémata aktivity (připravujeme)](#)
+- [Termíny a kapacita (připravujeme)](#)
+- [Jak vytvořit aktivitu (připravujeme)](#)
+- [Jak přiřadit aktivitu uživatelům (připravujeme)](#)
+
+# Role a oprávnění
+
+Competent řídí přístup uživatelů prostřednictvím **rolí**. Role není jen označení uživatele – je to pojmenovaná sada oprávnění, která systém vyhodnocuje při každé akci. Klíčem k pochopení celého modelu je rozlišení mezi **globální rolí** a **objektovou rolí**: první platí pro celý systém, druhá platí pouze ve vztahu ke konkrétnímu záznamu.
+
+______________________________________________________________________
+
+## Globální role
+
+Globální role se přiděluje uživateli jako vlastnost jeho účtu a platí bez ohledu na to, s jakým objektem pracuje. Typickými příklady jsou role administrátora nebo role s právem přepínat do jiného účtu.
+
+Uživatel s globální rolí smí provádět všechny akce, které daná role obsahuje, kdekoliv v systému. Proto je přidělování globálních rolí vyhrazeno administrátorům – každý uživatel, který ji obdrží, získá odpovídající rozsah oprávnění plošně.
+
+Globální role nezná hranice objektu
+
+Oprávnění plynoucí z globální role nelze omezit na konkrétní aktivitu, sadu nebo dokument. Pokud potřebujete oprávnění omezit na jeden objekt, použijte objektovou roli.
+
+______________________________________________________________________
+
+## Objektové role
+
+Objektová role popisuje vztah mezi uživatelem a konkrétním objektem – například aktivitou, skupinou uživatelů nebo dokumentem. Teprve spolu s touto vazbou má role smysl: „Anna je lektorka *této* aktivity" je jiný výrok než „Anna je lektorka".
+
+Díky tomu lze nastavit, aby jedna osoba měla práva lektora u jedné aktivity a práva pouhého účastníka u jiné – bez jakékoliv globální změny jejího účtu.
+
+Objektové role se přiřazují přímo u daného záznamu, zpravidla v sekci **Práva** nebo **Účastníci**. Přesné označení se může mírně lišit podle verze rozhraní. Kdo smí roli přiřadit, závisí na tom, jaké role sám přiřazující uživatel má (viz níže).
+
+______________________________________________________________________
+
+## Oprávnění a jejich typologie
+
+Každá role (globální i objektová) je tvořena sadou oprávnění. Systém rozlišuje tyto základní kategorie:
+
+| Kategorie       | Příklady akcí                                             |
+| --------------- | --------------------------------------------------------- |
+| **Zobrazit**    | Zobrazit záznam v přehledu                                |
+| **Číst**        | Zobrazit detail včetně skrytého nebo archivovaného obsahu |
+| **Vytvořit**    | Vytvořit nový záznam daného typu                          |
+| **Upravit**     | Upravit existující záznam                                 |
+| **Smazat**      | Smazat záznam                                             |
+| **Změnit stav** | Změnit stav záznamu (např. publikovat aktivitu)           |
+| **Registrovat** | Přihlásit uživatele na aktivitu                           |
+| **Spustit**     | Spustit aktivitu (e-learning modul)                       |
+
+Mezi oprávněními existují závislosti: například **Upravit vyžaduje Číst**. Systém tuto závislost vynucuje automaticky – roli, která má právo upravovat, musí mít uděleno i právo číst.
+
+Globální oprávnění (např. správa šablon notifikací, editace navigace) jsou ve svém charakteru celosystémová a nemají vazbu na konkrétní objekt.
+
+______________________________________________________________________
+
+## Dědění oprávnění ve stromě objektů
+
+Objekty v Competent tvoří hierarchii: skupiny uživatelů mohou být zanořeny, aktivity se zařazují do sad a podobně. Objektové role se v této hierarchii **dědí směrem dolů**: pokud je uživatel přiřazen v určité roli k nadřazenému objektu, platí jeho oprávnění i pro objekty zanořené pod ním – pokud to role výslovně nevylučuje.
+
+Pravidlo pro vyhodnocení přístupu lze shrnout takto:
+
+Uživatel smí provést akci, pokud má globální roli s daným oprávněním, nebo je přiřazen k objektu (nebo jeho rodiči ve stromě) v roli, která dané oprávnění obsahuje.
+
+______________________________________________________________________
+
+## Systémové role: Vlastník a Účastník
+
+Competent přiřazuje dvě speciální role automaticky – bez zásahu administrátora.
+
+**Vlastník (owner)** se stane uživatel v okamžiku, kdy objekt vytvoří. Vlastník má nad daným objektem plná práva a navíc může ostatním uživatelům přiřazovat objektové role – i tehdy, pokud by jinak neměl právo správy rolí.
+
+**Účastník (participant)** je role, kterou systém přidělí uživateli při registraci na aktivitu, zařazení do skupiny nebo jiném připojení k objektu. Účastník typicky získá základní práva pro zobrazení záznamu, se kterým je svázán.
+
+Obě role jsou systémové: nelze je ručně odstranit ze sady rolí v nastavení a systém je spravuje sám.
+
+______________________________________________________________________
+
+## Delegování: kdo smí přiřazovat role
+
+Přiřazovat role mohou uživatelé ve třech situacích:
+
+1. Uživatel má globální oprávnění pro správu rolí (typicky administrátor).
+1. Uživatel je **vlastníkem** daného objektu – v takovém případě smí k tomuto objektu přiřazovat libovolnou objektovou roli.
+1. Role vyšší úrovně (např. administrátor oddělení) má v systému nastaveno oprávnění přiřazovat určité podřízené role (např. role lektora nebo vedoucího).
+
+U některých zákazníků se objektové role přidělují automaticky podle organizační struktury – manažeři tak bez manuálního nastavení získají oprávnění vůči svým podřízeným.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Jak přiřadit roli uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md)
+- [Jak nastavit práva k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+
+# Štítky: co jsou a jak fungují
+
+Štítek je jednoduchá pojmenovaná značka, kterou administrátor přiřadí aktivitě a tím ji volně označí libovolnou značkou – například „GDPR", „Onboarding" nebo „Povinné". Stejnou aktivitu lze označit více štítky najednou, jeden štítek zase může být přiřazen libovolnému počtu aktivit. Díky tomu se štítky hodí všude tam, kde pevná hierarchie složek nestačí a potřebujete aktivity křížově třídit podle více kritérií zároveň.
+
+______________________________________________________________________
+
+## Co je štítek
+
+Štítek je **plochá pojmenovaná značka pro označení aktivit**. Jediným atributem štítku je jeho **název** – bez barvy, ikony ani pořadí. Štítky nejsou vzájemně zanořeny: neexistuje žádný nadřazený nebo podřazený štítek, každý štítek stojí samostatně.
+
+Správu štítků – jejich vytváření, přejmenování a smazání – provádí administrátor v sekci **Nastavení**. Jak na to, popisuje průvodce [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md).
+
+______________________________________________________________________
+
+## Štítek, Sada a Složka: jak se liší
+
+Competent nabízí tři různé způsoby, jak seskupovat nebo označovat aktivity. Každý z nich slouží jinému účelu:
+
+| Nástroj    | Povaha                                           | Vztah k aktivitě                                                                        |
+| ---------- | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **Štítek** | Plochá značka                                    | Libovolný počet štítků na jednu aktivitu; jeden štítek na libovolný počet aktivit (M:N) |
+| **Sada**   | Kontejner aktivit, který lze přiřadit uživatelům | Aktivita může být součástí sady; sada se přiřazuje uživatelům jako celek                |
+| **Složka** | Hierarchický strom v administraci                | Každá aktivita leží právě v jedné složce; složky tvoří navigační strom                  |
+
+**Klíčový rozdíl:**
+
+- Složka určuje, **kde aktivita fyzicky leží** – je to navigační hierarchie v administraci. Každá aktivita patří do přesně jedné složky.
+- Sada je **přiřaditelný kontejner**: seskupuje aktivity do celku, který lze jako celek přiřadit uživatelům ke splnění.
+- Štítek je **volná značka**: nijak nemění umístění aktivity ani k čemu slouží – jen přidává označení, podle kterého lze aktivitu filtrovat.
+
+Více o sadách: [Sada (připravujeme)](#). Více o složkách: [Složky aktivit (připravujeme)](#).
+
+______________________________________________________________________
+
+## Vztah štítku k aktivitě
+
+Štítky a aktivity jsou ve vztahu **M:N** (mnoho k mnoha):
+
+- Jedna aktivita může mít **nula až libovolně mnoho** štítků.
+- Jeden štítek může označovat **nula až libovolně mnoho** aktivit.
+
+Vazba mezi aktivitou a štítkem nevzniká v Nastavení, ale přímo v **detailu aktivity**. Postup popisuje stránka [Přiřazení štítku k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md).
+
+Štítek lze přiřadit pouze aktivitě – ne sadě ani složce.
+
+______________________________________________________________________
+
+## Co se stane při smazání štítku
+
+Smazání štítku v sekci **Nastavení** má automatický dopad na všechny aktivity, kterým byl tento štítek přiřazen: **všechny vazby mezi smazaným štítkem a aktivitami zaniknou**. Aktivity samotné zůstávají beze změny obsahu – z jejich detailu pouze zmizí daný štítek.
+
+Toto chování je trvalé a automatické: jakmile je štítek smazán, nevzniká žádná vazba, kterou by bylo možné zpětně obnovit.
+
+Smazání štítku je nevratné
+
+V Competent není dostupný způsob, jak smazaný štítek nebo jeho vazby na aktivity v uživatelském rozhraní obnovit. Pokud chcete štítek přestat používat, ale vazby na aktivity zachovat, doporučujeme štítek nepřiřazovat novým aktivitám nebo ho přejmenovat – ne smazat.
+
+______________________________________________________________________
+
+## Kde se štítky používají
+
+Štítky jsou v Competent primárně nástrojem **filtrování**:
+
+- **Filtrování v seznamu aktivit** – v administraci lze aktivovat filtr podle štítků a zobrazit tak jen aktivity s daným označením. Postup popisuje stránka [Filtrování aktivit podle štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md).
+
+______________________________________________________________________
+
+## Pozor na
+
+- **Smazání štítku odstraní jeho přiřazení ze všech aktivit najednou, bez upozornění.** Po smazání se nezobrazí přehled aktivit, kterých se operace dotkla. Doporučení: před smazáním ověřte, které aktivity štítek nesou, a zvažte přejmenování místo smazání.
+- **V multi-jazyčných instalacích Competent může mít štítek lokalizovaný název.** Podrobnosti viz [Jazyková podpora (připravujeme)](#).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md) – jak v sekci **Nastavení** štítek vytvořit, přejmenovat nebo smazat.
+- [Přiřazení štítku k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md) – jak štítek přiřadit konkrétní aktivitě nebo ho z aktivity odebrat.
+- [Filtrování aktivit podle štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md) – jak v seznamu aktivit využít štítky jako filtr.
+- [Sada (připravujeme)](#) – seskupení aktivit přiřaditelné uživatelům.
+- [Složky aktivit (připravujeme)](#) – hierarchická navigace aktivit v administraci.
+
+# Uživatelská skupina: model a principy
+
+Uživatelská skupina je jeden z hlavních objektů systému Competent. Tato stránka vysvětluje, k čemu skupiny slouží, jak funguje členství a role v rámci skupiny, proč systém rozlišuje pohledy **Skupiny** a **Účastnické skupiny**, a jak skupiny tvoří hierarchii. Je určena administrátorům, kteří chtějí pochopit model před tím, než začnou skupiny vytvářet nebo spravovat.
+
+______________________________________________________________________
+
+## Co je uživatelská skupina
+
+Uživatelská skupina slouží ke **klasifikaci uživatelů**. Sdružuje uživatele podle libovolného kritéria – organizačního, projektového nebo jiného – a umožňuje s celou skupinou pracovat jako s jedním celkem.
+
+Skupiny v systému Competent plní tyto hlavní funkce:
+
+- **Filtrování seznamu uživatelů** – přehled uživatelů lze filtrovat podle skupiny a rychle najít konkrétní okruh lidí.
+- **Přiřazování oprávnění na základě skupiny** – oprávnění nebo přístup k aktivitám lze nastavit pro celou skupinu najednou.
+- **Odeslání zprávy členům skupiny** – hromadná komunikace s členy skupiny je dostupná přímo ze systému.
+- **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich členství ve skupině ([Přiřazení dle skupin (připravujeme)](#)).
+
+______________________________________________________________________
+
+## Členství a systémové role
+
+Každé členství uživatele ve skupině vždy nese **roli**. Role určuje, jaká oprávnění uživatel vůči skupině a jejím zdrojům má. Některé role přiděluje systém automaticky, jiné lze přiřadit ručně.
+
+Systém Competent definuje dvě systémové role pro skupiny:
+
+**Vlastník skupiny** : Role přiřazená automaticky uživateli, který skupinu vytvořil. Vlastník skupiny má nad skupinou plná práva. Tuto roli nelze přiřadit ručně – systém ji přiděluje výhradně sám v okamžiku vytvoření skupiny.
+
+**Účastník** : Výchozí role nového člena skupiny. Účastník získá základní práva odpovídající jeho členství. Tato role se přiřazuje při zařazení uživatele do skupiny.
+
+Obecný model rolí a dědění oprávnění je popsán v části [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Skupiny a Účastnické skupiny: jeden objekt, dva pohledy
+
+V přehledu uživatelů se na první pohled může zdát, že existují dva různé druhy skupin: **Skupiny** a **Účastnické skupiny**. Ve skutečnosti jde o **jeden druh objektu nahlížený dvěma různými pohledy podle role členství**.
+
+```
+graph LR
+    SG["Uživatelská skupina"]
+    U1["Uživatel A (Vlastník skupiny)"]
+    U2["Uživatel B (Účastník)"]
+    U3["Uživatel C (Účastník)"]
+
+    U1 -- "Skupiny: ano\nÚčastnické skupiny: ne" --> SG
+    U2 -- "Skupiny: ano\nÚčastnické skupiny: ano" --> SG
+    U3 -- "Skupiny: ano\nÚčastnické skupiny: ano" --> SG
+```
+
+Přesněji řečeno:
+
+| Pohled                 | Co zobrazuje                                                  | Sloupec v přehledu skupin |
+| ---------------------- | ------------------------------------------------------------- | ------------------------- |
+| **Skupiny**            | Všechny skupiny, jejichž je uživatel členem – v jakékoli roli | **Uživatelů**             |
+| **Účastnické skupiny** | Skupiny, kde je uživatel konkrétně v roli **Účastník**        | **Účastníků**             |
+
+Sloupec **Uživatelů** v přehledu skupin tedy zobrazuje celkový počet všech členů skupiny bez ohledu na jejich roli. Sloupec **Účastníků** zobrazuje pouze ty, kteří jsou ve skupině v roli Účastník.
+
+Účastnická skupina není zvláštní typ skupiny
+
+Termín „Účastnické skupiny" popisuje pohled na skupiny podle role uživatele, nikoliv samostatný druh skupiny. Všechny skupiny v systému jsou uživatelské skupiny – liší se jen tím, v jaké roli je daný uživatel jejich členem.
+
+______________________________________________________________________
+
+## Hierarchie skupin
+
+Skupiny lze organizovat do hierarchie: každá skupina může mít **nadřízené** a **podřízené** skupiny. Tímto způsobem lze modelovat například organizační strukturu firmy.
+
+```
+graph TD
+    A["Nadřízená skupina"]
+    B["Podřízená skupina A"]
+    C["Podřízená skupina B"]
+    D["Vnořená podřízená skupina"]
+
+    A --> B
+    A --> C
+    B --> D
+```
+
+Oprávnění a role se v hierarchii **dědí směrem dolů**: pokud má uživatel určitou roli u nadřízené skupiny, platí jeho oprávnění i pro skupiny podřízené. Podrobný popis dědění oprávnění ve stromě objektů najdete na stránce [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Subtyp skupiny
+
+Skupina nemá pevně daný „typ" – veškeré rozlišení skupin probíhá výhradně prostřednictvím **subtypu**. Subtyp určuje, jaké parametry skupina má a jaké dodatečné vlastnosti lze vyplnit. Ve výchozí instalaci systému Competent existuje jediný subtyp: **Uživatelská skupina**.
+
+Subtyp se nastavuje **pouze při vytváření skupiny** a nelze ho později měnit. Parametry skupiny (jako například **Název** nebo **Popis**) závisí na zvoleném subtypu.
+
+______________________________________________________________________
+
+## Pozor na
+
+Přiřazení dle skupin (automatické přiřazování aktivit na základě členství) je samostatná funkce systému, která není součástí základní správy skupin. Podrobnosti najdete v části [Přiřazení dle skupin (připravujeme)](#).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Jak vytvořit uživatelskou skupinu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
+- [Jak vytvořit nového uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Přiřazení dle skupin (připravujeme)](#)
+
+# E-mailové notifikace: jak funguje doručování zpráv
+
+Systém Competent odesílá e-maily automaticky – v reakci na události, jako je vytvoření účtu, blížící se termín aktivity nebo dokončení kurzu. Tato stránka vysvětluje **mechanismus**, který za odesíláním stojí: co je šablona, co je notifikační pravidlo, jak se určuje příjemce a jazyk, a proč se někdy e-mail nepošle.
+
+Je určena administrátorům, kteří chtějí pochopit principy systému před tím, než začnou šablony upravovat nebo konfigurovat pravidla.
+
+______________________________________________________________________
+
+## Šablona a notifikační pravidlo: dvě části jednoho e-mailu
+
+Každý automatický e-mail vzniká spojením **dvou nezávislých komponent**:
+
+**Šablona** určuje **obsah** – text předmětu a tělo zprávy. Šablona neví nic o tom, komu ani kdy se e-mail pošle; řeší pouze to, co bude v obálce. Šablony spravujete v menu **Nastavení**, záložka **Šablony Emailů**.
+
+**Notifikační pravidlo** určuje **kontext doručení** – na jakou událost (spouštěč) systém zareaguje a komu e-mail odešle (např. uživateli, hodnotiteli). Pravidla spravujete v menu **Nastavení**, záložka **Notifikace**.
+
+Toto oddělení umožňuje změnit obsah šablony bez zásahu do pravidel – nebo přesvědčit systém, aby stejnou šablonu použil pro více různých událostí.
+
+```
+flowchart LR
+    E["Událost\n(spouštěč)"] --> P["Notifikační pravidlo\n(KDY + KOMU)"]
+    S["Šablona\n(CO – předmět + tělo)"] --> P
+    P --> L["Jazyková varianta\nšablony"]
+    L --> M["Odeslaný e-mail\ns dosazenými proměnnými"]
+```
+
+______________________________________________________________________
+
+## Událost: kdy systém e-mail odešle
+
+Notifikační pravidlo je svázáno s **událostí** (v dokumentaci také „spouštěč"), která říká, za jakých okolností se e-mail má odeslat. Systém rozlišuje desítky událostí – například:
+
+- vytvoření uživatelského účtu
+- blížící se termín aktivity
+- splnění aktivity
+- příchozí zpráva
+
+Část událostí je **časovaná**: nespustí se okamžitě, ale určitý počet dní před datem nebo po datu (typicky termín aktivity). Díky tomu lze posílat připomínky a navazující zprávy v přesně definovaný čas relativně k aktivitě.
+
+Počet a přesné popisy událostí
+
+Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné popisy budou k dispozici v samostatné referenční stránce [Přehled notifikačních událostí (připravujeme)](#).
+
+______________________________________________________________________
+
+## Proměnné: dynamický obsah zprávy
+
+Text předmětu i tělo šablony mohou obsahovat **proměnné** ve tvaru `${nazev}`. Při odeslání e-mailu systém každou proměnnou nahradí konkrétní hodnotou platnou pro daného příjemce a událost.
+
+Příklady proměnných:
+
+| Proměnná          | Co se dosadí                                          |
+| ----------------- | ----------------------------------------------------- |
+| `${firstName}`    | jméno příjemce                                        |
+| `${activityName}` | název aktivity, které se událost týká                 |
+| `${link}`         | odkaz vedoucí do systému (přihlášení, aktivita apod.) |
+| `${login}`        | přihlašovací jméno příjemce                           |
+
+Úplný seznam proměnných dostupných pro konkrétní šablonu naleznete přímo v editoru šablony, pod polem **Tělo emailu**, kde je přehled **Povolené proměnné pro tělo e-mailu**. Kliknutím na proměnnou ji vložíte na pozici kurzoru.
+
+______________________________________________________________________
+
+## Jazyk e-mailu a jazykové varianty šablony
+
+E-mail se vždy odešle v **jazyce nastaveném u příjemce**. Každá skupina šablon proto může obsahovat více jazykových variant – jednu pro každý jazyk, který Vaši uživatelé používají.
+
+Pokud pro jazyk příjemce varianta neexistuje, e-mail se v daném jazyce **neodešle**. Toto chování je záměrné: systém raději zprávu nepošle, než aby ji doručil ve špatném jazyce.
+
+Praktický důsledek: pokud přidáváte nový jazyk prostředí, zkontrolujte, zda máte pro každou aktivní skupinu šablon přidanou příslušnou jazykovou variantu.
+
+______________________________________________________________________
+
+## Agregace: více událostí, jeden e-mail
+
+Systém podporuje **agregaci** – sloučení několika zpráv do jednoho souhrnného e-mailu. To se hodí například tehdy, kdy by uživatel jinak obdržel více podobných zpráv v krátkém časovém úseku.
+
+Agregovaná šablona se od základní liší tím, že má navíc **Hlavičku** a **Patičku**, které obalují opakované tělo. Každá agregovaná událost přispěje jedním blokem těla; hlavička a patička se zobrazí jednou, na začátku a konci celé zprávy.
+
+______________________________________________________________________
+
+## Nastavení pro konkrétní aktivitu
+
+Notifikační pravidlo je ve výchozím stavu **globální** – platí pro všechny aktivity stejně. U konkrétní aktivity lze toto globální pravidlo přepsat:
+
+- nastavit jiné pravidlo specifické pro tuto aktivitu (přepíše globální),
+- nebo notifikaci pro tuto aktivitu zcela vypnout.
+
+Tím lze například vypnout automatické upomínky u aktivit, které administrátor spravuje manuálně, aniž by se změnila globální konfigurace pro zbytek systému.
+
+______________________________________________________________________
+
+## Pozor na
+
+- **Náhled odeslaného e-mailu není k dispozici.** Editor šablony zobrazuje formátování HTML těla, ale proměnné (`${...}`) zůstávají v textu nenahrazeny. Výslednou podobu zprávy s dosazením konkrétních hodnot nelze v systému přímo otestovat.
+- **Vypnutí notifikace patří na pravidlo, ne na šablonu.** Šablona sama o sobě nemá přepínač „aktivní / neaktivní". Chcete-li e-mail přestat posílat, upravte nebo vypněte příslušné notifikační pravidlo v záložce **Notifikace**.
+- **Chybějící jazyková varianta = nedoručeno.** Pokud příjemce používá jazyk, pro který šablona nemá variantu, e-mail se nepošle. Tato situace nevyvolá chybovou hlášku – zpráva je tiše přeskočena.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
+- [Přehled notifikačních událostí (připravujeme)](#)
+- [Nastavení notifikací aktivity (připravujeme)](#)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+# Pro studenty
+
+# Pro studenty
+
+Obsah této sekce připravujeme.
+
+Pokud Vaše organizace používá samostatný studentský portál, dokumentace pro studenty je dostupná na adrese [docs-studenti.competent.cz](https://docs-studenti.competent.cz).
+# Slovník
+
+# Slovník
+
+Slovník pojmů, které v Competent potkáte.

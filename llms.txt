@@ -1,0 +1,53 @@
+# Competent – Uživatelská příručka
+
+> Oficiální dokumentace LMS Competent od Educasoftu
+
+Tato dokumentace popisuje administrátorský portál LMS Competent.
+Zahrnuje návody pro administrátory, referenci nastavení a konceptuální přehled.
+
+
+## Úvod
+
+- [Úvod](https://educasoftsolutions.github.io/competent-documentation/index.md)
+
+## Pro administrátory
+
+- [Pro administrátory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/index.md)
+- [Návody](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/index.md)
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
+- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
+- [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
+- [Vyhledávání v aktivitách](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md)
+- [Filtry a vyhledávání](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/filtry-a-vyhledavani/index.md)
+- [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)
+- [Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
+- [Vyhledávání a řazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+- [Přiřazení role uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md)
+- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md)
+- [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
+- [Reference](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/index.md)
+- [Chybové zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/chybove-zpravy/index.md)
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
+- [Koncepty](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md)
+- [Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+
+## Pro studenty
+
+- [Pro studenty](https://educasoftsolutions.github.io/competent-documentation/pro-studenty/index.md)
+
+## Slovník
+
+- [Slovník](https://educasoftsolutions.github.io/competent-documentation/slovnik/index.md)
+
