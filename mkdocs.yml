@@ -112,9 +112,9 @@ hooks:
 nav:
   - Úvod: index.md
   - Pro administrátory:
-      - pro-administratory/index.md
+      - Přehled: pro-administratory/index.md
       - Návody:
-          - pro-administratory/how-to/index.md
+          - Přehled: pro-administratory/how-to/index.md
           - Aktivity:
               - Vytvoření nového objektu: pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
               - Přesun objektu: pro-administratory/how-to/aktivity/presun-objektu.md
@@ -134,7 +134,7 @@ nav:
               - Vytvoření a správa štítků: pro-administratory/how-to/nastaveni/stitky.md
               - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
       - Reference:
-          - pro-administratory/reference/index.md
+          - Přehled: pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
           - Detail aktivity: pro-administratory/reference/detail-aktivity.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
@@ -142,7 +142,7 @@ nav:
           - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
           - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
       - Koncepty:
-          - pro-administratory/concepts/index.md
+          - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
           - Role a oprávnění: pro-administratory/concepts/role.md
           - Štítek: pro-administratory/concepts/stitky.md
