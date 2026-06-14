@@ -152,6 +152,6 @@ Role jsou odlišeny závorkami podle způsobu přiřazení:
 - [Přesun objektu](../how-to/aktivity/presun-objektu.md)
 - [Vytvoření SCORM aktivity](../how-to/aktivity/vytvoreni-scorm-aktivity.md)
 - [Detail aktivity](detail-aktivity.md)
-- [Detail sady (připravujeme)](#)
+- [Detail sady](detail-sady.md)
 - [Sdílené aktivity (připravujeme)](#)
 - [Termín aktivity (připravujeme)](#)

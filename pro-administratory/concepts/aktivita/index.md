@@ -10,7 +10,7 @@ Při vytváření nové položky Vám systém Competent nabídne čtyři typy. K
 
 ### Aktivita
 
-Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp, který určuje charakter obsahu: k dispozici jsou subtypy **Elearning** a **Školení** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp, který určuje charakter obsahu: k dispozici jsou subtypy **Elearning** a **Školení** (podrobnosti viz [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)).
 
 ### Sada
 
@@ -18,7 +18,7 @@ Sada je kontejner, který sdružuje aktivity a další Sady. Slouží k vytvář
 
 ### Termínová sada
 
-Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, kde se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, kde se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)).
 
 ### Hodnocení
 
@@ -100,7 +100,7 @@ ______________________________________________________________________
 
 ## Související stránky
 
-- [Subtypy aktivit (připravujeme)](#)
+- [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
 - [Stavy aktivity (připravujeme)](#)
 - [Schémata aktivity (připravujeme)](#)
 - [Termíny a kapacita (připravujeme)](#)

@@ -25,7 +25,7 @@ Skupiny v systému Competent plní tyto hlavní funkce:
 - **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje
   automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich
   členství ve skupině
-  ([Přiřazení dle skupin (připravujeme)](#)).
+  ([Přiřazení dle skupin](prirazeni-dle-skupin.md)).
 
 ---
 
@@ -129,7 +129,7 @@ subtypu.
 
 Přiřazení dle skupin (automatické přiřazování aktivit na základě členství)
 je samostatná funkce systému, která není součástí základní správy skupin.
-Podrobnosti najdete v části [Přiřazení dle skupin (připravujeme)](#).
+Podrobnosti najdete v části [Přiřazení dle skupin](prirazeni-dle-skupin.md).
 
 ---
 
@@ -140,4 +140,4 @@ Podrobnosti najdete v části [Přiřazení dle skupin (připravujeme)](#).
 - [Role a oprávnění](role.md)
 - [Přiřazení uživatele do skupiny](../how-to/lide/prirazeni-uzivatele-do-skupiny.md)
 - [Detail skupiny](../reference/detail-skupiny.md)
-- [Přiřazení dle skupin (připravujeme)](#)
+- [Přiřazení dle skupin](prirazeni-dle-skupin.md)

@@ -68,7 +68,7 @@ Nad gridem je umístěna lišta nástrojů s následujícími funkcemi:
 - **Znovunačtení dat** – obnoví seznam uživatelských přiřazení ze serveru.
 - **Hromadné akce** – umožní vybrat více uživatelských přiřazení najednou a provést hromadnou operaci: změnu dat plnění, odebrání uživatelských přístupů nebo odeslání zprávy. Potvrzovací modál má název **Hromadná změna stavu**.
 - **Export do Excelu** – otevře modál **Souhrnný report přístupů uživatelů** a nabídne ke stažení aktuálně zobrazený seznam uživatelů.
-- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů (připravujeme)](#) a [Periodické nastavení (připravujeme)](#).
+- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md) a [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md).
 
 ### Akce na řádku uživatelského přiřazení
 
@@ -115,13 +115,13 @@ Tab Detaily obsahuje formulář pro správu vlastností aktivity. Pole jsou logi
 
 ### Čas a opakování
 
-| Pole                                          | Popis                                                                                                          |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Nastavení opakování**                       | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení (připravujeme)](#). |
-| **Opakování**                                 | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování).                                           |
-| **Počet dnů přístupu**                        | Délka přístupu uživatele k aktivitě ve dnech.                                                                  |
-| **Počet dnů automatického prodloužení**       | Počet dnů, o které se přístup automaticky prodlouží.                                                           |
-| **Počet opakování automatického prodloužení** | Kolikrát se automatické prodloužení přístupu uplatní.                                                          |
+| Pole                                          | Popis                                                                                                                                                                                                                 |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nastavení opakování**                       | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md). |
+| **Opakování**                                 | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování).                                                                                                                                                  |
+| **Počet dnů přístupu**                        | Délka přístupu uživatele k aktivitě ve dnech.                                                                                                                                                                         |
+| **Počet dnů automatického prodloužení**       | Počet dnů, o které se přístup automaticky prodlouží.                                                                                                                                                                  |
+| **Počet opakování automatického prodloužení** | Kolikrát se automatické prodloužení přístupu uplatní.                                                                                                                                                                 |
 
 ### Verze aktivity
 
@@ -142,13 +142,13 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 
 ### Ostatní pole
 
-| Pole                | Popis                                                                                                                |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Recenze**         | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**. |
-| **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                            |
-| **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                       |
-| **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků (připravujeme)](#)).                                  |
-| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                           |
+| Pole                | Popis                                                                                                                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Recenze**         | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**.                                                                           |
+| **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                                                                                                      |
+| **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                                                                                                 |
+| **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)). |
+| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                                                                                                     |
 
 ______________________________________________________________________
 
@@ -183,7 +183,7 @@ ______________________________________________________________________
 
 Různé chování tabu Uživatelé podle schématu
 
-Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů (připravujeme)](#).
+Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md).
 
 Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Podmínky). U aktivit s Typem spouštění iTrivio a u aktivit se schématem **S termíny** se mohou zobrazit další taby (iTrivio, Termíny). Přesný výčet podmínek pro zobrazení těchto tabů bude doplněn v samostatné referenci po dokončení testování.
 
@@ -194,11 +194,11 @@ ______________________________________________________________________
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
 - [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
 - [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
-- [Přiřazení uživatelů (připravujeme)](#)
-- [Periodické nastavení (připravujeme)](#)
+- [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
 - [Pokusy uživatele (připravujeme)](#)
 - [Dokumenty v aktivitě (připravujeme)](#)
 - [Podmínky přístupu (připravujeme)](#)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
-- [Detail sady (připravujeme)](#)
+- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Sdílené aktivity (připravujeme)](#)

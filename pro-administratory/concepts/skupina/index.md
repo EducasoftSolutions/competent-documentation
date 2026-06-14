@@ -13,7 +13,7 @@ Skupiny v systému Competent plní tyto hlavní funkce:
 - **Filtrování seznamu uživatelů** – přehled uživatelů lze filtrovat podle skupiny a rychle najít konkrétní okruh lidí.
 - **Přiřazování oprávnění na základě skupiny** – oprávnění nebo přístup k aktivitám lze nastavit pro celou skupinu najednou.
 - **Odeslání zprávy členům skupiny** – hromadná komunikace s členy skupiny je dostupná přímo ze systému.
-- **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich členství ve skupině ([Přiřazení dle skupin (připravujeme)](#)).
+- **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich členství ve skupině ([Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)).
 
 ______________________________________________________________________
 
@@ -92,7 +92,7 @@ ______________________________________________________________________
 
 ## Pozor na
 
-Přiřazení dle skupin (automatické přiřazování aktivit na základě členství) je samostatná funkce systému, která není součástí základní správy skupin. Podrobnosti najdete v části [Přiřazení dle skupin (připravujeme)](#).
+Přiřazení dle skupin (automatické přiřazování aktivit na základě členství) je samostatná funkce systému, která není součástí základní správy skupin. Podrobnosti najdete v části [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md).
 
 ______________________________________________________________________
 
@@ -103,4 +103,4 @@ ______________________________________________________________________
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
 - [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
-- [Přiřazení dle skupin (připravujeme)](#)
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)

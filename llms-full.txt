@@ -500,6 +500,72 @@ U přidělených rolí používá aplikace ustálenou konvenci:
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 
+# Přiřazení uživatelů k aktivitě
+
+Tento návod ukazuje, jak k aktivitě se schématem **Bez termínu** přiřadíte konkrétní uživatele (případně uživatelské skupiny), nastavíte jim data přístupu a volitelně zapnete periodické opakování. Přiřazení probíhá v detailu aktivity prostřednictvím panelu **Výběr účastníků** a **Nastavení plnění**.
+
+## Předpoklady
+
+- Máte přístup k editaci aktivit v administraci.
+- V systému existuje alespoň jedna aktivita se schématem **Bez termínu** a alespoň jeden uživatel, kterého lze přiřadit.
+
+## Postup
+
+### 1. Otevřete detail aktivity
+
+V seznamu aktivit (stromu) otevřete detail aktivity **dvojklikem** na její název. Zobrazí se detail s aktivním tabem **Uživatelé**. Dokud nemá aktivita žádné přiřazené uživatele, je tabulka prázdná a ve spodní části se zobrazuje text **Celkem položek: 0**.
+
+### 2. Otevřete panel přiřazení
+
+V tabu **Uživatelé** klikněte na tlačítko **+** (přidání uživatelů) v pravé části nástrojové lišty tabulky. Otevře se panel přiřazení s prvním krokem **Výběr účastníků**.
+
+V bočním panelu můžete:
+
+- přepínat mezi záložkami **Uživatelé** a **Uživatelské skupiny**,
+- vyhledávat uživatele polem **Hledat**,
+- hromadně vybírat tlačítky **Vše** a **Nic**,
+- omezit seznam filtrem **Nemají splněno**.
+
+### 3. Vyberte účastníky
+
+Uživatele přidáte **kliknutím** na jeho řádek v bočním seznamu. Vybraní uživatelé se přesunou do hlavní části panelu. Jakmile vyberete alespoň jednoho uživatele, zpřístupní se tlačítko **Pokračovat nastavením plnění**.
+
+### 4. Nastavte data přístupu
+
+Klikněte na **Pokračovat nastavením plnění**. Zobrazí se krok **Nastavení plnění** s poli pro zadání dat přístupu k aktivitě.
+
+| Pole                     | Význam                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------- |
+| Začátek přístupu         | Od kdy má uživatel k aktivitě přístup. Když pole zůstane prázdné, doplní se aktuální datum a čas. |
+| Optimální počátek plnění | Doporučené datum zahájení plnění.                                                                 |
+| Optimální konec plnění   | Doporučené datum dokončení plnění.                                                                |
+| Vyžadované datum splnění | Datum, do kterého má uživatel aktivitu povinně splnit.                                            |
+| Konec přístupu           | Datum, po kterém uživatel ztrácí přístup k aktivitě.                                              |
+
+Data jsou na sebe chronologicky vázaná v pořadí **Začátek přístupu → Optimální počátek plnění → Optimální konec plnění → Vyžadované datum splnění → Konec přístupu**. Pozdější datum nelze nastavit před dřívější. U každého pole je vpravo vidět, jaká hodnota se doplní, pokud pole ponecháte prázdné.
+
+### 5. Volitelně zapněte periodické opakování
+
+Pokud má být přiřazení periodické (například každoroční opakování školení), rozbalte v kroku **Nastavení plnění** sekci **Periodické nastavení**. Po jejím zapnutí přibude oddíl **Nastavení dat pro budoucí přístupy k aktivitě** a pole **Konec přístupu** se změní na **Konec periodického přístupu**.
+
+Podrobný popis voleb periodicity najdete na stránce [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md). Pokud periodicitu nepotřebujete, sekci nechte vypnutou.
+
+### 6. Uložte přiřazení
+
+Klikněte na **Uložit**. Panel se zavře a v tabulce tabu **Uživatelé** se zobrazí nově přiřazení uživatelé. Počet záznamů ve spodní části (například **Celkem položek: 3**) potvrzuje, že se přiřazení uložilo.
+
+Tím je postup dokončen.
+
+## Pozor na
+
+- U aktivit se schématem **S termíny** probíhá přiřazení odlišně – uživatel se přiřazuje na konkrétní **termín** ze seznamu termínů. Tento postup popíšeme v samostatném návodu: [Přiřazení k termínové aktivitě (připravujeme)](#).
+- Periodické nastavení nezaměňujte s funkcí automatického prodloužení přístupu (pole **Počet dnů automatického prodloužení**) – jde o samostatné, nesouvisející nastavení.
+
+## Související stránky
+
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
 # Vytvoření uživatele v administraci
 
 Nového uživatele vytvoříte v obrazovce **Lidé**, kde se evidují všichni uživatelé systému Competent. Tento návod vás provede vyplněním formuláře, povinnými poli a volitelným zařazením uživatele do skupiny.
@@ -754,7 +820,7 @@ Vyberte jednu nebo více skupin, ponechte roli **Účastník** (nebo zvolte jino
 - [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
 - [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
 - [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
-- [Přiřazení dle skupin (připravujeme)](#)
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
 
 # Import uživatelů
 
@@ -1208,7 +1274,7 @@ ______________________________________________________________________
 - [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
 - [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
-- [Detail sady (připravujeme)](#)
+- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Sdílené aktivity (připravujeme)](#)
 - [Termín aktivity (připravujeme)](#)
 
@@ -1282,7 +1348,7 @@ Nad gridem je umístěna lišta nástrojů s následujícími funkcemi:
 - **Znovunačtení dat** – obnoví seznam uživatelských přiřazení ze serveru.
 - **Hromadné akce** – umožní vybrat více uživatelských přiřazení najednou a provést hromadnou operaci: změnu dat plnění, odebrání uživatelských přístupů nebo odeslání zprávy. Potvrzovací modál má název **Hromadná změna stavu**.
 - **Export do Excelu** – otevře modál **Souhrnný report přístupů uživatelů** a nabídne ke stažení aktuálně zobrazený seznam uživatelů.
-- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů (připravujeme)](#) a [Periodické nastavení (připravujeme)](#).
+- **Přiřazení nových uživatelů** – otevře vedlejší panel se seznamem uživatelů pro přiřazení. Průběh přiřazení se liší podle schématu aktivity (**S termíny** nebo **Bez termínu**) – viz [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md) a [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md).
 
 ### Akce na řádku uživatelského přiřazení
 
@@ -1329,13 +1395,13 @@ Tab Detaily obsahuje formulář pro správu vlastností aktivity. Pole jsou logi
 
 ### Čas a opakování
 
-| Pole                                          | Popis                                                                                                          |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Nastavení opakování**                       | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení (připravujeme)](#). |
-| **Opakování**                                 | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování).                                           |
-| **Počet dnů přístupu**                        | Délka přístupu uživatele k aktivitě ve dnech.                                                                  |
-| **Počet dnů automatického prodloužení**       | Počet dnů, o které se přístup automaticky prodlouží.                                                           |
-| **Počet opakování automatického prodloužení** | Kolikrát se automatické prodloužení přístupu uplatní.                                                          |
+| Pole                                          | Popis                                                                                                                                                                                                                 |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nastavení opakování**                       | Volba periodického přiřazování aktivity. Detailní popis rozhraní viz [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md). |
+| **Opakování**                                 | Zobrazuje aktuálně nastavený způsob opakování (např. Bez opakování).                                                                                                                                                  |
+| **Počet dnů přístupu**                        | Délka přístupu uživatele k aktivitě ve dnech.                                                                                                                                                                         |
+| **Počet dnů automatického prodloužení**       | Počet dnů, o které se přístup automaticky prodlouží.                                                                                                                                                                  |
+| **Počet opakování automatického prodloužení** | Kolikrát se automatické prodloužení přístupu uplatní.                                                                                                                                                                 |
 
 ### Verze aktivity
 
@@ -1356,13 +1422,13 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 
 ### Ostatní pole
 
-| Pole                | Popis                                                                                                                |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Recenze**         | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**. |
-| **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                            |
-| **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                       |
-| **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků (připravujeme)](#)).                                  |
-| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                           |
+| Pole                | Popis                                                                                                                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Recenze**         | Sekce pro konfiguraci recenzí aktivity. Obsahuje přepínač **Skrýt výsledky** a pole **Otázka pro recenzi aktivity**.                                                                           |
+| **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                                                                                                      |
+| **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                                                                                                 |
+| **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)). |
+| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                                                                                                     |
 
 ______________________________________________________________________
 
@@ -1397,7 +1463,7 @@ ______________________________________________________________________
 
 Různé chování tabu Uživatelé podle schématu
 
-Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů (připravujeme)](#).
+Tab Uživatelé funguje odlišně v závislosti na schématu aktivity. U aktivit se schématem **S termíny** je správa přiřazení provázána s termíny a přiřazení uživatelů probíhá jinak než u aktivit se schématem **Bez termínu**. Podrobnosti viz [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md).
 
 Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Podmínky). U aktivit s Typem spouštění iTrivio a u aktivit se schématem **S termíny** se mohou zobrazit další taby (iTrivio, Termíny). Přesný výčet podmínek pro zobrazení těchto tabů bude doplněn v samostatné referenci po dokončení testování.
 
@@ -1408,14 +1474,225 @@ ______________________________________________________________________
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
 - [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
 - [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
-- [Přiřazení uživatelů (připravujeme)](#)
-- [Periodické nastavení (připravujeme)](#)
+- [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
 - [Pokusy uživatele (připravujeme)](#)
 - [Dokumenty v aktivitě (připravujeme)](#)
 - [Podmínky přístupu (připravujeme)](#)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
-- [Detail sady (připravujeme)](#)
+- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Sdílené aktivity (připravujeme)](#)
+
+# Detail sady
+
+Detail sady je obrazovka, která zobrazuje informace o aktivitě typu **Sada** – kontejneru sdružujícím více potomků (dílčích aktivit) do jednoho celku. Stránka popisuje, čím se Detail sady liší od detailu běžné aktivity; pro sdílené části odkazuje na [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
+
+______________________________________________________________________
+
+## Co je Sada
+
+**Sada** je typ aktivity, který funguje jako kontejner: sdružuje více dílčích aktivit (potomků) do jednoho celku, například kurikula nebo strukturovaného vzdělávacího programu. Na rozdíl od koncové aktivity může Sada mít potomky.
+
+Variantou Sady je **Termínová sada** – varianta sady s termíny (přidává tab **Termíny**). Termínová sada je popsána samostatně: [Termínová sada (připravujeme)](#).
+
+______________________________________________________________________
+
+## Otevření detailu Sady
+
+Otevření detailu Sady se liší od otevření detailu běžné aktivity:
+
+- **Dvojklik** na Sadu ve stromu aktivit Sadu **neotevře do detailu** – pouze ji rozbalí jako složku a zobrazí její obsah v pravém panelu.
+- Tabový detail Sady se otevře kliknutím na **ikonu tužky** (úpravy) v hlavičce pravého panelu.
+
+Dvojklik neotevře detail
+
+U Sady platí odlišné chování než u koncové aktivity. Pokud po dvojkliku detail nevidíte, použijte ikonu tužky v hlavičce pravého panelu.
+
+______________________________________________________________________
+
+## Taby: přehled
+
+Detail sady obsahuje pět tabů v tomto pořadí:
+
+| Tab           | Popis                                                                                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Uživatelé** | Přehled uživatelů přiřazených k Sadě a správa přiřazení (viz [Tab Uživatelé](#tab-uzivatele) níže).                                                                                        |
+| **Obsah**     | Seznam potomků Sady a nástroj pro jejich správu (viz [Tab Obsah](#tab-obsah) níže).                                                                                                        |
+| **Detaily**   | Formulář s vlastnostmi Sady (viz [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)).                   |
+| **Dokumenty** | Přílohy a studijní materiály spojené se Sadou (viz [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)). |
+| **Podmínky**  | Konfigurace podmínek přístupu k Sadě (viz [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)).          |
+
+Prostá Sada **nemá** taby Termíny, Recenze ani Sdílení.
+
+______________________________________________________________________
+
+## Tab Uživatelé
+
+Tab Uživatelé zobrazuje seznam uživatelů přiřazených k Sadě. Přiřazení k Sadě probíhá 3krokovým průvodcem, který je popsán v sekci [Přiřazení uživatelů k Sadě](#prirazeni-uzivatelu-k-sade) níže.
+
+______________________________________________________________________
+
+## Tab Obsah
+
+Tab **Obsah** je tab specifický pro Sadu – u běžné (koncové) aktivity neexistuje. Zobrazuje seznam potomků (dílčích aktivit) aktuálně zařazených do Sady.
+
+### Tlačítko Upravit obsah
+
+Tlačítko **Upravit obsah** v tabu Obsah přepne zobrazení do stromového procházení Sady, kde lze její obsah spravovat běžnými nástroji stromu: přidat potomka, přesunout nebo změnit pořadí aktivit. Tlačítko neotevírá modální okno.
+
+______________________________________________________________________
+
+## Tab Detaily, Dokumenty a Podmínky
+
+Taby **Detaily**, **Dokumenty** a **Podmínky** fungují u Sady stejným způsobem jako u běžné aktivity. Jejich popis viz [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
+
+______________________________________________________________________
+
+## Přiřazení uživatelů k Sadě
+
+Přiřazení uživatelů k Sadě probíhá prostřednictvím 3krokového průvodce. Oproti přiřazení ke koncové aktivitě obsahuje průvodce jeden krok navíc – výběr aktivit Sady. Průvodce se spouští z tabu Uživatelé.
+
+| Krok | Název                | Obsah a ovládací prvky                                                                                                                                                                                                                                                                                                                                                                       |
+| ---- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | **Výběr účastníků**  | Výběr uživatelů nebo uživatelských skupin. K dispozici jsou záložky Uživatelé / Uživatelské skupiny, hromadný výběr Vše / Nic a filtr Nemají splněno. Tlačítko **Pokračovat výběrem aktivit** se aktivuje po výběru aspoň jednoho účastníka.                                                                                                                                                 |
+| 2    | **Výběr Aktivit**    | Výběr potomků Sady, které se přiřazeným účastníkům zařadí. Ovládací prvky: **Vybrat všechny** / **Zrušit výběr**. Tlačítko **Pokračovat nastavením plnění**.                                                                                                                                                                                                                                 |
+| 3    | **Nastavení plnění** | Nastavení dat přístupu. Horní řádek zobrazuje Sadu jako celek; pod ní jsou uvedeny jednotlivé vybrané potomky s možností nastavit data samostatně. Tlačítko **Uložit** / **Zavřít**. Podrobný popis nastavení viz [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md). |
+
+______________________________________________________________________
+
+## Pozor na
+
+Částečné splnění – skrytý parametr
+
+Sada obsahuje parametr **Částečné splnění**, který určuje, zda pro splnění celé Sady postačuje splnění jedné dílčí aktivity (zapnuto), nebo zda je nutné splnit všechny aktivity Sady (vypnuto). Ve standardním nasazení je tento parametr v administraci **skrytý** a zobrazí se v tabu Detaily pouze pokud ho zákaznická konfigurace odkryje. Nejedná se o standardně viditelné pole.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
+- [Termínová sada (připravujeme)](#)
+- [Sada (připravujeme)](#)
+
+# Periodické nastavení
+
+Periodické nastavení je komponenta, která umožňuje nakonfigurovat automatické opakování přístupu uživatele k aktivitě nebo sadě. Po vypršení aktuálního přístupu systém přístup automaticky obnoví podle nastavené periody. Typický příklad použití je každoroční školení BOZP.
+
+Komponentu naleznete na dvou místech: jako výchozí konfiguraci aktivity (nebo sady) v tabu **Detaily**, a jako nastavení periodicity konkrétního přiřazení v kroku **Nastavení plnění** (tab **Uživatelé**).
+
+______________________________________________________________________
+
+## Místa použití
+
+| Kontext                                   | Kde naleznete komponentu                                              | Popis                                                                                                                                                                                                                                                               |
+| ----------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tab **Detaily**                           | Pole **Opakování** – kliknutím otevřete editor periodického nastavení | Výchozí konfigurace opakování pro aktivitu nebo sadu. Změna se zde uloží pro nová přiřazení; tlačítkem **Aktualizovat existující přístupy** ji lze promítnout i do již existujících přiřazení. V editoru je dostupná volba **Bez opakování** (periodicita vypnuta). |
+| Krok **Nastavení plnění** (tab Uživatelé) | Sekce **Periodické nastavení**                                        | Periodicita konkrétního přiřazení nastavovaného právě v panelu přiřazení. Volba **Bez opakování** zde není dostupná – periodicitu pro konkrétní přiřazení buď zapnete, nebo pole nevyplníte.                                                                        |
+
+______________________________________________________________________
+
+## Typ výpočtu
+
+Pole **Typ výpočtu** určuje, od jakého okamžiku se perioda počítá.
+
+| Typ výpočtu      | Popis                                                           | Dostupné intervaly                                                             |
+| ---------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Kalendářní**   | Příští přístup se spouští k pevnému kalendářnímu datu nebo dnu. | Denně, Týdně, Měsíční, Roční (viz [Nastavení opakování](#nastaveni-opakovani)) |
+| **Od přiřazení** | Perioda se počítá od data přiřazení uživatele k aktivitě.       | Délka aktivní části ve dnech + Perioda (Roky / Měsíce / Dny)                   |
+| **Od splnění**   | Perioda se počítá od data splnění aktivity uživatelem.          | Délka aktivní části ve dnech + Perioda (Roky / Měsíce / Dny)                   |
+
+______________________________________________________________________
+
+## Nastavení opakování
+
+Sekce **Nastavení opakování** je zobrazena u typu výpočtu **Kalendářní** a umožňuje zvolit interval opakování pomocí záložek.
+
+### Denně
+
+K dispozici jsou dvě varianty:
+
+| Varianta           | Parametry                                                          |
+| ------------------ | ------------------------------------------------------------------ |
+| Každý n-tý den     | „Každý" [1–31] „den ve" – výběr hodiny a minuty.                   |
+| Každý pracovní den | „Každý pracovní den (Pondělí až Pátek) v" – výběr hodiny a minuty. |
+
+### Týdně
+
+| Parametr                                                         | Popis                                                                             |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Pondělí / Úterý / Středa / Čtvrtek / Pátek / Sobota / Neděle** | Sedm zaškrtávacích polí – zvolte jeden nebo více dnů, ve které se perioda spustí. |
+| **V čase**                                                       | Výběr hodiny a minuty spuštění.                                                   |
+
+### Měsíční
+
+Primární varianta kombinuje výběr dne a interval v měsících:
+
+| Parametr                  | Hodnoty                                                                                | Popis                                |
+| ------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------ |
+| Den                       | „První pracovní den" / „1. den" … „31. den" / „Poslední pracovní den" / „Poslední den" | Den v měsíci, kdy se perioda spustí. |
+| „Každý" [1–12] „měsíc ve" | Číslo měsíce 1–12 + hodina a minuta                                                    | Interval opakování a čas spuštění.   |
+
+K dispozici je také druhá (neaktivní) varianta s výběrem ordinálu a dne v týdnu (např. „první pondělí každého druhého měsíce").
+
+### Roční
+
+Primární varianta určuje pevný den v rámci zvoleného měsíce:
+
+| Parametr | Hodnoty                                                                                                     | Popis               |
+| -------- | ----------------------------------------------------------------------------------------------------------- | ------------------- |
+| Měsíc    | **Leden / Únor / Březen / Duben / Květen / Červen / Červenec / Srpen / Září / Říjen / Listopad / Prosinec** | Měsíc spuštění.     |
+| Den      | „První pracovní den" / „1. den" … „31. den" / „Poslední pracovní den" / „Poslední den"                      | Den v daném měsíci. |
+| Čas      | Hodina a minuta                                                                                             | Čas spuštění.       |
+
+K dispozici je také druhá (neaktivní) varianta s výběrem ordinálu a dne v týdnu v daném měsíci (např. „první pondělí v lednu").
+
+______________________________________________________________________
+
+## Od přiřazení a Od splnění
+
+Typy výpočtu **Od přiřazení** a **Od splnění** sdílejí stejné parametry. Sekce Nastavení opakování u nich není zobrazena – místo ní jsou přímo dostupná tato dvě pole:
+
+| Parametr                          | Popis                                                                                                                                                                                                                                 |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Délka aktivní části** (Dnů)     | Počet dní, po které je přiřazení aktivní v rámci jedné periody. Po uplynutí tohoto počtu dní se přístup automaticky obnoví.                                                                                                           |
+| **Perioda** (Roky / Měsíce / Dny) | Interval opakování – jak často se přístup obnovuje. Zadává se jako tři číselné hodnoty: počet roků, měsíců a dní. Pole **Perioda** se zobrazuje pouze u typů **Od přiřazení** a **Od splnění**; u typu **Kalendářní** se nezobrazuje. |
+
+______________________________________________________________________
+
+## Příští spuštění
+
+Pole **Příští spuštění** zobrazuje automaticky vypočtené datum a čas příštího obnovení přístupu. Slouží pouze ke kontrole – hodnota je jen pro čtení.
+
+- Pole se **nezobrazuje** u typu výpočtu **Od splnění** (systém datum v okamžiku nastavení ještě nezná).
+- Pokud je perioda nastavena chybně, zobrazí se v tomto poli chybová zpráva a tlačítko **Uložit** zůstane neaktivní.
+
+______________________________________________________________________
+
+## Aktualizovat existující přístupy
+
+Tlačítko **Aktualizovat existující přístupy** je dostupné v editoru otvíraném z pole **Opakování** v tabu **Detaily**. Po uložení nového nastavení opakování toto tlačítko promítne změnu do již existujících přiřazení uživatelů – nejen do budoucích.
+
+______________________________________________________________________
+
+## Pozor na
+
+Aktivity se schématem S termíny
+
+Aktivity se schématem **S termíny** periodicky přiřadit nelze. Periodické nastavení je dostupné pouze u aktivit se schématem **Bez termínu**.
+
+Periodicita není automatické prodloužení přístupu
+
+Nesouvisí s funkcí automatického prodloužení přístupu (pole **Počet dnů automatického prodloužení**) – jde o samostatné nastavení.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 
 # Detail skupiny
 
@@ -1726,7 +2003,7 @@ Při vytváření nové položky Vám systém Competent nabídne čtyři typy. K
 
 ### Aktivita
 
-Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp, který určuje charakter obsahu: k dispozici jsou subtypy **Elearning** a **Školení** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp, který určuje charakter obsahu: k dispozici jsou subtypy **Elearning** a **Školení** (podrobnosti viz [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)).
 
 ### Sada
 
@@ -1734,7 +2011,7 @@ Sada je kontejner, který sdružuje aktivity a další Sady. Slouží k vytvář
 
 ### Termínová sada
 
-Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, kde se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, kde se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)).
 
 ### Hodnocení
 
@@ -1816,12 +2093,73 @@ ______________________________________________________________________
 
 ## Související stránky
 
-- [Subtypy aktivit (připravujeme)](#)
+- [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
 - [Stavy aktivity (připravujeme)](#)
 - [Schémata aktivity (připravujeme)](#)
 - [Termíny a kapacita (připravujeme)](#)
 - [Jak vytvořit aktivitu (připravujeme)](#)
 - [Jak přiřadit aktivitu uživatelům (připravujeme)](#)
+
+# Subtypy aktivit: model a konfigurovatelnost
+
+Každá aktivita v systému Competent patří nejen k určitému **typu**, ale také k určitému **subtypu**. Zatímco typ určuje základní strukturální roli objektu (zda jde o vzdělávací list, kontejner nebo hodnoticí formulář), subtyp přidává vrstvu zákaznicky definovaného přednastaveného chování – sadu výchozích hodnot, které se při vytvoření aktivity automaticky uplatní. Tato stránka vysvětluje, co subtyp je, jak se vztahuje k typům aktivit a proč se konkrétní nabídka subtypů liší od jedné instalace ke druhé.
+
+______________________________________________________________________
+
+## Typ aktivity a subtyp: dvě různé úrovně
+
+### Typ aktivity
+
+Typ aktivity je pevně daná strukturální kategorie. Systém Competent rozlišuje čtyři typy: **Aktivita**, **Sada**, **Termínová sada** a **Hodnocení**. Tyto čtyři hodnoty jsou stejné pro všechny zákazníky a nelze je přidávat ani odebírat. Každý typ nese konkrétní pravidla – co může objekt obsahovat, kde může být umístěn v hierarchii a jak se zobrazuje. Podrobnosti o jednotlivých typech a jejich vztazích naleznete na stránce [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md).
+
+Ikona objektu v hierarchii obsahu se řídí typem aktivity, nikoliv subtypem.
+
+### Subtyp
+
+Subtyp je jemnější rozlišení uvnitř jednoho typu. Na rozdíl od typů nejsou subtypy pevně zabudovány do systému – každý zákazník si je definuje sám v administraci. Subtyp patří vždy právě jednomu typu; subtypy různých typů jsou navzájem oddělené.
+
+Subtyp plní dva účely:
+
+- **Rozlišení a filtrování.** Aktivity stejného typu lze pomocí subtypu dále třídit – například odlišit různé druhy prezenčních aktivit od aktivit realizovaných online.
+- **Výchozí parametry.** Každý subtyp nese přednastavené hodnoty, které se automaticky přenesou do každé nově vytvořené aktivity daného subtypu. Jde o výchozí schéma, typ vyhodnocení, předvyplněný popis a další výchozí parametry.
+
+______________________________________________________________________
+
+## Volba subtypu při vytváření aktivity
+
+Výběr probíhá ve dvou krocích. Při zakládání nové aktivity Vám systém nejprve nabídne skupiny odpovídající čtyřem typům aktivit. Po výběru skupiny se zobrazí konkrétní subtypy patřící k danému typu. Výběrem subtypu se nové aktivitě nastaví obojí – jak její typ, tak subtyp.
+
+Subtyp zvolený při vytváření je **neměnný** – po uložení aktivity jej nelze změnit na jiný.
+
+Konkrétní nabídka subtypů závisí na konfiguraci dané instalace. Například v jedné instalaci mohou být pro typ Aktivita k dispozici subtypy jako „elearning" nebo „školení", zatímco jiná instalace může mít subtypy pojmenované a nastavené zcela odlišně. Typ Termínová sada mívá subtyp nazvaný **Komplexní Sada** – tento název ilustruje, jak se jméno subtypu záměrně liší od jména typu: typ popisuje strukturální kategorii (kontejner s termíny a kapacitou), zatímco Komplexní Sada je pojmenovaná zákaznická varianta tohoto kontejneru s vlastními výchozími nastaveními.
+
+______________________________________________________________________
+
+## Konfigurace subtypů
+
+Subtypy aktivit jsou zákaznicky konfigurovatelné. V administraci na obrazovce Nastavení naleznete záložku **Subtypy**, kde lze spravovat stávající subtypy a přidávat subtypy nové. Nově vytvořený subtyp se okamžitě objeví v nabídce při zakládání aktivity – pod svým typem.
+
+Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce [Tab Subtypy (připravujeme)](#).
+
+### Subtypy dalších objektů
+
+Subtypy nejsou výhradou aktivit. Systém Competent používá stejný mechanismus i pro další typy objektů – například pro uživatele, uživatelské skupiny nebo kvalifikace. Princip je totožný, konkrétní nastavení se však liší podle druhu objektu. Tato stránka se zaměřuje výhradně na subtypy aktivit.
+
+______________________________________________________________________
+
+## Pozor na
+
+Termínová sada vs. Komplexní Sada
+
+Název **Termínová sada** označuje **typ** objektu – jednu ze čtyř pevných strukturálních kategorií. Název **Komplexní Sada** označuje **subtyp** patřící k tomuto typu. Nejde o synonyma ani o zaměnitelné pojmy – jsou to dvě různé úrovně modelu. Konkrétní instalace může subtypy Termínové sady pojmenovávat jinak nebo jich mít více.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Tab Subtypy (připravujeme)](#)
 
 # Role a oprávnění
 
@@ -2009,7 +2347,7 @@ Skupiny v systému Competent plní tyto hlavní funkce:
 - **Filtrování seznamu uživatelů** – přehled uživatelů lze filtrovat podle skupiny a rychle najít konkrétní okruh lidí.
 - **Přiřazování oprávnění na základě skupiny** – oprávnění nebo přístup k aktivitám lze nastavit pro celou skupinu najednou.
 - **Odeslání zprávy členům skupiny** – hromadná komunikace s členy skupiny je dostupná přímo ze systému.
-- **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich členství ve skupině ([Přiřazení dle skupin (připravujeme)](#)).
+- **Automatické přiřazování aktivit** – funkce Přiřazení dle skupin umožňuje automatické přiřazování vzdělávacích aktivit uživatelům na základě jejich členství ve skupině ([Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)).
 
 ______________________________________________________________________
 
@@ -2088,7 +2426,7 @@ ______________________________________________________________________
 
 ## Pozor na
 
-Přiřazení dle skupin (automatické přiřazování aktivit na základě členství) je samostatná funkce systému, která není součástí základní správy skupin. Podrobnosti najdete v části [Přiřazení dle skupin (připravujeme)](#).
+Přiřazení dle skupin (automatické přiřazování aktivit na základě členství) je samostatná funkce systému, která není součástí základní správy skupin. Podrobnosti najdete v části [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md).
 
 ______________________________________________________________________
 
@@ -2099,7 +2437,81 @@ ______________________________________________________________________
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
 - [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
-- [Přiřazení dle skupin (připravujeme)](#)
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
+
+# Přiřazení dle skupin: mechanismus a principy
+
+Přiřazení dle skupin je funkce systému Competent, která automaticky přiřazuje aktivity uživatelům na základě jejich členství ve skupině. Tato stránka vysvětluje, jak mechanismus funguje, jak reaguje na změny ve složení skupiny a jaký je vztah k přímému přiřazení uživatele k aktivitě. Je určena administrátorům, kteří chtějí pochopit princip před tím, než začnou pravidla přiřazení nastavovat nebo spravovat.
+
+______________________________________________________________________
+
+## Co je Přiřazení dle skupin
+
+Bez funkce Přiřazení dle skupin je nutné přiřazovat aktivity každému uživateli zvlášť – tedy ručně pro každou osobu a každou aktivitu. U větších organizací to vede k opakované, časově náročné práci.
+
+Přiřazení dle skupin tento postup automatizuje. Administrátor nastaví **pravidlo přiřazení** ve tvaru „skupina → aktivita" a systém sám vytvoří příslušné přístupy pro všechny členy skupiny. Výsledek je funkčně totožný s ručním přiřazením – rozdíl je pouze v tom, že práci odvede systém, nikoli administrátor.
+
+Pravidlo přiřazení lze cílit na:
+
+- **aktivitu** – přiřazení platí pro danou konkrétní aktivitu,
+- **sadu** – pravidlo pokryje celou sadu aktivit,
+- **složku** – pravidlo se rozpadne na dílčí pravidla pro každou aktivitu uvnitř složky.
+
+______________________________________________________________________
+
+## Jak se pravidlo projeví
+
+### Při vytvoření pravidla
+
+Jakmile administrátor pravidlo přiřazení uloží, systém ho okamžitě aplikuje na **všechny současné členy skupiny**. Každému z nich vznikne přístup k dotčené aktivitě (nebo aktivitám, pokud pravidlo cílí na sadu či složku).
+
+### Při přidání nového člena do skupiny
+
+Pokud je uživatel do skupiny zařazen později – poté, co pravidlo přiřazení již existuje – systém mu **automaticky vytvoří přístupy ke všem aktivitám**, které skupina prostřednictvím svých pravidel přiřazení pokrývá. Uživatel nemusí být do každé aktivity přidán zvlášť.
+
+### Při odebrání člena nebo zrušení pravidla
+
+Když uživatel skupinu opustí nebo administrátor pravidlo přiřazení zruší, jeho automaticky vytvořené přístupy se ukončí. Konkrétní chování – zda přístup zůstane jako ukončený záznam, nebo se zcela odebere – závisí na nastavení systému.
+
+______________________________________________________________________
+
+## Vztah k přímému přiřazení
+
+Přiřazení dle skupin nevytváří žádný zvláštní druh přístupu. Výsledkem pravidla přiřazení je standardní **přístup** uživatele k aktivitě – stejný, jaký vznikne při ručním přiřazení přes správu aktivity.
+
+Rozdíl mezi oběma způsoby je výhradně v **původu přístupu**:
+
+- **Přímé přiřazení** – administrátor přístup vytvoří ručně. Přístup existuje nezávisle na členství uživatele v jakékoli skupině.
+- **Skupinové přiřazení** – přístup vznikl automaticky z pravidla přiřazení. Systém ho udržuje v souladu s členstvím uživatele ve skupině.
+
+V přehledu uživatelů přiřazených k aktivitě se oba druhy přístupů zobrazují společně. Přístupy vzniklé ze skupinových pravidel jsou spravovány automaticky a administrátor je nemění ručně – jejich životní cyklus řídí pravidlo přiřazení a členství ve skupině.
+
+Jak přiřadit uživatele k aktivitě ručně popisuje stránka [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md).
+
+______________________________________________________________________
+
+## Kde se pravidla konfigurují
+
+Pravidla přiřazení se nastavují v sekci Nastavení na **záložce Přiřazení dle skupin**. Záložka umožňuje vytvářet nová pravidla, prohlížet existující a spravovat jejich parametry.
+
+Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením nového pravidla – najdete v části [Tab Přiřazení dle skupin (připravujeme)](#).
+
+______________________________________________________________________
+
+## Pozor na
+
+Přiřazení dle skupin je samostatná funkce a nesouvisí s rolemi nebo oprávněními, která uživatel ve skupině má. Členství ve skupině a role v rámci skupiny jsou popsány na stránce [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md) a [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+Chování systému při odebrání uživatele ze skupiny nebo při zrušení pravidla přiřazení může záviset na nastavení konkrétní instalace systému Competent. Pokud si nejste jistí, jak je Váš systém nakonfigurován, obraťte se na správce systému.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Tab Přiřazení dle skupin (připravujeme)](#)
 
 # E-mailové notifikace: jak funguje doručování zpráv
 
