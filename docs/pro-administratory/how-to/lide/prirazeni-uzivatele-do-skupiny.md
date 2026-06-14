@@ -85,4 +85,4 @@ Vyberte jednu nebo více skupin, ponechte roli **Účastník** (nebo zvolte jino
 - [Vytvoření uživatele](vytvoreni-uzivatele.md)
 - [Vytvoření uživatelské skupiny](vytvoreni-uzivatelske-skupiny.md)
 - [Uživatelská skupina](../../concepts/skupina.md)
-- [Přiřazení dle skupin (připravujeme)](#)
+- [Přiřazení dle skupin](../../concepts/prirazeni-dle-skupin.md)

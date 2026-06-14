@@ -18,7 +18,7 @@ plní jinou roli v organizaci vzdělávacího obsahu:
 Aktivita je nejmenší samostatná vzdělávací jednotka – „list" ve stromové
 struktuře obsahu. Neobsahuje žádné podřízené objekty. Při vytváření je nutné zvolit subtyp,
 který určuje charakter obsahu: k dispozici jsou subtypy **Elearning**
-a **Školení** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+a **Školení** (podrobnosti viz [Subtypy aktivit](subtypy-aktivit.md)).
 
 ### Sada
 
@@ -32,7 +32,7 @@ Termínová sada je kontejner s termíny a kapacitou. Slouží ke scénářům, 
 se uživatelé registrují na konkrétní datum, čas, místo a kde existuje omezený
 počet míst. Termínová sada může obsahovat **pouze Aktivity** – nelze do ní
 vkládat Sady ani další Termínové sady. Výchozí subtyp Termínové sady se
-jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit (připravujeme)](#)).
+jmenuje **Komplexní Sada** (podrobnosti viz [Subtypy aktivit](subtypy-aktivit.md)).
 
 ### Hodnocení
 
@@ -128,7 +128,7 @@ typy vzdělávacích objektů používá zastřešující pojem „aktivita".
 
 ## Související stránky
 
-- [Subtypy aktivit (připravujeme)](#)
+- [Subtypy aktivit](subtypy-aktivit.md)
 - [Stavy aktivity (připravujeme)](#)
 - [Schémata aktivity (připravujeme)](#)
 - [Termíny a kapacita (připravujeme)](#)

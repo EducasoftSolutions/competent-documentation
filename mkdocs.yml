@@ -80,6 +80,7 @@ plugins:
           - pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
           - pro-administratory/how-to/aktivity/prirazovani-stitku.md
           - pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
+          - pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatele.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
           - pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu.md
@@ -92,14 +93,18 @@ plugins:
           - pro-administratory/reference/chybove-zpravy.md
           - pro-administratory/reference/obrazovka-aktivity.md
           - pro-administratory/reference/detail-aktivity.md
+          - pro-administratory/reference/detail-sady.md
+          - pro-administratory/reference/periodicke-nastaveni.md
           - pro-administratory/reference/detail-skupiny.md
           - pro-administratory/reference/prehled-roli-a-opravneni.md
           - pro-administratory/reference/obrazovka-sablony-emailu.md
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
+          - pro-administratory/concepts/subtypy-aktivit.md
           - pro-administratory/concepts/role.md
           - pro-administratory/concepts/stitky.md
           - pro-administratory/concepts/skupina.md
+          - pro-administratory/concepts/prirazeni-dle-skupin.md
           - pro-administratory/concepts/emailove-notifikace.md
         Pro studenty:
           - pro-studenty/index.md
@@ -123,6 +128,7 @@ nav:
               - Filtry a vyhledávání: pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
               - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
               - Nastavení práv k aktivitě: pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
+              - Přiřazení uživatelů k aktivitě: pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
           - Lidé:
               - Vytvoření uživatele: pro-administratory/how-to/lide/vytvoreni-uzivatele.md
               - Vytvoření uživatelské skupiny: pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
@@ -137,6 +143,8 @@ nav:
           - Přehled: pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
           - Detail aktivity: pro-administratory/reference/detail-aktivity.md
+          - Detail sady: pro-administratory/reference/detail-sady.md
+          - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
           - Přehled rolí a oprávnění: pro-administratory/reference/prehled-roli-a-opravneni.md
           - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
@@ -144,9 +152,11 @@ nav:
       - Koncepty:
           - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
+          - Subtypy aktivit: pro-administratory/concepts/subtypy-aktivit.md
           - Role a oprávnění: pro-administratory/concepts/role.md
           - Štítek: pro-administratory/concepts/stitky.md
           - Uživatelská skupina: pro-administratory/concepts/skupina.md
+          - Přiřazení dle skupin: pro-administratory/concepts/prirazeni-dle-skupin.md
           - E-mailové notifikace: pro-administratory/concepts/emailove-notifikace.md
   - Pro studenty: pro-studenty/index.md
   - Slovník: slovnik/index.md
