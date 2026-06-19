@@ -76,7 +76,7 @@ obsah vlastní nenese.
 Sada má se složkou jednu společnou vlastnost: může obsahovat podřízené objekty.
 Na rozdíl od složky ale Sada nemůže obsahovat podsložky – vztah mezi Sadou
 a složkou je tedy asymetrický. Více o principech organizace obsahu přes složky
-viz [Složky aktivit (připravujeme)](#).
+viz [Složky aktivit](slozky-aktivit.md).
 
 ---
 
@@ -113,4 +113,4 @@ Pro přidávání a přesouvání položek slouží tlačítko **Upravit obsah**
 - [Detail sady](../reference/detail-sady.md)
 - [Jak přiřadit aktivitu uživatelům](../how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md)
 - [Termínová sada](terminova-sada.md)
-- [Složky aktivit (připravujeme)](#)
+- [Složky aktivit](slozky-aktivit.md)

@@ -106,4 +106,4 @@ Přiřazení uživatelů probíhá ke konkrétnímu termínu Termínové sady.
 - [Sada: struktura, hierarchie a splnění](sada.md)
 - [Subtypy aktivit](subtypy-aktivit.md)
 - [Detail sady](../reference/detail-sady.md)
-- [Složky aktivit (připravujeme)](#)
+- [Složky aktivit](slozky-aktivit.md)
