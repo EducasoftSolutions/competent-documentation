@@ -101,6 +101,7 @@ plugins:
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
           - pro-administratory/concepts/sada.md
+          - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/subtypy-aktivit.md
           - pro-administratory/concepts/role.md
           - pro-administratory/concepts/stitky.md
@@ -154,6 +155,7 @@ nav:
           - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
           - Sada: pro-administratory/concepts/sada.md
+          - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Subtypy aktivit: pro-administratory/concepts/subtypy-aktivit.md
           - Role a oprávnění: pro-administratory/concepts/role.md
           - Štítek: pro-administratory/concepts/stitky.md
