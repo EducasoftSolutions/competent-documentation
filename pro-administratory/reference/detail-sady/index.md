@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 **Sada** je typ aktivity, který funguje jako kontejner: sdružuje více dílčích aktivit (potomků) do jednoho celku, například kurikula nebo strukturovaného vzdělávacího programu. Na rozdíl od koncové aktivity může Sada mít potomky.
 
-Variantou Sady je **Termínová sada** – varianta sady s termíny (přidává tab **Termíny**). Termínová sada je popsána samostatně: [Termínová sada (připravujeme)](#).
+Variantou Sady je **Termínová sada** – varianta sady s termíny (přidává tab **Termíny**). Termínová sada je popsána samostatně: [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md).
 
 ______________________________________________________________________
 
@@ -88,5 +88,5 @@ ______________________________________________________________________
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 - [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
-- [Termínová sada (připravujeme)](#)
+- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)

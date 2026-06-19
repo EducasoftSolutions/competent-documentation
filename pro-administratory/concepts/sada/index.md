@@ -22,7 +22,7 @@ Sada je flexibilní kontejner, který akceptuje tři typy dílčích položek:
 - **Vnořené Sady** – Sada může obsahovat další Sady, čímž vzniká víceúrovňová hierarchie.
 - **Termínové sady** – kontejnery s termíny a kapacitou.
 
-Termínová sada se od Sady liší tím, že může obsahovat **pouze aktivity** – nelze do ní vkládat další Sady ani jiné Termínové sady. Toto omezení je záměrné: Termínová sada organizuje aktivity kolem konkrétních termínů a kapacit, nikoliv jako obecný hierarchický kontejner. Podrobnosti o Termínové sadě viz [Termínová sada (připravujeme)](#).
+Termínová sada se od Sady liší tím, že může obsahovat **pouze aktivity** – nelze do ní vkládat další Sady ani jiné Termínové sady. Toto omezení je záměrné: Termínová sada organizuje aktivity kolem konkrétních termínů a kapacit, nikoliv jako obecný hierarchický kontejner. Podrobnosti o Termínové sadě viz [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md).
 
 ______________________________________________________________________
 
@@ -77,5 +77,5 @@ ______________________________________________________________________
 - [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Jak přiřadit aktivitu uživatelům](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
-- [Termínová sada (připravujeme)](#)
+- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Složky aktivit (připravujeme)](#)

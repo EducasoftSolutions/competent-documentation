@@ -38,7 +38,7 @@ Termínová sada se od Sady liší tím, že může obsahovat **pouze aktivity**
 nelze do ní vkládat další Sady ani jiné Termínové sady. Toto omezení je
 záměrné: Termínová sada organizuje aktivity kolem konkrétních termínů a kapacit,
 nikoliv jako obecný hierarchický kontejner. Podrobnosti o Termínové sadě viz
-[Termínová sada (připravujeme)](#).
+[Termínová sada](terminova-sada.md).
 
 ---
 
@@ -112,5 +112,5 @@ Pro přidávání a přesouvání položek slouží tlačítko **Upravit obsah**
 - [Subtypy aktivit](subtypy-aktivit.md)
 - [Detail sady](../reference/detail-sady.md)
 - [Jak přiřadit aktivitu uživatelům](../how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md)
-- [Termínová sada (připravujeme)](#)
+- [Termínová sada](terminova-sada.md)
 - [Složky aktivit (připravujeme)](#)
