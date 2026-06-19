@@ -87,4 +87,4 @@ Přiřazení uživatelů k Sadě probíhá prostřednictvím 3krokového průvod
 - [Přiřazení uživatelů k aktivitě](../how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md)
 - [Periodické nastavení](periodicke-nastaveni.md)
 - [Termínová sada (připravujeme)](#)
-- [Sada (připravujeme)](#)
+- [Sada](../concepts/sada.md)

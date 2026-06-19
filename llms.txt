@@ -41,6 +41,7 @@ Zahrnuje návody pro administrátory, referenci nastavení a konceptuální pře
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
 - [Přehled](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md)
 - [Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
 - [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)

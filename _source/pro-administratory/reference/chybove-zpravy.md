@@ -34,5 +34,5 @@ Většina zpráv se zobrazuje v modálním okně nad aktuální obrazovkou. Okno
 ## Související stránky
 
 - [Přehled rolí a oprávnění](prehled-roli-a-opravneni.md)
-- [Detail aktivity (připravujeme)](#)
-- [Sady aktivit (připravujeme)](#)
+- [Detail aktivity](detail-aktivity.md)
+- [Sada](../concepts/sada.md)

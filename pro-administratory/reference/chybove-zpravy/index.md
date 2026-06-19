@@ -36,5 +36,5 @@ ______________________________________________________________________
 ## Související stránky
 
 - [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
-- [Detail aktivity (připravujeme)](#)
-- [Sady aktivit (připravujeme)](#)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
