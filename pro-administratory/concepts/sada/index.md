@@ -50,7 +50,7 @@ V systému Competent existují dva strukturálně odlišné koncepty, které se 
 
 **Složka** je organizační struktura v hierarchii obsahu – pomáhá udržet přehlednost v administraci, ale nelze ji přiřadit uživateli ani k ní tvořit přístupy. Plnění složky se nesleduje.
 
-Sada má se složkou jednu společnou vlastnost: může obsahovat podřízené objekty. Na rozdíl od složky ale Sada nemůže obsahovat podsložky – vztah mezi Sadou a složkou je tedy asymetrický. Více o principech organizace obsahu přes složky viz [Složky aktivit (připravujeme)](#).
+Sada má se složkou jednu společnou vlastnost: může obsahovat podřízené objekty. Na rozdíl od složky ale Sada nemůže obsahovat podsložky – vztah mezi Sadou a složkou je tedy asymetrický. Více o principech organizace obsahu přes složky viz [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md).
 
 ______________________________________________________________________
 
@@ -78,4 +78,4 @@ ______________________________________________________________________
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Jak přiřadit aktivitu uživatelům](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
-- [Složky aktivit (připravujeme)](#)
+- [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md)
