@@ -42,7 +42,7 @@ Každý z nich slouží jinému účelu:
 - Štítek je **volná značka**: nijak nemění umístění aktivity ani k čemu
   slouží – jen přidává označení, podle kterého lze aktivitu filtrovat.
 
-Více o sadách: [Sada (připravujeme)](#).
+Více o sadách: [Sada](sada.md).
 Více o složkách: [Složky aktivit (připravujeme)](#).
 
 ---
@@ -106,5 +106,5 @@ vazba, kterou by bylo možné zpětně obnovit.
 - [Vytvoření a správa štítků](../how-to/nastaveni/stitky.md) – jak v sekci **Nastavení** štítek vytvořit, přejmenovat nebo smazat.
 - [Přiřazení štítku k aktivitě](../how-to/aktivity/prirazovani-stitku.md) – jak štítek přiřadit konkrétní aktivitě nebo ho z aktivity odebrat.
 - [Filtrování aktivit podle štítků](../how-to/aktivity/vyhledavani-v-aktivitach.md) – jak v seznamu aktivit využít štítky jako filtr.
-- [Sada (připravujeme)](#) – seskupení aktivit přiřaditelné uživatelům.
+- [Sada](sada.md) – seskupení aktivit přiřaditelné uživatelům.
 - [Složky aktivit (připravujeme)](#) – hierarchická navigace aktivit v administraci.
