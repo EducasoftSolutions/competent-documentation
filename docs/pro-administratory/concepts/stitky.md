@@ -43,7 +43,7 @@ Každý z nich slouží jinému účelu:
   slouží – jen přidává označení, podle kterého lze aktivitu filtrovat.
 
 Více o sadách: [Sada](sada.md).
-Více o složkách: [Složky aktivit (připravujeme)](#).
+Více o složkách: [Složky aktivit](slozky-aktivit.md).
 
 ---
 
@@ -107,4 +107,4 @@ vazba, kterou by bylo možné zpětně obnovit.
 - [Přiřazení štítku k aktivitě](../how-to/aktivity/prirazovani-stitku.md) – jak štítek přiřadit konkrétní aktivitě nebo ho z aktivity odebrat.
 - [Filtrování aktivit podle štítků](../how-to/aktivity/vyhledavani-v-aktivitach.md) – jak v seznamu aktivit využít štítky jako filtr.
 - [Sada](sada.md) – seskupení aktivit přiřaditelné uživatelům.
-- [Složky aktivit (připravujeme)](#) – hierarchická navigace aktivit v administraci.
+- [Složky aktivit](slozky-aktivit.md) – hierarchická navigace aktivit v administraci.
