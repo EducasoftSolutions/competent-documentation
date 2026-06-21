@@ -28,7 +28,7 @@ Competent nabízí tři různé způsoby, jak seskupovat nebo označovat aktivit
 - Sada je **přiřaditelný kontejner**: seskupuje aktivity do celku, který lze jako celek přiřadit uživatelům ke splnění.
 - Štítek je **volná značka**: nijak nemění umístění aktivity ani k čemu slouží – jen přidává označení, podle kterého lze aktivitu filtrovat.
 
-Více o sadách: [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md). Více o složkách: [Složky aktivit (připravujeme)](#).
+Více o sadách: [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md). Více o složkách: [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md).
 
 ______________________________________________________________________
 
@@ -78,4 +78,4 @@ ______________________________________________________________________
 - [Přiřazení štítku k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md) – jak štítek přiřadit konkrétní aktivitě nebo ho z aktivity odebrat.
 - [Filtrování aktivit podle štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md) – jak v seznamu aktivit využít štítky jako filtr.
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md) – seskupení aktivit přiřaditelné uživatelům.
-- [Složky aktivit (připravujeme)](#) – hierarchická navigace aktivit v administraci.
+- [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md) – hierarchická navigace aktivit v administraci.
