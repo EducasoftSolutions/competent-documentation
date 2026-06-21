@@ -86,7 +86,7 @@ Popsané přechody a akční tlačítka platí přímo pro **beztermínové a je
 
 U **vícenásobných termínových aktivit** (aktivit s více termíny) funguje rozdělení odpovědnosti jinak: hlavní aktivita nese jen hrubé stavové přechody (typicky Skryto → Viditelné → Ukončeno → Archivováno), zatímco podrobné stavy registrace a spuštění jsou řízeny na úrovni jednotlivých termínů. Stav **Viditelné** je proto u tohoto typu aktivit klíčový – signalizuje, že aktivita je zveřejněna a uživatelé si mohou vybírat z termínů.
 
-Podrobnosti o schématech aktivit a chování termínů naleznete na stránce [Schémata aktivity (připravujeme)](#).
+Podrobnosti o schématech aktivit a chování termínů naleznete na stránce [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md).
 
 ______________________________________________________________________
 
@@ -103,5 +103,5 @@ ______________________________________________________________________
 - [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md) – úplná tabulka 10 stavů s jejich významem
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
-- [Schémata aktivity (připravujeme)](#)
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
 - [Pokusy uživatele (připravujeme)](#)

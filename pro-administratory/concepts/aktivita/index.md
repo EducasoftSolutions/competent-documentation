@@ -102,7 +102,7 @@ ______________________________________________________________________
 
 - [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
 - [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
-- [Schémata aktivity (připravujeme)](#)
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
 - [Termíny a kapacita (připravujeme)](#)
 - [Jak vytvořit aktivitu (připravujeme)](#)
 - [Jak přiřadit aktivitu uživatelům (připravujeme)](#)

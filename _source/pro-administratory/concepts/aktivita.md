@@ -130,7 +130,7 @@ typy vzdělávacích objektů používá zastřešující pojem „aktivita".
 
 - [Subtypy aktivit](subtypy-aktivit.md)
 - [Stavy aktivity](stavy-aktivity.md)
-- [Schémata aktivity (připravujeme)](#)
+- [Schémata aktivity](schemata-aktivity.md)
 - [Termíny a kapacita (připravujeme)](#)
 - [Jak vytvořit aktivitu (připravujeme)](#)
 - [Jak přiřadit aktivitu uživatelům (připravujeme)](#)
