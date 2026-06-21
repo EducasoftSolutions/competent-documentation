@@ -123,4 +123,4 @@ způsobit nekonzistenci dat. Zpravidla proto není součástí běžného provoz
 - [Termínová sada](terminova-sada.md)
 - [Detail aktivity](../reference/detail-aktivity.md)
 - [Obrazovka Aktivity](../reference/obrazovka-aktivity.md)
-- [Jak přidat termín k aktivitě (připravujeme)](#)
+- [Přidání termínu k aktivitě](../how-to/aktivity/terminy-aktivity.md)

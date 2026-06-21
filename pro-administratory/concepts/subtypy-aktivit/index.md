@@ -37,7 +37,7 @@ ______________________________________________________________________
 
 Subtypy aktivit jsou zákaznicky konfigurovatelné. V administraci na obrazovce Nastavení naleznete záložku **Subtypy**, kde lze spravovat stávající subtypy a přidávat subtypy nové. Nově vytvořený subtyp se okamžitě objeví v nabídce při zakládání aktivity – pod svým typem.
 
-Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce [Tab Subtypy (připravujeme)](#).
+Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce [Tab Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md).
 
 ### Subtypy dalších objektů
 
@@ -57,4 +57,4 @@ ______________________________________________________________________
 
 - [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
-- [Tab Subtypy (připravujeme)](#)
+- [Tab Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)

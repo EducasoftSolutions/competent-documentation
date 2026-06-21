@@ -566,6 +566,289 @@ Tím je postup dokončen.
 - [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 
+# Nastavení podmínek přístupu k aktivitě
+
+Podmínky přístupu umožňují omezit, kdo se může k aktivitě přihlásit nebo ji spustit. Systém zkontroluje, zda uživatel splnil požadované předpoklady – například absolvování jiné aktivity – a teprve poté mu aktivitu zpřístupní. Podmínky se nastavují v záložce **Podmínky** v detailu aktivity.
+
+## Předpoklady
+
+- Jste přihlášeni jako administrátor s oprávněním upravovat aktivity.
+- Aktivita existuje v systému. Podmínky přístupu lze nastavit na jakémkoli typu aktivity kromě hodnocení.
+
+## Postup
+
+### 1. Otevřete záložku Podmínky
+
+V detailu aktivity klikněte na záložku **Podmínky**.
+
+Pokud aktivita zatím nemá žádné podmínky přístupu, záložka zobrazuje tlačítko **Nastavit podmínky**.
+
+### 2. Inicializujte editor podmínek
+
+Klikněte na **Nastavit podmínky**. Systém inicializuje editor podmínek a zobrazí sekci **Je třeba splnit:** s tlačítky pro přidání podmínek.
+
+Na řádku **Přidat:** jsou dostupná tři tlačítka:
+
+- **Aktivity** – přidá požadavek na absolvování konkrétní aktivity
+- **Kvalifikace** – přidá požadavek na kvalifikaci (viz upozornění v sekci [Pozor na](#pozor-na))
+- **Více možností** – vloží skupinu podmínek ve vztahu nebo (stačí splnit alespoň jednu)
+
+### 3. Přidejte podmínku na aktivitu
+
+Klikněte na **Aktivity**. Otevře se vedlejší panel s výběrem aktivit ze stromu.
+
+V panelu klikněte na **Přidat** u aktivity, která má být splněna jako předpoklad. Aktivita se zobrazí v sekci **Je třeba splnit:**.
+
+Klikněte na **Hotovo** pro potvrzení výběru a zavření panelu.
+
+### 4. Přidejte skupinu pro alternativní podmínky (volitelné)
+
+Pokud chcete, aby stačilo splnit alespoň jednu z několika podmínek, klikněte na **Více možností**. Do stromu podmínek se vloží skupina **a jednu z možností** se dvěma větvemi: **Možnost A** a **Možnost B**.
+
+Do každé větve (Možnost A, Možnost B) pak pomocí akčního menu větve přidáte podmínky, které musí být splněny v rámci dané varianty.
+
+Pokud potřebujete přidat další variantu, klikněte na **Přidat další možnost** uvnitř skupiny.
+
+### 5. Zkontrolujte výsledný strom podmínek
+
+Strom podmínek zobrazuje všechny nastavené požadavky. Podmínky na stejné úrovni platí ve vztahu a zároveň – uživatel musí splnit všechny. Skupina **a jednu z možností** vyjadřuje vztah nebo.
+
+### 6. Odebrání podmínek
+
+Jednotlivou podmínku odeberete kliknutím na tlačítko **Odebrat** u dané položky. Systém zobrazí potvrzovací dialog.
+
+Chcete-li odebrat všechny podmínky najednou, klikněte na **Zrušit podmínky** a potvrďte dialog. Záložka se vrátí do prázdného stavu s tlačítkem **Nastavit podmínky**.
+
+## Pozor na
+
+- Podmínka na aktivitu je splněna teprve ve chvíli, kdy je uživatelský přístup k požadované aktivitě ve stavu **Dokončeno** nebo **Splněno**.
+- Pokud je aktivita součástí sady aktivit, lze podmínky přístupu převzít z nadřazené sady kliknutím na **Převzít podmínky z nadřazené Aktivity**.
+- Pokud aktivita zdědila podmínky z nadřazené sady, zobrazí se informace „Tato podmínka je nastavena dle podmínky na nadřazené Aktivitě" a tlačítka **Osamostatnit od podmínky na nadřazené Aktivitě** (odpojí podmínku od nadřazené sady) a **Zrušit podmínky**.
+- Mimo podmínek na aktivity systém umožňuje přidat i podmínku na kvalifikaci. Dostupnost a funkčnost podmínek na kvalifikace závisí na konfiguraci instalace – ověřte u dodavatele Educasoft.
+
+## Související stránky
+
+- [Podmínky přístupu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md) – popis principu vyhodnocování
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md) – přehled všech záložek detailu
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+
+# Jak přidat dokument k aktivitě
+
+Záložka **Dokumenty** v detailu aktivity slouží k přiřazení souborů, které budou uživatelům dostupné ke stažení v závislosti na jejich aktuálním stavu přístupu k aktivitě. Tento návod popisuje, jak soubor k aktivitě přiřadit, nastavit jeho viditelnost pro jednotlivé stavy přístupu a v případě potřeby soubor od aktivity odebrat.
+
+## Předpoklady
+
+- Jste přihlášeni jako administrátor s oprávněním upravovat aktivity (máte přístup k editaci aktivity v administraci).
+- Aktivita existuje v systému.
+- Soubor, který chcete přiřadit, je dostupný v Knihovně souborů, nebo ho máte připravený k nahrání.
+
+## Postup
+
+### 1. Otevřete záložku Dokumenty
+
+V detailu aktivity přejděte na záložku **Dokumenty**. Pokud k aktivitě dosud nebyl přiřazen žádný soubor, je záložka prázdná.
+
+### 2. Otevřete Knihovnu souborů
+
+Klikněte na tlačítko **plus** (kulaté) v záložce. Otevře se vedlejší panel **Knihovna souborů**.
+
+### 3. Vyberte soubor nebo nahrajte nový
+
+**Pokud soubor je v Knihovně souborů:**
+
+Proklikejte se do příslušné složky. Kliknutím na název souboru ho označíte – soubor se vizuálně vyznačí jako vybraný.
+
+**Pokud soubor v Knihovně souborů není:**
+
+Soubor nahrajte přímo z vedlejšího panelu jedním ze dvou způsobů:
+
+- Přetáhněte soubor do oblasti **Soubory přetáhněte** v panelu.
+- Klikněte na **vyberte v počítači**, vyberte soubor z počítače a poté klikněte na **Nahrát soubor**.
+
+Po nahrání se soubor zobrazí v panelu a je připravený k přiřazení.
+
+Soubor nahraný bez otevřené složky
+
+Pokud soubor nahrajete bez předem otevřené složky v panelu, zobrazí se informace, že nahraný soubor bude k dispozici pouze v této aktivitě a nebude dostupný v knihovně souborů.
+
+### 4. Nastavte viditelnost dokumentu
+
+V dolní části panelu klikněte na sekci **Nastavit stavy**. Otevře se výběr stavů uživatelského přístupu, při kterých bude dokument uživateli viditelný.
+
+Kliknutím do výběrového pole rozbalíte dostupné stavy přístupu.
+
+Vyberte jeden nebo více stavů, při kterých má být dokument viditelný. Chcete-li dokument zobrazovat ve všech stavech přístupu, klikněte na **Vše**.
+
+### 5. Ověřte přiřazení
+
+Po výběru stavů se soubor automaticky přiřadí k aktivitě a zobrazí se v záložce **Dokumenty**, roztříděný do skupin podle vybraných stavů přístupu.
+
+Tím je postup dokončen.
+
+## Odebrání souboru z aktivity
+
+Chcete-li soubor od aktivity odebrat, klikněte na ikonu křížku u daného souboru přímo v záložce **Dokumenty**.
+
+Note
+
+Přiřazením souboru k aktivitě vzniká interní kopie. Soubor zůstane uživatelům aktivity dostupný ke stažení i v případě, že se původní soubor odstraní z Knihovny souborů.
+
+## Pozor na
+
+- Soubory přiřazené k aktivitě jsou v záložce **Dokumenty** seřazeny do skupin podle stavů uživatelského přístupu (například **Budoucí, Zajímám se, Registrovaný, Spuštěno, Dokončeno** a další). Dokumenty nastavené pro všechny stavy jsou ve skupině **Všechny stavy**, dokumenty bez nastaveného stavu jsou ve skupině **Bez stavu**.
+- Slovo **stavy** v tomto kontextu označuje stavy uživatelského přístupu k aktivitě – nikoli stav dokumentu samotného. Přehled a popis jednotlivých stavů najdete na stránce [Stavy přístupu uživatele k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md).
+
+## Související stránky
+
+- [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md)
+- [Stavy přístupu uživatele k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
+# Jak přidat a upravit pokus uživatele
+
+Pokus je jeden záznam o absolvování aktivity konkrétním uživatelem. U aktivit, které hodnotí administrátor nebo pověřený hodnotitel, můžete pokusy zadávat a upravovat ručně. Tento postup popisuje, jak otevřít modál **Pokusy uživatele**, jak přidat nový pokus a jak upravit pokus stávající.
+
+## Předpoklady
+
+- Máte oprávnění hodnotit aktivitu (jste přihlášeni jako administrátor nebo hodnotitel s právem hodnotit aktivity).
+- Uživatel má k aktivitě přiřazený přístup, tedy figuruje na záložce **Uživatelé** v Detailu aktivity.
+- Aktivita má nastavený typ hodnocení. Přesná podoba formuláře pokusu se podle tohoto nastavení liší.
+
+## Postup
+
+### 1. Otevřete záložku Uživatelé
+
+V Detailu aktivity přejděte na záložku **Uživatelé**. Zobrazí se seznam uživatelů, kteří mají k aktivitě přiřazený přístup, společně s jejich aktuálním výsledkem a stavem.
+
+### 2. Spusťte hodnocení uživatele
+
+V řádku konkrétního uživatele klikněte na tlačítko **Hodnotit**. Ikony akcí najdete na pravém konci řádku.
+
+Otevře se modál **Pokusy uživatele**.
+
+### 3. Prohlédněte si přehled pokusů
+
+V záhlaví modálu vidíte jméno uživatele, název aktivity a souhrnné údaje:
+
+- **Stav** – zda uživatel aktivitu splnil, nebo nesplnil.
+- **Pokusy** – počet využitých, zbývajících a smazaných pokusů. Pokud aktivita nemá omezený počet pokusů, zobrazí se údaj **neomezeno**.
+
+Každý řádek v seznamu představuje jeden pokus. U pokusu se podle nastavení aktivity zobrazuje začátek pokusu, konec pokusu, výsledek pokusu, slovní hodnocení a hodnotitel. Pokud uživatel zatím nemá žádný pokus, zobrazí se informace, že uživatel nemá přiřazená žádná hodnocení.
+
+### 4. Přidejte nový pokus
+
+Klikněte na kulaté tlačítko **plus**. Otevře se formulář nového pokusu.
+
+Pole formuláře závisí na typu hodnocení aktivity (například procenta, body nebo prosté splnění). Do pole pro slovní hodnocení můžete zapsat komentář, který se k pokusu uloží.
+
+Notifikace
+
+Pokud formulář nabízí volbu **Neposílat notifikaci**, jejím zaškrtnutím potlačíte automatické e-mailové notifikace spojené s uložením pokusu.
+
+### 5. Uložte a vyhodnoťte pokus
+
+Po vyplnění údajů máte k dispozici tři možnosti uložení:
+
+- **Uložit** – uloží pokus bez vyhodnocení splnění aktivity.
+- **Uložit a vyhodnotit** – uloží pokus a vyhodnotí, zda uživatel aktivitu splnil.
+- **Vyhodnotit jako nesplněné** – uloží pokus a označí aktivitu jako nesplněnou.
+
+Které z těchto tlačítek se zobrazí, závisí na typu hodnocení aktivity.
+
+### 6. Upravte stávající pokus
+
+Existující pokus upravíte tlačítkem **Upravit** u příslušného řádku. Otevře se formulář s aktuálními hodnotami pokusu. Po úpravě použijete stejná tlačítka pro uložení jako při přidání nového pokusu.
+
+Modál nakonec zavřete tlačítkem **Zavřít**.
+
+## Pozor na
+
+- Pokud uživatel dosáhl maximálního povoleného počtu pokusů, tlačítko **plus** je nedostupné a systém zobrazí informaci, že další pokus nelze přidat.
+- Rozdíl mezi tlačítky **Uložit** a **Uložit a vyhodnotit** je v tom, zda se zároveň přepočítá splnění aktivity. Tlačítkem **Uložit** zaznamenáte pokus, aniž byste měnili výsledek splnění.
+
+## Související stránky
+
+- [Pokusy uživatele (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
+# Jak přidat termín k aktivitě
+
+Termín určuje, kdy a kde se aktivita koná, a kolik uživatelů se jí může zúčastnit. Tento postup popisuje, jak na záložce **Termíny** v Detailu aktivity přidat nový termín, vyplnit jeho základní údaje a nastavit jeho zveřejnění.
+
+## Předpoklady
+
+- Máte oprávnění upravovat aktivitu v administraci (jste přihlášeni jako administrátor).
+- Aktivita je Termínová sada, nebo má schéma **S termíny**. Jen u těchto aktivit je záložka **Termíny** dostupná.
+- Aktivita nemusí mít žádné existující termíny ani přiřazené uživatele.
+
+## Postup
+
+### 1. Otevřete záložku Termíny
+
+V Detailu aktivity přejděte na záložku **Termíny**. Záložka je rozdělena do tří podzáložek: **Budoucí**, **Probíhající** a **Minulé**, podle data konání termínů. Pokud aktivita zatím žádný termín nemá, zobrazí se informace **Aktivita nemá termíny**.
+
+Adresa záložky
+
+V adrese prohlížeče má záložka technický parametr `activeTab=runs`. V rozhraní se však vždy jmenuje **Termíny**.
+
+### 2. Otevřete formulář nového termínu
+
+Klikněte na tlačítko **plus**. Otevře se formulář **Nový termín** s předvyplněným zítřejším datem.
+
+### 3. Vyplňte termín konání
+
+V sekci **Termín konání aktivity** zadejte, kdy se termín koná:
+
+- **Datum** – den konání termínu. Toto je jediný povinný údaj celého formuláře.
+- **Čas** – čas začátku a konce termínu.
+- **Vícedenní termín** – zaškrtnutím zobrazíte druhé datové pole pro konec vícedenního termínu.
+- **Celodenní** – předvyplní časy na celý den.
+
+### 4. Doplňte nepovinné údaje
+
+Dále můžete vyplnit nepovinné parametry termínu:
+
+- **Kapacita** – maximální počet účastníků. Tlačítkem **Neomezeno** omezení kapacity zrušíte.
+- **Místo** – místo konání termínu. Vyberete je ze seznamu míst uložených v systému. Termín může probíhat i bez přiřazeného místa.
+- **Realizační tým** – uživatelé s organizační rolí v termínu, například lektoři nebo zkoušející.
+- **Popis** – libovolný text s informacemi nebo pokyny k termínu.
+- **Cena** – cena termínu. Tato hodnota je pouze informativní a nemá žádné funkční napojení na platební systém.
+
+Kliknutím na **Pokračovat** přejdete do druhého kroku.
+
+### 5. Nastavte registraci a zveřejnění
+
+Druhý krok zobrazí souhrn zadaných údajů a dvě sekce nastavení.
+
+V sekci **Registrace** nastavte, kdy se termín zpřístupní uživatelům k přihlášení.
+
+V sekci **Zveřejnění** určíte, kdy termín přejde do stavu, ve kterém je viditelný:
+
+- **Zveřejnit manuálně** – termín zůstane po uložení skrytý a zveřejníte ho později ručně.
+- **Zveřejnit ihned po uložení** – termín se zpřístupní okamžitě po uložení.
+- **Nastavit termín zveřejnění** – termín se automaticky zveřejní v zadané datum a čas.
+
+### 6. Uložte termín
+
+Klikněte na **Uložit**. Nový termín se zobrazí v příslušné podzáložce (Budoucí, Probíhající nebo Minulé) podle data konání. U termínu vidíte datum, čas, obsazenost vůči kapacitě a jeho aktuální stav.
+
+## Pozor na
+
+- Kapacita se eviduje pro každý termín zvlášť. Při plné kapacitě již nelze k termínu přihlásit dalšího uživatele.
+- Zvolíte-li **Zveřejnit manuálně**, termín zůstane ve stavu **Skryto** a pro uživatele není viditelný, dokud ho ručně nezveřejníte.
+
+Vícefázové termíny
+
+Pokud termín sestává z více fází (například konference s několika přednáškami), použijte ve formuláři termínu tlačítko **Vložit fázi**.
+
+## Související stránky
+
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
+- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
 # Vytvoření uživatele v administraci
 
 Nového uživatele vytvoříte v obrazovce **Lidé**, kde se evidují všichni uživatelé systému Competent. Tento návod vás provede vyplněním formuláře, povinnými poli a volitelným zařazením uživatele do skupiny.
@@ -1357,7 +1640,7 @@ Každý řádek v gridu umožňuje následující operace:
 - **Data přiřazení** – nastavení dat: začátek, optimální začátek, optimální konec, vyžadovaný konec a konec přístupu.
 - **Stáhnout certifikát** – stažení certifikátu o splnění aktivity.
 - **Historie přístupů** – zobrazení záznamu o přístupech uživatele k aktivitě.
-- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele (připravujeme)](#)).
+- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)).
 - **Stav přiřazení** – zobrazení a změna stavu přiřazení.
 - **Editace přiřazení** – dostupná pouze u aktivit se schématem **Bez termínu**.
 - **Odebrání uživatelského přístupu** – odebere přístup uživatele k aktivitě.
@@ -1428,19 +1711,19 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 | **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                                                                                                      |
 | **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                                                                                                 |
 | **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)). |
-| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                                                                                                     |
+| **Workflow**        | Panel Workflow. Viz [Workflow aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/workflow-aktivity/index.md).                                  |
 
 ______________________________________________________________________
 
 ## Tab Dokumenty
 
-Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě (připravujeme)](#).
+Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md).
 
 ______________________________________________________________________
 
 ## Tab Podmínky
 
-Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu (připravujeme)](#).
+Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md).
 
 ______________________________________________________________________
 
@@ -1476,9 +1759,9 @@ ______________________________________________________________________
 - [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
 - [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
-- [Pokusy uživatele (připravujeme)](#)
-- [Dokumenty v aktivitě (připravujeme)](#)
-- [Podmínky přístupu (připravujeme)](#)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md)
+- [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/index.md)
@@ -1797,6 +2080,249 @@ ______________________________________________________________________
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Detail uživatele (připravujeme)](#)
 
+# Záložka Přiřazení dle Skupin
+
+Záložka **Přiřazení dle Skupin** je součástí obrazovky **Nastavení** v administraci Competent. Umožňuje prohlížet a spravovat pravidla přiřazení, která automaticky přidělují aktivity uživatelům na základě jejich členství ve skupinách. Tato stránka popisuje sloupce, tlačítka a pole formuláře záložky.
+
+Popis toho, jak mechanismus přiřazení dle skupin funguje, naleznete na stránce [Přiřazení dle skupin: mechanismus a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md).
+
+______________________________________________________________________
+
+## Přístup do záložky
+
+Záložka se nachází na obrazovce **Nastavení** v administrátorské navigaci. Záložka **Přiřazení dle Skupin** je dostupná uživatelům s oprávněním zobrazovat nebo spravovat pravidla přiřazení dle skupin. Celá sekce Nastavení je určena proškoleným administrátorům – nesprávná manipulace s pravidly přiřazení může ovlivnit přístupy uživatelů.
+
+______________________________________________________________________
+
+## Přehled záložky
+
+Záložka obsahuje dva subtaby pro přepínání pohledu:
+
+| Subtab                  | Obsah                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Uživatelské skupiny** | Seznam uživatelských skupin a jejich přiřazených aktivit, sad nebo složek.                              |
+| **Objekty stromu**      | Seznam objektů (aktivit, sad, složek) a skupin, jimž jsou přiřazeny prostřednictvím pravidel přiřazení. |
+
+Záložka zobrazuje seznam existujících pravidel přiřazení; v demo prostředí může být seznam prázdný.
+
+### Prvky záložky
+
+| Prvek                          | Popis                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------- |
+| Tlačítko **Nové přiřazení**    | Otevře modál [Přiřadit](#modal-priradit) pro vytvoření nového pravidla přiřazení.         |
+| Checkbox **Zobrazit ukončené** | Přepíná viditelnost ukončených pravidel přiřazení; ukončená pravidla se zobrazují šedivě. |
+
+______________________________________________________________________
+
+## Subtab Uživatelské skupiny
+
+Pohled **Uživatelské skupiny** zobrazuje seznam skupin se sloupci:
+
+| Sloupec                            | Popis                                                                                  |
+| ---------------------------------- | -------------------------------------------------------------------------------------- |
+| **Název skupiny**                  | Název uživatelské skupiny.                                                             |
+| **Popis skupiny**                  | Textový popis skupiny.                                                                 |
+| **Přiřazené Aktivity/Sady/Složky** | Výčet aktivit, sad nebo složek přiřazených skupině prostřednictvím pravidel přiřazení. |
+
+### Detail skupiny
+
+Kliknutím na řádek skupiny se rozbalí detail s tabulkou přiřazených objektů. Rozbalený detail obsahuje sloupce:
+
+| Sloupec                        | Popis                                                                                           |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Název Aktivity/Sady/Složky** | Název přiřazeného objektu.                                                                      |
+| **Popis**                      | Popis objektu.                                                                                  |
+| **Typ**                        | Typ objektu (aktivita, sada nebo složka).                                                       |
+| **Nastavení přístupu**         | Parametry přístupu nastavené v daném pravidle přiřazení (začátek přístupu, vyžadované splnění). |
+
+______________________________________________________________________
+
+## Subtab Objekty stromu
+
+Pohled **Objekty stromu** zobrazuje seznam objektů se sloupci:
+
+| Sloupec                        | Popis                                                                |
+| ------------------------------ | -------------------------------------------------------------------- |
+| **Název Aktivity/Sady/Složky** | Název objektu.                                                       |
+| **Popis**                      | Popis objektu.                                                       |
+| **Typ**                        | Typ objektu (aktivita, sada nebo složka).                            |
+| **Přiřazené skupiny**          | Skupiny, jimž je objekt přiřazen prostřednictvím pravidel přiřazení. |
+
+______________________________________________________________________
+
+## Modál Přiřadit
+
+Modál **Přiřadit** se otevírá tlačítkem **Nové přiřazení** (vytvoření pravidla) nebo akcí **Upravit** na existujícím pravidle.
+
+### Pole Skupina
+
+Výběr uživatelské skupiny, pro níž se pravidlo přiřazení vytváří.
+
+### Pole Aktivita/Složka
+
+Výběr cíle pravidla přiřazení. Pravidlo lze cílit na:
+
+- **aktivitu nebo sadu** – tlačítkem **Zvolit Aktivitu**,
+- **složku** – tlačítkem **Zvolit Složku**; pravidlo se rozpadne na dílčí pravidla pro každý objekt uvnitř složky.
+
+### Pole Začátek přístupu
+
+Určuje, od kdy začíná přístup uživatele k přiřazenému objektu.
+
+| Možnost                     | Chování                                                                                                                                   |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Datum**                   | Přístup začíná pevným datem nastaveným administrátorem. Tlačítko **Nenastavovat** použije jako začátek datum vstupu uživatele do skupiny. |
+| **Dle členství ve skupině** | Přístup začíná datem vstupu uživatele do skupiny nebo datem vytvoření pravidla – co nastane dříve.                                        |
+| **Dle parametru**           | Začátek přístupu určuje parametr aktivity.                                                                                                |
+
+### Pole Vyžadované splnění
+
+Určuje délku nebo podmínku ukončení přístupu.
+
+| Možnost                     | Chování                                                                  |
+| --------------------------- | ------------------------------------------------------------------------ |
+| **Datumy**                  | Přístup trvá do pevného data nastaveného administrátorem.                |
+| **Počtem dní**              | Přístup trvá zadaný počet dní od začátku (hodnota musí být větší než 0). |
+| **Podle aktivity**          | Délka přístupu se přebírá z parametru „Počet dnů přístupu" na aktivitě.  |
+| **Nemá vyžadované splnění** | Přístup nemá časové omezení.                                             |
+| **Dle parametru**           | Délka přístupu je určena parametrem.                                     |
+
+### Checkbox Znovu nastavit i aktuálně splněné přístupy
+
+Dostupný při vytváření nového pravidla.
+
+| Stav checkboxu | Chování                                                                        |
+| -------------- | ------------------------------------------------------------------------------ |
+| Zaškrtnuto     | Pravidlo se aplikuje i na uživatele, kteří aktivitu již mají splněnou.         |
+| Nezaškrtnuto   | Pravidlo se aplikuje pouze na uživatele bez aktivního nebo splněného přístupu. |
+
+______________________________________________________________________
+
+## Ukončení a smazání pravidla
+
+### Ukončit pravidlo
+
+Tlačítko **Ukončit** ukončí aktivní pravidlo přiřazení. Po ukončení:
+
+- všechny přístupy vytvořené tímto pravidlem přejdou do stavu **Dokončeno**,
+- z pravidla se nadále nevytváří nové přístupy,
+- uživatelé aktivitu v historii stále vidí.
+
+### Smazat pravidlo
+
+Tlačítko **Smazat** (ikona koše) zobrazí dialog se dvěma volbami:
+
+| Volba dialogu           | Dopad na přístupy uživatelů                                                                                            |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Ano**                 | Pravidlo se smaže; existující přístupy uživatelů zůstávají beze změny.                                                 |
+| **Ano včetně přístupů** | Pravidlo se smaže a aktuální přístupy přejdou do stavu **Zrušeno**. Historické (již ukončené) přístupy jsou zachovány. |
+
+______________________________________________________________________
+
+## Pozor na
+
+Pravidla s periodicitou a ukončení
+
+U pravidla s nastavením periodicity může dojít k vytvoření nového přístupu i po ukončení pravidla tlačítkem **Ukončit**.
+
+Formulář **Přiřadit** může obsahovat další nastavení přístupu, například periodicitu opakování. Konkrétní možnosti závisí na konfiguraci systému.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Přiřazení dle skupin: mechanismus a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
+- [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
+# Záložka Subtypy
+
+Záložka **Subtypy** je součástí obrazovky **Nastavení** a umožňuje spravovat subtypy pro všechny typy objektů v systému Competent – aktivity, hodnocení, sady, termínové sady, uživatele, uživatelské skupiny a kvalifikace. Záložka je přístupná pouze uživatelům s oprávněním spravovat subtypy a parametry systému Competent.
+
+______________________________________________________________________
+
+## Přístup k záložce
+
+Záložka **Subtypy** se nachází na obrazovce **Nastavení**. K záložce mají přístup uživatelé s oprávněním spravovat subtypy a parametry systému Competent. Sekce Nastavení je určena pro zkušené administrátory – nesprávná manipulace se subtypy může ovlivnit fungování systému.
+
+______________________________________________________________________
+
+## Subtaby
+
+Záložka Subtypy je vnitřně rozdělena do subtabů podle typů objektů. Aktivní subtab je vizuálně vyznačen tučným písmem a bílou šipkou zespodu.
+
+| Subtab                  | Subtypy pro                 |
+| ----------------------- | --------------------------- |
+| **Aktivity**            | Objekty typu Aktivita       |
+| **Hodnocení**           | Objekty typu Hodnocení      |
+| **Sady**                | Objekty typu Sada           |
+| **Termínové sady**      | Objekty typu Termínová sada |
+| **Uživatelé**           | Uživatele                   |
+| **Uživatelské skupiny** | Skupiny uživatelů           |
+| **Kvalifikace**         | Kvalifikace                 |
+
+______________________________________________________________________
+
+## Seznam subtypů
+
+Po výběru subtabu se zobrazí seznam subtypů příslušného typu. V záložce uvidíte subtypy nakonfigurované pro Vaši instalaci systému Competent.
+
+| Prvek                             | Popis                                                     |
+| --------------------------------- | --------------------------------------------------------- |
+| **Tlačítko plus** (vpravo nahoře) | Otevře modál **Nový subtyp…** pro přidání nového subtypu. |
+| **Řádek subtypu**                 | Kliknutím na řádek otevřete editační okno subtypu.        |
+| **Ikona koše** (na řádku)         | Smaže vybraný subtyp.                                     |
+
+______________________________________________________________________
+
+## Modál Nový subtyp
+
+Modál **Nový subtyp…** se otevře po kliknutí na tlačítko plus v pravém horním rohu záložky.
+
+| Pole / Prvek                      | Popis                                                                                                                                                                                                                                                           |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Název**                         | Název nového subtypu. Povinné pole.                                                                                                                                                                                                                             |
+| **Iniciální konfigurace subtypu** | Výchozí hodnoty, které se automaticky nastaví každému nově vytvořenému objektu s tímto subtypem – například typ hodnocení, výchozí popis nebo schéma aktivity. Konkrétní konfigurační pole závisí na typu objektu. Sekci lze před vytvořením volitelně upravit. |
+| **vytvořit** (tlačítko)           | Potvrdí vytvoření subtypu. Po stisknutí systém otevře editační okno subtypu pro přidání parametrů.                                                                                                                                                              |
+
+______________________________________________________________________
+
+## Editační okno subtypu
+
+Editační okno se otevře kliknutím na řádek existujícího subtypu nebo automaticky po potvrzení vytvoření nového.
+
+| Prvek                             | Popis                                                                                                                                                                                      |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Název subtypu** (záhlaví)       | Aktuální název subtypu. Lze upravit kliknutím na editační ikonu.                                                                                                                           |
+| **Iniciální konfigurace subtypu** | Sekce s výchozí konfigurací subtypu. Tlačítko **Upravit konfiguraci** vpravo sekci otevře k editaci.                                                                                       |
+| **Seznam parametrů subtypu**      | Vedlejší parametry přiřazené k tomuto subtypu. Každý objekt vytvořený s daným subtypem tyto parametry zdědí. Kliknutím na řádek parametru ho upravíte, kliknutím na ikonu koše ho smažete. |
+| **Přidat parametr** (tlačítko)    | Přidá nový parametr k subtypu. Při vytváření parametru systém kontroluje unikátnost názvu.                                                                                                 |
+| **Uložit a zavřít** (tlačítko)    | Uloží veškeré změny v editačním okně a zavře ho.                                                                                                                                           |
+
+Uložení změn v editačním okně
+
+Veškeré změny – přidané parametry i úpravy konfigurace – se uloží až kliknutím na tlačítko **Uložit a zavřít**. Samotné přidání parametru nebo ukončení editace konfigurace změny neukládá.
+
+______________________________________________________________________
+
+## Vlastnosti subtypu
+
+| Vlastnost                  | Popis                                                                                                                                      |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Neměnnost**              | Subtyp objektu je neměnný po uložení objektu. Po uložení aktivity, uživatele nebo jiného objektu nelze jeho subtyp změnit.                 |
+| **Rozsah**                 | Subtypy existují pro každý typ objektu v systému: Aktivity, Hodnocení, Sady, Termínové sady, Uživatele, Uživatelské skupiny a Kvalifikace. |
+| **Závislost na instalaci** | Konkrétní nabídka subtypů závisí na konfiguraci instalace systému Competent.                                                               |
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Subtypy aktivit: model a konfigurovatelnost](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
 # Přehled rolí a oprávnění
 
 Tato stránka je referenční katalog rolí a kategorií oprávnění v systému Competent. Vysvětluje, které role lze přiřadit ručně, které přiděluje systém automaticky a co vyjadřují závorky u názvů rolí v dialogu práv. Model fungování rolí (globální vs. objektové, dědění, delegování) je popsán na stránce [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
@@ -1981,6 +2507,177 @@ ______________________________________________________________________
 
 - [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+
+# Přehled notifikačních událostí
+
+Systém Competent podporuje **57 notifikačních událostí** (spouštěčů), které lze přiřadit k notifikačním pravidlům. Přehled mechanismu fungování notifikací naleznete na stránce [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md).
+
+Události se dělí podle způsobu spouštění:
+
+| Typ spouštění           | Popis                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------- |
+| **Reakce na akci**      | E-mail se odešle okamžitě, jakmile nastane příslušná systémová událost.            |
+| **Časovaná připomínka** | E-mail se odešle v naplánovaný čas, určitý počet dní před nebo po sledovaném datu. |
+
+______________________________________________________________________
+
+## Přístupy k aktivitám
+
+| Událost                         | Kdy nastane                                                                                       |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Přiřazení aktivity uživateli    | Uživateli je vytvořen nový přístup k aktivitě (např. přiřazením z administrace nebo importem).    |
+| Začátek přístupu k aktivitě     | Nastane okamžik začátku přístupu uživatele k aktivitě.                                            |
+| Dokončení aktivity              | Přístup uživatele k aktivitě přechází do stavu Dokončeno (s libovolným výsledkem).                |
+| Úspěšné dokončení aktivity      | Přístup uživatele k aktivitě je dokončen a aktivita je úspěšně splněna.                           |
+| Neúspěšné dokončení aktivity    | Přístup uživatele k aktivitě je dokončen a aktivita nebyla splněna (vypršel přístup nebo pokusy). |
+| Splnění aktivity                | Aktivita je splněna.                                                                              |
+| Zrušení aktivity                | Přístup uživatele k aktivitě je zrušen.                                                           |
+| Potřeba vyhodnocení aktivity    | Pokus aktivity čeká na ruční vyhodnocení hodnotitelem.                                            |
+| Prodloužení přístupu k aktivitě | Přístup uživatele k aktivitě byl automaticky prodloužen.                                          |
+| Změna času přístupu k Aktivitě  | Datum začátku nebo konce přístupu uživatele k aktivitě bylo změněno.                              |
+
+______________________________________________________________________
+
+## Běhy přístupu k aktivitě
+
+Události v této kategorii nastávají pouze u aktivit s přiřazeným termínem (během).
+
+| Událost             | Kdy nastane                                              |
+| ------------------- | -------------------------------------------------------- |
+| Vybrán běh přístupu | Uživateli je k přístupu přiřazen konkrétní termín (běh). |
+| Změněn běh přístupu | Termín přiřazený k přístupu byl změněn.                  |
+| Smazán běh přístupu | Termín přiřazený k přístupu byl odstraněn.               |
+
+______________________________________________________________________
+
+## Přístupy k hodnocením
+
+| Událost                          | Kdy nastane                                                |
+| -------------------------------- | ---------------------------------------------------------- |
+| Přiřazení hodnocení uživateli    | Uživateli je vytvořen nový přístup k hodnocení.            |
+| Začátek přístupu k hodnocení     | Nastane okamžik začátku přístupu uživatele k hodnocení.    |
+| Dokončení hodnocení              | Přístup uživatele k hodnocení přechází do stavu Dokončeno. |
+| Úspěšné dokončení hodnocení      | Hodnocení je dokončeno a úspěšně splněno.                  |
+| Neúspěšné dokončení hodnocení    | Hodnocení je dokončeno a nebylo splněno.                   |
+| Zrušení hodnocení                | Přístup uživatele k hodnocení je zrušen.                   |
+| Prodloužení přístupu k hodnocení | Přístup uživatele k hodnocení byl automaticky prodloužen.  |
+| Změna času přístupu k Hodnocení  | Datum přístupu uživatele k hodnocení bylo změněno.         |
+
+______________________________________________________________________
+
+## Pokusy
+
+| Událost                                     | Kdy nastane                                                     |
+| ------------------------------------------- | --------------------------------------------------------------- |
+| Aktualizace pokusu aktivity                 | Pokus aktivity byl aktualizován (např. uložení průběhu).        |
+| Aktualizace pokusu aktivity po vyhodnocení  | Pokus aktivity byl aktualizován v návaznosti na vyhodnocení.    |
+| Vyhodnocení pokusu hodnocení                | Pokus hodnocení byl vyhodnocen hodnotitelem.                    |
+| Aktualizace pokusu hodnocení                | Pokus hodnocení byl aktualizován.                               |
+| Aktualizace pokusu hodnocení po vyhodnocení | Pokus hodnocení byl aktualizován v návaznosti na vyhodnocení.   |
+| Vyhodnocení pokusu aktivity                 | Dostupné v UI; funkčnost neověřena – viz [Pozor na](#pozor-na). |
+
+______________________________________________________________________
+
+## Časované připomínky
+
+Události v této kategorii se neodesílají okamžitě – e-mail je naplánován na konkrétní datum odvozené od sledovaného data přístupu.
+
+| Událost                                      | Kdy nastane                                                     |
+| -------------------------------------------- | --------------------------------------------------------------- |
+| Počet dní před začátkem přístupu k aktivitě  | N dní před datem začátku přístupu uživatele k aktivitě.         |
+| Počet dní po začátku přístupu k aktivitě     | N dní po datu začátku přístupu uživatele k aktivitě.            |
+| Počet dní před začátkem přístupu k hodnocení | N dní před datem začátku přístupu uživatele k hodnocení.        |
+| Počet dní po začátku přístupu k hodnocení    | N dní po datu začátku přístupu uživatele k hodnocení.           |
+| Počet dní po úspěšném splnění aktivity       | N dní po datu splnění aktivity uživatelem.                      |
+| Počet dní před datem splnění aktivity        | Dostupné v UI; funkčnost neověřena – viz [Pozor na](#pozor-na). |
+| Počet dní po datu splnění aktivity           | Dostupné v UI; funkčnost neověřena – viz [Pozor na](#pozor-na). |
+| Počet dní před datem splnění hodnocení       | Dostupné v UI; funkčnost neověřena – viz [Pozor na](#pozor-na). |
+| Počet dní po datu splnění hodnocení          | Dostupné v UI; funkčnost neověřena – viz [Pozor na](#pozor-na). |
+
+______________________________________________________________________
+
+## Uživatelský účet
+
+| Událost                                    | Kdy nastane                                                         |
+| ------------------------------------------ | ------------------------------------------------------------------- |
+| Založení nového uživatele                  | Byl vytvořen nový uživatelský účet (jednotlivě nebo importem).      |
+| Zapomenuté heslo                           | Uživatel požádal o reset hesla na přihlašovací obrazovce.           |
+| Změna emailu uživatele                     | E-mailová adresa uživatelského účtu byla změněna.                   |
+| Ověření emailu uživatele                   | Systém odeslal požadavek na ověření e-mailové adresy.               |
+| Emailové ověření před vytvořením Uživatele | Ověřovací e-mail je odeslán před dokončením registrace nového účtu. |
+| Změna hesla uživatele                      | Heslo uživatelského účtu bylo změněno.                              |
+
+______________________________________________________________________
+
+## Verze aktivity
+
+| Událost                      | Kdy nastane                                                 |
+| ---------------------------- | ----------------------------------------------------------- |
+| Aktivace nové verze aktivity | Nová verze aktivity byla aktivována (ručně nebo plánovaně). |
+
+______________________________________________________________________
+
+## Zprávy
+
+| Událost            | Kdy nastane                           |
+| ------------------ | ------------------------------------- |
+| Nová zpráva        | V systému byla vytvořena nová zpráva. |
+| Aktualizace zprávy | Zpráva v systému byla aktualizována.  |
+
+______________________________________________________________________
+
+## Žádosti o přístup k aktivitě
+
+| Událost                                                      | Kdy nastane                                                      |
+| ------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Vytvoření žádosti o přístup k Aktivitě                       | Uživatel odeslal žádost o přístup k aktivitě z katalogu.         |
+| Aktualizace žádosti o přístup k Aktivitě                     | Stav nebo obsah žádosti o přístup byl aktualizován.              |
+| Uživatel se stal Schvalovatelem žádosti o přístup k Aktivitě | Uživatel byl zařazen do řetězce schvalovatelů žádosti o přístup. |
+| Schválení žádosti o přístup k Aktivitě                       | Žádost o přístup k aktivitě byla schválena.                      |
+| Zamítnutí žádosti o přístup k Aktivitě                       | Žádost o přístup k aktivitě byla zamítnuta.                      |
+
+______________________________________________________________________
+
+## Žádosti o vytvoření nové aktivity
+
+| Událost                                                  | Kdy nastane                                                             |
+| -------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Vytvoření žádosti o novou Aktivitu                       | Uživatel odeslal žádost o vytvoření nové aktivity.                      |
+| Aktualizace žádosti o novou Aktivitu                     | Stav nebo obsah žádosti o novou aktivitu byl aktualizován.              |
+| Uživatel se stal Schvalovatelem žádosti o novou Aktivitu | Uživatel byl zařazen do řetězce schvalovatelů žádosti o novou aktivitu. |
+| Schválení žádosti o novou Aktivitu                       | Žádost o vytvoření nové aktivity byla schválena.                        |
+| Zamítnutí žádosti o novou Aktivitu                       | Žádost o vytvoření nové aktivity byla zamítnuta.                        |
+
+______________________________________________________________________
+
+## Speciální události
+
+| Událost           | Kdy nastane                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agregační skupina | Speciální typ události, který seskupí více dílčích notifikací do jednoho souhrnného e-mailu odesílaného jednou denně. Vyžaduje šablonu typu Agregovaná. |
+| Specifický        | Vlastní spouštěč pro specifické integrace. Chování závisí na konfiguraci konkrétní instalace.                                                           |
+
+______________________________________________________________________
+
+## Pozor na
+
+Neověřené události
+
+Pět následujících událostí je v systému dostupných v rozbalovacím seznamu, ale jejich aktivní fungování v aktuální verzi nebylo ověřeno. Pokud je chcete použít, ověřte nejdříve funkčnost s dodavatelem.
+
+- Vyhodnocení pokusu aktivity
+- Počet dní před datem splnění aktivity
+- Počet dní po datu splnění aktivity
+- Počet dní před datem splnění hodnocení
+- Počet dní po datu splnění hodnocení
+
+______________________________________________________________________
+
+## Související stránky
+
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
+- [Nastavení notifikací aktivity (připravujeme)](#)
 
 # Koncepty
 
@@ -2196,7 +2893,7 @@ ______________________________________________________________________
 
 Dvě různé věci se stejným názvem
 
-Pojmy **Spuštěno**, **Hodnocení** a **Archivováno** se vyskytují jak jako stavy aktivity (popsané na této stránce), tak jako stavy uživatelského **přístupu** k aktivitě. Jde o dva odlišné objekty s vlastními, na sobě nezávislými stavy. Tato stránka se zabývá výhradně stavem aktivity jako celku. Stavy uživatelského přístupu jsou popsány na samostatné stránce [Pokusy uživatele (připravujeme)](#).
+Pojmy **Spuštěno**, **Hodnocení** a **Archivováno** se vyskytují jak jako stavy aktivity (popsané na této stránce), tak jako stavy uživatelského **přístupu** k aktivitě. Jde o dva odlišné objekty s vlastními, na sobě nezávislými stavy. Tato stránka se zabývá výhradně stavem aktivity jako celku. Stavy uživatelského přístupu jsou popsány na samostatné stránce [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md).
 
 ______________________________________________________________________
 
@@ -2206,7 +2903,7 @@ ______________________________________________________________________
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
-- [Pokusy uživatele (připravujeme)](#)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
 
 # Schémata aktivity: beztermínová a termínová aktivita
 
@@ -2294,7 +2991,352 @@ ______________________________________________________________________
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
-- [Jak přidat termín k aktivitě (připravujeme)](#)
+- [Přidání termínu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/terminy-aktivity/index.md)
+
+# Pokusy uživatele: přístupy, pokusy a výsledky
+
+Systém Competent sleduje, jak každý uživatel plní každou aktivitu, které byl přiřazen. K tomu slouží dva propojené záznamy – **přístup uživatele k aktivitě** a **pokus uživatele**. Tato stránka vysvětluje, co tyto záznamy znamenají, jak se mění jejich stav a jak systém vyhodnocuje, zda uživatel aktivitu splnil. Je určena administrátorům, kteří přiřazují aktivity nebo kontrolují plnění uživatelů.
+
+______________________________________________________________________
+
+## Přístup uživatele k aktivitě
+
+**Přístup uživatele k aktivitě** (zkráceně „přístup") je záznam, který popisuje vztah konkrétního uživatele ke konkrétní aktivitě: od kdy a do kdy aktivitu plní, v jakém je stavu a zda ji splnil.
+
+Každý přístup nese povinný **začátek přístupu** – datum, od kterého může uživatel aktivitu plnit. Vedle toho může přístup nést další volitelná data:
+
+- **Konec přístupu** – datum, kdy přestane být aktivita uživateli přístupná.
+- **Vyžadované datum splnění** – termín, do kdy musí mít uživatel aktivitu úspěšně splněnou.
+- **Optimální začátek plnění** a **Optimální konec plnění** – doporučené (nezávazné) termíny.
+- **Platnost splnění** – pokud je nastavena, udává, do kdy platí úspěšné splnění.
+
+V jeden okamžik může mít uživatel u jedné aktivity nejvýše jeden aktivní přístup. Pokud přístup vyprší nebo je ukončen, stane se **historickým přístupem** a uživateli lze aktivitu přiřadit znovu jako nový přístup.
+
+### Termínové aktivity
+
+U termínové aktivity se přístup váže ke konkrétnímu termínu. Data přístupu (datum konání, konec registrace) se přebírají z termínu. Pokud byl uživatel přiřazen bez výběru konkrétního termínu, přístup je ve stavu **Nemá termín**, dokud si termín nevybere.
+
+______________________________________________________________________
+
+## Pokus uživatele
+
+**Pokus uživatele** je záznam o jednom konkrétním běhu plnění aktivity – například jednom spuštění online kurzu nebo jedné zkušební jízdě. Pokaždé, když se uživatel pokusí o splnění přiřazené aktivity, vzniká v systému nový pokus.
+
+Pokus může vzniknout dvěma způsoby:
+
+- **Automaticky** – systém jej vytvoří po spuštění obsahu (například SCORM kurzu).
+- **Manuálně** – hodnotitel jej zapíše do systému, typicky po fyzické zkoušce nebo jiné prověrce.
+
+Každý přístup může mít libovolný počet pokusů. Pokud je na aktivitě nastaven parametr **Počet pokusů**, tento limit určuje maximální počet pokusů dostupných pro daný přístup. Není-li nastaven, uživatel počtem pokusů limitován není.
+
+Aktualizace počtu pokusů u existujících přístupů
+
+Parametr Počet pokusů se nastavuje na aktivitě, ale jeho hodnota se při vytvoření přístupu zkopíruje do přístupu. Pokud je parametr na aktivitě změněn po již existujících přístupech, ke změně dojde jen tehdy, je-li zaškrtnuto **Aktualizovat existující přístupy**.
+
+### Nejlepší pokus
+
+Ze všech dokončených pokusů eviduje systém **nejlepší pokus** – pokus s nejlepším výsledkem (při shodě ten dřívější). Nejlepší pokus se v přehledu zobrazuje jako výchozí.
+
+### Modální okno Pokusy uživatele
+
+Pokusy uživatele na dané aktivitě jsou přístupné v modálním okně **Pokusy uživatele**. Toto okno zobrazuje pokusy aktuálního přístupu. Pokusy historických přístupů jsou dostupné u příslušného historického přístupu.
+
+Modální okno Pokusy uživatele lze otevřít ze dvou míst:
+
+- Záložka **Uživatelé** v detailu aktivity – ikona **Hodnotit** v řádku uživatele.
+- Záložka **Aktivity** v detailu uživatele – ikona hodnotit v kartě aktivity.
+
+______________________________________________________________________
+
+## Stavy přístupu uživatele
+
+Přístup uživatele k aktivitě má vlastní **stav přístupu**, který je odlišný od stavu aktivity jako objektu. Stav přístupu se mění jak automaticky (na základě dat přístupu a výsledků pokusů), tak manuálně (administrátorem).
+
+Stejné názvy, různé entity
+
+Pojmy jako „Spuštěno", „V hodnocení" nebo „Archivováno" se vyskytují jak jako stavy aktivity, tak jako stavy přístupu uživatele. Jde o dva zcela odlišné objekty s vlastními, na sobě nezávislými stavy. Stavy aktivity jako objektu jsou popsány na stránce [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md).
+
+Systém rozlišuje celkem 12 hodnot stavu přístupu:
+
+| Stav             | Aktivní? | Používá se? | Kdy nastane                                                                             |
+| ---------------- | -------- | ----------- | --------------------------------------------------------------------------------------- |
+| **Registrovaný** | ano      | ano         | Přiřazení s budoucím začátkem přístupu; přístup čeká na datum spuštění                  |
+| **Spuštěno**     | ano      | ano         | Nastal začátek přístupu; uživatel může aktivitu plnit                                   |
+| **V hodnocení**  | ano      | ano         | Uživatel odevzdal pokus k hodnocení; hodnotitel jej dosud nevyhodnotil                  |
+| **Dokončeno**    | ne       | ano         | Přístup byl uzavřen: uživatel splnil aktivitu, nebo vypršel termín                      |
+| **Zrušeno**      | ne       | ano         | Přístup byl zrušen administrátorem                                                      |
+| **Nemá termín**  | ano      | ano         | Jen u termínové aktivity: uživatel byl přiřazen, ale dosud si nevybral konkrétní termín |
+| **Expirováno**   | ne       | ano         | Platnost splnění vypršela                                                               |
+| **Budoucí**      | ano      | ne          | V základní konfiguraci se nepoužívá                                                     |
+| **Zajímám se**   | ano      | ne          | V základní konfiguraci se nepoužívá                                                     |
+| **Rezervovaný**  | ano      | ne          | V základní konfiguraci se nepoužívá                                                     |
+| **Objednáno**    | ano      | ne          | V základní konfiguraci se nepoužívá                                                     |
+| **Archivováno**  | ne       | ne          | V základní konfiguraci se nepoužívá                                                     |
+
+Stavy **Budoucí**, **Zajímám se**, **Rezervovaný**, **Objednáno** a **Archivováno** jsou vyhrazeny pro pokročilé scénáře a v základním nasazení systému se nevyskytují.
+
+### Automatické přechody na základě dat
+
+Systém mění stav přístupu automaticky, jakmile nastane příslušné datum:
+
+- Jakmile nastane **začátek přístupu**, přejde přístup ze stavu Registrovaný do stavu **Spuštěno**.
+- Jakmile nastane **konec přístupu** nebo **vyžadované datum splnění**, přejde přístup do stavu **Dokončeno**.
+- Jakmile nastane **platnost splnění**, přejde přístup do stavu **Expirováno**.
+
+### Automatické přechody na základě pokusů
+
+Stav přístupu se mění také na základě výsledků a průběhu pokusů:
+
+- Když uživatel odevzdá pokus k hodnocení (a je nastaven hodnotitel), přejde přístup do stavu **V hodnocení**.
+- Jakmile hodnotitel pokus vyhodnotí, přístup se vrátí do stavu **Spuštěno** (pokud zbývají pokusy) nebo přejde do stavu **Dokončeno**.
+- Jakmile jsou vyčerpány všechny dostupné pokusy, přejde přístup do stavu **Dokončeno**.
+
+### Hodnotitel
+
+Hodnotitel je uživatel zodpovědný za ruční ohodnocení pokusu. Nastavuje se při přiřazení aktivity.
+
+### Co znamená „aktivní" přístup
+
+Přístup je **aktivní**, pokud uživateli nelze stejnou aktivitu přiřadit znovu. Mezi aktivní stavy patří: Registrovaný, Spuštěno, V hodnocení, Nemá termín a obdobné. Neaktivní přístup (Dokončeno, Zrušeno, Expirováno, Archivováno) znamená, že interakce s aktivitou je považována za skončenou a uživateli ji lze přiřadit znovu.
+
+______________________________________________________________________
+
+## Výsledek přístupu: splněno nebo nesplněno
+
+**Výsledek přístupu** je dimenze oddělená od stavu přístupu. Zatímco stav popisuje, v jaké fázi se přístup nachází (například Spuštěno nebo Dokončeno), výsledek popisuje, zda uživatel aktivitu splnil.
+
+Systém rozlišuje tři hodnoty výsledku přístupu:
+
+- **Splněno** – uživatel má alespoň jeden úspěšný pokus.
+- **Nesplněno** – přístup byl uzavřen bez úspěšného pokusu.
+- **Prozatím nesplněno** – uživatel dosud nemá úspěšný pokus, ale stále může aktivitu splnit (přístup je aktivní a termín nenastal).
+
+Stav **Dokončeno** má dvojí sémantiku: buď uživatel aktivitu úspěšně splnil (výsledek: Splněno), nebo vypršel termín a splnění nestihl (výsledek: Nesplněno). Tyto dvě situace rozlišuje právě hodnota výsledku přístupu.
+
+### Kombinované zobrazení stavu a výsledku
+
+V kontextech, kde je to relevantní, zobrazuje systém stav a výsledek společně – například „Spuštěno (splněno)", „Dokončeno (splněno)" nebo „Expirováno (splněno)". Nejde o samostatné stavy přístupu, ale o zobrazené kombinace stavu přístupu a hodnoty výsledku (splněno).
+
+______________________________________________________________________
+
+## Kde v systému přístupy a pokusy vidíte
+
+Přístupy a pokusy jsou přístupné ze dvou hlavních míst:
+
+**Záložka Uživatelé v detailu aktivity** zobrazuje všechny přiřazené uživatele. Tabulka obsahuje sloupce „Uživatel", „Aktuální výsledek", „Aktuální stav", „Budoucí stav" a „Účastnické skupiny". Číslo v závorce u výsledku (například „Prozatím nesplněno (1)") udává počet pokusů. Každý řádek nabízí akční ikony:
+
+- **Hodnotit** – otevře modální okno Pokusy uživatele.
+- **Historie přístupů** – otevře přehled historických přístupů.
+- **Upravit** – upraví data přístupu.
+- **Smazat** – smaže přístup.
+
+**Záložka Aktivity v detailu uživatele** zobrazuje aktivity uživatele rozdělené do skupin: „Probíhající", „Budoucí", „K řešení" a „Ukončené". Každá karta aktivity zobrazuje výsledek a umožňuje přístup k pokusům i historii přístupů.
+
+______________________________________________________________________
+
+## Pozor na
+
+- Stav přístupu a výsledek přístupu jsou dvě nezávislé hodnoty. Přístup ve stavu Dokončeno může mít výsledek Splněno i výsledek Nesplněno – záleží na tom, proč byl uzavřen.
+- Aktivitu lze nastavit tak, aby zůstala ve stavu Spuštěno i po úspěšném splnění – uživatel pak může dále spouštět obsah.
+- Pokusy zobrazené v modálním okně Pokusy uživatele patří vždy k aktuálnímu přístupu. Pokusy z dřívějších (historických) přístupů jsou přístupné přes ikonu **Historie přístupů**.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
+- [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/index.md)
+
+# Podmínky přístupu: prerekvizity a vyhodnocení
+
+Podmínky přístupu říkají systému Competent, **které jiné aktivity musí uživatel splnit, než mu bude zpřístupněn obsah podmíněné aktivity**. Nejde o omezení samotného přiřazení – uživatel může být k aktivitě přiřazen a jeho přístup být ve stavu Spuštěno, ale bez splnění podmínek obsah spustit nemůže. Tato stránka vysvětluje mechanismus podmínek, logiku jejich kombinování a způsob, jakým systém vyhodnocení provádí.
+
+______________________________________________________________________
+
+## Co podmínky přístupu blokují
+
+Podmínky přístupu blokují **spuštění obsahu aktivity** – například otevření SCORM kurzu nebo jiného studijního materiálu. Nebrání tomu, aby byl uživatel k aktivitě přiřazen, ani aby jeho přístup k aktivitě existoval.
+
+Pokud uživatel podmínky nesplňuje:
+
+- Přístup uživatele k aktivitě existuje a může být ve stavu **Spuštěno**.
+- Obsah aktivity **nelze spustit**, dokud nejsou podmínky splněny.
+
+Podmínky se konfigurují v záložce **Podmínky** v Detailu aktivity.
+
+______________________________________________________________________
+
+## Logika stromu podmínek
+
+Podmínky tvoří strom. Na nejvyšší úrovni stromu jsou jednotlivé aktivity a skupiny požadovány **a zároveň** – uživatel musí splnit všechny z nich.
+
+Tam, kde stačí splnit alespoň jednu z více aktivit, se používá skupina **„a jednu z možností"**. Uvnitř takové skupiny jsou větve pojmenované **Možnost A**, **Možnost B** atd. Uživatel musí splnit právě jednu libovolnou z nich.
+
+Skupiny „a jednu z možností" lze vnořovat, takže výsledný strom může vyjádřit libovolně složitá kombinační pravidla.
+
+**Příklad:** aktivita vyžaduje splnění Aktivity 1 a zároveň splnění alespoň jedné z Aktivity 2 nebo Aktivity 3.
+
+```
+flowchart TD
+    Root["Je třeba splnit (a zároveň)"]
+    A1["Aktivita 1"]
+    OR["a jednu z možností"]
+    MA["Možnost A: Aktivita 2"]
+    MB["Možnost B: Aktivita 3"]
+
+    Root --> A1
+    Root --> OR
+    OR --> MA
+    OR --> MB
+```
+
+______________________________________________________________________
+
+## Kdy se podmínky vyhodnocují
+
+Vyhodnocení podmínek probíhá **automaticky** – systém jej spustí pokaždé, když se změní stav nebo výsledek prerekvizitní aktivity u daného uživatele. To nastane například při přiřazení aktivity, při splnění pokusu nebo při zrušení přístupu.
+
+Výsledek vyhodnocení (zda jsou podmínky splněny) je uložen v přístupu uživatele. Systém jej použije při každém pokusu o spuštění obsahu.
+
+______________________________________________________________________
+
+## Co musí uživatel splnit
+
+Podmínka vázaná na konkrétní aktivitu je vyhodnocena jako **splněná**, pokud uživatel tuto prerekvizitní aktivitu **úspěšně splnil**. Není přitom rozhodující, ve kterém konkrétním stavu se přístup uživatele k prerekvizitě nachází – rozhoduje výsledek přístupu.
+
+Podrobnosti o stavech přístupu uživatele a jejich vztahu k výsledkům najdete na stránce [Pokusy uživatele: přístupy, pokusy a výsledky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md).
+
+______________________________________________________________________
+
+## Dědičnost podmínek z nadřazené aktivity
+
+Pokud je aktivita součástí hierarchie, může záložka **Podmínky** zobrazit informaci, že podmínka je nastavena dle podmínky na nadřazené aktivitě. V takovém případě aktivita přebírá podmínky z nadřazeného uzlu.
+
+Pokud je potřeba podmínky pro danou aktivitu od rodiče oddělit, je k dispozici tlačítko **Osamostatnit od podmínky na nadřazené Aktivitě**.
+
+______________________________________________________________________
+
+## Záložka Podmínky: co zobrazuje
+
+Záložka **Podmínky** je součástí Detailu aktivity. Co zobrazuje, závisí na tom, zda jsou podmínky nastaveny a zda máte oprávnění k úpravě:
+
+| Situace                                               | Co záložka zobrazuje                                                                                                                                |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Podmínky nejsou nastaveny, máte oprávnění k editaci   | Tlačítko **Nastavit podmínky**. Pokud existuje nadřazená aktivita s podmínkami, zobrazí se také tlačítko **Převzít podmínky z nadřazené Aktivity**. |
+| Podmínky nejsou nastaveny, oprávnění k editaci nemáte | Záložka je prázdná – žádný text ani tlačítko.                                                                                                       |
+| Podmínky jsou nastaveny                               | Nadpis **Je třeba splnit:** a pod ním strom podmínek s možností odstranit jednotlivé položky.                                                       |
+
+Přidávat podmínky do stromu lze přes akční menu, které nabízí dvě volby:
+
+- **Aktivita** – přidá konkrétní aktivitu jako prerekvizitu.
+- **Více možností** – vytvoří skupinu „a jednu z možností" pro větvení s volitelnou alternativou.
+
+______________________________________________________________________
+
+## Pozor na
+
+- Podmínky přístupu blokují **spuštění obsahu**, ne samotný přístup uživatele. Uživatel s přístupem ve stavu Spuštěno, který podmínky nesplňuje, aktivitu „má" přiřazenu – jen nemůže otevřít obsah.
+- V záložce Podmínky se v akčním menu může zobrazit i volba **Kvalifikace**. Tato volba v základní konfiguraci systému nemá efekt. Pokud ji vidíte a chcete ji využít, obraťte se na dodavatele.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Pokusy uživatele: přístupy, pokusy a výsledky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Stavy aktivity: přechody a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Nastavení podmínek přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/index.md)
+
+# Dokumenty v aktivitě: přiřazení a viditelnost
+
+Systém Competent umožňuje ke každé aktivitě přiřadit soubory a studijní materiály – **dokumenty** – které jsou uživatelům dostupné ke stažení nebo zobrazení ve studentském zobrazení aktivity. Tato stránka vysvětluje mechanismus stavové viditelnosti dokumentů vůči uživateli a způsob, jakým jsou dokumenty ke aktivitě přiřazovány. Je určena administrátorům konfigurujícím studijní materiály k aktivitám.
+
+______________________________________________________________________
+
+## Co jsou dokumenty v aktivitě
+
+**Dokumenty v aktivitě** jsou soubory a materiály přiřazené ke konkrétní aktivitě. Uživatel je vidí a může si je stáhnout nebo zobrazit ve svém studentském zobrazení aktivity. Administrátor je spravuje prostřednictvím záložky **Dokumenty** v Detailu aktivity.
+
+______________________________________________________________________
+
+## Stavová viditelnost dokumentů
+
+Klíčovým principem systému dokumentů je **stavová viditelnost**: každý přiřazený dokument nese informaci, v jakých stavech přístupu uživatele k aktivitě má být viditelný. Uživatel vidí pouze ty dokumenty, jejichž nastavená viditelnost odpovídá aktuálnímu stavu jeho přístupu.
+
+Tím je možné zobrazit uživateli jiné materiály před spuštěním aktivity, jiné při plnění a jiné po úspěšném splnění – aniž by bylo nutné vytvářet více verzí aktivity. Ke každému dokumentu lze vybrat jeden nebo více stavů.
+
+### Varianty viditelnosti
+
+Každé přiřazení dokumentu se váže na jeden nebo více stavů ze dvou typů:
+
+| Typ stavu                                       | Podmínka viditelnosti pro uživatele                                                                 |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **Stav** (např. „Spuštěno")                     | Přístup uživatele k aktivitě se nachází v daném stavu. Výsledek (splněno / nesplněno) nehraje roli. |
+| **Stav (splněno)** (např. „Spuštěno (splněno)") | Přístup uživatele k aktivitě se nachází v daném stavu a aktivita je zároveň úspěšně splněna.        |
+
+Variantu **Stav (splněno)** lze využít například pro bonusové materiály nebo potvrzovací dokumenty, které se mají zobrazit teprve po úspěšném splnění aktivity.
+
+### Stav Veřejný
+
+Zvláštní kategorií je stav **Veřejný**. Dokument přiřazený s tímto stavem je viditelný i uživateli, který dosud nemá aktivitu přiřazenou – například v Katalogu, kde si teprve vybírá, zda o aktivitu projeví zájem. Stav Veřejný slouží ke zpřístupnění informačních a přehledových materiálů před samotnou registrací.
+
+______________________________________________________________________
+
+## Záložka Dokumenty a sekce Všechny stavy
+
+Záložka **Dokumenty** v Detailu aktivity zobrazuje přehled přiřazených dokumentů. Záložka je rozdělena do sekcí:
+
+- **Všechny stavy** – zobrazuje všechny dokumenty aktivity bez ohledu na nastavený stav viditelnosti. Tato sekce je ve výchozím stavu rozbalená a nabízí rychlý přehled kompletního obsahu dokumentů k aktivitě.
+- **Sekce pojmenované podle stavů** – každá sekce zobrazuje dokumenty přiřazené právě pro daný stav (například „Spuštěno" nebo „Veřejný"). Administrátor tak vidí, jaké materiály obdrží uživatel v každém konkrétním stavu přístupu.
+
+______________________________________________________________________
+
+## Jak systém přiřazení dokumentů funguje
+
+Dokumenty se přiřazují prostřednictvím **vedlejšího panelu Knihovna souborů**, který se otevře kliknutím na ikonu + v záložce Dokumenty. Vedlejší panel nabízí dvě cesty výběru souboru:
+
+- **Výběr ze stávající Knihovny souborů** – stromová struktura složek umožňuje procházet a vybrat dříve nahraný soubor.
+- **Nahrání nového souboru** – tlačítkem **Nahrát soubor** lze přidat soubor přímo z počítače.
+
+Po výběru souboru se ve vedlejším panelu zpřístupní sekce **Nastavit stavy**, kde administrátor určí, v jakých stavech přístupu bude dokument uživatelům viditelný. Teprve po výběru alespoň jednoho stavu je dokument k aktivitě přiřazen.
+
+Přiřazení dokumentu k aktivitě vyžaduje oprávnění **Upravení – Aktivita**.
+
+### Interní kopie přiřazeného souboru
+
+Přiřazením souboru k aktivitě systém vytvoří jeho **interní kopii**. Dokument proto zůstane uživatelům dostupný i v případě, že jej administrátor následně odstraní z Knihovny souborů – uživatelé přiřazení k aktivitě nepřijdou o přístup k materiálu bez ohledu na to, co se s původním souborem v knihovně stane.
+
+Stejný soubor lze přiřadit ke stejné aktivitě opakovaně pro různé stavy, nebo jej sdílet přes více aktivit.
+
+### Odebrání dokumentu z aktivity
+
+Dokument lze z aktivity odebrat dvěma způsoby:
+
+- **Ze sekce Všechny stavy** – odebrání platí pro všechny nastavené stavy zároveň; dokument je z aktivity odstraněn zcela.
+- **Z konkrétní stavové sekce** – odebrání platí jen pro daný stav; ve zbývajících stavech dokument zůstane přiřazen.
+
+______________________________________________________________________
+
+## Pozor na
+
+- Pokud dokument nemá nastaven žádný stav viditelnosti, uživatelé jej neuvidí. Bez výběru alespoň jednoho stavu v sekci **Nastavit stavy** k přiřazení dokumentu nedojde.
+- Typ dokumentu systém určí automaticky z přípony souboru – uživatel jej nemusí nastavovat ručně. Pokud se soubor zobrazí s nesprávným typem, zkontrolujte příponu nahrávaného souboru.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Pokusy uživatele: přístupy, pokusy a výsledky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md) – stav přístupu uživatele a jeho hodnoty
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Přidání dokumentu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/index.md)
 
 # Sada: struktura, hierarchie a splnění
 
@@ -2720,7 +3762,7 @@ ______________________________________________________________________
 
 Subtypy aktivit jsou zákaznicky konfigurovatelné. V administraci na obrazovce Nastavení naleznete záložku **Subtypy**, kde lze spravovat stávající subtypy a přidávat subtypy nové. Nově vytvořený subtyp se okamžitě objeví v nabídce při zakládání aktivity – pod svým typem.
 
-Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce [Tab Subtypy (připravujeme)](#).
+Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce [Tab Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md).
 
 ### Subtypy dalších objektů
 
@@ -2740,7 +3782,7 @@ ______________________________________________________________________
 
 - [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
-- [Tab Subtypy (připravujeme)](#)
+- [Tab Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)
 
 # Role a oprávnění
 
@@ -3075,7 +4117,7 @@ ______________________________________________________________________
 
 Pravidla přiřazení se nastavují v sekci Nastavení na **záložce Přiřazení dle skupin**. Záložka umožňuje vytvářet nová pravidla, prohlížet existující a spravovat jejich parametry.
 
-Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením nového pravidla – najdete v části [Tab Přiřazení dle skupin (připravujeme)](#).
+Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením nového pravidla – najdete v části [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md).
 
 ______________________________________________________________________
 
@@ -3092,7 +4134,7 @@ ______________________________________________________________________
 - [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
 - [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
-- [Tab Přiřazení dle skupin (připravujeme)](#)
+- [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
 
 # E-mailové notifikace: jak funguje doručování zpráv
 
@@ -3135,7 +4177,7 @@ Notifikační pravidlo je svázáno s **událostí** (v dokumentaci také „spo
 
 Počet a přesné popisy událostí
 
-Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné popisy budou k dispozici v samostatné referenční stránce [Přehled notifikačních událostí (připravujeme)](#).
+Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné popisy budou k dispozici v samostatné referenční stránce [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md).
 
 ______________________________________________________________________
 
@@ -3197,9 +4239,109 @@ ______________________________________________________________________
 
 - [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
-- [Přehled notifikačních událostí (připravujeme)](#)
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
 - [Nastavení notifikací aktivity (připravujeme)](#)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+
+# Workflow: automatizace přiřazení aktivit
+
+Competent obsahuje subsystém **Workflow**, který umožňuje definovat pravidla ve formátu „KDYŽ nastane událost → SPUSŤ akci". Namísto ručního přiřazování aktivit uživatelům lze tuto rutinu svěřit systému. Tato stránka vysvětluje, **co Workflow je a jak funguje** – tedy principy mechanismu, nikoliv krok za krokem, jak pravidlo nastavit.
+
+Workflow je dostupné jako součást jádra systému pro všechny instalace Competentu. Panel pro správu Workflow vidí pouze uživatelé s přístupem systémového správce.
+
+______________________________________________________________________
+
+## Co je Workflow a co není
+
+Workflow v Competentu je **automatizační engine** – sada pravidel, která systém sleduje a při splnění podmínek vykoná předem definovanou akci. Každé pravidlo říká: při jaké události a na jakém objektu se má co provést.
+
+Workflow **není**:
+
+- **stavový automat aktivity** – přechody mezi stavy aktivity (Skryto, Spuštěno, Ukončeno apod.) řídí administrátor ručně nebo prostřednictvím akčních tlačítek. Workflow s těmito přechody nijak nesouvisí.
+- **schvalovací tok** – Workflow neschvaluje požadavky ani nečeká na souhlas. Pravidlo se vykoná automaticky bez potvrzení.
+
+Oba odlišné systémy – stavové přechody aktivity i Workflow – existují v Competentu paralelně a nezávisle na sobě.
+
+______________________________________________________________________
+
+## Struktura pravidla Workflow
+
+Každé pravidlo Workflow je svázáno s jedním objektem (například aktivitou nebo skupinou) a obsahuje tři části:
+
+| Část pravidla        | Popis                                                                         |
+| -------------------- | ----------------------------------------------------------------------------- |
+| **Spouštěcí akce**   | Událost, která pravidlo spustí: vytvoření, úprava nebo smazání objektu        |
+| **Akce**             | Co systém po spuštění provede – například přiřadí aktivitu uživatelům skupiny |
+| **Konfigurace akce** | Parametry provedení – například délka přístupu k aktivitě                     |
+
+```
+flowchart LR
+    O["Objekt\n(aktivita / skupina)"] --> T["Spouštěcí akce\n(vytvoření / úprava / smazání)"]
+    T --> A["Akce\n(co se provede)"]
+    A --> K["Konfigurace\n(parametry provedení)"]
+```
+
+______________________________________________________________________
+
+## Primární využití: automatické přiřazení aktivity skupině
+
+Nejčastěji používanou akcí Workflow je **automatické přiřazení aktivity** uživatelům na základě jejich členství ve skupině. Pravidlo funguje takto: jakmile je uživatel přidán do skupiny, systém mu automaticky zpřístupní vybranou aktivitu.
+
+Díky tomu není nutné přiřazovat přístup k aktivitě každému uživateli zvlášť – stačí jej zařadit do příslušné skupiny a Workflow zbytek vyřídí samo.
+
+### Nastavení délky přístupu
+
+Při definování pravidla automatického přiřazení aktivity se volí délka přístupu uživatele k aktivitě. Systém nabízí tři způsoby:
+
+| Způsob             | Popis                                                            |
+| ------------------ | ---------------------------------------------------------------- |
+| **Datumy**         | Přístup je vymezen pevným datem od a do                          |
+| **Počtem dní**     | Přístup trvá stanovený počet dní od okamžiku přidělení           |
+| **Podle aktivity** | Délka přístupu se řídí nastavením aktivity nebo jejím opakováním |
+
+### Jedinečnost pravidla
+
+Každá kombinace aktivity a skupiny může být v Workflow použita nejvýše jednou. Systém neumožní vytvořit dvě pravidla pro tutéž dvojici aktivita–skupina.
+
+### Smazání pravidla
+
+Při smazání pravidla automatického přiřazení systém nabídne dvě možnosti:
+
+- **Smazat jen pravidlo** – pravidlo se odstraní, ale přístupy, které pravidlo dříve vytvořilo, zůstanou uživatelům zachovány.
+- **Smazat pravidlo včetně přístupů** – pravidlo se odstraní a zároveň se zruší všechny přístupy uživatelů, které toto pravidlo vytvořilo.
+
+______________________________________________________________________
+
+## Další automatizační akce
+
+Systém může v závislosti na konfiguraci konkrétní instalace obsahovat i další automatizační akce, například automatické zařazení uživatele do skupiny nebo sloučení podskupin. Dostupnost těchto akcí závisí na nastavení instalace.
+
+Pro nastavení Workflow doporučujeme konzultaci s dodavatelem Educasoft.
+
+______________________________________________________________________
+
+## Kde Workflow najít
+
+Sekce **Workflow** se nachází v **Detailu aktivity**, na tabu **Detaily**. Kliknutím na ikonu úprav v sekci se otevře přehled stávajících pravidel a formulář pro přidání nového pravidla.
+
+Přístup k panelu Workflow
+
+Panel Workflow je dostupný pouze uživatelům s přístupem systémového správce. Pokud panel v Detailu aktivity nevidíte, obraťte se na dodavatele Educasoft.
+
+______________________________________________________________________
+
+## Workflow vs. e-mailové notifikace
+
+Workflow a e-mailové notifikace jsou dva oddělené systémy. Přestože některé akce Workflow mohou volitelně spustit odeslání zprávy, řídí se doručování e-mailů vlastní konfigurací notifikačních pravidel – nezávisle na Workflow. Princip notifikací popisuje stránka [E-mailové notifikace: jak funguje doručování zpráv](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md) – popis záložky Detaily, kde sekce Workflow sídlí
+- [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md) – jak fungují skupiny uživatelů, se kterými Workflow pracuje
+- [Stavy aktivity: přechody a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md) – stavový automat aktivity, odlišný systém od Workflow
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md) – notifikační systém, který Workflow doplňuje
 # Pro studenty
 
 # Pro studenty

@@ -39,7 +39,7 @@ Notifikační pravidlo je svázáno s **událostí** (v dokumentaci také „spo
 
 Počet a přesné popisy událostí
 
-Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné popisy budou k dispozici v samostatné referenční stránce [Přehled notifikačních událostí (připravujeme)](#).
+Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné popisy budou k dispozici v samostatné referenční stránce [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md).
 
 ______________________________________________________________________
 
@@ -101,6 +101,6 @@ ______________________________________________________________________
 
 - [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
-- [Přehled notifikačních událostí (připravujeme)](#)
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
 - [Nastavení notifikací aktivity (připravujeme)](#)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)

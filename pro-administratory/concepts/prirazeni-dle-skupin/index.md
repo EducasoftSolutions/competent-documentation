@@ -53,7 +53,7 @@ ______________________________________________________________________
 
 Pravidla přiřazení se nastavují v sekci Nastavení na **záložce Přiřazení dle skupin**. Záložka umožňuje vytvářet nová pravidla, prohlížet existující a spravovat jejich parametry.
 
-Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením nového pravidla – najdete v části [Tab Přiřazení dle skupin (připravujeme)](#).
+Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením nového pravidla – najdete v části [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md).
 
 ______________________________________________________________________
 
@@ -70,4 +70,4 @@ ______________________________________________________________________
 - [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
 - [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
-- [Tab Přiřazení dle skupin (připravujeme)](#)
+- [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)

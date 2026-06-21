@@ -94,7 +94,7 @@ ______________________________________________________________________
 
 Dvě různé věci se stejným názvem
 
-Pojmy **Spuštěno**, **Hodnocení** a **Archivováno** se vyskytují jak jako stavy aktivity (popsané na této stránce), tak jako stavy uživatelského **přístupu** k aktivitě. Jde o dva odlišné objekty s vlastními, na sobě nezávislými stavy. Tato stránka se zabývá výhradně stavem aktivity jako celku. Stavy uživatelského přístupu jsou popsány na samostatné stránce [Pokusy uživatele (připravujeme)](#).
+Pojmy **Spuštěno**, **Hodnocení** a **Archivováno** se vyskytují jak jako stavy aktivity (popsané na této stránce), tak jako stavy uživatelského **přístupu** k aktivitě. Jde o dva odlišné objekty s vlastními, na sobě nezávislými stavy. Tato stránka se zabývá výhradně stavem aktivity jako celku. Stavy uživatelského přístupu jsou popsány na samostatné stránce [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md).
 
 ______________________________________________________________________
 
@@ -104,4 +104,4 @@ ______________________________________________________________________
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
-- [Pokusy uživatele (připravujeme)](#)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)

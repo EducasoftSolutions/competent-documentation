@@ -77,7 +77,7 @@ Každý řádek v gridu umožňuje následující operace:
 - **Data přiřazení** – nastavení dat: začátek, optimální začátek, optimální konec, vyžadovaný konec a konec přístupu.
 - **Stáhnout certifikát** – stažení certifikátu o splnění aktivity.
 - **Historie přístupů** – zobrazení záznamu o přístupech uživatele k aktivitě.
-- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele (připravujeme)](#)).
+- **Hodnotit** – otevře modální okno s pokusy uživatele (viz [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)).
 - **Stav přiřazení** – zobrazení a změna stavu přiřazení.
 - **Editace přiřazení** – dostupná pouze u aktivit se schématem **Bez termínu**.
 - **Odebrání uživatelského přístupu** – odebere přístup uživatele k aktivitě.
@@ -148,19 +148,19 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 | **Vytvořeno**       | Datum vytvoření aktivity (jen pro čtení).                                                                                                                                                      |
 | **Poslední úprava** | Datum poslední úpravy záznamu (jen pro čtení).                                                                                                                                                 |
 | **Štítky**          | Panel pro přiřazení štítků k aktivitě (viz [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)). |
-| **Workflow**        | Panel Workflow. Viz [Workflow aktivity (připravujeme)](#).                                                                                                                                     |
+| **Workflow**        | Panel Workflow. Viz [Workflow aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/workflow-aktivity/index.md).                                  |
 
 ______________________________________________________________________
 
 ## Tab Dokumenty
 
-Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě (připravujeme)](#).
+Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md).
 
 ______________________________________________________________________
 
 ## Tab Podmínky
 
-Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu (připravujeme)](#).
+Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md).
 
 ______________________________________________________________________
 
@@ -196,9 +196,9 @@ ______________________________________________________________________
 - [Vytvoření SCORM aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
 - [Přiřazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
 - [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
-- [Pokusy uživatele (připravujeme)](#)
-- [Dokumenty v aktivitě (připravujeme)](#)
-- [Podmínky přístupu (připravujeme)](#)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md)
+- [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/index.md)

@@ -133,7 +133,7 @@ Podrobnosti o schématech aktivit a chování termínů naleznete na stránce
     uživatelského **přístupu** k aktivitě. Jde o dva odlišné objekty
     s vlastními, na sobě nezávislými stavy. Tato stránka se zabývá výhradně
     stavem aktivity jako celku. Stavy uživatelského přístupu jsou popsány
-    na samostatné stránce [Pokusy uživatele (připravujeme)](#).
+    na samostatné stránce [Pokusy uživatele](pokusy-uzivatele.md).
 
 ---
 
@@ -144,4 +144,4 @@ Podrobnosti o schématech aktivit a chování termínů naleznete na stránce
 - [Sada](sada.md)
 - [Termínová sada](terminova-sada.md)
 - [Schémata aktivity](schemata-aktivity.md)
-- [Pokusy uživatele (připravujeme)](#)
+- [Pokusy uživatele](pokusy-uzivatele.md)

@@ -84,7 +84,7 @@ prohlížet existující a spravovat jejich parametry.
 
 Podrobný popis záložky – včetně jednotlivých polí a průvodce vytvořením
 nového pravidla – najdete v části
-[Tab Přiřazení dle skupin (připravujeme)](#).
+[Tab Přiřazení dle skupin](../reference/tab-prirazeni-dle-skupin.md).
 
 ---
 
@@ -106,4 +106,4 @@ správce systému.
 - [Uživatelská skupina](skupina.md)
 - [Přiřazení uživatelů k aktivitě](../how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md)
 - [Přiřazení uživatele do skupiny](../how-to/lide/prirazeni-uzivatele-do-skupiny.md)
-- [Tab Přiřazení dle skupin (připravujeme)](#)
+- [Tab Přiřazení dle skupin](../reference/tab-prirazeni-dle-skupin.md)

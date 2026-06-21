@@ -54,7 +54,7 @@ připomínky a navazující zprávy v přesně definovaný čas relativně k akt
 !!! note "Počet a přesné popisy událostí"
     Systém obsahuje desítky přednastavených událostí. Jejich výčet a podrobné
     popisy budou k dispozici v samostatné referenční stránce
-    [Přehled notifikačních událostí (připravujeme)](#).
+    [Přehled notifikačních událostí](../reference/prehled-notifikacnich-udalosti.md).
 
 ---
 
@@ -142,6 +142,6 @@ spravuje manuálně, aniž by se změnila globální konfigurace pro zbytek syst
 
 - [Úprava šablony e-mailu](../how-to/nastaveni/uprava-sablony-emailu.md)
 - [Obrazovka Šablony e-mailů](../reference/obrazovka-sablony-emailu.md)
-- [Přehled notifikačních událostí (připravujeme)](#)
+- [Přehled notifikačních událostí](../reference/prehled-notifikacnich-udalosti.md)
 - [Nastavení notifikací aktivity (připravujeme)](#)
 - [Role a oprávnění](role.md)
