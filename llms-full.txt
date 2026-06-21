@@ -3151,6 +3151,200 @@ ______________________________________________________________________
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 - [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/index.md)
 
+# Přiřazení aktivity uživateli: přístup
+
+Když přiřadíte aktivitu uživateli, systém vytvoří objekt nazývaný **přístup** (plným názvem: přiřazení aktivity uživateli). Přístup popisuje, jak a kdy má uživatel aktivitu plnit a v jakém stavu se tento proces nachází. Tato stránka vysvětluje, co přístup obsahuje, jaké má stavy a jak se liší od pokusů uživatele. Je určena administrátorům, kteří přiřazují aktivity a sledují jejich plnění.
+
+______________________________________________________________________
+
+## Přístup a pokus: dvě různé věci
+
+Systém Competent rozlišuje dva propojené záznamy, které se snadno zaměňují: **přístup** a **pokus**.
+
+**Přístup** je trvalá vazba mezi uživatelem a aktivitou. Nese termíny, stav procesu a informaci o tom, zda uživatel aktivitu splnil. Na každou kombinaci uživatel–aktivita–přiřazení vznikne právě jeden přístup.
+
+**Pokus** je záznam o jednom konkrétním spuštění nebo odevzdání obsahu aktivity. Pod jedním přístupem může vzniknout více pokusů – například když uživatel prochází online kurzem opakovaně nebo když hodnotitel zapíše výsledek fyzické zkoušky.
+
+Přístup si průběžně udržuje odkaz na **nejlepší pokus** (pokus s nejlepším výsledkem) a na **právě probíhající pokus**. Celkový výsledek přístupu vychází z nejlepšího pokusu.
+
+Podrobnosti o tom, jak jednotlivé pokusy vznikají, jak jsou hodnoceny a kde je v systému najdete na stránce [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md).
+
+______________________________________________________________________
+
+## Klíčové atributy přístupu
+
+Každý přístup nese povinný **začátek přístupu** – datum, od kterého může uživatel aktivitu plnit. Vedle toho může přístup nést další volitelná data:
+
+- **Konec přístupu** – datum, kdy přestane být aktivita uživateli přístupná.
+- **Vyžadované datum splnění** – termín, do kdy musí mít uživatel aktivitu úspěšně splněnou; jeho uplynutím bez úspěšného pokusu přístup přechází do stavu Dokončeno s výsledkem nesplněno.
+- **Platnost splnění** – pokud je nastavena, udává, do kdy platí úspěšné splnění; po jejím uplynutí přejde přístup do stavu Expirováno.
+- **Počet zbývajících pokusů** – kolik dalších pokusů zbývá uživateli k dispozici v rámci tohoto přístupu.
+
+______________________________________________________________________
+
+## Stavy přístupu
+
+Přístup má vlastní stav, nezávislý na stavu aktivity jako objektu. Systém rozlišuje celkem 12 hodnot stavu přístupu. Sedm z nich se používá v běžném provozu systému; zbývající pětice se vyskytuje jen ve specifických nebo pokročilých konfiguracích.
+
+### Běžně používané stavy
+
+| Stav             | Přístup je aktivní | Kdy nastane                                                                                            |
+| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Registrovaný** | ano                | Uživatel byl přiřazen; datum začátku přístupu ještě nenastalo                                          |
+| **Spuštěno**     | ano                | Nastalo datum začátku přístupu; uživatel může aktivitu plnit                                           |
+| **V hodnocení**  | ano                | Uživatel odevzdal pokus k hodnocení; hodnotitel jej dosud nevyhodnotil (typicky u termínových aktivit) |
+| **Nemá termín**  | ano                | Jen u termínové aktivity: uživatel byl přiřazen, ale dosud si nevybral konkrétní termín                |
+| **Dokončeno**    | ne                 | Přístup byl uzavřen – buď uživatel aktivitu splnil, nebo vypršel termín bez splnění                    |
+| **Zrušeno**      | ne                 | Přístup byl zrušen; aktivitu nelze plnit                                                               |
+| **Expirováno**   | ne                 | Platnost splnění vypršela; úspěch již není považován za platný                                         |
+
+Sloupec „Přístup je aktivní" říká, zda lze uživateli tutéž aktivitu v daném stavu přiřadit znovu. Aktivní přístup nové přiřazení blokuje; neaktivní přístup se stane historickým a nové přiřazení je možné.
+
+Stejné názvy, různé entity
+
+Pojmy jako „Spuštěno", „V hodnocení" nebo „Dokončeno" se vyskytují jak jako stavy přístupu uživatele, tak jako stavy aktivity jako objektu. Jde o dva zcela odlišné záznamy s vlastními, na sobě nezávislými stavy.
+
+### Okrajové stavy
+
+Pět dalších stavů je vyhrazeno pro pokročilé nebo nestandardní scénáře a v základním nasazení systému se nevyskytují:
+
+| Stav            | Přístup je aktivní | Typický scénář                                                                       |
+| --------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| **Budoucí**     | ano                | Aktivita přiřazena; datum přístupu teprve nastane (alternativní konfigurační scénář) |
+| **Zajímám se**  | ano                | Vyjádření zájmu o aktivitu                                                           |
+| **Rezervováno** | ano                | Rezervovaná účast                                                                    |
+| **Objednáno**   | ano                | Účast objednaná přes prodejní systém                                                 |
+| **Archivováno** | ne                 | Přístup ukončen archivací celé aktivity; viditelné jen administrátorům               |
+
+______________________________________________________________________
+
+## Typický průběh přístupu
+
+Přístup prochází stavy v závislosti na čase a výsledcích pokusů. Níže je popsán nejběžnější tok:
+
+Po přiřazení aktivity uživateli s budoucím datem začátku je přístup ve stavu **Registrovaný**. Jakmile nastane datum začátku přístupu, systém přístup automaticky přepne do stavu **Spuštěno** a uživatel může aktivitu plnit.
+
+Pokud je aktivita hodnocena hodnotitelem, přejde přístup po odevzdání pokusu do stavu **V hodnocení**. Po vyhodnocení hodnotitelem přístup přechází do stavu **Dokončeno**.
+
+Přístup skončí ve stavu **Dokončeno** také tehdy, vyprší-li termín bez splnění nebo jsou-li vyčerpány všechny dostupné pokusy. Stav Dokončeno tedy neznačí automaticky úspěch – rozhoduje výsledek přístupu (splněno nebo nesplněno).
+
+Byl-li přístup úspěšně splněn a je nastavena platnost splnění, přejde přístup po uplynutí platnosti do stavu **Expirováno**. V takovém případě lze uživateli aktivitu přiřadit znovu – buď ručně, nebo automaticky prostřednictvím [periodického nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md).
+
+______________________________________________________________________
+
+## Vznik a zánik přístupu
+
+Přístup vzniká jedním z těchto způsobů:
+
+- ručním přiřazením aktivity uživateli nebo skupině uživatelů,
+- hromadným importem,
+- samoregistrací uživatele na termín aktivity,
+- automatickou periodickou obnovou po vypršení předchozího přístupu.
+
+Když přístup vyprší nebo je ukončen, stane se **historickým přístupem** – zůstane v systému zachován v historii uživatele a uživateli lze aktivitu přiřadit znovu jako zcela nový přístup.
+
+Automatickou obnovu přístupu po vypršení zajišťuje funkce periodického nastavení; její princip popisuje stránka [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md).
+
+______________________________________________________________________
+
+## Pozor na
+
+- Stav **Dokončeno** má dvojí sémantiku: přístup mohl být uzavřen úspěšným splněním i vypršením termínu bez splnění. Jaký byl výsledek, sděluje hodnota výsledku přístupu (splněno / nesplněno), nikoli samotný stav.
+- Přechody mezi stavy závisejí na konkrétní konfiguraci přístupu a aktivitě. Uvedený typický tok platí pro nejběžnější nasazení; v pokročilých scénářích se mohou lišit.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
+- [Uživatel: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+
+# Periodické nastavení: princip a typy periody
+
+Periodické nastavení je mechanismus, díky kterému systém Competent automaticky obnovuje přístup uživatele k beztermínové aktivitě nebo sadě poté, co předchozí přístup skončí. Typické využití jsou zákonem vyžadovaná opakovaná školení – například každoroční školení BOZP nebo proškolení řidičů.
+
+Tato stránka vysvětluje **princip**, na kterém periodicita stojí. Postup nastavení v rozhraní popisuje stránka [Periodické nastavení (reference)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md).
+
+______________________________________________________________________
+
+## Jak periodické nastavení funguje
+
+Přístup s nastavenou periodicitou funguje stejně jako běžné přiřazení aktivity uživateli. Rozdíl nastane v okamžiku, kdy uživatel aktivitu úspěšně dokončí: systém podle parametrů periody naplánuje nový přístup na další období. Obnovu zajišťuje periodický job systému.
+
+Celý cyklus lze popsat takto:
+
+1. Uživateli je přiřazena aktivita s periodickým nastavením – vzniká první přístup.
+1. Uživatel aktivitu splní (stav **Dokončeno**).
+1. Systém podle zvoleného typu výpočtu periody naplánuje začátek dalšího přístupu.
+1. V naplánovaný okamžik se automaticky vytvoří nový přístup a cyklus se opakuje.
+
+______________________________________________________________________
+
+## Tři typy výpočtu periody
+
+Typ výpočtu určuje, od jakého okamžiku se odvíjí začátek příštího přístupu.
+
+| Typ výpočtu      | Jak se počítá příští přístup                                                                     |
+| ---------------- | ------------------------------------------------------------------------------------------------ |
+| **Kalendářní**   | Příští přístup se spouští k pevnému kalendářnímu pravidlu (například každý rok v konkrétní den). |
+| **Od přiřazení** | Pevný interval (roky / měsíce / dny) se počítá od začátku aktuálního přiřazení.                  |
+| **Od splnění**   | Stejný interval, ale počítaný od okamžiku úspěšného splnění aktivity.                            |
+
+### Parametry typů Od přiřazení a Od splnění
+
+Oba tyto typy sdílejí dvě klíčová pole:
+
+- **Délka aktivní části** – počet dní, po které je obnovený přístup otevřený (uživatel může aktivitu v tomto okně plnit).
+- **Perioda** – interval opakování zadaný v rocích, měsících a dnech.
+
+U typu **Od splnění** se pole **Příští spuštění** nezobrazuje. Datum dalšího přístupu nelze naplánovat dopředu, protože se odvíjí od okamžiku splnění, který předem není znám.
+
+### Upřesnění ke Kalendářnímu typu
+
+U typu **Kalendářní** se interval v rocích, měsících a dnech nezadává. Místo toho se opakování nastavuje výběrem frekvence: **Denně**, **Týdně**, **Měsíčně** nebo **Ročně**.
+
+______________________________________________________________________
+
+## Periodicita sad
+
+Sadu lze přiřadit periodicky obdobně jako samostatnou aktivitu. Po splnění sady systém naplánuje její další přiřazení. Při obnově platí tato pravidla:
+
+- Všem beztermínovým aktivitám v sadě se nastaví stejný přístup jako sadě samotné.
+- Termínové aktivity v sadě se přiřadí bez termínu.
+
+Podrobnosti o sadách viz [Sada: struktura, hierarchie a splnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md).
+
+______________________________________________________________________
+
+## Zrušení periody
+
+Aby se přístup přestal automaticky obnovovat, je třeba přístup převést do stavu **Zrušeno**. Systém poté již další přístup neplánuje.
+
+______________________________________________________________________
+
+## Pozor na
+
+Přestupné roky a délka měsíce
+
+U intervalu zadaného v měsících nebo rocích systém nebere v potaz skutečnou délku konkrétního měsíce ani přestupné roky. Datum příštího přístupu se počítá bez korekce na tyto odchylky.
+
+Periodicita vs. automatické prodloužení přístupu
+
+Periodické nastavení nesouvisí s funkcí **automatického prodloužení přístupu** (pole Počet dnů automatického prodloužení). Jde o dva samostatné mechanismy s odlišným chováním.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Periodické nastavení (reference)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md) – postup nastavení v rozhraní
+- [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md) – přístup jako objekt, stavy
+- [Sada: struktura, hierarchie a splnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
+
 # Podmínky přístupu: prerekvizity a vyhodnocení
 
 Podmínky přístupu říkají systému Competent, **které jiné aktivity musí uživatel splnit, než mu bude zpřístupněn obsah podmíněné aktivity**. Nejde o omezení samotného přiřazení – uživatel může být k aktivitě přiřazen a jeho přístup být ve stavu Spuštěno, ale bez splnění podmínek obsah spustit nemůže. Tato stránka vysvětluje mechanismus podmínek, logiku jejich kombinování a způsob, jakým systém vyhodnocení provádí.
@@ -3337,6 +3531,79 @@ ______________________________________________________________________
 - [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 - [Přidání dokumentu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/index.md)
+
+# Certifikát: princip a generování
+
+Certifikát je listina potvrzující splnění aktivity. Competent jej nevytváří jako samostatný objekt v databázi, ale **generuje ho z ODT šablony** v okamžiku, kdy uživatel splní aktivitu a dosáhne nastaveného stavu. Tato stránka vysvětluje, jak generování funguje, z čeho certifikát čerpá data a jak se nastavuje šablona.
+
+______________________________________________________________________
+
+## Certifikát jako generovaný dokument
+
+Klíčová vlastnost certifikátu je, že **nejde o systémovou entitu**. Systém neeviduje vydané certifikáty v žádné vlastní tabulce. Existuje pouze:
+
+- **šablona certifikátu** – ODT soubor nahraný administrátorem,
+- **vygenerovaný dokument** – výsledek sloučení šablony s daty konkrétního uživatele, aktivity a přístupu, stažitelný dokument.
+
+Každé stažení certifikátu je tedy generování tohoto dokumentu na vyžádání z aktuálních dat.
+
+______________________________________________________________________
+
+## Princip generování certifikátu
+
+Aby systém mohl certifikát vygenerovat, musí být splněny dvě podmínky: existuje nahraná ODT šablona označená jako **šablona certifikátu** a tato šablona je přiřazena k aktivitě s nastaveným stavem dostupnosti. Administrátor obě podmínky nastavuje předem – šablonu nahraje přes obrazovku **Soubory** a označí ji v kontextové nabídce, poté ji přiřadí na záložce **Dokumenty** v detailu aktivity a zvolí stav, při jehož dosažení má být certifikát uživatelům dostupný.
+
+Jakmile přístup uživatele k aktivitě dosáhne nastaveného stavu, systém dokument sestaví sloučením šablony s aktuálními daty daného uživatele a zpřístupní jej ke stažení. Stažení certifikátu tedy není odložená operace – certifikát vzniká na vyžádání pokaždé z dat platných v daném okamžiku.
+
+Podrobný postup nastavení šablony popisuje [Nastavení šablony certifikátu (připravujeme)](#).
+
+______________________________________________________________________
+
+## Data v certifikátu
+
+Šablona certifikátu čerpá data ze tří oblastí:
+
+| Oblast dat   | Popis                                                                    |
+| ------------ | ------------------------------------------------------------------------ |
+| **Uživatel** | Jméno, příjmení a další parametry uživatele, jemuž je aktivita přiřazena |
+| **Aktivita** | Název a parametry aktivity                                               |
+| **Přístup**  | Stav, datum splnění a výsledky z nejlepšího pokusu uživatele             |
+
+Tím certifikát odráží skutečný stav plnění v okamžiku stažení.
+
+______________________________________________________________________
+
+## Šablona certifikátu: formát a obsah
+
+Šablona se vytváří v editoru kompatibilním s formátem ODT (například LibreOffice Writer). Místa, která mají být nahrazena daty ze systému, se označují **placeholdery** ve tvaru `${název}`.
+
+Pro pokročilou práci se šablonou – například podmíněné zobrazení bloků textu nebo formátování dat – slouží skriptovací jazyk **ZenScript** (vycházející z JavaScriptu). Podrobná tvorba šablon s využitím ZenScriptu přesahuje rozsah tohoto přehledu a bude popsána v samostatném návodu.
+
+______________________________________________________________________
+
+## Stažení certifikátu
+
+Certifikát ke stažení je dostupný:
+
+- **Administrátorovi aktivity** – zobrazí se u uživatele na záložce **Uživatelé** v detailu aktivity, pokud má administrátor přístup k aktivitě i k danému uživateli a přístup uživatele se nachází v nastaveném stavu.
+- **Uživateli (studentovi)** – ve svém studentském zobrazení, pokud je mu aktivita přiřazena a přístup se nachází v nastaveném stavu.
+
+______________________________________________________________________
+
+## Pozor na
+
+- Šablonu je třeba v systému souborů explicitně označit jako **šablonu certifikátu** – samotné nahrání souboru nestačí. Bez tohoto označení nebude nabídnuta k přiřazení v záložce Dokumenty jako certifikátová šablona.
+- Stav nastavený u šablony v záložce **Dokumenty** určuje, kdy je certifikát dostupný. Doporučuje se volit stav odpovídající úspěšnému splnění (například **Dokončeno**), aby certifikát nebyl přístupný dříve, než uživatel aktivitu úspěšně dokončí.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Dokumenty v aktivitě: přiřazení a viditelnost](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md) – jak se k aktivitě přiřazují soubory a nastavuje jejich stavová viditelnost
+- [Pokusy uživatele: přístupy, pokusy a výsledky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md) – co je nejlepší pokus a jak systém ukládá výsledky
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md) – kontext aktivity, ke které se certifikát váže
+- [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md) – přístup a stavy, od nichž se odvíjí dostupnost certifikátu
+- [Uživatel: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md) – data uživatele, která šablona může obsahovat
 
 # Sada: struktura, hierarchie a splnění
 
@@ -3955,6 +4222,118 @@ ______________________________________________________________________
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md) – seskupení aktivit přiřaditelné uživatelům.
 - [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md) – hierarchická navigace aktivit v administraci.
 
+# Uživatel: model a životní cyklus
+
+Uživatel je základní evidenční objekt systému Competent – každá osoba zavedená do systému existuje jako objekt uživatele s vlastními parametry, rolemi a přístupy k aktivitám. Tato stránka vysvětluje, co uživatelský objekt obsahuje, jakými stavy účet prochází a jak uživatel souvisí s dalšími částmi systému. Je určena administrátorům, kteří chtějí pochopit model před tím, než začnou uživatele spravovat nebo konfigurovat jejich přístupy.
+
+______________________________________________________________________
+
+## Co je uživatel
+
+Uživatelem rozumíme každou osobu zavedenou do systému Competent: správce, hodnotitele, účastníky kurzů i osoby evidované v systému bez aktivního přístupu k rozhraní. Obrazovka, kde spravujete uživatele, se jmenuje **Lidé**.
+
+V technickém smyslu lze rozlišit dvě roviny:
+
+- **Uživatel** – fyzická osoba, za níž záznam stojí.
+- **Objekt uživatele** – datový záznam v systému s parametry, rolemi a vazbami.
+
+Toto rozlišení je užitečné zejména při uvažování o tom, co se děje při zablokování účtu nebo při automatickém přiřazování aktivit – akce vždy míří na objekt, nikoliv přímo na osobu.
+
+______________________________________________________________________
+
+## Parametry účtu
+
+Každý uživatel má sadu parametrů. Níže jsou klíčové z nich:
+
+| Parametr               | Popis                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------- |
+| **Jméno a Příjmení**   | Identifikace osoby v systému                                                          |
+| **E-mail**             | Musí být unikátní v celém systému; používá se pro notifikace                          |
+| **Přihlašovací jméno** | Unikátní identifikátor pro přihlášení                                                 |
+| **Heslo**              | Uloženo v zašifrované podobě                                                          |
+| **Jazyk**              | Jazyk rozhraní systému pro daného uživatele; nemá vliv na jazyk obsahu kurzů          |
+| **Subtyp**             | Určuje sadu parametrů uživatele; nastavuje se při vytvoření a nelze ho později změnit |
+
+Uživatelské subtypy umožňují přidat vlastní parametry; jejich správa je v **Nastavení**. Detailní přehled všech parametrů najdete na stránce [Detail uživatele (připravujeme)](#).
+
+______________________________________________________________________
+
+## Stav účtu
+
+Uživatelský účet má právě dva možné stavy:
+
+- **Aktivní** – uživatel se může přihlásit a pracovat v systému podle svých oprávnění.
+- **Zablokovaný** – přihlášení není možné; uživatelský záznam zůstává v systému zachován včetně veškeré historie.
+
+Jiné stavy účtu neexistují. Zablokování se provede přímo v detailu uživatele; záznam se z databáze nemaže.
+
+______________________________________________________________________
+
+## Životní cyklus uživatele
+
+Uživatel vzniká jedním ze dvou způsobů:
+
+- **Ručním založením** – administrátor vytvoří záznam přímo v obrazovce **Lidé** ([Jak vytvořit nového uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)).
+- **Importem** – hromadné zavedení uživatelů ze souboru xlsx ([Jak importovat uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)).
+
+Po celou dobu existence uživatelského záznamu systém eviduje **historii akcí**: veškeré změny parametrů i přiřazení jsou zaznamenány a dostupné v detailu uživatele.
+
+Deaktivace probíhá nastavením stavu **Zablokovaný**. Záznam se z databáze nemaže – historická data a přístupy k aktivitám zůstávají zachovány.
+
+```
+graph LR
+    A["Vznik\n(ruční / import)"]
+    B["Aktivní"]
+    C["Zablokovaný"]
+
+    A --> B
+    B --> C
+    C --> B
+```
+
+______________________________________________________________________
+
+## Role a oprávnění
+
+Uživatel může mít oprávnění přidělena dvěma způsoby:
+
+- **Globální role** – přiřazeny přímo uživateli a platí v celém systému.
+- **Objektové role** – vážou se ke konkrétnímu objektu (aktivitě, skupině apod.) a platí jen pro tento objekt.
+
+Role lze přidělit uživateli přímo nebo prostřednictvím jeho členství v uživatelské skupině. Detailní popis modelu oprávnění najdete na stránce [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Skupiny
+
+Uživatel může být členem jedné nebo více **uživatelských skupin**. Skupiny slouží ke klasifikaci uživatelů a umožňují hromadné přiřazování oprávnění nebo aktivit. Podrobnosti najdete na stránce [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md).
+
+______________________________________________________________________
+
+## Přístupy k aktivitám
+
+Vztah uživatele k aktivitám není uložen přímo na uživateli – pro každou kombinaci uživatel a aktivita vzniká samostatný objekt zvaný **přístup**. Přístup popisuje, od kdy a do kdy má uživatel aktivitu k dispozici, v jakém stavu se plnění nachází a jaké pokusy proběhly. Podrobnosti najdete na stránce [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md).
+
+______________________________________________________________________
+
+## Pozor na
+
+Super administrátor
+
+Systém Competent nabízí příznak **Super administrátor**, který uděluje přihlášenému uživateli plná práva bez ohledu na přiřazené role. Jeho nastavení se nedoporučuje – použijte raději cíleně přidělené role. Podrobnosti o rolích najdete na stránce [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Jak vytvořit nového uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Jak importovat uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+- [Jak přiřadit roli uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
+
 # Uživatelská skupina: model a principy
 
 Uživatelská skupina je jeden z hlavních objektů systému Competent. Tato stránka vysvětluje, k čemu skupiny slouží, jak funguje členství a role v rámci skupiny, proč systém rozlišuje pohledy **Skupiny** a **Účastnické skupiny**, a jak skupiny tvoří hierarchii. Je určena administrátorům, kteří chtějí pochopit model před tím, než začnou skupiny vytvářet nebo spravovat.
@@ -4353,4 +4732,45 @@ Pokud Vaše organizace používá samostatný studentský portál, dokumentace p
 
 # Slovník
 
-Slovník pojmů, které v Competent potkáte.
+Tato stránka obsahuje přehled základních pojmů používaných v Competent. Každý termín naleznete i v příslušné části dokumentace, na kterou odkazuje sloupec **Detail**.
+
+| Termín                                     | Definice                                                                                                                                                             | Detail                                                                                                                                           |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Aktivita                                   | Nejmenší splnitelná jednotka systému, přiřaditelná uživatelům; definována názvem, subtypem, schématem a obsahem.                                                     | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)                             |
+| Automaticky prodloužený přístup k aktivitě | Nedokončené přístupy se v datum konce neukončí, ale prodlouží o nastavený čas; opakuje se do vyčerpání počtu prodloužení.                                            |                                                                                                                                                  |
+| Beztermínové schéma aktivity               | Schéma pro aktivity plněné samostatně, nezávislé na datu a místě konání (online kurzy, periodická školení).                                                          | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)                    |
+| Certifikát                                 | Listina potvrzující splnění aktivity, kterou Competent generuje z ODT šablony.                                                                                       | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)                           |
+| Datové typy                                | Typy hodnot, které mohou mít parametry objektů a subtypů: text, číslo, ano/ne, datum, datum a čas, e-mail, heslo, odkaz na objekt, výběr z možností a identifikátor. |                                                                                                                                                  |
+| Hlavní objekt                              | Objekty s pevnými hlavními parametry a volitelnými subtypy: Aktivita, Sada, Termínová sada, Hodnocení, Uživatel, Uživatelská skupina, Kvalifikace.                   |                                                                                                                                                  |
+| Hodnocení                                  | Hlavní objekt sdílející datový model s aktivitou, ale s jiným využitím: nevyžaduje plnění, uživatel je hodnocen.                                                     |                                                                                                                                                  |
+| Hodnotitel                                 | Uživatel, který má přiřazeno hodnocení přidělených uživatelů; pracuje přes záložku K hodnocení.                                                                      |                                                                                                                                                  |
+| Import/Export (xlsx)                       | Hromadné vytváření a export objektů přes tabulky xlsx s povinnou strukturou.                                                                                         |                                                                                                                                                  |
+| Jazyková podpora                           | Lokalizace systému do více jazyků na úrovni serveru, rozhraní i názvů vybraných objektů.                                                                             |                                                                                                                                                  |
+| Místo                                      | Entita popisující fyzickou lokaci (místo konání, adresa, bydliště uživatele).                                                                                        |                                                                                                                                                  |
+| Notifikace                                 | Automatické e-mailové zprávy zasílané definovaným uživatelům při určité události.                                                                                    | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)                  |
+| Oprávnění                                  | Povolení uživatele využívat funkce systému (globální) nebo nakládat s objekty (objektová).                                                                           | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
+| Parametr                                   | Vlastnost objektu; hlavní (pevné) nebo vedlejší (přidávané přes subtypy).                                                                                            |                                                                                                                                                  |
+| Periodické nastavení                       | Opakované automatické obnovování přístupu k aktivitě nebo sadě po jeho vypršení.                                                                                     | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)                 |
+| Podmínky aktivit a kvalifikací             | Podmínění spuštění aktivity nebo platnosti kvalifikace splněním jiných aktivit či kvalifikací.                                                                       | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)                    |
+| Pokusy uživatele                           | Soubor jednotlivých pokusů uživatele o splnění aktivity; každé spuštění tvoří nový pokus.                                                                            | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)                     |
+| Proměnné                                   | Zástupné symboly v e-mailových šablonách, automaticky nahrazené daty ze systému.                                                                                     | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)                  |
+| Přihlášení jako jiný uživatel              | Administrační nástroj umožňující procházet systém z pohledu jiného uživatele; vázán na zvláštní oprávnění.                                                           |                                                                                                                                                  |
+| Přiřazení aktivity uživateli (přístup)     | Objekt vazby mezi uživatelem a aktivitou; popisuje jak, kdy a v jakém stavu uživatel aktivitu plní.                                                                  | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md) |
+| Přiřazení dle skupin                       | Pravidlo automatického přiřazování aktivit na základě členství v uživatelských skupinách.                                                                            | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)                 |
+| Příkazy serveru                            | Sada příkazů, jimiž oprávněný administrátor udržuje systém v chodu.                                                                                                  |                                                                                                                                                  |
+| Recenze                                    | Uživatelské hodnocení aktivity (hvězdičky, slovní hodnocení); může být povinné.                                                                                      |                                                                                                                                                  |
+| Role                                       | Soubor oprávnění; uživatel je nositelem role vůči objektu nebo globálně.                                                                                             | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
+| Sada                                       | Seskupení aktivit, sad a termínových sad do celku přiřaditelného jako celek.                                                                                         | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)                                 |
+| Subtyp                                     | Detailní rozlišení hlavního objektu; každý objekt musí mít subtyp, po vytvoření neměnný.                                                                             | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)                      |
+| Termínová sada                             | Kombinace sady a termínové aktivity; lze do ní přiřazovat aktivity a vytvářet termíny.                                                                               | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)                       |
+| Typ hodnocení                              | Určuje způsob vyhodnocení splnění aktivity (Textové, Body, Prošel/Neprošel, Procentuální, Formulář, Složené).                                                        |                                                                                                                                                  |
+| Typ spouštění                              | Určuje typ obsahu aktivity a co se stane při spuštění (Žádný, Url, SCORM, iTrivio, PDF, Složené).                                                                    |                                                                                                                                                  |
+| Účastník                                   | Společný jmenovatel interních rolí přiřazených uživateli jako členovi skupiny, kurzistovi nebo osobě na pozici.                                                      | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
+| Uživatel                                   | Osoba zavedená do systému; má přiřazené parametry, role a přístupy k aktivitám.                                                                                      | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)                             |
+| Uživatelská práva                          | Akce povolené uživateli; každá akce má objekt oprávnění, oprávnění jsou organizována do rolí.                                                                        | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
+| Uživatelská skupina                        | Hlavní objekt pro klasifikaci uživatelů; umožňuje filtrování, hromadné přiřazení oprávnění i zpráv.                                                                  | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)                              |
+| Vlastník                                   | Systémová role automaticky přiřazená tvůrci hlavního objektu; opravňuje k plné kontrole objektu.                                                                     | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
+| Vlastnosti aplikace                        | Soustava nastavení prostředí; část v konfiguračních souborech, část měnitelná za běhu.                                                                               |                                                                                                                                                  |
+| Výběr uživatelů                            | Panel pro výběr uživatelů při přiřazování k aktivitám a hodnocení.                                                                                                   |                                                                                                                                                  |
+| Zasílání e-mailů                           | Hlavní komunikační nástroj; systém odesílá notifikace i zprávy přes vlastní frontu a externí SMTP.                                                                   | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)                  |
+| Štítky                                     | Klasifikace aktivit do skupin pro snazší orientaci; přiřazují se v detailu aktivity.                                                                                 | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)                               |
