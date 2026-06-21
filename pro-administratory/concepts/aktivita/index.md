@@ -76,7 +76,7 @@ Každá aktivita prochází v průběhu svého existence stavem, který určuje,
 | 9   | **Ukončeno**       | Aktivita je finálně uzavřena                                                                               |
 | 10  | **Archivováno**    | Aktivita je archivována; nezobrazuje se v běžných přehledech                                               |
 
-Jednotlivé stavy představují sémantické fáze životního cyklu aktivity. Podrobnosti o přechodech viz [Stavy aktivity (připravujeme)](#).
+Jednotlivé stavy představují sémantické fáze životního cyklu aktivity. Podrobnosti o přechodech viz [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md).
 
 ## Disambiguace pojmu *Hodnocení*
 
@@ -101,7 +101,7 @@ ______________________________________________________________________
 ## Související stránky
 
 - [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
-- [Stavy aktivity (připravujeme)](#)
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
 - [Schémata aktivity (připravujeme)](#)
 - [Termíny a kapacita (připravujeme)](#)
 - [Jak vytvořit aktivitu (připravujeme)](#)

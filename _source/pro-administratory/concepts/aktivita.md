@@ -98,7 +98,7 @@ je viditelná a přístupná pro uživatele. Systém rozlišuje celkem 10 stavů
 | 10 | **Archivováno** | Aktivita je archivována; nezobrazuje se v běžných přehledech |
 
 Jednotlivé stavy představují sémantické fáze životního cyklu aktivity.
-Podrobnosti o přechodech viz [Stavy aktivity (připravujeme)](#).
+Podrobnosti o přechodech viz [Stavy aktivity](stavy-aktivity.md).
 
 ## Disambiguace pojmu *Hodnocení*
 
@@ -129,7 +129,7 @@ typy vzdělávacích objektů používá zastřešující pojem „aktivita".
 ## Související stránky
 
 - [Subtypy aktivit](subtypy-aktivit.md)
-- [Stavy aktivity (připravujeme)](#)
+- [Stavy aktivity](stavy-aktivity.md)
 - [Schémata aktivity (připravujeme)](#)
 - [Termíny a kapacita (připravujeme)](#)
 - [Jak vytvořit aktivitu (připravujeme)](#)
