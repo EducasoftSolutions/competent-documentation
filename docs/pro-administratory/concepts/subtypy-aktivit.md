@@ -72,7 +72,7 @@ a přidávat subtypy nové. Nově vytvořený subtyp se okamžitě objeví v nab
 při zakládání aktivity – pod svým typem.
 
 Podrobný popis záložky Subtypy a postup konfigurace naleznete na stránce
-[Tab Subtypy (připravujeme)](#).
+[Tab Subtypy](../reference/tab-subtypy.md).
 
 ### Subtypy dalších objektů
 
@@ -98,4 +98,4 @@ objektu. Tato stránka se zaměřuje výhradně na subtypy aktivit.
 
 - [Aktivita: model a životní cyklus](aktivita.md)
 - [Detail aktivity](../reference/detail-aktivity.md)
-- [Tab Subtypy (připravujeme)](#)
+- [Tab Subtypy](../reference/tab-subtypy.md)

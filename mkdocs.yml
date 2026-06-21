@@ -81,6 +81,10 @@ plugins:
           - pro-administratory/how-to/aktivity/prirazovani-stitku.md
           - pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
           - pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
+          - pro-administratory/how-to/aktivity/podminky-pristupu.md
+          - pro-administratory/how-to/aktivity/dokumenty-v-aktivite.md
+          - pro-administratory/how-to/aktivity/pokusy-uzivatele.md
+          - pro-administratory/how-to/aktivity/terminy-aktivity.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatele.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
           - pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu.md
@@ -96,12 +100,18 @@ plugins:
           - pro-administratory/reference/detail-sady.md
           - pro-administratory/reference/periodicke-nastaveni.md
           - pro-administratory/reference/detail-skupiny.md
+          - pro-administratory/reference/tab-prirazeni-dle-skupin.md
+          - pro-administratory/reference/tab-subtypy.md
           - pro-administratory/reference/prehled-roli-a-opravneni.md
           - pro-administratory/reference/obrazovka-sablony-emailu.md
+          - pro-administratory/reference/prehled-notifikacnich-udalosti.md
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
           - pro-administratory/concepts/stavy-aktivity.md
           - pro-administratory/concepts/schemata-aktivity.md
+          - pro-administratory/concepts/pokusy-uzivatele.md
+          - pro-administratory/concepts/podminky-pristupu.md
+          - pro-administratory/concepts/dokumenty-v-aktivite.md
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/slozky-aktivit.md
@@ -112,6 +122,7 @@ plugins:
           - pro-administratory/concepts/skupina.md
           - pro-administratory/concepts/prirazeni-dle-skupin.md
           - pro-administratory/concepts/emailove-notifikace.md
+          - pro-administratory/concepts/workflow-aktivity.md
         Pro studenty:
           - pro-studenty/index.md
         Slovník:
@@ -135,6 +146,10 @@ nav:
               - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
               - Nastavení práv k aktivitě: pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
               - Přiřazení uživatelů k aktivitě: pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
+              - Nastavení podmínek přístupu: pro-administratory/how-to/aktivity/podminky-pristupu.md
+              - Přidání dokumentu k aktivitě: pro-administratory/how-to/aktivity/dokumenty-v-aktivite.md
+              - Pokusy uživatele: pro-administratory/how-to/aktivity/pokusy-uzivatele.md
+              - Přidání termínu k aktivitě: pro-administratory/how-to/aktivity/terminy-aktivity.md
           - Lidé:
               - Vytvoření uživatele: pro-administratory/how-to/lide/vytvoreni-uzivatele.md
               - Vytvoření uživatelské skupiny: pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
@@ -152,14 +167,20 @@ nav:
           - Detail sady: pro-administratory/reference/detail-sady.md
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
+          - Tab Přiřazení dle skupin: pro-administratory/reference/tab-prirazeni-dle-skupin.md
+          - Tab Subtypy: pro-administratory/reference/tab-subtypy.md
           - Přehled rolí a oprávnění: pro-administratory/reference/prehled-roli-a-opravneni.md
           - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
+          - Přehled notifikačních událostí: pro-administratory/reference/prehled-notifikacnich-udalosti.md
           - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
       - Koncepty:
           - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
           - Stavy aktivity: pro-administratory/concepts/stavy-aktivity.md
           - Schémata aktivity: pro-administratory/concepts/schemata-aktivity.md
+          - Pokusy uživatele: pro-administratory/concepts/pokusy-uzivatele.md
+          - Podmínky přístupu: pro-administratory/concepts/podminky-pristupu.md
+          - Dokumenty v aktivitě: pro-administratory/concepts/dokumenty-v-aktivite.md
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Složky aktivit: pro-administratory/concepts/slozky-aktivit.md
@@ -170,6 +191,7 @@ nav:
           - Uživatelská skupina: pro-administratory/concepts/skupina.md
           - Přiřazení dle skupin: pro-administratory/concepts/prirazeni-dle-skupin.md
           - E-mailové notifikace: pro-administratory/concepts/emailove-notifikace.md
+          - Workflow: pro-administratory/concepts/workflow-aktivity.md
   - Pro studenty: pro-studenty/index.md
   - Slovník: slovnik/index.md
 
