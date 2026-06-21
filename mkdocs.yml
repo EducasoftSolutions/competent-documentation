@@ -110,8 +110,11 @@ plugins:
           - pro-administratory/concepts/stavy-aktivity.md
           - pro-administratory/concepts/schemata-aktivity.md
           - pro-administratory/concepts/pokusy-uzivatele.md
+          - pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup.md
+          - pro-administratory/concepts/periodicke-nastaveni.md
           - pro-administratory/concepts/podminky-pristupu.md
           - pro-administratory/concepts/dokumenty-v-aktivite.md
+          - pro-administratory/concepts/certifikat.md
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/slozky-aktivit.md
@@ -119,6 +122,7 @@ plugins:
           - pro-administratory/concepts/subtypy-aktivit.md
           - pro-administratory/concepts/role.md
           - pro-administratory/concepts/stitky.md
+          - pro-administratory/concepts/uzivatel.md
           - pro-administratory/concepts/skupina.md
           - pro-administratory/concepts/prirazeni-dle-skupin.md
           - pro-administratory/concepts/emailove-notifikace.md
@@ -179,8 +183,11 @@ nav:
           - Stavy aktivity: pro-administratory/concepts/stavy-aktivity.md
           - Schémata aktivity: pro-administratory/concepts/schemata-aktivity.md
           - Pokusy uživatele: pro-administratory/concepts/pokusy-uzivatele.md
+          - Přiřazení aktivity uživateli (přístup): pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup.md
+          - Periodické nastavení: pro-administratory/concepts/periodicke-nastaveni.md
           - Podmínky přístupu: pro-administratory/concepts/podminky-pristupu.md
           - Dokumenty v aktivitě: pro-administratory/concepts/dokumenty-v-aktivite.md
+          - Certifikát: pro-administratory/concepts/certifikat.md
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Složky aktivit: pro-administratory/concepts/slozky-aktivit.md
@@ -188,6 +195,7 @@ nav:
           - Subtypy aktivit: pro-administratory/concepts/subtypy-aktivit.md
           - Role a oprávnění: pro-administratory/concepts/role.md
           - Štítek: pro-administratory/concepts/stitky.md
+          - Uživatel: pro-administratory/concepts/uzivatel.md
           - Uživatelská skupina: pro-administratory/concepts/skupina.md
           - Přiřazení dle skupin: pro-administratory/concepts/prirazeni-dle-skupin.md
           - E-mailové notifikace: pro-administratory/concepts/emailove-notifikace.md
