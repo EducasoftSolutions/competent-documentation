@@ -100,6 +100,7 @@ plugins:
           - pro-administratory/reference/obrazovka-sablony-emailu.md
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
+          - pro-administratory/concepts/stavy-aktivity.md
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/slozky-aktivit.md
@@ -156,6 +157,7 @@ nav:
       - Koncepty:
           - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
+          - Stavy aktivity: pro-administratory/concepts/stavy-aktivity.md
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Složky aktivit: pro-administratory/concepts/slozky-aktivit.md
