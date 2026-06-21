@@ -153,5 +153,5 @@ Role jsou odlišeny závorkami podle způsobu přiřazení:
 - [Vytvoření SCORM aktivity](../how-to/aktivity/vytvoreni-scorm-aktivity.md)
 - [Detail aktivity](detail-aktivity.md)
 - [Detail sady](detail-sady.md)
-- [Sdílené aktivity (připravujeme)](#)
+- [Sdílené aktivity](../concepts/sdilene-aktivity.md)
 - [Termín aktivity (připravujeme)](#)

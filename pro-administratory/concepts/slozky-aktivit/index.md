@@ -134,4 +134,4 @@ ______________________________________________________________________
 - [Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
-- [Sdílené aktivity (připravujeme)](#)
+- [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/index.md)

@@ -135,4 +135,4 @@ Podrobný model oprávnění naleznete na stránce [Role a oprávnění](role.md
 - [Štítky](stitky.md)
 - [Role a oprávnění](role.md)
 - [Obrazovka Aktivity](../reference/obrazovka-aktivity.md)
-- [Sdílené aktivity (připravujeme)](#)
+- [Sdílené aktivity](sdilene-aktivity.md)

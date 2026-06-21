@@ -201,4 +201,4 @@ ______________________________________________________________________
 - [Podmínky přístupu (připravujeme)](#)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
-- [Sdílené aktivity (připravujeme)](#)
+- [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/index.md)
