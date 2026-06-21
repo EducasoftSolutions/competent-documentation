@@ -199,4 +199,4 @@ Detail aktivity má výchozí čtyři taby (Uživatelé, Detaily, Dokumenty, Pod
 - [Podmínky přístupu (připravujeme)](#)
 - [E-mailové notifikace](../concepts/emailove-notifikace.md)
 - [Detail sady](detail-sady.md)
-- [Sdílené aktivity (připravujeme)](#)
+- [Sdílené aktivity](../concepts/sdilene-aktivity.md)
