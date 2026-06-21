@@ -121,7 +121,7 @@ signalizuje, že aktivita je zveřejněna a uživatelé si mohou vybírat
 z termínů.
 
 Podrobnosti o schématech aktivit a chování termínů naleznete na stránce
-[Schémata aktivity (připravujeme)](#).
+[Schémata aktivity](schemata-aktivity.md).
 
 ---
 
@@ -143,5 +143,5 @@ Podrobnosti o schématech aktivit a chování termínů naleznete na stránce
   s jejich významem
 - [Sada](sada.md)
 - [Termínová sada](terminova-sada.md)
-- [Schémata aktivity (připravujeme)](#)
+- [Schémata aktivity](schemata-aktivity.md)
 - [Pokusy uživatele (připravujeme)](#)

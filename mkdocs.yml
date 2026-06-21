@@ -101,6 +101,7 @@ plugins:
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
           - pro-administratory/concepts/stavy-aktivity.md
+          - pro-administratory/concepts/schemata-aktivity.md
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/slozky-aktivit.md
@@ -158,6 +159,7 @@ nav:
           - Přehled: pro-administratory/concepts/index.md
           - Aktivita: pro-administratory/concepts/aktivita.md
           - Stavy aktivity: pro-administratory/concepts/stavy-aktivity.md
+          - Schémata aktivity: pro-administratory/concepts/schemata-aktivity.md
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Složky aktivit: pro-administratory/concepts/slozky-aktivit.md
