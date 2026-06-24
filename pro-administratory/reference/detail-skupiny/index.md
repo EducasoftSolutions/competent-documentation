@@ -99,4 +99,4 @@ ______________________________________________________________________
 - [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
 - [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)

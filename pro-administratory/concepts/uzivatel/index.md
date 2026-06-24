@@ -13,7 +13,7 @@ V technickém smyslu lze rozlišit dvě roviny:
 - **Uživatel** – fyzická osoba, za níž záznam stojí.
 - **Objekt uživatele** – datový záznam v systému s parametry, rolemi a vazbami.
 
-Toto rozlišení je užitečné zejména při uvažování o tom, co se děje při zablokování účtu nebo při automatickém přiřazování aktivit – akce vždy míří na objekt, nikoliv přímo na osobu.
+Toto rozlišení je užitečné zejména při uvažování o tom, co se děje při deaktivaci účtu nebo při automatickém přiřazování aktivit – akce vždy míří na objekt, nikoliv přímo na osobu.
 
 ______________________________________________________________________
 
@@ -30,7 +30,7 @@ Každý uživatel má sadu parametrů. Níže jsou klíčové z nich:
 | **Jazyk**              | Jazyk rozhraní systému pro daného uživatele; nemá vliv na jazyk obsahu kurzů          |
 | **Subtyp**             | Určuje sadu parametrů uživatele; nastavuje se při vytvoření a nelze ho později změnit |
 
-Uživatelské subtypy umožňují přidat vlastní parametry; jejich správa je v **Nastavení**. Detailní přehled všech parametrů najdete na stránce [Detail uživatele (připravujeme)](#).
+Uživatelské subtypy umožňují přidat vlastní parametry; jejich správa je v **Nastavení**. Detailní přehled všech parametrů najdete na stránce [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md).
 
 ______________________________________________________________________
 
@@ -39,9 +39,9 @@ ______________________________________________________________________
 Uživatelský účet má právě dva možné stavy:
 
 - **Aktivní** – uživatel se může přihlásit a pracovat v systému podle svých oprávnění.
-- **Zablokovaný** – přihlášení není možné; uživatelský záznam zůstává v systému zachován včetně veškeré historie.
+- **Deaktivovaný** – přihlášení není možné; uživatelský záznam zůstává v systému zachován včetně veškeré historie.
 
-Jiné stavy účtu neexistují. Zablokování se provede přímo v detailu uživatele; záznam se z databáze nemaže.
+Jiné stavy účtu neexistují. Deaktivaci nastavuje přepínač **Účet deaktivován** v zakládacím nebo editačním modálu uživatele; záznam se z databáze nemaže.
 
 ______________________________________________________________________
 
@@ -54,13 +54,13 @@ Uživatel vzniká jedním ze dvou způsobů:
 
 Po celou dobu existence uživatelského záznamu systém eviduje **historii akcí**: veškeré změny parametrů i přiřazení jsou zaznamenány a dostupné v detailu uživatele.
 
-Deaktivace probíhá nastavením stavu **Zablokovaný**. Záznam se z databáze nemaže – historická data a přístupy k aktivitám zůstávají zachovány.
+Deaktivace probíhá nastavením stavu **Deaktivovaný** (přepínač Účet deaktivován). Záznam se z databáze nemaže – historická data a přístupy k aktivitám zůstávají zachovány.
 
 ```
 graph LR
     A["Vznik\n(ruční / import)"]
     B["Aktivní"]
-    C["Zablokovaný"]
+    C["Deaktivovaný"]
 
     A --> B
     B --> C

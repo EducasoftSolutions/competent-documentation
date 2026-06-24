@@ -62,4 +62,4 @@ Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; př
 - [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
 - [Hromadné akce (připravujeme)](#)
 - [Zobrazení sloupců (připravujeme)](#)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)

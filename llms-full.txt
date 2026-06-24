@@ -1027,7 +1027,7 @@ Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; př
 - [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
 - [Hromadné akce (připravujeme)](#)
 - [Zobrazení sloupců (připravujeme)](#)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
 
 # Přiřazení uživatele do skupiny
 
@@ -2010,6 +2010,319 @@ ______________________________________________________________________
 - [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
 - [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
 
+# Obrazovka Lidé
+
+Obrazovka **Lidé** je centrálním místem administrace pro správu uživatelů, skupin a rolí. Zobrazí se po kliknutí na položku **Lidé** v hlavním menu administrace. Obrazovka nabízí **přepínač pohledů** se třemi výchozími pohledy: **Uživatelé**, **Skupiny** a **Role**. Kliknutím na řádek v pohledu Uživatelé nebo Skupiny přejdete na příslušný detail.
+
+______________________________________________________________________
+
+## Přepínač pohledů
+
+Přepínač pohledů v horní části obrazovky umožňuje přecházet mezi třemi výchozími pohledy:
+
+| Pohled        | Obsah                                                                                |
+| ------------- | ------------------------------------------------------------------------------------ |
+| **Uživatelé** | Datová tabulka uživatelů s vyhledáváním, zakládáním a hromadnými operacemi.          |
+| **Skupiny**   | Datová tabulka uživatelských skupin s vyhledáváním a zakládáním.                     |
+| **Role**      | Doplňkový přehled uživatelů seřazených podle role (1. úroveň) a skupiny (2. úroveň). |
+
+Další pohledy
+
+Podle konfigurace systému se mohou v přepínači pohledů zobrazit i další pohledy (například Nadskupiny nebo Oddělení).
+
+______________________________________________________________________
+
+## Nástroje datové tabulky
+
+Pohledy Uživatelé a Skupiny jsou datové tabulky. Nad tabulkou jsou k dispozici tyto nástroje:
+
+| Nástroj                              | Popis                                                                                                                        |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Znovunačtení dat ze serveru**      | Obnoví data v tabulce ze serveru (Obnovit data).                                                                             |
+| **Import/Export**                    | Otevře modál pro import a export uživatelů, přístupů a vztahů.                                                               |
+| **Nový uživatel** / **Nová skupina** | Otevře modál pro vytvoření nového záznamu; viz [Modál Nový uživatel](#modal-novy-uzivatel).                                  |
+| **Vyhledávání**                      | Otevře filtrační pole pod záhlavími sloupců; viz [Vyhledávání](#vyhledavani).                                                |
+| **Hromadné úpravy**                  | Aktivuje výběr více řádků pro hromadné operace; dostupné jen v pohledu Uživatelé. Viz [Hromadné operace](#hromadne-operace). |
+| **Zobrazené sloupce**                | Umožní zobrazit nebo skrýt volitelné sloupce tabulky.                                                                        |
+| **Řazení dat**                       | Nastaví řazení tabulky.                                                                                                      |
+| **Možnosti sloupce**                 | Upřesní chování jednotlivých sloupců.                                                                                        |
+
+______________________________________________________________________
+
+## Sloupce seznamu uživatelů
+
+Ve výchozím zobrazení pohledu Uživatelé jsou viditelné tyto sloupce:
+
+| Sloupec                | Popis                                            |
+| ---------------------- | ------------------------------------------------ |
+| **Jméno**              | Křestní jméno uživatele.                         |
+| **Příjmení**           | Příjmení uživatele.                              |
+| **E-mail**             | E-mailová adresa uživatele.                      |
+| **Skupiny**            | Uživatelské skupiny, jejichž je uživatel členem. |
+| **Účastnické skupiny** | Skupiny, ve kterých má uživatel roli Účastník.   |
+
+Pomocí nástroje **Zobrazené sloupce** lze doplnit další sloupce: **Vlastní ID, Externí ID, Nástup, Výstup, Jazyk, Deaktivován, Superadmin**.
+
+Patička tabulky uvádí celkový počet záznamů (například „Celkem položek: 31").
+
+______________________________________________________________________
+
+## Pohled Uživatelé
+
+### Modál Nový uživatel
+
+Kliknutím na **Nový uživatel** v nástrojích tabulky se otevře modál pro vytvoření nového uživatele. Modál obsahuje tato pole a prvky:
+
+| Pole / Prvek            | Popis                                                                                                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Subtyp**              | Výběr subtypu uživatele; výchozí hodnota je **Uživatel**. Dostupné subtypy: Uživatel, Eshop uživatel.                                                                                                  |
+| **E-mail**              | Povinné. E-mailová adresa uživatele.                                                                                                                                                                   |
+| **Přihlašovací jméno**  | Povinné. Unikátní přihlašovací jméno.                                                                                                                                                                  |
+| **Heslo**               | Povinné. Heslo pro přístup do systému.                                                                                                                                                                 |
+| **Jméno**               | Povinné. Křestní jméno uživatele.                                                                                                                                                                      |
+| **Příjmení**            | Povinné. Příjmení uživatele.                                                                                                                                                                           |
+| **Jazyk**               | Jazyk rozhraní pro tohoto uživatele.                                                                                                                                                                   |
+| **Účet deaktivován**    | Přepínač. Je-li zapnut, uživatel nemůže přistupovat do systému; viz [Stav účtu uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md). |
+| **Uživatelské skupiny** | Multiselect. Přiřazení uživatele do jedné nebo více skupin při vytvoření.                                                                                                                              |
+| **Zrušit / Vytvořit**   | Tlačítka pro zrušení nebo potvrzení vytvoření uživatele.                                                                                                                                               |
+
+Podrobný postup viz [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md).
+
+### Vyhledávání
+
+Nástroj **Vyhledávání** otevře filtrační pole pod záhlavími sloupců. Výsledky tabulky se aktualizují okamžitě při změně hodnoty filtru.
+
+### Hromadné operace
+
+Po aktivaci nástroje **Hromadné úpravy** lze vybrat více uživatelů najednou a provést jednu z hromadných operací:
+
+| Operace             | Popis                                                |
+| ------------------- | ---------------------------------------------------- |
+| **Poslat zprávu**   | Otevře modál Poslat e-mail s předvybranými příjemci. |
+| **Odebrat vybrané** | Odebere vybrané uživatele; vyžaduje potvrzení.       |
+
+Hromadné operace jsou dostupné pouze v pohledu **Uživatelé**.
+
+______________________________________________________________________
+
+## Pohled Skupiny
+
+Pohled **Skupiny** zobrazuje datovou tabulku uživatelských skupin. Dostupné operace:
+
+- **Nová skupina** – otevře zakládací modál pro vytvoření nové uživatelské skupiny.
+- **Vyhledávání** – filtrační pole pod záhlavími sloupců, aktualizace výsledků okamžitá.
+- **Smazání skupiny** – smaže skupinu po potvrzení konfirmačního dialogu.
+
+Pohled Skupiny nemá hromadné operace. Kliknutím na řádek přejdete na [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md).
+
+______________________________________________________________________
+
+## Pohled Role
+
+Pohled **Role** je doplňkový přehled. Zobrazuje uživatele seřazené podle přiřazené role (1. úroveň) a skupiny, ve které je role přiřazena (2. úroveň). Správu rolí a oprávnění popisuje [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md).
+
+______________________________________________________________________
+
+## Pozor na
+
+Deaktivace vs. smazání uživatele
+
+Přepínač **Účet deaktivován** v zakládacím modálu (i v editaci uživatele) deaktivuje přístup do systému, ale uživatelský záznam zůstává zachován. Smazání záznamu je nevratné. Model stavů uživatelského účtu popisuje [Uživatel: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Uživatel: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)
+- [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+
+# Detail uživatele
+
+Obrazovka **Detail uživatele** zobrazuje veškeré informace o konkrétním uživateli: jeho aktivity a hodnocení, profilová data, členství ve skupinách, kvalifikace a vazby s ostatními uživateli. Obrazovka používá stejný UX vzor jako [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md) – hlavička s akcemi, lišta tabů a obsahový panel. Tato stránka popisuje pouze prvky specifické pro Detail uživatele; společný rámec viz [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
+
+Do Detailu uživatele se dostanete z přehledu **Lidé → pohled Uživatelé** kliknutím na řádek uživatele v tabulce.
+
+______________________________________________________________________
+
+## Hlavička detailu
+
+Záhlaví obrazovky zobrazuje **jméno uživatele**. Pokud uživatel nemá vyplněné jméno, zobrazí se místo něj jeho e-mail. Vedle jména je dostupná informační ikona; po najetí myší se v tooltipu zobrazí e-mail a přihlašovací jméno uživatele.
+
+Pod jménem je umístěna lišta tabů. V pravé části záhlaví se nacházejí tyto akce:
+
+| Akce                    | Popis                                                                                |
+| ----------------------- | ------------------------------------------------------------------------------------ |
+| **Export do XLS**       | Exportuje obsah aktuálně zobrazeného tabu do souboru Excel.                          |
+| **Hledání**             | Filtruje záznamy v zobrazeném seznamu.                                               |
+| **Nastavení uživatele** | Otevře panel pro přidělení globálních rolí uživateli a zobrazení jeho historie akcí. |
+| **Obnovit data**        | Znovu načte data ze serveru.                                                         |
+
+Nastavení uživatele není tab
+
+Přidělení globálních rolí a zobrazení historie akcí je dostupné přes akci **nastavení uživatele** v záhlaví obrazovky – nikoli jako samostatný tab v liště.
+
+______________________________________________________________________
+
+## Taby: přehled
+
+Detail uživatele obsahuje šest tabů:
+
+| Tab             | Obsah                                                                      |
+| --------------- | -------------------------------------------------------------------------- |
+| **Aktivity**    | Přehled aktivit přiřazených uživateli a jejich stav splněnosti.            |
+| **Hodnocení**   | Přehled hodnocení přiřazených uživateli.                                   |
+| **Popis**       | Profilová data uživatele s možností inline editace.                        |
+| **Skupiny**     | Seznam uživatelských skupin, jichž je uživatel členem, a jeho role v nich. |
+| **Kvalifikace** | Výpis kvalifikací uživatele rozdělený podle stavu.                         |
+| **Vazby**       | Vztahy uživatele s dalšími uživateli (podřízení a nadřízení).              |
+
+______________________________________________________________________
+
+## Tab Aktivity
+
+Tab **Aktivity** zobrazuje přehled aktivit přiřazených uživateli.
+
+### Filtry a přepínače
+
+Nad seznamem jsou dostupné rychlé filtry pro omezení zobrazených záznamů:
+
+| Filtr           | Popis                                         |
+| --------------- | --------------------------------------------- |
+| **Všechny**     | Zobrazí všechna přiřazení bez ohledu na stav. |
+| **Probíhající** | Přiřazení, která jsou aktuálně aktivní.       |
+| **Budoucí**     | Přiřazení naplánovaná do budoucna.            |
+| **K řešení**    | Přiřazení vyžadující pozornost.               |
+| **Ukončené**    | Dokončená nebo zrušená přiřazení.             |
+
+Přepínač **Hodnocený / Hodnotitel** umožňuje přepnout pohled mezi aktivitami, kde je uživatel v roli hodnoceného, a aktivitami, kde vystupuje jako hodnotitel.
+
+### Zobrazení a řazení
+
+Seznam podporuje hierarchické zobrazení zohledňující sady a řazení podle názvu nebo data.
+
+### Informace o přiřazení
+
+Každá položka seznamu obsahuje název aktivity, jméno hodnotitele, data přiřazení a **stav splněnosti**. Stav splněnosti nabývá hodnot:
+
+- **Splněno**
+- **Nesplněno**
+- **Prozatím nesplněno**
+
+### Akce na řádku
+
+| Akce                   | Popis                                                                                                                                                                                    |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Prerekvizity**       | Zobrazí prerekvizity aktivity.                                                                                                                                                           |
+| **Historie přístupů**  | Zobrazí záznam přístupů uživatele k aktivitě.                                                                                                                                            |
+| **Hodnotit**           | Otevře pokusy uživatele pro danou aktivitu (viz [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)). |
+| **Stav přiřazení**     | Umožní zobrazit nebo ručně změnit stav přiřazení. Ruční změna se nedoporučuje – stav řídí systém.                                                                                        |
+| **Editovat přiřazení** | Umožní upravit parametry přiřazení.                                                                                                                                                      |
+| **Smazat přiřazení**   | Odebere přiřazení aktivity uživateli.                                                                                                                                                    |
+
+______________________________________________________________________
+
+## Tab Hodnocení
+
+Tab **Hodnocení** je vizuálně a ovládáním shodný s tabem [Aktivity](#tab-aktivity). Místo aktivit zobrazuje hodnocení přiřazená uživateli. Podrobnosti o modelu hodnocení viz [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md).
+
+______________________________________________________________________
+
+## Tab Popis
+
+Tab **Popis** zobrazuje profilová data uživatele. Jednotlivá pole lze upravovat inline – kliknutím na ikonu tužky vedle pole nebo skupiny polí.
+
+Pole dostupná v tabu Popis:
+
+| Pole                   | Popis                                              |
+| ---------------------- | -------------------------------------------------- |
+| **E-mail**             | E-mailová adresa uživatele.                        |
+| **Přihlašovací jméno** | Jméno použité pro přihlášení do systému.           |
+| **Heslo**              | Umožňuje nastavit nové heslo uživatele.            |
+| **Vytvořen**           | Datum vytvoření záznamu uživatele (jen pro čtení). |
+| **Titul před jménem**  | Akademický nebo jiný titul uváděný před jménem.    |
+| **Titul za jménem**    | Akademický nebo jiný titul uváděný za jménem.      |
+| **Datum narození**     | Datum narození uživatele.                          |
+| **Jazyk**              | Preferovaný jazyk rozhraní pro daného uživatele.   |
+
+Jméno uživatele se mění přes editační ikonu přímo v záhlaví obrazovky, nikoli v tomto tabu. Přehled všech parametrů uživatele viz [Uživatel: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md).
+
+______________________________________________________________________
+
+## Tab Skupiny
+
+Tab **Skupiny** zobrazuje seznam uživatelských skupin, jichž je uživatel členem, a jeho role v nich.
+
+### Přepínač zobrazení
+
+| Přepínač    | Popis                                   |
+| ----------- | --------------------------------------- |
+| **Seznam**  | Zobrazí skupiny jako jednoduchý seznam. |
+| **Skupiny** | Zobrazí skupiny ve stromové struktuře.  |
+
+Filtr umožňuje omezit zobrazení na účastnické skupiny nebo skupiny s lokální rolí.
+
+### Editace skupin a rolí
+
+Přiřazení skupin a rolí se provádí přes vedlejší panel. Po výběru skupin a nastavení rolí se přiřazení potvrdí tlačítkem **Přiřadit role vybraným skupinám**. Výchozí role při přiřazení je **Účastník**. Podrobnosti o rolích viz [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md) a [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md).
+
+______________________________________________________________________
+
+## Tab Kvalifikace
+
+Tab **Kvalifikace** zobrazuje výpis kvalifikací uživatele rozdělený podle stavu. Novou kvalifikaci lze uživateli přiřadit; přiřazená kvalifikace má výchozí stav **Přiřazená**.
+
+Dostupné stavy uživatelské kvalifikace:
+
+- **Přiřazená**
+- **Splněná**
+- **Nesplněná**
+- **Zrušená**
+- **Expirovaná**
+
+______________________________________________________________________
+
+## Tab Vazby
+
+Tab **Vazby** zobrazuje vztahy uživatele s dalšími uživateli na základě členství a rolí ve skupinách. Záznamy jsou rozděleny do dvou pohledů:
+
+| Pohled        | Popis                                                          |
+| ------------- | -------------------------------------------------------------- |
+| **Podřízení** | Uživatelé, kteří jsou vůči tomuto uživateli v podřízené vazbě. |
+| **Nadřízení** | Uživatelé, jimž je tento uživatel podřízen.                    |
+
+K dispozici je checkbox **Zobrazit vazby ze skupin**. Přiřazení nové vazby se provádí přes vedlejší panel tlačítkem **Přiřadit role vybraným uživatelům**.
+
+______________________________________________________________________
+
+## Pozor na
+
+Stav přiřazení aktivity
+
+Stav přiřazení aktivity v tabu Aktivity spravuje systém automaticky. Ruční změna stavu je sice technicky dostupná, nedoporučuje se však – může vést k nekonzistentnímu stavu záznamu.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
+- [Obrazovka Lidé](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-lide/index.md)
+- [Uživatel: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Přiřazení aktivity uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
+- [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
+
 # Periodické nastavení
 
 Periodické nastavení je komponenta, která umožňuje nakonfigurovat automatické opakování přístupu uživatele k aktivitě nebo sadě. Po vypršení aktuálního přístupu systém přístup automaticky obnoví podle nastavené periody. Typický příklad použití je každoroční školení BOZP.
@@ -2229,7 +2542,7 @@ ______________________________________________________________________
 - [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
 - [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
 
 # Záložka Přiřazení dle Skupin
 
@@ -4460,7 +4773,7 @@ V technickém smyslu lze rozlišit dvě roviny:
 - **Uživatel** – fyzická osoba, za níž záznam stojí.
 - **Objekt uživatele** – datový záznam v systému s parametry, rolemi a vazbami.
 
-Toto rozlišení je užitečné zejména při uvažování o tom, co se děje při zablokování účtu nebo při automatickém přiřazování aktivit – akce vždy míří na objekt, nikoliv přímo na osobu.
+Toto rozlišení je užitečné zejména při uvažování o tom, co se děje při deaktivaci účtu nebo při automatickém přiřazování aktivit – akce vždy míří na objekt, nikoliv přímo na osobu.
 
 ______________________________________________________________________
 
@@ -4477,7 +4790,7 @@ Každý uživatel má sadu parametrů. Níže jsou klíčové z nich:
 | **Jazyk**              | Jazyk rozhraní systému pro daného uživatele; nemá vliv na jazyk obsahu kurzů          |
 | **Subtyp**             | Určuje sadu parametrů uživatele; nastavuje se při vytvoření a nelze ho později změnit |
 
-Uživatelské subtypy umožňují přidat vlastní parametry; jejich správa je v **Nastavení**. Detailní přehled všech parametrů najdete na stránce [Detail uživatele (připravujeme)](#).
+Uživatelské subtypy umožňují přidat vlastní parametry; jejich správa je v **Nastavení**. Detailní přehled všech parametrů najdete na stránce [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md).
 
 ______________________________________________________________________
 
@@ -4486,9 +4799,9 @@ ______________________________________________________________________
 Uživatelský účet má právě dva možné stavy:
 
 - **Aktivní** – uživatel se může přihlásit a pracovat v systému podle svých oprávnění.
-- **Zablokovaný** – přihlášení není možné; uživatelský záznam zůstává v systému zachován včetně veškeré historie.
+- **Deaktivovaný** – přihlášení není možné; uživatelský záznam zůstává v systému zachován včetně veškeré historie.
 
-Jiné stavy účtu neexistují. Zablokování se provede přímo v detailu uživatele; záznam se z databáze nemaže.
+Jiné stavy účtu neexistují. Deaktivaci nastavuje přepínač **Účet deaktivován** v zakládacím nebo editačním modálu uživatele; záznam se z databáze nemaže.
 
 ______________________________________________________________________
 
@@ -4501,13 +4814,13 @@ Uživatel vzniká jedním ze dvou způsobů:
 
 Po celou dobu existence uživatelského záznamu systém eviduje **historii akcí**: veškeré změny parametrů i přiřazení jsou zaznamenány a dostupné v detailu uživatele.
 
-Deaktivace probíhá nastavením stavu **Zablokovaný**. Záznam se z databáze nemaže – historická data a přístupy k aktivitám zůstávají zachovány.
+Deaktivace probíhá nastavením stavu **Deaktivovaný** (přepínač Účet deaktivován). Záznam se z databáze nemaže – historická data a přístupy k aktivitám zůstávají zachovány.
 
 ```
 graph LR
     A["Vznik\n(ruční / import)"]
     B["Aktivní"]
-    C["Zablokovaný"]
+    C["Deaktivovaný"]
 
     A --> B
     B --> C

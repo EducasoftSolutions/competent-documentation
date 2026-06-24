@@ -41,6 +41,8 @@ Zahrnuje návody pro administrátory, referenci nastavení a konceptuální pře
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/index.md)
 - [Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)
+- [Obrazovka Lidé](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-lide/index.md)
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
 - [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
 - [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
 - [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
