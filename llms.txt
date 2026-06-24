@@ -54,6 +54,7 @@ Zahrnuje návody pro administrátory, referenci nastavení a konceptuální pře
 - [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
 - [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
+- [Tab Notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-notifikace/index.md)
 - [Přehled](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md)
 - [Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
 - [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)

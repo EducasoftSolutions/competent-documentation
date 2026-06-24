@@ -26,13 +26,13 @@ Obrazovka Nastavení obsahuje panel s 12 záložkami. Přehled záložek v pořa
 | [**Subtypy**](tab-subtypy.md) | Správa subtypů aktivit a dalších objektů. |
 | [**Parametry**](tab-parametry.md) | Správa parametrů hlavních objektů Competentu. |
 | [**Přiřazení dle skupin**](tab-prirazeni-dle-skupin.md) | Pravidla automatického přiřazování objektů uživatelům na základě příslušnosti ke skupinám. |
-| **Šablony e-mailů** | Samostatná dokumentace se připravuje. |
-| **Notifikace** | Samostatná dokumentace se připravuje. |
+| [**Šablony e-mailů**](obrazovka-sablony-emailu.md) | Správa skupin e-mailových šablon. |
+| [**Notifikace**](tab-notifikace.md) | Správa globálních notifikací (událost, šablona, příjemci). |
 | **Koš** | Obnova a trvalé odstranění dříve smazaných objektů. |
 | **Workflows** | Samostatná dokumentace se připravuje. |
 | **Superadmin** | Samostatná dokumentace se připravuje. |
 
-Záložky Menu, Šablony e-mailů, Notifikace, Workflows a Superadmin slouží k pokročilejší konfiguraci systému; jejich samostatná dokumentace se připravuje.
+Záložky Menu, Workflows a Superadmin slouží k pokročilejší konfiguraci systému; jejich samostatná dokumentace se připravuje.
 
 ---
 
