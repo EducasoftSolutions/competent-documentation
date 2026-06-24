@@ -76,4 +76,4 @@ Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; př
 - [Vytvoření uživatele](vytvoreni-uzivatele.md)
 - [Hromadné akce (připravujeme)](#)
 - [Zobrazení sloupců (připravujeme)](#)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](../../reference/detail-uzivatele.md)

@@ -100,6 +100,8 @@ plugins:
           - pro-administratory/reference/detail-sady.md
           - pro-administratory/reference/obrazovka-hodnoceni.md
           - pro-administratory/reference/detail-hodnoceni.md
+          - pro-administratory/reference/obrazovka-lide.md
+          - pro-administratory/reference/detail-uzivatele.md
           - pro-administratory/reference/periodicke-nastaveni.md
           - pro-administratory/reference/detail-skupiny.md
           - pro-administratory/reference/tab-prirazeni-dle-skupin.md
@@ -174,6 +176,8 @@ nav:
           - Detail sady: pro-administratory/reference/detail-sady.md
           - Obrazovka Hodnocení: pro-administratory/reference/obrazovka-hodnoceni.md
           - Detail hodnocení: pro-administratory/reference/detail-hodnoceni.md
+          - Obrazovka Lidé: pro-administratory/reference/obrazovka-lide.md
+          - Detail uživatele: pro-administratory/reference/detail-uzivatele.md
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
           - Tab Přiřazení dle skupin: pro-administratory/reference/tab-prirazeni-dle-skupin.md

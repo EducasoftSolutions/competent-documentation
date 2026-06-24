@@ -105,4 +105,4 @@ Skupiny lze přidávat tlačítkem **+** a odebírat ikonou koše. Členství zd
 - [Vytvoření uživatelské skupiny](../how-to/lide/vytvoreni-uzivatelske-skupiny.md)
 - [Uživatelská skupina: model a principy](../concepts/skupina.md)
 - [Role a oprávnění](../concepts/role.md)
-- [Detail uživatele (připravujeme)](#)
+- [Detail uživatele](detail-uzivatele.md)
