@@ -104,6 +104,10 @@ plugins:
           - pro-administratory/reference/detail-uzivatele.md
           - pro-administratory/reference/periodicke-nastaveni.md
           - pro-administratory/reference/detail-skupiny.md
+          - pro-administratory/reference/obrazovka-nastaveni.md
+          - pro-administratory/reference/tab-mista.md
+          - pro-administratory/reference/tab-stitky.md
+          - pro-administratory/reference/tab-parametry.md
           - pro-administratory/reference/tab-prirazeni-dle-skupin.md
           - pro-administratory/reference/tab-subtypy.md
           - pro-administratory/reference/prehled-roli-a-opravneni.md
@@ -180,6 +184,10 @@ nav:
           - Detail uživatele: pro-administratory/reference/detail-uzivatele.md
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
+          - Obrazovka Nastavení: pro-administratory/reference/obrazovka-nastaveni.md
+          - Tab Místa: pro-administratory/reference/tab-mista.md
+          - Tab Štítky: pro-administratory/reference/tab-stitky.md
+          - Tab Parametry: pro-administratory/reference/tab-parametry.md
           - Tab Přiřazení dle skupin: pro-administratory/reference/tab-prirazeni-dle-skupin.md
           - Tab Subtypy: pro-administratory/reference/tab-subtypy.md
           - Přehled rolí a oprávnění: pro-administratory/reference/prehled-roli-a-opravneni.md
