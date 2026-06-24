@@ -10,8 +10,8 @@ Tato stránka obsahuje přehled základních pojmů používaných v Competent. 
 | Certifikát | Listina potvrzující splnění aktivity, kterou Competent generuje z ODT šablony. | → [Více](../pro-administratory/concepts/certifikat.md) |
 | Datové typy | Typy hodnot, které mohou mít parametry objektů a subtypů: text, číslo, ano/ne, datum, datum a čas, e-mail, heslo, odkaz na objekt, výběr z možností a identifikátor. | |
 | Hlavní objekt | Objekty s pevnými hlavními parametry a volitelnými subtypy: Aktivita, Sada, Termínová sada, Hodnocení, Uživatel, Uživatelská skupina, Kvalifikace. | |
-| Hodnocení | Hlavní objekt sdílející datový model s aktivitou, ale s jiným využitím: nevyžaduje plnění, uživatel je hodnocen. | |
-| Hodnotitel | Uživatel, který má přiřazeno hodnocení přidělených uživatelů; pracuje přes záložku K hodnocení. | |
+| Hodnocení | Hlavní objekt sdílející datový model s aktivitou, ale s jiným využitím: nevyžaduje plnění, uživatel je hodnocen. | → [Více](../pro-administratory/concepts/hodnoceni.md) |
+| Hodnotitel | Uživatel pověřený vyhodnocením pokusů přiřazených uživatelů; není to systémová role. | |
 | Import/Export (xlsx) | Hromadné vytváření a export objektů přes tabulky xlsx s povinnou strukturou. | |
 | Jazyková podpora | Lokalizace systému do více jazyků na úrovni serveru, rozhraní i názvů vybraných objektů. | |
 | Místo | Entita popisující fyzickou lokaci (místo konání, adresa, bydliště uživatele). | |
@@ -31,8 +31,8 @@ Tato stránka obsahuje přehled základních pojmů používaných v Competent. 
 | Sada | Seskupení aktivit, sad a termínových sad do celku přiřaditelného jako celek. | → [Více](../pro-administratory/concepts/sada.md) |
 | Subtyp | Detailní rozlišení hlavního objektu; každý objekt musí mít subtyp, po vytvoření neměnný. | → [Více](../pro-administratory/concepts/subtypy-aktivit.md) |
 | Termínová sada | Kombinace sady a termínové aktivity; lze do ní přiřazovat aktivity a vytvářet termíny. | → [Více](../pro-administratory/concepts/terminova-sada.md) |
-| Typ hodnocení | Určuje způsob vyhodnocení splnění aktivity (Textové, Body, Prošel/Neprošel, Procentuální, Formulář, Složené). | |
 | Typ spouštění | Určuje typ obsahu aktivity a co se stane při spuštění (Žádný, Url, SCORM, iTrivio, PDF, Složené). | |
+| Typ vyhodnocení | Určuje způsob vyhodnocení splnění aktivity: Textové, Body, Prošel/Neprošel, Procentuální, Formulář (u hodnocení jen Textové a Formulář). | |
 | Účastník | Společný jmenovatel interních rolí přiřazených uživateli jako členovi skupiny, kurzistovi nebo osobě na pozici. | → [Více](../pro-administratory/concepts/role.md) |
 | Uživatel | Osoba zavedená do systému; má přiřazené parametry, role a přístupy k aktivitám. | → [Více](../pro-administratory/concepts/uzivatel.md) |
 | Uživatelská práva | Akce povolené uživateli; každá akce má objekt oprávnění, oprávnění jsou organizována do rolí. | → [Více](../pro-administratory/concepts/role.md) |

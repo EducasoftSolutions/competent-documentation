@@ -1859,6 +1859,157 @@ ______________________________________________________________________
 - [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
 - [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
 
+# Obrazovka Hodnocení
+
+Obrazovka **Hodnocení** slouží ke správě hodnocení v administraci Competent. Otevřete ji kliknutím na položku **Hodnocení** v hlavním menu administrace.
+
+Ovládání obrazovky je z velké části totožné s ovládáním [Obrazovky Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md) – levý strom, složkové zobrazení, vyhledávání, filtrování, akční ikony i kontextové menu fungují stejně. Tato stránka popisuje pouze rozdíly oproti Obrazovce Aktivity.
+
+______________________________________________________________________
+
+## Obsah obrazovky
+
+Obrazovka zobrazuje výhradně **hodnocení** a složky. Na rozdíl od Obrazovky Aktivity se zde nevyskytují spustitelné aktivity.
+
+______________________________________________________________________
+
+## Strom hodnocení
+
+Levý panel zobrazuje hierarchii složek a hodnocení. Kořenem stromu je složka **feedback root**.
+
+Strom nemá textový nadpis zobrazený v rozhraní – struktura a ovládání stromu jsou jinak shodné s [Obrazovkou Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md).
+
+______________________________________________________________________
+
+## Vytvoření nového hodnocení
+
+Nový objekt vytvořený na obrazovce Hodnocení je vždy **hodnocení**. Postup vytvoření odpovídá obecnému postupu tvorby objektů popsanému pro Obrazovku Aktivity.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md) – sdílená mechanika stromu, složkového zobrazení a kontextového menu
+- [Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)
+- [Hodnocení: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+
+# Detail hodnocení
+
+Obrazovka **Detail hodnocení** zobrazuje vlastnosti konkrétního hodnocení a seznam uživatelů, jimž bylo hodnocení přiřazeno. Rozložení obrazovky a základní ovládání jsou totožné s [Detailem aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md) – tato stránka popisuje pouze prvky specifické pro hodnocení.
+
+______________________________________________________________________
+
+## Taby: přehled
+
+Detail hodnocení obsahuje dva taby:
+
+| Tab           | Popis                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------- |
+| **Uživatelé** | Seznam uživatelů přiřazených k hodnocení; hlavní rozhraní pro správu těchto přiřazení. |
+| **Detaily**   | Formulář s vlastnostmi hodnocení – včetně parametrů specifických pro hodnocení.        |
+
+Společné prvky hlavičky (stavová lišta, přepínání tabů) jsou popsány v [Detailu aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
+
+______________________________________________________________________
+
+## Tab Uživatelé
+
+Tab Uživatelé zobrazuje seznam uživatelů přiřazených k hodnocení. Slouží zároveň jako hlavní rozhraní pro správu těchto přiřazení.
+
+### Sloupec Splněnost
+
+Sloupec **Splněnost** zobrazuje celkový výsledek přiřazení daného uživatele. Možné hodnoty:
+
+| Hodnota                | Popis                                             |
+| ---------------------- | ------------------------------------------------- |
+| **Nesplněno**          | Uživatel hodnocení dosud nesplnil.                |
+| **Splněno**            | Hodnocení bylo úspěšně vyhodnoceno jako splněné.  |
+| **Prozatím nesplněno** | Hodnocení ještě probíhá nebo čeká na vyhodnocení. |
+
+### Nástroje pro práci se seznamem
+
+Nad seznamem jsou k dispozici tyto nástroje:
+
+- **Znovunačtení dat** – obnoví seznam uživatelských přiřazení ze serveru.
+- **Režim hromadných úprav** – umožní vybrat více přiřazení najednou a provést hromadnou operaci.
+- **Export do XLS** – stáhne aktuálně zobrazený seznam přiřazení.
+- **Přiřazení nových uživatelů** – otevře panel pro přiřazení dalších uživatelů k hodnocení.
+
+### Akce na řádku uživatelského přiřazení
+
+U každého uživatele v seznamu jsou dostupné tyto operace:
+
+- **Pokusy uživatele** – zobrazení pokusů uživatele k tomuto hodnocení (viz [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)).
+- **Historické přístupy** – záznamy o předchozích přiřazeních.
+- **Stav přístupu** – zobrazení aktuálního stavu přiřazení (viz [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)).
+- **Úprava přiřazení** – editace parametrů přiřazení.
+- **Zrušení přístupu** – odebere přiřazení uživatele k hodnocení.
+
+______________________________________________________________________
+
+## Tab Detaily
+
+Tab Detaily obsahuje formulář s vlastnostmi hodnocení. Obecná pole (Název, Specifické ID, Externí ID) jsou stejná jako v [Detailu aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md). Níže jsou popsány parametry specifické pro hodnocení nebo parametry s odlišným chováním.
+
+### Typ vyhodnocení
+
+Pole **Typ vyhodnocení** určuje způsob, jakým hodnotitel vyhodnotí pokus přiřazeného uživatele. U hodnocení jsou dostupné právě dva typy:
+
+| Typ          | Popis                                                                                                                             |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Textové**  | Hodnotitel zvolí, zda uživatel splnil nebo nesplnil, a připojí textové zdůvodnění.                                                |
+| **Formulář** | Hodnotitel zvolí splnil/nesplnil a poté vyplní strukturovaný formulář. Strukturu formuláře určuje JSON přiřazený v tomto detailu. |
+
+### Více aktivních přístupů
+
+Parametr **Více aktivních přístupů** – u hodnocení je nastaven na Ano. Znamená to, že stejné hodnocení lze přiřadit témuž uživateli vícekrát, pokud se přiřazení liší hodnotitelem. Unikátní je trojice uživatel – hodnocení – hodnotitel. Podrobné vysvětlení principu viz [Hodnocení: koncept](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md).
+
+### Opakování
+
+Pole **Opakování** předvyplní periodické nastavení přiřazení: po přiřazení uživatele k hodnocení se zde nastavené hodnoty předvyplní do periodického nastavení. Podrobný popis rozhraní viz [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md).
+
+### Správa verzí
+
+Sekce **Správa verzí** zobrazuje přehled verzí hodnocení. Verze umožňují naplánovat změnu nastavení hodnocení na konkrétní okamžik.
+
+### Notifikace
+
+Sekce **Notifikace** slouží ke konfiguraci notifikací specifických pro toto hodnocení. Jak notifikace fungují, popisuje [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md). Přehled dostupných notifikačních událostí pro hodnocení viz [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md).
+
+### Další pole
+
+| Pole                      | Popis                                                                      |
+| ------------------------- | -------------------------------------------------------------------------- |
+| **Popis**                 | Delší slovní popis hodnocení.                                              |
+| **Spuštění i po splnění** | Pokud je zapnuto, hodnocení zůstává otevřené i po datu konce přístupu.     |
+| **Počet pokusů**          | Kolik hodnotitelských zápisů lze vložit k jednomu uživatelskému hodnocení. |
+| **Kapacita**              | Maximální počet uživatelů přiřazených k hodnocení.                         |
+| **Skrýt výsledky**        | Skryje uživateli konkrétní dosažený výsledek.                              |
+| **Vytvořeno**             | Datum vytvoření, vyplněno automaticky.                                     |
+
+______________________________________________________________________
+
+## Pozor na
+
+Hodnotitel v administraci
+
+Detail hodnocení nezobrazuje samostatnou frontu úkolů hodnotitele. Hodnotitel pokusy vyhodnocuje ve svém rozhraní. Informace o stavu vyhodnocení jsou dostupné přes akce na řádku uživatele v tabu Uživatelé.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/index.md)
+- [Hodnocení: koncept](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
+- [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+
 # Periodické nastavení
 
 Periodické nastavení je komponenta, která umožňuje nakonfigurovat automatické opakování přístupu uživatele k aktivitě nebo sadě. Po vypršení aktuálního přístupu systém přístup automaticky obnoví podle nastavené periody. Typický příklad použití je každoroční školení BOZP.
@@ -3773,6 +3924,78 @@ ______________________________________________________________________
 - [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
 - [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md)
 
+# Hodnocení: model a principy
+
+Hodnocení je objekt systému Competent, který sdílí datový model s aktivitou, ale slouží jinému účelu: uživatel hodnocení neplní, nýbrž je **hodnocen** jinou osobou. Tato stránka vysvětluje, co hodnocení je, jak se liší od běžné aktivity, kdo je hodnotitel a jak systém výsledek hodnocení eviduje. Je určena administrátorům, kteří chtějí pochopit princip před tím, než začnou hodnocení konfigurovat nebo přiřazovat.
+
+______________________________________________________________________
+
+## Co je hodnocení
+
+Hodnocení je hlavní objekt Competentu, který sdílí datový model s aktivitou, ale má odlišné využití: na rozdíl od aktivity nevyžaduje od přiřazeného uživatele žádné vlastní plnění. Uživatel je hodnocen – například jako podklad pro klasifikaci podřízeného nadřízeným nebo jako zpětná vazba účastníků kurzu na instruktora.
+
+Hodnocení se spravuje v samostatné sekci systému přístupné přes menu **Hodnocení**.
+
+Výsledek konkrétního vyhodnocení se ukládá k **pokusu** uživatele; celkový výsledek se promítá do **přístupu** uživatele. Principy přístupu a pokusu jsou shodné s aktivitami – podrobnosti viz [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md) a [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md).
+
+______________________________________________________________________
+
+## Hodnotitel
+
+**Hodnotitel** je uživatel pověřený vyhodnocením pokusů přiřazených uživatelů. Hodnotitel není systémová role ani oprávnění – jde o přiřazení konkrétní osoby jako hodnotitele k danému přístupu nebo pokusu.
+
+Jakmile uživatel odevzdá pokus k vyhodnocení, přístup přejde do stavu **V hodnocení** a čeká, dokud hodnotitel pokus nevyhodnotí. Přechody stavu přístupu jsou popsány na stránce [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md).
+
+______________________________________________________________________
+
+## Více aktivních přístupů
+
+Parametr **Více aktivních přístupů** je u hodnocení nastaven na hodnotu Ano. Znamená to, že stejné hodnocení lze přiřadit témuž uživateli vícekrát – za podmínky, že se liší hodnotitel. Unikátní je teprve trojice **uživatel – hodnocení – hodnotitel**.
+
+Toto nastavení pokrývá scénáře, kdy více osob hodnotí téhož uživatele: každý hodnotitel pak má vlastní přístup ke stejnému hodnocení, aniž by si záznamy kolidovaly.
+
+______________________________________________________________________
+
+## Typ vyhodnocení
+
+Způsob, jakým hodnotitel výsledek zapíše, určuje pole **Typ vyhodnocení**. U hodnocení jsou dostupné právě dva typy:
+
+**Textové** – hodnotitel rozhodne, zda uživatel splnil nebo nesplnil, a připojí textové zdůvodnění.
+
+**Formulář** – hodnotitel nejprve rozhodne o splnění a poté vyplní strukturovaný formulář. Strukturu formuláře určuje JSON přiřazený v detailu hodnocení.
+
+Splněnost uživatele nabývá tří hodnot: **Nesplněno**, **Splněno** nebo **Prozatím nesplněno** (přístup je stále aktivní a výsledek dosud nebyl stanoven).
+
+Typ vyhodnocení u aktivit
+
+Aktivity obecně nabízejí pět typů vyhodnocení. U hodnocení jsou dostupné pouze dva – Textové a Formulář. Přehled všech typů najdete ve [Slovníku pojmů](https://educasoftsolutions.github.io/competent-documentation/slovnik/index.md) u hesla Typ vyhodnocení.
+
+______________________________________________________________________
+
+## Stavy, notifikace a oprávnění
+
+**Stavy hodnocení jsou shodné se stavy aktivity.** Jejich přehled a popis přechodů najdete na stránce [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md).
+
+Hodnocení má **vlastní sadu notifikačních spouštěčů**, oddělenou od aktivit – změny hodnocení se tak nemíchají se změnami aktivit. Přehled spouštěčů a konfiguraci e-mailových notifikací popisují stránky [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md) a [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md).
+
+**Oprávnění pro přístup k hodnocení jsou stejná jako u aktivit.** Jejich přehled najdete na stránce [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md).
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
+- [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/index.md)
+- [Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)
+
 # Složky aktivit: organizace obsahu v hierarchii
 
 Složka je organizační kontejner v systému Competent, který pomáhá udržet přehlednost ve správě vzdělávacího obsahu. Slouží výhradně ke strukturování hierarchie aktivit – sama o sobě výukový obsah nenese a nelze ji přiřadit uživateli. Tato stránka vysvětluje, co složka je, co může obsahovat, jak se liší od Sady a štítku, a jaké operace s ní administrátor může provádět.
@@ -4742,8 +4965,8 @@ Tato stránka obsahuje přehled základních pojmů používaných v Competent. 
 | Certifikát                                 | Listina potvrzující splnění aktivity, kterou Competent generuje z ODT šablony.                                                                                       | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)                           |
 | Datové typy                                | Typy hodnot, které mohou mít parametry objektů a subtypů: text, číslo, ano/ne, datum, datum a čas, e-mail, heslo, odkaz na objekt, výběr z možností a identifikátor. |                                                                                                                                                  |
 | Hlavní objekt                              | Objekty s pevnými hlavními parametry a volitelnými subtypy: Aktivita, Sada, Termínová sada, Hodnocení, Uživatel, Uživatelská skupina, Kvalifikace.                   |                                                                                                                                                  |
-| Hodnocení                                  | Hlavní objekt sdílející datový model s aktivitou, ale s jiným využitím: nevyžaduje plnění, uživatel je hodnocen.                                                     |                                                                                                                                                  |
-| Hodnotitel                                 | Uživatel, který má přiřazeno hodnocení přidělených uživatelů; pracuje přes záložku K hodnocení.                                                                      |                                                                                                                                                  |
+| Hodnocení                                  | Hlavní objekt sdílející datový model s aktivitou, ale s jiným využitím: nevyžaduje plnění, uživatel je hodnocen.                                                     | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)                            |
+| Hodnotitel                                 | Uživatel pověřený vyhodnocením pokusů přiřazených uživatelů; není to systémová role.                                                                                 |                                                                                                                                                  |
 | Import/Export (xlsx)                       | Hromadné vytváření a export objektů přes tabulky xlsx s povinnou strukturou.                                                                                         |                                                                                                                                                  |
 | Jazyková podpora                           | Lokalizace systému do více jazyků na úrovni serveru, rozhraní i názvů vybraných objektů.                                                                             |                                                                                                                                                  |
 | Místo                                      | Entita popisující fyzickou lokaci (místo konání, adresa, bydliště uživatele).                                                                                        |                                                                                                                                                  |
@@ -4763,8 +4986,8 @@ Tato stránka obsahuje přehled základních pojmů používaných v Competent. 
 | Sada                                       | Seskupení aktivit, sad a termínových sad do celku přiřaditelného jako celek.                                                                                         | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)                                 |
 | Subtyp                                     | Detailní rozlišení hlavního objektu; každý objekt musí mít subtyp, po vytvoření neměnný.                                                                             | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)                      |
 | Termínová sada                             | Kombinace sady a termínové aktivity; lze do ní přiřazovat aktivity a vytvářet termíny.                                                                               | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)                       |
-| Typ hodnocení                              | Určuje způsob vyhodnocení splnění aktivity (Textové, Body, Prošel/Neprošel, Procentuální, Formulář, Složené).                                                        |                                                                                                                                                  |
 | Typ spouštění                              | Určuje typ obsahu aktivity a co se stane při spuštění (Žádný, Url, SCORM, iTrivio, PDF, Složené).                                                                    |                                                                                                                                                  |
+| Typ vyhodnocení                            | Určuje způsob vyhodnocení splnění aktivity: Textové, Body, Prošel/Neprošel, Procentuální, Formulář (u hodnocení jen Textové a Formulář).                             |                                                                                                                                                  |
 | Účastník                                   | Společný jmenovatel interních rolí přiřazených uživateli jako členovi skupiny, kurzistovi nebo osobě na pozici.                                                      | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
 | Uživatel                                   | Osoba zavedená do systému; má přiřazené parametry, role a přístupy k aktivitám.                                                                                      | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)                             |
 | Uživatelská práva                          | Akce povolené uživateli; každá akce má objekt oprávnění, oprávnění jsou organizována do rolí.                                                                        | → [Více](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)                                 |
