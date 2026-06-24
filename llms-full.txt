@@ -2544,6 +2544,253 @@ ______________________________________________________________________
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
 - [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
 
+# Obrazovka Nastavení
+
+Obrazovka **Nastavení** slouží ke konfiguraci systému Competent podle potřeb vaší organizace. Nastavení škálují od jednoduché správy štítků a míst až po řízení komplexních workflow. Obrazovka je organizována do záložek – každá záložka spravuje určitou část konfigurace systému.
+
+Přístup jen pro proškolené administrátory
+
+Tato sekce by měla být přístupná jen několika málo proškoleným uživatelům, kteří dobře znají fungování systému Competent. Nesprávná manipulace s nastavením může nenávratně poškodit spravovaná data.
+
+______________________________________________________________________
+
+## Přístup k obrazovce
+
+Vstup do obrazovky Nastavení a do jednotlivých záložek je řízen oprávněními. Různé záložky mohou vyžadovat různá oprávnění.
+
+______________________________________________________________________
+
+## Záložky obrazovky Nastavení
+
+Obrazovka Nastavení obsahuje panel s 12 záložkami. Přehled záložek v pořadí, v jakém se zobrazují v rozhraní:
+
+| Záložka                                                                                                                                                 | Popis                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**Místa**](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-mista/index.md)                               | Správa sdíleného číselníku míst (adres), která lze přiřazovat objektům v systému.                                                                                                                                                                                                                                             |
+| [**Štítky**](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-stitky/index.md)                             | Správa štítků sloužících ke klasifikaci aktivit.                                                                                                                                                                                                                                                                              |
+| **Menu**                                                                                                                                                | Samostatná dokumentace se připravuje.                                                                                                                                                                                                                                                                                         |
+| **Role**                                                                                                                                                | Správa rolí a oprávnění. Viz také [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md) a [Role: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md). |
+| [**Subtypy**](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)                           | Správa subtypů aktivit a dalších objektů.                                                                                                                                                                                                                                                                                     |
+| [**Parametry**](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-parametry/index.md)                       | Správa parametrů hlavních objektů Competentu.                                                                                                                                                                                                                                                                                 |
+| [**Přiřazení dle skupin**](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md) | Pravidla automatického přiřazování objektů uživatelům na základě příslušnosti ke skupinám.                                                                                                                                                                                                                                    |
+| **Šablony e-mailů**                                                                                                                                     | Samostatná dokumentace se připravuje.                                                                                                                                                                                                                                                                                         |
+| **Notifikace**                                                                                                                                          | Samostatná dokumentace se připravuje.                                                                                                                                                                                                                                                                                         |
+| **Koš**                                                                                                                                                 | Obnova a trvalé odstranění dříve smazaných objektů.                                                                                                                                                                                                                                                                           |
+| **Workflows**                                                                                                                                           | Samostatná dokumentace se připravuje.                                                                                                                                                                                                                                                                                         |
+| **Superadmin**                                                                                                                                          | Samostatná dokumentace se připravuje.                                                                                                                                                                                                                                                                                         |
+
+Záložky Menu, Šablony e-mailů, Notifikace, Workflows a Superadmin slouží k pokročilejší konfiguraci systému; jejich samostatná dokumentace se připravuje.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Záložka Místa](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-mista/index.md)
+- [Záložka Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-stitky/index.md)
+- [Záložka Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)
+- [Záložka Parametry](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-parametry/index.md)
+- [Záložka Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
+- [Role: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+
+# Záložka Místa
+
+Záložka **Místa** je součástí obrazovky **Nastavení** a slouží ke správě sdíleného číselníku míst v systému Competent. Místo představuje adresní záznam, který lze přiřazovat objektům v systému (například aktivitám). Správou míst na tomto místě zajistíte konzistentní adresní údaje napříč celou instalací.
+
+______________________________________________________________________
+
+## Horní lišta
+
+V horní části záložky se nachází ovládací prvky pro řazení a přidávání míst.
+
+| Prvek                            | Popis                                                   |
+| -------------------------------- | ------------------------------------------------------- |
+| **Seřadit podle**                | Rozbalovací menu pro výběr řazení seznamu míst.         |
+| **Tlačítko s ikonou +** (vpravo) | Otevře modál **Nové místo** pro přidání nového záznamu. |
+
+### Možnosti řazení
+
+| Hodnota   | Popis                                     |
+| --------- | ----------------------------------------- |
+| **Názvu** | Místa jsou seřazena abecedně podle názvu. |
+| **Města** | Místa jsou seřazena abecedně podle města. |
+| **Země**  | Místa jsou seřazena abecedně podle státu. |
+
+______________________________________________________________________
+
+## Seznam míst
+
+Pod horní lištou se zobrazuje seznam míst seřazený podle vybraného atributu. U každého záznamu jsou uvedeny jeho název a adresní údaje. Dlouhý záznam lze rozbalit rozbalovacím prvkem na konci řádku.
+
+| Prvek                     | Popis                                                              |
+| ------------------------- | ------------------------------------------------------------------ |
+| **Řádek místa**           | Kliknutím na záznam se otevře modál s formulářem pro úpravu místa. |
+| **Ikona koše** (na řádku) | Vyvolá potvrzovací dialog pro smazání záznamu.                     |
+
+Smazání přiřazeného místa
+
+Místo, které je přiřazeno nějakému objektu v systému, **nelze smazat**. Systém v takovém případě zobrazí chybovou hlášku. Před smazáním je nutné ověřit, že místo není nikde přiřazeno.
+
+______________________________________________________________________
+
+## Modál Nové místo
+
+Modál **Nové místo** se otevře kliknutím na tlačítko s ikonou + v horní liště záložky. Tentýž modál se používá i pro úpravu existujícího záznamu.
+
+| Pole                | Popis                                                                               |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| **Název**           | Název místa. Povinné pole. Pokud zůstane prázdné, uloží se předvyplněný šedý název. |
+| **Popis**           | Volitelný popis místa.                                                              |
+| **Stát**            | Stát nebo země, ve které se místo nachází.                                          |
+| **Město**           | Město. Zobrazuje se na stejném řádku jako PSČ.                                      |
+| **PSČ**             | Poštovní směrovací číslo.                                                           |
+| **Ulice**           | Název ulice. Zobrazuje se na stejném řádku jako čísla popisné a orientační.         |
+| **Č. orientační**   | Část adresy místa.                                                                  |
+| **Č. popisné**      | Část adresy místa.                                                                  |
+| **Patro**           | Patro budovy.                                                                       |
+| **Místnost**        | Označení místnosti.                                                                 |
+| **Překladový klíč** | Rezervováno pro budoucí vícejazyčné názvy míst. Viz poznámka níže.                  |
+
+### Tlačítka modálu
+
+| Tlačítko           | Popis                         |
+| ------------------ | ----------------------------- |
+| **Zrušit**         | Zavře modál bez uložení změn. |
+| **Vytvořit místo** | Uloží nový záznam místa.      |
+
+Překladový klíč
+
+Pole **Překladový klíč** je rezervováno pro budoucí podporu vícejazyčných názvů míst. V současné době se v systému nepoužívá.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)
+- [Záložka Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-stitky/index.md)
+- [Záložka Parametry](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-parametry/index.md)
+- [Záložka Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)
+- [Záložka Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
+
+# Záložka Štítky
+
+Záložka **Štítky** je součástí obrazovky [Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md) a umožňuje spravovat štítky dostupné v systému Competent. Štítky slouží ke klasifikaci aktivit do skupin, podle kterých se v aktivitách orientujete a filtrujete je. Podrobný výklad najdete v části [Štítky: koncept](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md).
+
+______________________________________________________________________
+
+## Přístup k záložce
+
+Záložka **Štítky** se nachází na obrazovce **Nastavení**. Přístup do záložky je řízen oprávněními; jednotlivé záložky mohou vyžadovat různá oprávnění.
+
+______________________________________________________________________
+
+## Seznam štítků
+
+Pod záhlavím záložky se zobrazuje plochý seznam všech štítků seřazených podle názvu. Štítky nemají hierarchii ani kategorie.
+
+| Prvek                                   | Popis                                                             |
+| --------------------------------------- | ----------------------------------------------------------------- |
+| **Tlačítko s ikonou +** (vpravo nahoře) | Otevře modál **Nový štítek** pro přidání nového štítku.           |
+| **Řádek štítku**                        | Kliknutím na řádek otevřete tentýž modál pro úpravu názvu štítku. |
+| **Ikona koše** (na řádku)               | Smaže vybraný štítek.                                             |
+
+Pozor na smazání
+
+Jakmile je štítek smazán, automaticky se odebere všem aktivitám, kterým byl přiřazen, bez jakékoli notifikace. Tuto operaci nelze vzít zpět.
+
+______________________________________________________________________
+
+## Modál Nový štítek
+
+Modál **Nový štítek** se otevře po kliknutí na tlačítko s ikonou + v záhlaví záložky. Tentýž modál se použije i při úpravě existujícího štítku.
+
+| Pole / Prvek                   | Popis                                |
+| ------------------------------ | ------------------------------------ |
+| **Název**                      | Název štítku. Jediné pole formuláře. |
+| **Zrušit** (tlačítko)          | Zavře modál bez uložení změn.        |
+| **Vytvořit štítek** (tlačítko) | Uloží nový štítek.                   |
+
+Vícejazyčné prostředí
+
+Ve vícejazyčném prostředí lze v poli **Název** zadat názvy v několika jazycích oddělené svislítkem (`|`). Pořadí jazykových variant odpovídá nastavení systému.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)
+- [Záložka Místa](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-mista/index.md)
+- [Štítky: koncept](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md) – filtrování aktivit podle štítků
+
+# Záložka Parametry
+
+Záložka **Parametry** je součástí obrazovky **Nastavení** a slouží ke správě parametrů hlavních objektů systému Competent. Správa je rozdělena do subtabů podle typu objektu.
+
+______________________________________________________________________
+
+## Přístup k záložce
+
+Záložka **Parametry** se nachází na obrazovce [Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md). Přístup do záložky je řízen oprávněními.
+
+______________________________________________________________________
+
+## Subtaby
+
+Záložka Parametry je vnitřně rozdělena do čtyř subtabů. Aktuálně zvolený subtab je zvýrazněn.
+
+| Subtab                  | Parametry pro                                           |
+| ----------------------- | ------------------------------------------------------- |
+| **Aktivity**            | Objekty typu aktivita, hodnocení, sada a termínová sada |
+| **Uživatelé**           | Uživatele                                               |
+| **Uživatelské skupiny** | Skupiny uživatelů                                       |
+| **Kvalifikace**         | Kvalifikace                                             |
+
+Aktivity, hodnocení, sada a termínová sada sdílejí parametry
+
+Pro systém Competent jsou [aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md), [hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md), [sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md) a [termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md) stejný objekt, rozlišený pouze vnitřním příznakem. Proto mají společné parametry a jsou všechny zastoupeny jediným subtabem Aktivity.
+
+______________________________________________________________________
+
+## Tabulka parametrů
+
+Po výběru subtabu se zobrazí tabulka parametrů příslušného objektu. Tabulka je seřazena podle sloupce **Pořadí**.
+
+| Sloupec             | Popis                                                                                     |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| **Pořadí**          | Pořadí parametru v seznamu; libovolné číslo, doporučen rozestup po desítkách/stovkách.    |
+| **Název**           | Zobrazovaný název parametru.                                                              |
+| **Skrytý**          | Příznak Ano/Ne, zda je parametr skrytý.                                                   |
+| **Smí být prázdný** | Příznak Ano/Ne, zda parametr smí zůstat bez hodnoty.                                      |
+| **Nelze upravit**   | Příznak Ano/Ne, zda je parametr pouze pro čtení.                                          |
+| **Typ**             | Datový typ hodnoty parametru.                                                             |
+| **Výchozí hodnota** | Hodnota předvyplněná, pokud není zadána jiná.                                             |
+| **Konfigurace**     | Rozšířená konfigurace parametru ve formátu JSON; sloupec zobrazuje JSON, nebo je prázdný. |
+| **Překlady**        | Překlady názvu parametru do podporovaných jazyků ve formátu JSON.                         |
+| **Nápověda**        | Text nápovědy k parametru ve formátu JSON.                                                |
+
+______________________________________________________________________
+
+## Editace parametru
+
+Parametry nelze přidávat ani odebírat
+
+Parametry nelze přidávat ani odebírat, lze je pouze upravit.
+
+Kliknutím na řádek parametru se řádek rozbalí a zobrazí editovatelné atributy. Tlačítko **Uložit** uloží provedené změny.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)
+- [Záložka Subtypy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-subtypy/index.md)
+- [Záložka Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
+- [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
+- [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
+- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
+
 # Záložka Přiřazení dle Skupin
 
 Záložka **Přiřazení dle Skupin** je součástí obrazovky **Nastavení** v administraci Competent. Umožňuje prohlížet a spravovat pravidla přiřazení, která automaticky přidělují aktivity uživatelům na základě jejich členství ve skupinách. Tato stránka popisuje sloupce, tlačítka a pole formuláře záložky.
