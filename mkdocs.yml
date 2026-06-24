@@ -114,6 +114,8 @@ plugins:
           - pro-administratory/reference/obrazovka-sablony-emailu.md
           - pro-administratory/reference/prehled-notifikacnich-udalosti.md
           - pro-administratory/reference/tab-notifikace.md
+          - pro-administratory/reference/tab-kos.md
+          - pro-administratory/reference/obrazovka-soubory.md
           - pro-administratory/concepts/index.md
           - pro-administratory/concepts/aktivita.md
           - pro-administratory/concepts/stavy-aktivity.md
@@ -195,6 +197,8 @@ nav:
           - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
           - Přehled notifikačních událostí: pro-administratory/reference/prehled-notifikacnich-udalosti.md
           - Tab Notifikace: pro-administratory/reference/tab-notifikace.md
+          - Tab Koš: pro-administratory/reference/tab-kos.md
+          - Obrazovka Soubory: pro-administratory/reference/obrazovka-soubory.md
           - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
       - Koncepty:
           - Přehled: pro-administratory/concepts/index.md

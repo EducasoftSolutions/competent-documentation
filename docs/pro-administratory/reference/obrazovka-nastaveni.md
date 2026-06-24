@@ -28,7 +28,7 @@ Obrazovka Nastavení obsahuje panel s 12 záložkami. Přehled záložek v pořa
 | [**Přiřazení dle skupin**](tab-prirazeni-dle-skupin.md) | Pravidla automatického přiřazování objektů uživatelům na základě příslušnosti ke skupinám. |
 | [**Šablony e-mailů**](obrazovka-sablony-emailu.md) | Správa skupin e-mailových šablon. |
 | [**Notifikace**](tab-notifikace.md) | Správa globálních notifikací (událost, šablona, příjemci). |
-| **Koš** | Obnova a trvalé odstranění dříve smazaných objektů. |
+| [**Koš**](tab-kos.md) | Obnova a trvalé odstranění dříve smazaných objektů. |
 | **Workflows** | Samostatná dokumentace se připravuje. |
 | **Superadmin** | Samostatná dokumentace se připravuje. |
 
@@ -43,5 +43,6 @@ Záložky Menu, Workflows a Superadmin slouží k pokročilejší konfiguraci sy
 - [Záložka Subtypy](tab-subtypy.md)
 - [Záložka Parametry](tab-parametry.md)
 - [Záložka Přiřazení dle skupin](tab-prirazeni-dle-skupin.md)
+- [Záložka Koš](tab-kos.md)
 - [Přehled rolí a oprávnění](prehled-roli-a-opravneni.md)
 - [Role: model a principy](../concepts/role.md)
