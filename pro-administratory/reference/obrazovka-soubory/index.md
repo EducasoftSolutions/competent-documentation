@@ -78,7 +78,7 @@ ______________________________________________________________________
 Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automaticky generované dokumenty.
 
 - **Šablona certifikátu** – soubor formátu `.odt` lze označit jako šablonu certifikátu pomocí akce „Označit jako šablonu certifikátu" v kontextovém menu. Ve sloupci **Šablona** se poté zobrazí hodnota „certifikát". Podrobnosti o certifikátech naleznete na stránce [Certifikát](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md).
-- **Šablona e-mailu** – soubor označený jako šablona e-mailu má ve sloupci **Šablona** hodnotu „email". Správa e-mailových šablon je dostupná na obrazovce [Šablony Emailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md).
+- **Šablona e-mailu** – soubor označený jako šablona e-mailu má ve sloupci **Šablona** hodnotu „email". Správa e-mailových šablon je dostupná na obrazovce [Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md).
 
 ______________________________________________________________________
 
@@ -163,4 +163,4 @@ ______________________________________________________________________
 ## Související stránky
 
 - [Certifikát](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)
-- [Obrazovka Šablony Emailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
