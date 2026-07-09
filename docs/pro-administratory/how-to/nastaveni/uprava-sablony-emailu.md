@@ -4,14 +4,14 @@ Na této stránce najdete postup, jak v sekci **Nastavení** upravit obsah e-mai
 
 ## Předpoklady
 
-- Máte administrátorský přístup do Competent a oprávnění upravovat e-mailové šablony. Bez tohoto oprávnění se záložka **Šablony Emailů** v Nastavení nezobrazí.
+- Máte administrátorský přístup do Competent a oprávnění upravovat e-mailové šablony. Bez tohoto oprávnění se záložka **Šablony e-mailů** v Nastavení nezobrazí.
 - V Nastavení existuje alespoň jedna skupina šablon, kterou chcete upravit.
 
 ## Postup
 
-### 1. Otevřete záložku Šablony Emailů
+### 1. Otevřete záložku Šablony e-mailů
 
-V hlavním menu klikněte na **Nastavení**. Nastavení se otevírá na jedné ze svých záložek (například **Místa**), proto v záhlaví obrazovky klikněte na záložku **Šablony Emailů**. Zobrazí se seznam skupin šablon.
+V hlavním menu klikněte na **Nastavení**. Nastavení se otevírá na jedné ze svých záložek (například **Místa**), proto v záhlaví obrazovky klikněte na záložku **Šablony e-mailů**. Zobrazí se seznam skupin šablon.
 
 ### 2. Otevřete skupinu šablon
 

@@ -1,12 +1,12 @@
-# Obrazovka Šablony Emailů
+# Obrazovka Šablony e-mailů
 
-Tab **Šablony Emailů** v sekci **Nastavení** zobrazuje přehled skupin e-mailových šablon a umožňuje jejich správu. Tato stránka popisuje prvky a pole obrazovky – postup úpravy obsahu šablon naleznete v [Úpravě šablony e-mailu](../how-to/nastaveni/uprava-sablony-emailu.md).
+Záložka **Šablony e-mailů** v sekci **Nastavení** zobrazuje přehled skupin e-mailových šablon a umožňuje jejich správu. Tato stránka popisuje prvky a pole obrazovky – postup úpravy obsahu šablon naleznete v [Úpravě šablony e-mailu](../how-to/nastaveni/uprava-sablony-emailu.md).
 
 ---
 
 ## Seznam skupin šablon
 
-Po přechodu na tab **Šablony Emailů** (Nastavení → Šablony Emailů) se zobrazí tabulka se všemi skupinami e-mailových šablon. Tabulka nemá vyhledávací pole ani filtry.
+Po přechodu na tab **Šablony e-mailů** (Nastavení → Šablony e-mailů) se zobrazí tabulka se všemi skupinami e-mailových šablon. Tabulka nemá vyhledávací pole ani filtry.
 
 ![Seznam skupin šablon – řádek „Uvítací e-mail pro nové uživatele" s jazyky CS a EN, typem Základní a ikonou koše](_media/obrazovka-sablony-emailu/01-seznam-skupin.png)
 
@@ -69,7 +69,7 @@ Kliknutím na proměnnou se vloží na pozici kurzoru v poli Tělo emailu ve tva
 
 ## Oprávnění
 
-Tab **Šablony Emailů** se zobrazí pouze uživatelům s oprávněním pro správu e-mailových šablon. Uživatelům bez tohoto oprávnění se tab v sekci Nastavení nezobrazí.
+Tab **Šablony e-mailů** se zobrazí pouze uživatelům s oprávněním pro správu e-mailových šablon. Uživatelům bez tohoto oprávnění se tab v sekci Nastavení nezobrazí.
 
 ---
 

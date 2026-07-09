@@ -78,7 +78,7 @@ V režimu **Seznam** jsou položky zobrazeny v tabulce s těmito sloupci:
 Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automaticky generované dokumenty.
 
 - **Šablona certifikátu** – soubor formátu `.odt` lze označit jako šablonu certifikátu pomocí akce „Označit jako šablonu certifikátu" v kontextovém menu. Ve sloupci **Šablona** se poté zobrazí hodnota „certifikát". Podrobnosti o certifikátech naleznete na stránce [Certifikát](../concepts/certifikat.md).
-- **Šablona e-mailu** – soubor označený jako šablona e-mailu má ve sloupci **Šablona** hodnotu „email". Správa e-mailových šablon je dostupná na obrazovce [Šablony Emailů](obrazovka-sablony-emailu.md).
+- **Šablona e-mailu** – soubor označený jako šablona e-mailu má ve sloupci **Šablona** hodnotu „email". Správa e-mailových šablon je dostupná na obrazovce [Šablony e-mailů](obrazovka-sablony-emailu.md).
 
 ---
 
@@ -162,4 +162,4 @@ Obrazovka **Soubory** je dostupná pouze uživatelům s oprávněním pro správ
 ## Související stránky
 
 - [Certifikát](../concepts/certifikat.md)
-- [Obrazovka Šablony Emailů](obrazovka-sablony-emailu.md)
+- [Obrazovka Šablony e-mailů](obrazovka-sablony-emailu.md)

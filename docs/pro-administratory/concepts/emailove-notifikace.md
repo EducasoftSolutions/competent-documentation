@@ -17,7 +17,7 @@ Každý automatický e-mail vzniká spojením **dvou nezávislých komponent**:
 
 **Šablona** určuje **obsah** – text předmětu a tělo zprávy. Šablona neví nic
 o tom, komu ani kdy se e-mail pošle; řeší pouze to, co bude v obálce.
-Šablony spravujete v menu **Nastavení**, záložka **Šablony Emailů**.
+Šablony spravujete v menu **Nastavení**, záložka **Šablony e-mailů**.
 
 **Notifikační pravidlo** určuje **kontext doručení** – na jakou událost
 (spouštěč) systém zareaguje a komu e-mail odešle (např. uživateli, hodnotiteli).
