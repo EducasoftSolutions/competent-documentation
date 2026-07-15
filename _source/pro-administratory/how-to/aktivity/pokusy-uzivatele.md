@@ -1,9 +1,11 @@
-# Jak přidat a upravit pokus uživatele
+# Jak přidat, upravit a vyhodnotit pokus uživatele
 
 Pokus je jeden záznam o absolvování aktivity konkrétním uživatelem. U aktivit,
 které hodnotí administrátor nebo pověřený hodnotitel, můžete pokusy zadávat
-a upravovat ručně. Tento postup popisuje, jak otevřít modál **Pokusy uživatele**,
-jak přidat nový pokus a jak upravit pokus stávající.
+a upravovat ručně. Součástí tohoto postupu je i hodnocení aktivity – pokus
+uživatele zároveň vyhodnotíte (ohodnotíte) a určíte, zda aktivitu splnil, nebo
+nesplnil. Tento postup popisuje, jak otevřít modál **Pokusy uživatele**, jak
+přidat nový pokus a jak upravit pokus stávající.
 
 ## Předpoklady
 
@@ -97,3 +99,4 @@ Modál nakonec zavřete tlačítkem **Zavřít**.
 - [Pokusy uživatele (koncept)](../../concepts/pokusy-uzivatele.md)
 - [Stavy aktivity](../../concepts/stavy-aktivity.md)
 - [Detail aktivity](../../reference/detail-aktivity.md)
+- [Obrazovka Hodnocení](../../reference/obrazovka-hodnoceni.md)

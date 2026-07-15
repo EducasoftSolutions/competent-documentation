@@ -704,9 +704,9 @@ Přiřazením souboru k aktivitě vzniká interní kopie. Soubor zůstane uživa
 - [Stavy přístupu uživatele k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 
-# Jak přidat a upravit pokus uživatele
+# Jak přidat, upravit a vyhodnotit pokus uživatele
 
-Pokus je jeden záznam o absolvování aktivity konkrétním uživatelem. U aktivit, které hodnotí administrátor nebo pověřený hodnotitel, můžete pokusy zadávat a upravovat ručně. Tento postup popisuje, jak otevřít modál **Pokusy uživatele**, jak přidat nový pokus a jak upravit pokus stávající.
+Pokus je jeden záznam o absolvování aktivity konkrétním uživatelem. U aktivit, které hodnotí administrátor nebo pověřený hodnotitel, můžete pokusy zadávat a upravovat ručně. Součástí tohoto postupu je i hodnocení aktivity – pokus uživatele zároveň vyhodnotíte (ohodnotíte) a určíte, zda aktivitu splnil, nebo nesplnil. Tento postup popisuje, jak otevřít modál **Pokusy uživatele**, jak přidat nový pokus a jak upravit pokus stávající.
 
 ## Předpoklady
 
@@ -771,6 +771,7 @@ Modál nakonec zavřete tlačítkem **Zavřít**.
 - [Pokusy uživatele (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
 - [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
+- [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/index.md)
 
 # Jak přidat termín k aktivitě
 
