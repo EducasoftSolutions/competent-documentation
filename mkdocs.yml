@@ -93,6 +93,7 @@ plugins:
           - pro-administratory/how-to/lide/prirazeni-role-uzivateli.md
           - pro-administratory/how-to/nastaveni/stitky.md
           - pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
+          - pro-administratory/how-to/reporty/export-reportu.md
           - pro-administratory/reference/index.md
           - pro-administratory/reference/chybove-zpravy.md
           - pro-administratory/reference/obrazovka-aktivity.md
@@ -105,6 +106,7 @@ plugins:
           - pro-administratory/reference/periodicke-nastaveni.md
           - pro-administratory/reference/detail-skupiny.md
           - pro-administratory/reference/obrazovka-nastaveni.md
+          - pro-administratory/reference/obrazovka-reporty.md
           - pro-administratory/reference/tab-mista.md
           - pro-administratory/reference/tab-stitky.md
           - pro-administratory/reference/tab-parametry.md
@@ -176,6 +178,8 @@ nav:
           - Nastavení:
               - Vytvoření a správa štítků: pro-administratory/how-to/nastaveni/stitky.md
               - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
+          - Reporty:
+              - Export reportu: pro-administratory/how-to/reporty/export-reportu.md
       - Reference:
           - Přehled: pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
@@ -188,6 +192,7 @@ nav:
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
           - Obrazovka Nastavení: pro-administratory/reference/obrazovka-nastaveni.md
+          - Obrazovka Reporty: pro-administratory/reference/obrazovka-reporty.md
           - Tab Místa: pro-administratory/reference/tab-mista.md
           - Tab Štítky: pro-administratory/reference/tab-stitky.md
           - Tab Parametry: pro-administratory/reference/tab-parametry.md

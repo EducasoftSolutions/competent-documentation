@@ -32,3 +32,7 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 
 - **[Vytvoření a správa štítků](nastaveni/stitky.md)** – jak v sekci Nastavení > Štítky vytvořit, upravit a smazat štítek.
 - **[Úprava šablony e-mailu](nastaveni/uprava-sablony-emailu.md)** – jak v Nastavení upravit obsah e-mailové šablony, včetně vložení proměnné a přepínání jazykových variant.
+
+### Reporty
+
+- **[Export reportu](reporty/export-reportu.md)** – jak z obrazovky Reporty vyexportovat souhrnný report přístupů uživatelů do souboru XLSX.
