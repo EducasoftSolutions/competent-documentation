@@ -32,3 +32,7 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 
 - **[Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md)** – jak v sekci Nastavení > Štítky vytvořit, upravit a smazat štítek.
 - **[Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)** – jak v Nastavení upravit obsah e-mailové šablony, včetně vložení proměnné a přepínání jazykových variant.
+
+### Reporty
+
+- **[Export reportu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/reporty/export-reportu/index.md)** – jak z obrazovky Reporty vyexportovat souhrnný report přístupů uživatelů do souboru XLSX.
