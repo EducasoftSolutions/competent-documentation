@@ -153,6 +153,7 @@ plugins:
           - pro-administratory/concepts/prirazeni-dle-skupin.md
           - pro-administratory/concepts/emailove-notifikace.md
           - pro-administratory/concepts/workflow-aktivity.md
+          - pro-administratory/concepts/jazykova-podpora.md
         Pro studenty:
           - pro-studenty/index.md
         Slovník:
@@ -255,6 +256,7 @@ nav:
           - Přiřazení dle skupin: pro-administratory/concepts/prirazeni-dle-skupin.md
           - E-mailové notifikace: pro-administratory/concepts/emailove-notifikace.md
           - Workflow: pro-administratory/concepts/workflow-aktivity.md
+          - Jazyková podpora: pro-administratory/concepts/jazykova-podpora.md
   - Pro studenty: pro-studenty/index.md
   - Slovník: slovnik/index.md
 
