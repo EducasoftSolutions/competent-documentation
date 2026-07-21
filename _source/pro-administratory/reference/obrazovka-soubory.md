@@ -30,12 +30,12 @@ Obsah adresáře lze zobrazit ve dvou režimech:
 
 ## Globální akce
 
-Globální akce jsou dostupné z rozbalovacího menu v pravém horním rohu obrazovky nebo pravým kliknutím do prázdné plochy adresáře.
+Globální akce jsou dostupné z rozbalovacího menu v pravém horním rohu obrazovky.
 
 | Akce | Popis |
 |---|---|
-| **Nový adresář** | Otevře modal pro vytvoření nového adresáře v aktuálním umístění. |
-| **Nahrát soubory** | Otevře modal pro nahrání souborů do aktuálního adresáře. |
+| **Nový adresář** | Otevře modál pro vytvoření nového adresáře v aktuálním umístění. |
+| **Nahrát soubory** | Otevře modál pro nahrání souborů do aktuálního adresáře. |
 
 ---
 
@@ -49,10 +49,10 @@ Pravým kliknutím na soubor nebo adresář se zobrazí kontextové menu s dostu
 | **Stáhnout** | Soubor | Stáhne soubor do počítače uživatele. |
 | **Uložit jako ZIP** | Více souborů | Zabalí vybrané položky do archivu ZIP a nabídne jeho stažení. |
 | **Zobrazit položku** | Soubor (obrázek) | Zobrazí náhled obrázku. |
-| **Přejmenovat** | Soubor, adresář | Otevře modal pro změnu názvu. |
-| **Přesunout** | Soubor, adresář | Otevře modal pro výběr cílového adresáře. |
-| **Kopírovat** | Soubor | Otevře modal pro kopírování souboru s volbou nového názvu. |
-| **Editovat** | Textový soubor | Otevře modal s editorem obsahu textového souboru. |
+| **Přejmenovat** | Soubor, adresář | Otevře modál pro změnu názvu. |
+| **Přesunout** | Soubor, adresář | Otevře modál pro výběr cílového adresáře. |
+| **Kopírovat** | Soubor | Otevře modál pro kopírování souboru s volbou nového názvu. |
+| **Editovat** | Textový soubor | Otevře modál s editorem obsahu textového souboru. |
 | **Označit jako šablonu certifikátu** | Soubor .odt | Označí soubor jako šablonu certifikátu (viz [Soubory jako šablony](#soubory-jako-sablony)). |
 | **Odznačit jako šablonu certifikátu** | Soubor .odt označený jako šablona | Odebere označení šablony certifikátu. |
 | **Smazat** | Soubor, adresář | Otevře potvrzovací dialog a po potvrzení soubor nebo adresář odstraní. |
@@ -89,25 +89,25 @@ Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automa
 | Prvek | Popis |
 |---|---|
 | **Jméno adresáře** | Textové pole pro zadání názvu nového adresáře. |
-| **Zrušit** | Zavře modal bez vytvoření adresáře. |
+| **Zrušit** | Zavře modál bez vytvoření adresáře. |
 | **Vytvořit** | Vytvoří adresář se zadaným názvem v aktuálním umístění. |
 
 ### Nahrát soubory
 
 | Prvek | Popis |
 |---|---|
-| Cílový adresář | Modal zobrazuje adresář, do kterého budou soubory nahrány. |
+| Informace o cíli | Modál zobrazuje text „Soubory budou nahrány do `<cesta>`", kde `<cesta>` je aktuální adresář. |
 | **Výběr souborů** | Tlačítko pro výběr souborů z počítače uživatele. |
 | **Nahrát** | Spustí nahrávání vybraných souborů. |
 | **Přerušit** | Přeruší probíhající nahrávání. |
-| **Zavřít** | Zavře modal. |
+| **Zavřít** | Zavře modál. |
 
 ### Přejmenovat
 
 | Prvek | Popis |
 |---|---|
 | Pole pro nový název | Textové pole pro zadání nového názvu. |
-| **Zrušit** | Zavře modal bez přejmenování. |
+| **Zrušit** | Zavře modál bez přejmenování. |
 | **Přejmenovat** | Uloží nový název. |
 
 ### Přesunout
@@ -117,7 +117,7 @@ Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automa
 | **Cíl** | Zobrazuje aktuálně vybraný cílový adresář. |
 | **Změnit** | Otevře dialog **Zvolte cílový adresář** pro výběr adresáře v adresářové struktuře. |
 | **Označit toto** | Potvrdí výběr zobrazeného adresáře jako cíle přesunu. |
-| **Zrušit** | Zavře modal bez přesunutí. |
+| **Zrušit** | Zavře modál bez přesunutí. |
 | **Přesunout** | Přesune soubor nebo adresář do vybraného cíle. |
 
 ### Kopírovat soubor
@@ -125,7 +125,7 @@ Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automa
 | Prvek | Popis |
 |---|---|
 | Pole pro nový název | Textové pole pro zadání názvu kopie souboru. |
-| **Zrušit** | Zavře modal bez kopírování. |
+| **Zrušit** | Zavře modál bez kopírování. |
 | **Kopírovat** | Vytvoří kopii souboru se zadaným názvem. |
 
 ### Smazat
@@ -141,7 +141,7 @@ Soubory uložené na obrazovce **Soubory** lze využít jako šablony pro automa
 | Prvek | Popis |
 |---|---|
 | Editor | Textový editor zobrazující a umožňující úpravu obsahu souboru. |
-| **Zavřít** | Zavře modal bez uložení změn. |
+| **Zavřít** | Zavře modál bez uložení změn. |
 | **Editovat** | Uloží provedené úpravy. |
 
 ---

@@ -141,6 +141,8 @@ Dostupné stavy uživatelské kvalifikace:
 - **Zrušená**
 - **Expirovaná**
 
+Podrobnosti o modelu kvalifikace, jejích stavech a platnosti viz [Kvalifikace: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md). Popis obrazovky Kvalifikace a jejího detailu viz [Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md) a [Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md).
+
 ______________________________________________________________________
 
 ## Tab Vazby
@@ -153,6 +155,20 @@ Tab **Vazby** zobrazuje vztahy uživatele s dalšími uživateli na základě č
 | **Nadřízení** | Uživatelé, jimž je tento uživatel podřízen.                    |
 
 K dispozici je checkbox **Zobrazit vazby ze skupin**. Přiřazení nové vazby se provádí přes vedlejší panel tlačítkem **Přiřadit role vybraným uživatelům**.
+
+______________________________________________________________________
+
+## Profil (vlastní účet)
+
+Obrazovka **Profil** zobrazuje vlastní účet přihlášeného uživatele. Otevře se kliknutím na položku **Profil** v menu avataru, na adrese `/portal/profile`. Jde o stejnou obrazovku jako Detail uživatele, zobrazenou nad vlastními daty přihlášeného uživatele.
+
+Pole na záložce **Parametry** (odpovídá záložce [Popis](#tab-popis) výše) jsou věcně totožná s poli popsanými v tomto dokumentu – podrobný popis jednotlivých polí se zde neopakuje.
+
+Profil se od administrátorského zobrazení Detailu uživatele liší v několika ohledech:
+
+- Editační režim je na Profilu vždy zapnutý – uživatel může své parametry upravovat přímo, bez nutnosti editaci nejprve aktivovat.
+- Záložka **Skupiny** je needitovatelná – zobrazuje pouze seznam skupin s filtrem **Zobrazit** (Pouze účastníky / Pouze lokální role / Vše), bez možnosti přiřazení skupin nebo změny rolí.
+- Na Profilu je dostupná změna vlastního hesla. K dispozici jsou pole **Aktuální**, **Nové**, **Síla hesla** a **Požadavky na heslo** (systém zde zobrazí požadavky, které nové heslo musí splňovat), potvrzení provádí tlačítka **Zrušit** a **Uložit nové heslo**.
 
 ______________________________________________________________________
 
@@ -176,5 +192,8 @@ ______________________________________________________________________
 - [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
 - [Uživatelská skupina: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
+- [Kvalifikace: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)
+- [Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md)
+- [Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md)
 - [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
 - [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)

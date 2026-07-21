@@ -140,6 +140,8 @@ Dostupné stavy uživatelské kvalifikace:
 - **Zrušená**
 - **Expirovaná**
 
+Podrobnosti o modelu kvalifikace, jejích stavech a platnosti viz [Kvalifikace: model a principy](../concepts/kvalifikace.md). Popis obrazovky Kvalifikace a jejího detailu viz [Obrazovka Kvalifikace](obrazovka-kvalifikace.md) a [Detail kvalifikace](detail-kvalifikace.md).
+
 ---
 
 ## Tab Vazby
@@ -152,6 +154,20 @@ Tab **Vazby** zobrazuje vztahy uživatele s dalšími uživateli na základě č
 | **Nadřízení** | Uživatelé, jimž je tento uživatel podřízen. |
 
 K dispozici je checkbox **Zobrazit vazby ze skupin**. Přiřazení nové vazby se provádí přes vedlejší panel tlačítkem **Přiřadit role vybraným uživatelům**.
+
+---
+
+## Profil (vlastní účet)
+
+Obrazovka **Profil** zobrazuje vlastní účet přihlášeného uživatele. Otevře se kliknutím na položku **Profil** v menu avataru, na adrese `/portal/profile`. Jde o stejnou obrazovku jako Detail uživatele, zobrazenou nad vlastními daty přihlášeného uživatele.
+
+Pole na záložce **Parametry** (odpovídá záložce [Popis](#tab-popis) výše) jsou věcně totožná s poli popsanými v tomto dokumentu – podrobný popis jednotlivých polí se zde neopakuje.
+
+Profil se od administrátorského zobrazení Detailu uživatele liší v několika ohledech:
+
+- Editační režim je na Profilu vždy zapnutý – uživatel může své parametry upravovat přímo, bez nutnosti editaci nejprve aktivovat.
+- Záložka **Skupiny** je needitovatelná – zobrazuje pouze seznam skupin s filtrem **Zobrazit** (Pouze účastníky / Pouze lokální role / Vše), bez možnosti přiřazení skupin nebo změny rolí.
+- Na Profilu je dostupná změna vlastního hesla. K dispozici jsou pole **Aktuální**, **Nové**, **Síla hesla** a **Požadavky na heslo** (systém zde zobrazí požadavky, které nové heslo musí splňovat), potvrzení provádí tlačítka **Zrušit** a **Uložit nové heslo**.
 
 ---
 
@@ -174,5 +190,8 @@ K dispozici je checkbox **Zobrazit vazby ze skupin**. Přiřazení nové vazby s
 - [Hodnocení](../concepts/hodnoceni.md)
 - [Uživatelská skupina: model a principy](../concepts/skupina.md)
 - [Role a oprávnění](../concepts/role.md)
+- [Kvalifikace: model a principy](../concepts/kvalifikace.md)
+- [Obrazovka Kvalifikace](obrazovka-kvalifikace.md)
+- [Detail kvalifikace](detail-kvalifikace.md)
 - [Vytvoření uživatele](../how-to/lide/vytvoreni-uzivatele.md)
 - [Import uživatelů](../how-to/lide/import-uzivatelu.md)

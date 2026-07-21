@@ -21,7 +21,7 @@ Aby systém mohl certifikát vygenerovat, musí být splněny dvě podmínky: ex
 
 Jakmile přístup uživatele k aktivitě dosáhne nastaveného stavu, systém dokument sestaví sloučením šablony s aktuálními daty daného uživatele a zpřístupní jej ke stažení. Stažení certifikátu tedy není odložená operace – certifikát vzniká na vyžádání pokaždé z dat platných v daném okamžiku.
 
-Podrobný postup nastavení šablony popisuje [Nastavení šablony certifikátu (připravujeme)](#).
+Podrobný postup nastavení šablony popisuje [Nastavení šablony certifikátu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/index.md).
 
 ______________________________________________________________________
 

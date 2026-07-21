@@ -36,3 +36,12 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 ### Reporty
 
 - **[Export reportu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/reporty/export-reportu/index.md)** – jak z obrazovky Reporty vyexportovat souhrnný report přístupů uživatelů do souboru XLSX.
+
+### Kvalifikace
+
+- **[Vytvoření a nastavení kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace/index.md)** – jak založit novou kvalifikaci, nastavit její platnost a dodatečné hodnocení a otevřít nastavení požadavků.
+- **[Přiřazení kvalifikace uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace/index.md)** – jak přiřadit existující kvalifikaci uživatelům nebo uživatelským skupinám a nastavit počáteční stav a termín splnění.
+
+### Certifikáty
+
+- **[Nastavení šablony certifikátu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/index.md)** – jak nahrát ODT šablonu certifikátu na obrazovce Soubory a přiřadit ji k aktivitě se stavem dostupnosti.

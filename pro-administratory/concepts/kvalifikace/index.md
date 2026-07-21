@@ -39,7 +39,7 @@ ______________________________________________________________________
 
 Definice kvalifikace určuje, jak dlouho zůstává splněná kvalifikace platná. K dispozici jsou tři režimy:
 
-- **Neomezená platnost** – kvalifikace nemá žádné časové omezení.
+- **Neomezeně** – kvalifikace nemá žádné časové omezení.
 - **Do termínu** – platnost je vázána na pevné kalendářní datum.
 - **Od data splnění** – platnost se počítá jako zadaný počet **Dnů** od okamžiku, kdy uživatel kvalifikaci splnil.
 
