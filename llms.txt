@@ -94,6 +94,7 @@ Zahrnuje návody pro administrátory, referenci nastavení a konceptuální pře
 - [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
 - [Workflow](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/workflow-aktivity/index.md)
+- [Jazyková podpora](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/jazykova-podpora/index.md)
 
 ## Pro studenty
 
