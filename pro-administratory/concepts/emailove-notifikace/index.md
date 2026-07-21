@@ -102,5 +102,5 @@ ______________________________________________________________________
 - [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
 - [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
-- [Nastavení notifikací aktivity (připravujeme)](#)
+- [Nastavení notifikací aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/index.md)
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)

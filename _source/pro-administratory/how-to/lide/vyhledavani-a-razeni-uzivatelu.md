@@ -65,15 +65,31 @@ Kliknutím na záhlaví jiného sloupce přepnete řazení na nový sloupec; př
 
 Řazení respektuje českou abecedu, takže znaky s diakritikou (Á, Č, Š, Ž) se zařazují na správné místo.
 
+## Hromadné akce
+
+Nad tabulkou uživatelů se nachází tlačítko **Hromadné akce**. Kliknutím na něj otevřete panel se čtyřmi akcemi:
+
+- **Vybrat všechny** – označí všechny položky v aktuálně zobrazeném seznamu.
+- **Zrušit výběr** – zruší označení všech vybraných položek.
+- **Poslat zprávu** – odešle zprávu všem vybraným uživatelům.
+- **Odebrat vybrané** – hromadně odstraní vybrané uživatele.
+
+Po výběru položek se patička tabulky rozšíří o informaci o počtu vybraných záznamů, například „Celkem položek: 31 (Vybrané položky: 5)".
+
+## Zobrazení sloupců
+
+Ikona v levém horním rohu tabulky otevře menu **Sloupce:**, kde pomocí přepínače (checkbox) u každého sloupce zvolíte, které sloupce se mají v tabulce zobrazit – například **Jméno**, **Příjmení**, **E-mail**, **Skupiny** a další. Stejné menu nabízí i doplňkové funkce **Odstranit všechny filtry** a export seznamu do Excelu (ve dvou variantách).
+
+Jednotlivý sloupec lze upravit i přímo z jeho záhlaví – kliknutím na menu (⋮) vedle názvu sloupce se nabídne volba **Schovat sloupec** (skryje jen tento sloupec), řazení **Seřadit od A-Z/Z-A** nebo **Zamknout vlevo/vpravo** (ukotvení sloupce na okraj tabulky).
+
 ## Pozor na
 
 - **Některé sloupce nemusí být řaditelné.** Pokud po kliknutí na záhlaví sloupce nedojde k žádné změně pořadí ani se neobjeví šipka, sloupec řazení nepodporuje. V takovém případě tabulku seřaďte podle jiného sloupce.
 - **Řazení se po vyhledávání zachová.** Když nejprve nastavíte řazení a poté zadáte vyhledávací řetězec, výsledné řádky zůstanou seřazené podle původně zvoleného sloupce.
 - **Vyhledávací pole platí pouze pro daný sloupec.** Řetězec zadaný v poli pod **Příjmením** se neporovnává s obsahem sloupců **Jméno** ani **E-mail**.
+- **Odebrat vybrané je nevratná akce.** Hromadně odstraní všechny vybrané uživatele a operaci nelze vzít zpět – před potvrzením si výběr pečlivě zkontrolujte.
 
 ## Související stránky
 
 - [Vytvoření uživatele](vytvoreni-uzivatele.md)
-- [Hromadné akce (připravujeme)](#)
-- [Zobrazení sloupců (připravujeme)](#)
 - [Detail uživatele](../../reference/detail-uzivatele.md)

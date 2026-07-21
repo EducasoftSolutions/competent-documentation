@@ -24,7 +24,7 @@ ______________________________________________________________________
 
 ## Jak je sdílená aktivita odlišena ve stromu
 
-Ve Stromu aktivit je sdílená aktivita vizuálně odlišena od běžných aktivit **nevyplněnou (obrysovou) ikonou**. Díky tomu lze na první pohled rozpoznat, zda se jedná o zdrojový objekt nebo o sdílený výskyt.
+Ve Stromu aktivit je sdílená aktivita vizuálně odlišena od běžných aktivit **světlejším (šedým) zobrazením ikony i názvu**. Díky tomu lze na první pohled rozpoznat, zda se jedná o zdrojový objekt nebo o sdílený výskyt.
 
 Se sdíleným výskytem jsou ve Stromu aktivit záměrně **omezeny tyto operace**:
 
@@ -75,4 +75,4 @@ ______________________________________________________________________
 - [Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
 - [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
 - [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
-- [Jak sdílet aktivitu (připravujeme)](#)
+- [Jak sdílet aktivitu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/sdileni-aktivity/index.md)

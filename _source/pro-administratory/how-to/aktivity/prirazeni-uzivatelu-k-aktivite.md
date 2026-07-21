@@ -68,7 +68,7 @@ Tím je postup dokončen.
 
 ## Pozor na
 
-- U aktivit se schématem **S termíny** probíhá přiřazení odlišně – uživatel se přiřazuje na konkrétní **termín** ze seznamu termínů. Tento postup popíšeme v samostatném návodu: [Přiřazení k termínové aktivitě (připravujeme)](#).
+- U aktivit se schématem **S termíny** probíhá přiřazení odlišně – uživatel se přiřazuje na konkrétní **termín** ze seznamu termínů. Tento postup popisuje samostatný návod [Přiřazení uživatele k termínové aktivitě](prirazeni-uzivatele-terminove-aktivite.md).
 - Periodické nastavení nezaměňujte s funkcí automatického prodloužení přístupu (pole **Počet dnů automatického prodloužení**) – jde o samostatné, nesouvisející nastavení.
 
 ## Související stránky

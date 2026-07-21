@@ -167,4 +167,4 @@ ______________________________________________________________________
 
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
 - [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
-- [Nastavení notifikací aktivity (připravujeme)](#)
+- [Nastavení notifikací aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/index.md)

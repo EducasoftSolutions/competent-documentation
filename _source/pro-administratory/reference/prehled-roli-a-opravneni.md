@@ -79,7 +79,7 @@ Vlastní role (neinterní, zákazníkem zakládané) se spravují v části **Na
 
 - Tlačítkem **Vytvořit roli** administrátor vytvoří novou roli a nastaví pro ni matici oprávnění a vazby. Vyžaduje oprávnění správy rolí.
 - Systémové (interní) role jsou v tomto přehledu skryty za přepínačem **Zobrazit systémové role** a nelze je smazat.
-- Podrobný postup zakládání vlastní role bude popsán v návodu [Vytvoření vlastní role (připravujeme)](#).
+- Podrobný postup zakládání vlastní role popisuje návod [Vytvoření vlastní role](../how-to/lide/vytvoreni-vlastni-role.md).
 
 **Lidé → Role** je čistě přehledový panel (strom role → skupina → uživatelé) a slouží pouze ke čtení – definice rolí ani přiřazení zde nelze měnit.
 
