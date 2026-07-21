@@ -101,6 +101,8 @@ plugins:
           - pro-administratory/reference/detail-sady.md
           - pro-administratory/reference/obrazovka-hodnoceni.md
           - pro-administratory/reference/detail-hodnoceni.md
+          - pro-administratory/reference/obrazovka-kvalifikace.md
+          - pro-administratory/reference/detail-kvalifikace.md
           - pro-administratory/reference/obrazovka-lide.md
           - pro-administratory/reference/detail-uzivatele.md
           - pro-administratory/reference/periodicke-nastaveni.md
@@ -128,6 +130,7 @@ plugins:
           - pro-administratory/concepts/podminky-pristupu.md
           - pro-administratory/concepts/dokumenty-v-aktivite.md
           - pro-administratory/concepts/certifikat.md
+          - pro-administratory/concepts/kvalifikace.md
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/hodnoceni.md
@@ -187,6 +190,8 @@ nav:
           - Detail sady: pro-administratory/reference/detail-sady.md
           - Obrazovka Hodnocení: pro-administratory/reference/obrazovka-hodnoceni.md
           - Detail hodnocení: pro-administratory/reference/detail-hodnoceni.md
+          - Obrazovka Kvalifikace: pro-administratory/reference/obrazovka-kvalifikace.md
+          - Detail kvalifikace: pro-administratory/reference/detail-kvalifikace.md
           - Obrazovka Lidé: pro-administratory/reference/obrazovka-lide.md
           - Detail uživatele: pro-administratory/reference/detail-uzivatele.md
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
@@ -216,6 +221,7 @@ nav:
           - Podmínky přístupu: pro-administratory/concepts/podminky-pristupu.md
           - Dokumenty v aktivitě: pro-administratory/concepts/dokumenty-v-aktivite.md
           - Certifikát: pro-administratory/concepts/certifikat.md
+          - Kvalifikace: pro-administratory/concepts/kvalifikace.md
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Hodnocení: pro-administratory/concepts/hodnoceni.md

@@ -35,5 +35,6 @@ správně a předcházet chybám při správě obsahu a přístupu uživatelů.
 
 - **[Hodnocení: model a principy](hodnoceni.md)** – Objekt sdílející datový model s aktivitou, ve kterém je uživatel hodnocen jinou osobou.
 - **[Certifikát: princip a generování](certifikat.md)** – Generování certifikátu z ODT šablony v okamžiku, kdy uživatel splní aktivitu.
+- **[Kvalifikace: model a principy](kvalifikace.md)** – Způsobilost nebo osvědčení, které uživatel v systému může získat a držet, včetně stavů, platnosti a podmínek splnění.
 - **[E-mailové notifikace: jak funguje doručování zpráv](emailove-notifikace.md)** – Mechanismus automatického odesílání e-mailů: šablony, notifikační pravidla a určení příjemce.
 - **[Periodické nastavení: princip a typy periody](periodicke-nastaveni.md)** – Automatické obnovování přístupu k beztermínové aktivitě nebo sadě po skončení předchozího přístupu.

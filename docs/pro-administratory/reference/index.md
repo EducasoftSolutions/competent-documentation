@@ -12,6 +12,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Obrazovka Nastavení](obrazovka-nastaveni.md)** – Konfigurace systému Competent, organizovaná do záložek.
 - **[Obrazovka Soubory](obrazovka-soubory.md)** – Správce souborů a adresářů v systému Competent.
 - **[Obrazovka Šablony e-mailů](obrazovka-sablony-emailu.md)** – Přehled skupin e-mailových šablon a jejich správa.
+- **[Obrazovka Kvalifikace](obrazovka-kvalifikace.md)** – Přehled definovaných kvalifikací a založení nové kvalifikace.
 
 ### Detailní obrazovky
 
@@ -20,6 +21,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Detail uživatele](detail-uzivatele.md)** – Veškeré informace o konkrétním uživateli: aktivity, hodnocení, profilová data, skupiny a kvalifikace.
 - **[Detail skupiny](detail-skupiny.md)** – Veškeré informace o uživatelské skupině: členové, role a hierarchické vazby.
 - **[Detail hodnocení](detail-hodnoceni.md)** – Vlastnosti konkrétního hodnocení a seznam uživatelů, kterým bylo přiřazeno.
+- **[Detail kvalifikace](detail-kvalifikace.md)** – Správa jedné konkrétní kvalifikace v záložkách Uživatelé, Popis, Podmínky a Práva.
 
 ### Záložky sekce Nastavení
 
