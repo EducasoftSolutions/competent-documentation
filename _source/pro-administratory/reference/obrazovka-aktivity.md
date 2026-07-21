@@ -154,4 +154,4 @@ Role jsou odlišeny závorkami podle způsobu přiřazení:
 - [Detail aktivity](detail-aktivity.md)
 - [Detail sady](detail-sady.md)
 - [Sdílené aktivity](../concepts/sdilene-aktivity.md)
-- [Termín aktivity (připravujeme)](#)
+- [Jak přidat termín k aktivitě](../how-to/aktivity/terminy-aktivity.md)
