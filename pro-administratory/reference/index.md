@@ -12,6 +12,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)** – Konfigurace systému Competent, organizovaná do záložek.
 - **[Obrazovka Soubory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-soubory/index.md)** – Správce souborů a adresářů v systému Competent.
 - **[Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)** – Přehled skupin e-mailových šablon a jejich správa.
+- **[Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md)** – Přehled definovaných kvalifikací a založení nové kvalifikace.
 
 ### Detailní obrazovky
 
@@ -20,6 +21,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)** – Veškeré informace o konkrétním uživateli: aktivity, hodnocení, profilová data, skupiny a kvalifikace.
 - **[Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)** – Veškeré informace o uživatelské skupině: členové, role a hierarchické vazby.
 - **[Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)** – Vlastnosti konkrétního hodnocení a seznam uživatelů, kterým bylo přiřazeno.
+- **[Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md)** – Správa jedné konkrétní kvalifikace v záložkách Uživatelé, Popis, Podmínky a Práva.
 
 ### Záložky sekce Nastavení
 

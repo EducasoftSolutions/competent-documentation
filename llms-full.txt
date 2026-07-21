@@ -1457,6 +1457,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)** – Konfigurace systému Competent, organizovaná do záložek.
 - **[Obrazovka Soubory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-soubory/index.md)** – Správce souborů a adresářů v systému Competent.
 - **[Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)** – Přehled skupin e-mailových šablon a jejich správa.
+- **[Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md)** – Přehled definovaných kvalifikací a založení nové kvalifikace.
 
 ### Detailní obrazovky
 
@@ -1465,6 +1466,7 @@ Referenční stránky jsou věcné přehledy – tabulky chybových zpráv, sezn
 - **[Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)** – Veškeré informace o konkrétním uživateli: aktivity, hodnocení, profilová data, skupiny a kvalifikace.
 - **[Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)** – Veškeré informace o uživatelské skupině: členové, role a hierarchické vazby.
 - **[Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)** – Vlastnosti konkrétního hodnocení a seznam uživatelů, kterým bylo přiřazeno.
+- **[Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md)** – Správa jedné konkrétní kvalifikace v záložkách Uživatelé, Popis, Podmínky a Práva.
 
 ### Záložky sekce Nastavení
 
@@ -2131,6 +2133,157 @@ ______________________________________________________________________
 - [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
 - [Přiřazení aktivity uživateli: přístup](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
 - [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
+
+# Obrazovka Kvalifikace
+
+Obrazovka Kvalifikace zobrazuje přehled definovaných kvalifikací a umožňuje založit novou kvalifikaci. Kliknutí na kartu v seznamu otevře detail dané kvalifikace, jehož záložky popisuje samostatná stránka. Model kvalifikace (stavy, platnost, podmínky) vysvětluje koncept Kvalifikace.
+
+______________________________________________________________________
+
+## Prvky obrazovky
+
+| Prvek                                    | Popis                                                                                          |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Seznam kvalifikací**                   | Plochý seznam karet; podrobnosti viz [Seznam kvalifikací](#seznam-kvalifikaci) níže.           |
+| **Tlačítko +**                           | Otevře modál **Nová kvalifikace**; viz [Modál Nová kvalifikace](#modal-nova-kvalifikace) níže. |
+| **Ikona koše** (po najetí myší na kartu) | Spustí smazání kvalifikace; viz [Mazání kvalifikace](#mazani-kvalifikace) níže.                |
+
+______________________________________________________________________
+
+## Seznam kvalifikací
+
+Obrazovka Kvalifikace obsahuje plochý seznam karet, nikoli stromovou strukturu. Každá karta zobrazuje **jméno** kvalifikace a její **subtyp**.
+
+Seznam nemá sloupce, filtry ani vyhledávání. Kliknutí na kartu otevře [detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md).
+
+______________________________________________________________________
+
+## Modál Nová kvalifikace
+
+Tlačítko **+** v levé horní části obrazovky otevře modál **Nová kvalifikace**.
+
+Modál obsahuje tato pole:
+
+| Pole       | Popis                                    |
+| ---------- | ---------------------------------------- |
+| **Subtyp** | Výchozí hodnotou je „Kvalifikace".       |
+| **Jméno**  | Textové pole pro jméno nové kvalifikace. |
+
+Potvrzení modálu zajišťuje tlačítko **Vytvořit**, zrušení tlačítko **Zrušit**.
+
+______________________________________________________________________
+
+## Mazání kvalifikace
+
+Najetí myší na kartu v seznamu zobrazí ikonu koše. Její aktivace spustí potvrzovací dialog; po jeho potvrzení se kvalifikace smaže.
+
+______________________________________________________________________
+
+## Dostupnost obrazovky
+
+Obrazovka Kvalifikace je dostupná administrátorům.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md)
+- [Kvalifikace (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)
+
+# Detail kvalifikace
+
+Detail kvalifikace je obrazovka, na které se spravuje jedna konkrétní kvalifikace. Nadpis obrazovky odpovídá názvu dané kvalifikace. Obrazovka je rozdělena do čtyř záložek: **Uživatelé**, **Popis**, **Podmínky** a **Práva**.
+
+______________________________________________________________________
+
+## Záložky: přehled
+
+| Záložka       | Popis                                                                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Uživatelé** | Seznam uživatelů, kterým je kvalifikace přiřazena, se stavovými filtry a akcemi pro přiřazení. Výchozí (aktivní po otevření detailu) záložka. |
+| **Popis**     | Vlastnosti kvalifikace: délka platnosti, dodatečné hodnocení, textový popis a dokumenty.                                                      |
+| **Podmínky**  | Definice požadavků, které je třeba splnit.                                                                                                    |
+| **Práva**     | Správa přístupových práv ke kvalifikaci.                                                                                                      |
+
+______________________________________________________________________
+
+## Záložka Uživatelé
+
+Záložka Uživatelé zobrazuje seznam uživatelů, kterým je kvalifikace přiřazena. Seznam lze filtrovat podle stavu, ve kterém se kvalifikace u daného uživatele nachází.
+
+### Stav kvalifikace
+
+| Stav           | Význam                                                      |
+| -------------- | ----------------------------------------------------------- |
+| **Přiřazená**  | Kvalifikace je uživateli přiřazena, zatím není splněná.     |
+| **Splněná**    | Uživatel kvalifikaci splnil.                                |
+| **Nesplněná**  | Kvalifikace nebyla splněna.                                 |
+| **Zrušená**    | Přiřazení kvalifikace bylo zrušeno.                         |
+| **Expirovaná** | Kvalifikace byla dříve splněná, ale její platnost vypršela. |
+
+### Akce
+
+Nad seznamem uživatelů jsou k dispozici dvě akce pro přiřazení kvalifikace:
+
+- **Přiřadit uživateli** – přiřazení kvalifikace jednotlivému uživateli.
+- **Přiřadit skupiny** – přiřazení kvalifikace celé uživatelské skupině.
+
+______________________________________________________________________
+
+## Záložka Popis
+
+Záložka Popis obsahuje editovatelné vlastnosti kvalifikace.
+
+| Položka                 | Popis                                                                                                                                                                                                                                                                                                       |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Délka platnosti**     | Určuje, jak dlouho zůstává splněná kvalifikace platná. K dispozici jsou tři volby: **Neomezená platnost** (kvalifikace nikdy neexpiruje), **Do termínu** (platnost končí k pevně zadanému datu) a **Od data splnění** (platnost se počítá jako počet **Dnů** od okamžiku, kdy uživatel kvalifikaci splnil). |
+| **Dodatečné hodnocení** | Volba doplňkového způsobu hodnocení kvalifikace: **Žádné** nebo **Procentuální s komentářem**.                                                                                                                                                                                                              |
+| **Popis**               | Volný text popisující kvalifikaci.                                                                                                                                                                                                                                                                          |
+| **Dokumenty**           | Dokumenty přiřazené ke kvalifikaci.                                                                                                                                                                                                                                                                         |
+
+______________________________________________________________________
+
+## Záložka Podmínky
+
+Záložka Podmínky nese nadpis **Je třeba splnit** a definuje, co je pro danou kvalifikaci požadováno.
+
+Tlačítko **Přidat** nabízí tři možnosti:
+
+- **Aktivity** – přidání požadované aktivity (nebo více aktivit).
+- **Kvalifikace** – přidání jiné požadované kvalifikace.
+- **Více možností** – přidá další sadu podmínek.
+
+Jednotlivé požadavky se seskupují do **sad**. U sady lze určit, zda je pro její splnění nutné splnit všechny položky, nebo zda postačí splnění libovolné jedné položky.
+
+Záložka Podmínky slouží k **definici požadavků** na kvalifikaci, nikoli k jejich vyhodnocování. Stav kvalifikace u konkrétního uživatele (Přiřazená, Splněná, Nesplněná, Zrušená, Expirovaná) systém eviduje na záložce Uživatelé.
+
+______________________________________________________________________
+
+## Záložka Práva
+
+Záložka Práva slouží ke správě přístupových práv ke kvalifikaci.
+
+| Prvek                    | Popis                                               |
+| ------------------------ | --------------------------------------------------- |
+| **SKUPINY**              | Seznam uživatelských skupin s právy ke kvalifikaci. |
+| **Vlastník kvalifikace** | Uživatel nebo skupina v roli vlastníka kvalifikace. |
+
+______________________________________________________________________
+
+## Pozor na
+
+Podmínky nejsou automatické vyhodnocení
+
+Splnění položek na záložce Podmínky samo o sobě nezpůsobí, že se kvalifikace u uživatele automaticky změní na stav Splněná. Záložka Podmínky popisuje pouze to, co je pro splnění kvalifikace požadováno (splnění vybraných aktivit, případně jiných kvalifikací); samotný stav kvalifikace u uživatele eviduje záložka Uživatelé.
+
+Přesný výpočet data expirace nebo termínu nad rámec tří popsaných režimů platnosti (Neomezená platnost / Do termínu / Od data splnění) tato reference neuvádí.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md)
+- [Kvalifikace (koncept)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)
 
 # Obrazovka Lidé
 
@@ -3964,6 +4117,7 @@ Tato sekce vysvětluje principy a mentální modely, na nichž Competent stojí.
 
 - **[Hodnocení: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)** – Objekt sdílející datový model s aktivitou, ve kterém je uživatel hodnocen jinou osobou.
 - **[Certifikát: princip a generování](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)** – Generování certifikátu z ODT šablony v okamžiku, kdy uživatel splní aktivitu.
+- **[Kvalifikace: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)** – Způsobilost nebo osvědčení, které uživatel v systému může získat a držet, včetně stavů, platnosti a podmínek splnění.
 - **[E-mailové notifikace: jak funguje doručování zpráv](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)** – Mechanismus automatického odesílání e-mailů: šablony, notifikační pravidla a určení příjemce.
 - **[Periodické nastavení: princip a typy periody](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)** – Automatické obnovování přístupu k beztermínové aktivitě nebo sadě po skončení předchozího přístupu.
 
@@ -4883,6 +5037,91 @@ ______________________________________________________________________
 - [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md) – kontext aktivity, ke které se certifikát váže
 - [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md) – přístup a stavy, od nichž se odvíjí dostupnost certifikátu
 - [Uživatel: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md) – data uživatele, která šablona může obsahovat
+
+# Kvalifikace: model a principy
+
+Kvalifikace představuje způsobilost nebo osvědčení, které uživatel v systému Competent může získat a držet – typickým příkladem je jazykový certifikát. Tato stránka vysvětluje, z čeho se kvalifikace skládá, jakými stavy prochází u konkrétního uživatele, jak se nastavuje její platnost a jak fungují podmínky, které určují požadavky na její splnění. Je určena administrátorům, kteří chtějí model pochopit dříve, než začnou kvalifikace v administraci konfigurovat.
+
+Note
+
+Modul Kvalifikace nemusí být dostupný ve všech instalacích – závisí na konfiguraci systému.
+
+______________________________________________________________________
+
+## Definice kvalifikace a kvalifikace přiřazená uživateli
+
+Pojem „kvalifikace" v systému existuje ve dvou rovinách:
+
+- **Definice kvalifikace** – šablona spravovaná v administraci. Určuje vlastnosti, které platí pro každé přiřazení této kvalifikace.
+- **Kvalifikace přiřazená uživateli** – konkrétní držení dané kvalifikace konkrétním uživatelem, se svým vlastním stavem a termíny.
+
+Kvalifikaci lze přiřadit jak jednotlivým **uživatelům**, tak celým **uživatelským skupinám**.
+
+______________________________________________________________________
+
+## Stavy kvalifikace u uživatele
+
+Kvalifikace přiřazená uživateli nabývá vždy jednoho z pěti stavů:
+
+| Stav           | Význam                                                                             |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **Přiřazená**  | Kvalifikace byla uživateli přiřazena, zatím nebyla splněna.                        |
+| **Splněná**    | Uživatel kvalifikaci splnil (získal).                                              |
+| **Nesplněná**  | Kvalifikace nebyla splněna – například vypršel termín, ve kterém měla být splněna. |
+| **Zrušená**    | Přiřazení kvalifikace bylo zrušeno.                                                |
+| **Expirovaná** | Kvalifikace byla dříve splněna, ale její platnost mezitím vypršela.                |
+
+Souhrnně se tento údaj v systému označuje jako **stav kvalifikace**.
+
+______________________________________________________________________
+
+## Platnost kvalifikace
+
+Definice kvalifikace určuje, jak dlouho zůstává splněná kvalifikace platná. K dispozici jsou tři režimy:
+
+- **Neomezená platnost** – kvalifikace nemá žádné časové omezení.
+- **Do termínu** – platnost je vázána na pevné kalendářní datum.
+- **Od data splnění** – platnost se počítá jako zadaný počet **Dnů** od okamžiku, kdy uživatel kvalifikaci splnil.
+
+Pokud u splněné kvalifikace vyprší platnost, systém stav automaticky změní na **Expirovaná**. Pokud naopak uživatel nesplní kvalifikaci ve stanoveném termínu, systém stav automaticky změní na **Nesplněná**.
+
+______________________________________________________________________
+
+## Podmínky: definice požadavků
+
+Definice kvalifikace může obsahovat **Podmínky** – seznam požadavků pod nadpisem **Je třeba splnit**, který určuje, co má uživatel splnit, aby kvalifikaci mohl získat. Požadavkem může být buď **konkrétní aktivita**, nebo **jiná kvalifikace**.
+
+Jednotlivé požadavky se seskupují do **sad**. Sada může vyžadovat splnění **všech** svých položek, nebo stačí splnit **libovolnou jednu** z nich (částečné splnění) – tím lze vyjádřit i alternativní cesty ke splnění kvalifikace.
+
+```
+flowchart TD
+    Root["Je třeba splnit"]
+    S1["Sada: všechny položky"]
+    A1["Aktivita 1"]
+    Q1["Kvalifikace X"]
+
+    Root --> S1
+    S1 --> A1
+    S1 --> Q1
+```
+
+Podmínky určují, co je pro splnění kvalifikace požadováno – splnění vybraných aktivit, případně jiných kvalifikací. Stav kvalifikace u uživatele (Přiřazená, Splněná a další) systém eviduje.
+
+______________________________________________________________________
+
+## Pozor na
+
+- Tato stránka nepopisuje mechanismus, kterým se stav kvalifikace u uživatele mění na **Splněná**. Podmínky definují **požadavky** na splnění – jejich konkrétní vyhodnocení a přechod uživatele do stavu Splněná není součástí tohoto přehledu.
+
+______________________________________________________________________
+
+## Související stránky
+
+- [Obrazovka Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-kvalifikace/index.md) – popis seznamové obrazovky a vytvoření nové kvalifikace
+- [Detail kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-kvalifikace/index.md) – popis záložek Uživatelé, Popis, Podmínky a Práva
+- [Certifikát: princip a generování](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)
+- [Aktivita: model a životní cyklus](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md) – objekt, na který se mohou podmínky kvalifikace odkazovat
+- [Podmínky přístupu: prerekvizity a vyhodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)
 
 # Sada: struktura, hierarchie a splnění
 

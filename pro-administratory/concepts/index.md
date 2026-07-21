@@ -32,5 +32,6 @@ Tato sekce vysvětluje principy a mentální modely, na nichž Competent stojí.
 
 - **[Hodnocení: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)** – Objekt sdílející datový model s aktivitou, ve kterém je uživatel hodnocen jinou osobou.
 - **[Certifikát: princip a generování](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)** – Generování certifikátu z ODT šablony v okamžiku, kdy uživatel splní aktivitu.
+- **[Kvalifikace: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)** – Způsobilost nebo osvědčení, které uživatel v systému může získat a držet, včetně stavů, platnosti a podmínek splnění.
 - **[E-mailové notifikace: jak funguje doručování zpráv](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)** – Mechanismus automatického odesílání e-mailů: šablony, notifikační pravidla a určení příjemce.
 - **[Periodické nastavení: princip a typy periody](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)** – Automatické obnovování přístupu k beztermínové aktivitě nebo sadě po skončení předchozího přístupu.
