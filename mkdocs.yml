@@ -79,18 +79,22 @@ plugins:
           - pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
           - pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
           - pro-administratory/how-to/aktivity/prirazovani-stitku.md
+          - pro-administratory/how-to/aktivity/sdileni-aktivity.md
           - pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
           - pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
           - pro-administratory/how-to/aktivity/podminky-pristupu.md
           - pro-administratory/how-to/aktivity/dokumenty-v-aktivite.md
           - pro-administratory/how-to/aktivity/pokusy-uzivatele.md
+          - pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity.md
           - pro-administratory/how-to/aktivity/terminy-aktivity.md
+          - pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatele.md
           - pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
           - pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu.md
           - pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny.md
           - pro-administratory/how-to/lide/import-uzivatelu.md
           - pro-administratory/how-to/lide/prirazeni-role-uzivateli.md
+          - pro-administratory/how-to/lide/vytvoreni-vlastni-role.md
           - pro-administratory/how-to/nastaveni/stitky.md
           - pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - pro-administratory/how-to/reporty/export-reportu.md
@@ -170,12 +174,15 @@ nav:
               - Vyhledávání v aktivitách: pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
               - Filtry a vyhledávání: pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
               - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
+              - Sdílení aktivity: pro-administratory/how-to/aktivity/sdileni-aktivity.md
               - Nastavení práv k aktivitě: pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
               - Přiřazení uživatelů k aktivitě: pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite.md
               - Nastavení podmínek přístupu: pro-administratory/how-to/aktivity/podminky-pristupu.md
               - Přidání dokumentu k aktivitě: pro-administratory/how-to/aktivity/dokumenty-v-aktivite.md
               - Pokusy uživatele: pro-administratory/how-to/aktivity/pokusy-uzivatele.md
+              - Nastavení notifikací aktivity: pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity.md
               - Přidání termínu k aktivitě: pro-administratory/how-to/aktivity/terminy-aktivity.md
+              - Přiřazení uživatele k termínové aktivitě: pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite.md
           - Lidé:
               - Vytvoření uživatele: pro-administratory/how-to/lide/vytvoreni-uzivatele.md
               - Vytvoření uživatelské skupiny: pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny.md
@@ -183,6 +190,7 @@ nav:
               - Přiřazení uživatele do skupiny: pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny.md
               - Import uživatelů: pro-administratory/how-to/lide/import-uzivatelu.md
               - Přiřazení role uživateli: pro-administratory/how-to/lide/prirazeni-role-uzivateli.md
+              - Vytvoření vlastní role: pro-administratory/how-to/lide/vytvoreni-vlastni-role.md
           - Nastavení:
               - Vytvoření a správa štítků: pro-administratory/how-to/nastaveni/stitky.md
               - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md

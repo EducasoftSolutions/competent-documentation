@@ -38,8 +38,8 @@ Podrobnosti o Sadě jako kontejneru naleznete na stránce
 ## Jak je sdílená aktivita odlišena ve stromu
 
 Ve Stromu aktivit je sdílená aktivita vizuálně odlišena od běžných aktivit
-**nevyplněnou (obrysovou) ikonou**. Díky tomu lze na první pohled rozpoznat,
-zda se jedná o zdrojový objekt nebo o sdílený výskyt.
+**světlejším (šedým) zobrazením ikony i názvu**. Díky tomu lze na první pohled
+rozpoznat, zda se jedná o zdrojový objekt nebo o sdílený výskyt.
 
 Se sdíleným výskytem jsou ve Stromu aktivit záměrně **omezeny tyto operace**:
 
@@ -105,4 +105,4 @@ Podrobnosti o štítcích naleznete na stránce [Štítky](stitky.md).
 - [Štítky](stitky.md)
 - [Detail aktivity](../reference/detail-aktivity.md)
 - [Obrazovka Aktivity](../reference/obrazovka-aktivity.md)
-- [Jak sdílet aktivitu (připravujeme)](#)
+- [Jak sdílet aktivitu](../how-to/aktivity/sdileni-aktivity.md)

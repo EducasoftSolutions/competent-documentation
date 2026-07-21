@@ -143,5 +143,5 @@ spravuje manuálně, aniž by se změnila globální konfigurace pro zbytek syst
 - [Úprava šablony e-mailu](../how-to/nastaveni/uprava-sablony-emailu.md)
 - [Obrazovka Šablony e-mailů](../reference/obrazovka-sablony-emailu.md)
 - [Přehled notifikačních událostí](../reference/prehled-notifikacnich-udalosti.md)
-- [Nastavení notifikací aktivity (připravujeme)](#)
+- [Nastavení notifikací aktivity](../how-to/aktivity/nastaveni-notifikaci-aktivity.md)
 - [Role a oprávnění](role.md)
