@@ -36,3 +36,12 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 ### Reporty
 
 - **[Export reportu](reporty/export-reportu.md)** – jak z obrazovky Reporty vyexportovat souhrnný report přístupů uživatelů do souboru XLSX.
+
+### Kvalifikace
+
+- **[Vytvoření a nastavení kvalifikace](kvalifikace/vytvoreni-kvalifikace.md)** – jak založit novou kvalifikaci, nastavit její platnost a dodatečné hodnocení a otevřít nastavení požadavků.
+- **[Přiřazení kvalifikace uživateli](kvalifikace/prirazeni-kvalifikace.md)** – jak přiřadit existující kvalifikaci uživatelům nebo uživatelským skupinám a nastavit počáteční stav a termín splnění.
+
+### Certifikáty
+
+- **[Nastavení šablony certifikátu](certifikaty/nastaveni-sablony-certifikatu.md)** – jak nahrát ODT šablonu certifikátu na obrazovce Soubory a přiřadit ji k aktivitě se stavem dostupnosti.

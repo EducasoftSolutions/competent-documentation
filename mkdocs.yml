@@ -94,12 +94,16 @@ plugins:
           - pro-administratory/how-to/nastaveni/stitky.md
           - pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - pro-administratory/how-to/reporty/export-reportu.md
+          - pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
+          - pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
+          - pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu.md
           - pro-administratory/reference/index.md
           - pro-administratory/reference/chybove-zpravy.md
           - pro-administratory/reference/obrazovka-aktivity.md
           - pro-administratory/reference/detail-aktivity.md
           - pro-administratory/reference/detail-sady.md
           - pro-administratory/reference/obrazovka-hodnoceni.md
+          - pro-administratory/reference/obrazovka-zpravy.md
           - pro-administratory/reference/detail-hodnoceni.md
           - pro-administratory/reference/obrazovka-kvalifikace.md
           - pro-administratory/reference/detail-kvalifikace.md
@@ -134,6 +138,7 @@ plugins:
           - pro-administratory/concepts/sada.md
           - pro-administratory/concepts/terminova-sada.md
           - pro-administratory/concepts/hodnoceni.md
+          - pro-administratory/concepts/zpravy.md
           - pro-administratory/concepts/slozky-aktivit.md
           - pro-administratory/concepts/sdilene-aktivity.md
           - pro-administratory/concepts/subtypy-aktivit.md
@@ -183,12 +188,18 @@ nav:
               - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - Reporty:
               - Export reportu: pro-administratory/how-to/reporty/export-reportu.md
+          - Kvalifikace:
+              - Vytvoření a nastavení kvalifikace: pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
+              - Přiřazení kvalifikace uživateli: pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
+          - Certifikáty:
+              - Nastavení šablony certifikátu: pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu.md
       - Reference:
           - Přehled: pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
           - Detail aktivity: pro-administratory/reference/detail-aktivity.md
           - Detail sady: pro-administratory/reference/detail-sady.md
           - Obrazovka Hodnocení: pro-administratory/reference/obrazovka-hodnoceni.md
+          - Obrazovka Zprávy: pro-administratory/reference/obrazovka-zpravy.md
           - Detail hodnocení: pro-administratory/reference/detail-hodnoceni.md
           - Obrazovka Kvalifikace: pro-administratory/reference/obrazovka-kvalifikace.md
           - Detail kvalifikace: pro-administratory/reference/detail-kvalifikace.md
@@ -225,6 +236,7 @@ nav:
           - Sada: pro-administratory/concepts/sada.md
           - Termínová sada: pro-administratory/concepts/terminova-sada.md
           - Hodnocení: pro-administratory/concepts/hodnoceni.md
+          - Zprávy: pro-administratory/concepts/zpravy.md
           - Složky aktivit: pro-administratory/concepts/slozky-aktivit.md
           - Sdílené aktivity: pro-administratory/concepts/sdilene-aktivity.md
           - Subtypy aktivit: pro-administratory/concepts/subtypy-aktivit.md
