@@ -4,7 +4,10 @@ Competent obsahuje subsystém **Workflow**, který umožňuje definovat pravidla
 ve formátu „KDYŽ nastane událost → SPUSŤ akci". Namísto ručního přiřazování
 aktivit uživatelům lze tuto rutinu svěřit systému. Tato stránka vysvětluje,
 **co Workflow je a jak funguje** – tedy principy mechanismu, nikoliv krok za
-krokem, jak pravidlo nastavit.
+ krokem, jak pravidlo nastavit.
+
+!!! warning "Workflow se momentálně nevyužívá"
+    Sekci Workflow sice řada klientů v rozhraní vidí, ale pro běžnou práci ji nepotřebujete.
 
 Workflow je dostupné jako součást jádra systému pro všechny instalace Competentu.
 Panel pro správu Workflow vidí pouze uživatelé s přístupem systémového správce.

@@ -44,6 +44,7 @@ Tím je postup dokončen.
 - **Formát je XLS(X), ne CSV.** Import přijímá soubory Microsoft Excel s příponou `.xls` nebo `.xlsx`.
 - **Vždy vycházejte z aktuálního vzoru.** Ukázkový soubor respektuje nastavení konkrétní instance; pro každý subtyp obsahuje samostatný list, protože subtypy mají vlastní parametry.
 - **Neměňte text v závorkách v záhlaví.** Text v závorce je technický identifikátor sloupce. Pokud jej změníte, import nemusí sloupec správně rozpoznat.
+- **Import můžete opakovat pro aktualizaci údajů.** Již existující uživatele systém znovu nevytváří – rozpozná je primárně podle ID a sekundárně podle e-mailu a jejich údaje aktualizuje. Opakovaným importem tak například doplníte nově přidanou skupinu.
 
 ## Související stránky
 

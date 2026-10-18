@@ -41,6 +41,17 @@ Klikněte na **Stáhnout výsledek**. Teprve tímto krokem prohlížeč stáhne 
 
 Tím je postup dokončen.
 
+## Export reportu z detailu aktivity
+
+Report ke konkrétní aktivitě vyexportujete z jejího detailu:
+
+1. Otevřete detail aktivity a přejděte na panel reportů.
+1. Vyberte požadovaný report.
+1. Spusťte export a vyčkejte na přípravu souboru.
+1. Stáhněte výsledný soubor do svého zařízení.
+
+Report je konfigurovatelný, s nastavením Vám pomůže podpora Educasoftu.
+
 ## Ověření
 
 Ve složce stažených souborů prohlížeče se objeví soubor XLSX se souhrnným reportem přístupů uživatelů.

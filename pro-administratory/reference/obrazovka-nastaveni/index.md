@@ -14,7 +14,7 @@ Vstup do obrazovky Nastavení a do jednotlivých záložek je řízen oprávněn
 
 ______________________________________________________________________
 
-## Záložky obrazovky Nastavení
+## Přehled záložek
 
 Obrazovka Nastavení obsahuje panel s 12 záložkami. Přehled záložek v pořadí, v jakém se zobrazují v rozhraní:
 
@@ -45,5 +45,7 @@ ______________________________________________________________________
 - [Záložka Parametry](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-parametry/index.md)
 - [Záložka Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
 - [Záložka Koš](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-kos/index.md)
+- [Záložka Notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-notifikace/index.md)
+- [Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
 - [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
 - [Role: model a principy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)

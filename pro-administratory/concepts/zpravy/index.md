@@ -8,7 +8,9 @@ ______________________________________________________________________
 
 Modul **Zprávy** je vnitřní systém zpráv Competent. Kromě běžné komunikace mezi uživateli pokrývá i systémová hlášení, komentáře k pokusům uživatele a žádosti o schválení (přístup k aktivitě, nová aktivita).
 
-Modul **není položkou hlavního menu**. Otevírá se výhradně přes **zvonek notifikací** v hlavičce aplikace, odkazem „Zobrazit všechny zprávy". Jde o jedinou cestu na obrazovku Zprávy.
+Žádosti o schválení se doručují do Zpráv určeným schvalovatelům. Schvalovatel žádost v detailu zprávy posoudí a rozhodne o jejím schválení nebo zamítnutí. O výsledku může být žadatel informován e-mailovou notifikací, pokud je nastavena.
+
+Modul **není položkou hlavního menu**. Otevírá se přes **zvonek notifikací** v hlavičce, odkazem **„Zobrazit všechny zprávy"**. Obrazovka nese název **Zprávy**.
 
 Dostupnost modulu je navíc podmíněná nastavením systému. Pokud je modul v daném prostředí vypnutý, zvonek notifikací se v hlavičce nezobrazuje vůbec a k obrazovce Zprávy se nelze dostat žádnou jinou cestou.
 
@@ -22,17 +24,17 @@ ______________________________________________________________________
 
 Systém rozlišuje 9 typů zpráv. Uživatel může ručně vytvořit jen 5 z nich přes tlačítko **Nová zpráva** – zbývající typy vznikají výhradně automaticky, jako důsledek jiné akce v systému.
 
-| Typ                         | Vytvořitelný ručně | Vzniká                  |
-| --------------------------- | ------------------ | ----------------------- |
-| **Uživatelská**             | ano                | ručně, přes Nová zpráva |
-| **Chyba**                   | ano                | ručně, přes Nová zpráva |
-| **Úkol**                    | ano                | ručně, přes Nová zpráva |
-| **Žádost o přístup**        | ano                | ručně, přes Nová zpráva |
-| **Žádost o novou aktivitu** | ano                | ručně, přes Nová zpráva |
-| **Systém**                  | ne                 | automaticky             |
-| **Skupinová**               | ne                 | automaticky             |
-| **Komentář**                | ne                 | automaticky             |
-| **Notifikace**              | ne                 | automaticky             |
+| Typ                         | Vytvořitelný ručně | Vzniká                      |
+| --------------------------- | ------------------ | --------------------------- |
+| **Uživatelská**             | ano                | ručně, přes **Nová zpráva** |
+| **Chyba**                   | ano                | ručně, přes **Nová zpráva** |
+| **Úkol**                    | ano                | ručně, přes **Nová zpráva** |
+| **Žádost o přístup**        | ano                | ručně, přes **Nová zpráva** |
+| **Žádost o novou aktivitu** | ano                | ručně, přes **Nová zpráva** |
+| **Systém**                  | ne                 | automaticky                 |
+| **Skupinová**               | ne                 | automaticky                 |
+| **Komentář**                | ne                 | automaticky                 |
+| **Notifikace**              | ne                 | automaticky                 |
 
 Typ **Komentář** je způsob, jakým se do systému zpráv promítají [komentáře k pokusům uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md). Každý takový komentář vznikne jako zpráva typu Komentář s automaticky sestaveným předmětem ve tvaru „Pokus uživatele `<uživatel>` na aktivitě `<aktivita>`". Zobrazení komentářů přímo v modálním okně Pokusy uživatele popisuje stránka věnovaná pokusům.
 

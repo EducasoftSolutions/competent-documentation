@@ -94,6 +94,20 @@ U aktivit lze udělit i přístup bez přihlášení (anonymní přístup). Jeho
 
 ______________________________________________________________________
 
+## Tahák: jakou roli kdy nastavit
+
+Následující tabulka shrnuje typické potřeby a odpovídající role popsané výše na této stránce.
+
+| Typická potřeba                                                          | Vhodná role                    |
+| ------------------------------------------------------------------------ | ------------------------------ |
+| Potřebujete, aby uživatel viděl aktivitu v katalogu                      | **Zobrazení v katalogu**       |
+| Potřebujete, aby uživatel mohl požádat o přístup k aktivitě přes katalog | **Možnost zažádat v katalogu** |
+| Potřebujete zařadit uživatele do uživatelské skupiny                     | **Účastník (člen skupiny)**    |
+| Potřebujete, aby administrátor viděl i skryté a archivované záznamy      | **Admin pohled**               |
+| Potřebujete jednat za jiného uživatele, například při řešení problému    | **Přepínání účtů**             |
+
+______________________________________________________________________
+
 ## Související stránky
 
 - [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)

@@ -1,6 +1,6 @@
 # Vytvoření nového objektu
 
-V administraci Competent zakládáte nové objekty (složku, aktivitu, sadu, termínovou sadu) ze stromu aktivit. Nový objekt se vloží do právě otevřené složky a okamžitě se zobrazí ve stromu i v pravém panelu se seznamem obsahu.
+V administraci Competent zakládáte nové objekty (složku, aktivitu nebo sadu) ze stromu aktivit. Nový objekt se vloží do právě otevřené složky a okamžitě se zobrazí ve stromu i v pravém panelu se seznamem obsahu.
 
 ## Než začnete
 
@@ -12,21 +12,21 @@ V administraci Competent zakládáte nové objekty (složku, aktivitu, sadu, ter
 
 ### 1. Otevřete nabídku pro vytvoření
 
-Ve stromu klikněte na zelené tlačítko **+** na uzlu **root** (tooltip „Vytvoř novou položku"). Otevře se rozbalovací nabídka s pěti možnostmi:
+Ve stromu klikněte na zelené tlačítko **+** na uzlu **root** (tooltip „Vytvoř novou položku"). Otevře se rozbalovací nabídka se čtyřmi možnostmi:
 
 - **Složka**
 - **Aktivita**
 - **Sada**
-- **Termínová sada**
 - **Import/Export**
 
 ### 2. Vyberte typ objektu
 
-Najeďte myší na požadovanou položku. U položek **Aktivita**, **Sada** a **Termínová sada** se rozbalí podmenu:
+Najeďte myší na požadovanou položku. U položek **Aktivita** a **Sada** se rozbalí podmenu:
 
 - **Aktivita** → **Elearning** / **Školení**
 - **Sada** → **Sada**
-- **Termínová sada** → **Komplexní Sada**
+
+**Elearning** je beztermínová aktivita – studium probíhá kdykoliv podle vlastního tempa. **Školení** je termínová aktivita – váže se na konkrétní termín a místo, podrobnosti najdete na stránkách Termíny.
 
 Příklad: pro vytvoření e-learningové aktivity najeďte na **Aktivita** a z podmenu vyberte **Elearning**.
 
@@ -47,11 +47,10 @@ U e-learningové aktivity je za názvem v závorce uveden podtyp: _(Elearning)_.
 
 ## Pozor na
 
-- Do uzlu **root** a do **Složek** lze vkládat libovolný typ objektu (Složka, Aktivita, Sada, Termínová sada).
-- Do **Termínové sady** lze vkládat pouze aktivity – nelze do ní vložit Sadu ani další Termínovou sadu.
+- Do uzlu **root** a do **Složek** lze vkládat libovolný typ objektu (Složka, Aktivita, Sada).
 - **Import/Export** v nabídce není typ objektu – otevírá nástroj **Import/Export**, ne dialog pro vytvoření.
 
 ## Související stránky
 
 - [Přesun objektu](presun-objektu.md)
-- [Vytvoření SCORM aktivity](vytvoreni-scorm-aktivity.md)
+- [Nastavení typu spuštění SCORM](vytvoreni-scorm-aktivity.md)

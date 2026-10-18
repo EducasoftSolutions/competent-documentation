@@ -72,6 +72,17 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
+## Předpony štítků na Portálu
+
+Na Portálu slouží štítky ke kategorizaci obsahu. Význam štítku určuje jeho předpona:
+
+- `main::` – hlavní kategorie v sekci Moje vzdělávání.
+- `cat::` – podkategorie v Katalogu.
+- `spec::` – slideshow v Katalogu (využívá primárně jeden klient).
+- Bez předpony – podkategorie v sekci Moje vzdělávání.
+
+______________________________________________________________________
+
 ## Související stránky
 
 - [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md) – jak v sekci **Nastavení** štítek vytvořit, přejmenovat nebo smazat.

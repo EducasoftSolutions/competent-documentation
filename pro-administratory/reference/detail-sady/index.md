@@ -2,6 +2,22 @@
 
 Detail sady je obrazovka, která zobrazuje informace o aktivitě typu **Sada** – kontejneru sdružujícím více potomků (dílčích aktivit) do jednoho celku. Stránka popisuje, čím se Detail sady liší od detailu běžné aktivity; pro sdílené části odkazuje na [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
 
+Rozdíly mezi instancemi
+
+Detail sady se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
+Na obrázku vidíte detail sady včetně tabu Recenze.
+
+______________________________________________________________________
+
+## Rozdíly oproti detailu aktivity
+
+Struktura detailu sady je velmi podobná [detailu aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md), liší se pouze v polích a prvcích specifických pro sadu:
+
+- Navíc obsahuje tab **Obsah** pro správu potomků, který u běžné aktivity neexistuje.
+- Otevření detailu se liší – viz [Otevření detailu Sady](#otevreni-detailu-sady) níže.
+- Přiřazení uživatelů probíhá rozšířeným průvodcem s výběrem aktivit – viz [Přiřazení uživatelů k Sadě](#prirazeni-uzivatelu-k-sade) níže.
+
 ______________________________________________________________________
 
 ## Co je Sada

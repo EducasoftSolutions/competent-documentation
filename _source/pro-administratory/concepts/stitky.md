@@ -97,7 +97,18 @@ vazba, kterou by bylo možné zpětně obnovit.
   dotkla. Doporučení: před smazáním ověřte, které aktivity štítek nesou,
   a zvažte přejmenování místo smazání.
 - **V multi-jazyčných instalacích Competent může mít štítek lokalizovaný
-  název.** Podrobnosti viz [Jazyková podpora (připravujeme)](#).
+   název.** Podrobnosti viz [Jazyková podpora (připravujeme)](#).
+
+---
+
+## Předpony štítků na Portálu
+
+Na Portálu slouží štítky ke kategorizaci obsahu. Význam štítku určuje jeho předpona:
+
+- `main::` – hlavní kategorie v sekci Moje vzdělávání.
+- `cat::` – podkategorie v Katalogu.
+- `spec::` – slideshow v Katalogu (využívá primárně jeden klient).
+- Bez předpony – podkategorie v sekci Moje vzdělávání.
 
 ---
 

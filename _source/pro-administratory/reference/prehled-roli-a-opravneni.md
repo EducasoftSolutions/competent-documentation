@@ -92,6 +92,20 @@ Vlastní role (neinterní, zákazníkem zakládané) se spravují v části **Na
 
 ---
 
+## Tahák: jakou roli kdy nastavit
+
+Následující tabulka shrnuje typické potřeby a odpovídající role popsané výše na této stránce.
+
+| Typická potřeba | Vhodná role |
+|---|---|
+| Potřebujete, aby uživatel viděl aktivitu v katalogu | **Zobrazení v katalogu** |
+| Potřebujete, aby uživatel mohl požádat o přístup k aktivitě přes katalog | **Možnost zažádat v katalogu** |
+| Potřebujete zařadit uživatele do uživatelské skupiny | **Účastník (člen skupiny)** |
+| Potřebujete, aby administrátor viděl i skryté a archivované záznamy | **Admin pohled** |
+| Potřebujete jednat za jiného uživatele, například při řešení problému | **Přepínání účtů** |
+
+---
+
 ## Související stránky
 
 - [Role a oprávnění](../concepts/role.md)

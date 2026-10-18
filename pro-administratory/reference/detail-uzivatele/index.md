@@ -25,9 +25,13 @@ Přidělení globálních rolí a zobrazení historie akcí je dostupné přes a
 
 ______________________________________________________________________
 
+Rozdíly mezi instancemi
+
+Detail uživatele se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
 ## Taby: přehled
 
-Detail uživatele obsahuje šest tabů:
+Detail uživatele standardně obsahuje šest tabů, jejich dostupnost a podoba se však mohou lišit podle instance klienta:
 
 | Tab             | Obsah                                                                      |
 | --------------- | -------------------------------------------------------------------------- |

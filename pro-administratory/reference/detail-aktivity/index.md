@@ -2,6 +2,10 @@
 
 Detail aktivity je obrazovka, která zobrazuje veškeré informace o konkrétní aktivitě: její základní vlastnosti, přiřazené uživatele, dokumenty a podmínky přístupu. Obrazovka je rozdělena na **hlavičku** se stavovou lištou a sadu **tabů**, přičemž každý tab pokrývá odlišnou oblast správy aktivity.
 
+Rozdíly mezi instancemi
+
+Detail aktivity se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
 ______________________________________________________________________
 
 ## Hlavička obrazovky
@@ -168,10 +172,11 @@ ______________________________________________________________________
 
 U některých typů aktivit se mohou vedle čtyř základních tabů zobrazit také tyto taby:
 
-| Tab         | Kdy se zobrazuje                                                 |
-| ----------- | ---------------------------------------------------------------- |
-| **iTrivio** | Pravděpodobně u aktivit s Typem spouštění nastaveným na iTrivio. |
-| **Termíny** | Pravděpodobně u aktivit se schématem **S termíny**.              |
+| Tab                      | Kdy se zobrazuje                                                                              |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| **iTrivio**              | Pravděpodobně u aktivit s Typem spouštění nastaveným na iTrivio.                              |
+| **Termíny**              | Pravděpodobně u aktivit se schématem **S termíny**.                                           |
+| **Přiřazení dle skupin** | Zobrazeno na všech screenshotech detailu (tab **Přiřazení dle skupin** vedle Tabu Uživatelé). |
 
 Podmínky zobrazení
 

@@ -28,6 +28,7 @@ Záložka zobrazuje seznam existujících pravidel přiřazení; v demo prostře
 | Prvek                          | Popis                                                                                     |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
 | Tlačítko **Nové přiřazení**    | Otevře modál [Přiřadit](#modal-priradit) pro vytvoření nového pravidla přiřazení.         |
+| Tlačítko **Obnova dat**        | Znovu načte seznam pravidel přiřazení.                                                    |
 | Checkbox **Zobrazit ukončené** | Přepíná viditelnost ukončených pravidel přiřazení; ukončená pravidla se zobrazují šedivě. |
 
 ______________________________________________________________________
@@ -44,14 +45,15 @@ Pohled **Uživatelské skupiny** zobrazuje seznam skupin se sloupci:
 
 ### Detail skupiny
 
-Kliknutím na řádek skupiny se rozbalí detail s tabulkou přiřazených objektů. Rozbalený detail obsahuje sloupce:
+Kompletní přehled přiřazených objektů zobrazíte tlačítkem **Detail**, případně kliknutím přímo na název skupiny. Rozbalený detail obsahuje tabulku přiřazených objektů se sloupci:
 
-| Sloupec                        | Popis                                                                                           |
-| ------------------------------ | ----------------------------------------------------------------------------------------------- |
-| **Název Aktivity/Sady/Složky** | Název přiřazeného objektu.                                                                      |
-| **Popis**                      | Popis objektu.                                                                                  |
-| **Typ**                        | Typ objektu (aktivita, sada nebo složka).                                                       |
-| **Nastavení přístupu**         | Parametry přístupu nastavené v daném pravidle přiřazení (začátek přístupu, vyžadované splnění). |
+| Sloupec                                       | Popis                                                                                                                                |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Název Aktivity/Sady/Složky**                | Název přiřazeného objektu.                                                                                                           |
+| **Popis**                                     | Popis objektu.                                                                                                                       |
+| **Typ**                                       | Typ objektu (aktivita, sada nebo složka).                                                                                            |
+| **Nastavení přístupu**                        | Parametry přístupu nastavené v daném pravidle přiřazení (začátek přístupu, vyžadované splnění).                                      |
+| Tlačítka **Upravit**, **Ukončit**, **Smazat** | Akce pro úpravu, ukončení a smazání pravidla přiřazení. Podrobnosti viz [Ukončení a smazání pravidla](#ukonceni-a-smazani-pravidla). |
 
 ______________________________________________________________________
 
@@ -66,53 +68,82 @@ Pohled **Objekty stromu** zobrazuje seznam objektů se sloupci:
 | **Typ**                        | Typ objektu (aktivita, sada nebo složka).                            |
 | **Přiřazené skupiny**          | Skupiny, jimž je objekt přiřazen prostřednictvím pravidel přiřazení. |
 
+Kompletní přehled zobrazíte tlačítkem **Detail** nebo kliknutím na název objektu. Rozbalený detail obsahuje přehled všech skupin přiřazených dané aktivitě, sadě nebo složce. U každé skupiny se zobrazuje název, popis a nastavení přístupu. Na pravé straně jsou dostupná tlačítka pro úpravu, ukončení a smazání nastavení.
+
 ______________________________________________________________________
 
 ## Modál Přiřadit
 
-Modál **Přiřadit** se otevírá tlačítkem **Nové přiřazení** (vytvoření pravidla) nebo akcí **Upravit** na existujícím pravidle.
+Modál **Přiřadit** se otevírá tlačítkem **Nové přiřazení** (vytvoření pravidla) nebo akcí **Upravit** na existujícím pravidle. Modál Vás provede nastavením ve třech krocích.
 
-### Pole Skupina
+### Krok 1 – výchozí objekt
 
-Výběr uživatelské skupiny, pro níž se pravidlo přiřazení vytváří.
+V prvním kroku vybíráte výchozí objekt, ke kterému budete přiřazení vytvářet:
 
-### Pole Aktivita/Složka
+- **uživatelskou skupinu**, ke které budete následně přiřazovat aktivity, sady nebo složky,
+- nebo **aktivitu, sadu či složku**, ke které budete přiřazovat jednu či více uživatelských skupin.
 
-Výběr cíle pravidla přiřazení. Pravidlo lze cílit na:
+Pro výběr výchozího objektu použijte příslušné tlačítko (**Zvolit skupinu**, **Zvolit aktivitu** nebo **Zvolit složku**). Po kliknutí se na pravé straně zobrazí panel s dostupnými objekty.
 
-- **aktivitu nebo sadu** – tlačítkem **Zvolit Aktivitu**,
-- **složku** – tlačítkem **Zvolit Složku**; pravidlo se rozpadne na dílčí pravidla pro každý objekt uvnitř složky.
+- Uživatelské skupiny vybíráte kliknutím na jejich název. Skupiny jsou rozděleny do sekcí podle subtypu a v rámci jednotlivých sekcí jsou seřazeny abecedně.
+- Aktivity, sady a složky vybíráte procházením struktury stromu. Jednotlivé položky lze rozbalovat a požadované objekty přidáte kliknutím na tlačítko **Přidat**.
+
+Pravidlo cílené na složku se rozpadne na dílčí pravidla pro každý objekt uvnitř složky.
+
+### Krok 2 – výběr protistrany
+
+Ve druhém kroku vybíráte objekty, které budou přiřazeny k objektu zvolenému v prvním kroku. Pokud jste nejprve vybrali uživatelskou skupinu, vybíráte nyní aktivity, sady nebo složky. Pokud jste nejprve vybrali aktivitu, sadu nebo složku, vybíráte nyní uživatelské skupiny. Princip výběru objektů je totožný jako v prvním kroku.
+
+Pokud je mezi vybranými objekty alespoň jedna sada, zpřístupní se tlačítko **Konfigurovat vybrané sady**. Po jeho stisknutí se zobrazí seznam všech sad vybraných k přiřazení. Kliknutím na konkrétní sadu otevřete její konfiguraci. Pro každou sadu můžete odebrat vybrané aktivity ze sady a nastavit odklad začátku přístupu pro jednotlivé aktivity.
+
+Odklad začátku přístupu určuje počet dní mezi zpřístupněním jednotlivých aktivit v rámci sady. Pokud je například nastaven odklad 7 dní, další aktivita se zpřístupní k plnění až 7 dní po zpřístupnění předchozí aktivity v pořadí. Konfiguraci uložíte tlačítkem **Potvrdit konfiguraci sad**.
+
+Po dokončení výběru objektů pokračujete tlačítkem **Potvrdit výběr aktivit/sad/složek** nebo **Potvrdit výběr uživatelských skupin**.
+
+### Krok 3 – parametry přístupů
 
 ### Pole Začátek přístupu
 
-Určuje, od kdy začíná přístup uživatele k přiřazenému objektu.
+Určuje okamžik, od kterého bude mít uživatel vytvořen přístup k vybrané aktivitě, sadě nebo složce. V závislosti na zvolené možnosti mohou být zobrazena pole pro nastavení data a času. Vyplněné datum lze odstranit tlačítkem **Nenastavovat**.
 
-| Možnost                     | Chování                                                                                                                                   |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Datum**                   | Přístup začíná pevným datem nastaveným administrátorem. Tlačítko **Nenastavovat** použije jako začátek datum vstupu uživatele do skupiny. |
-| **Dle členství ve skupině** | Přístup začíná datem vstupu uživatele do skupiny nebo datem vytvoření pravidla – co nastane dříve.                                        |
-| **Dle parametru**           | Začátek přístupu určuje parametr aktivity.                                                                                                |
+| Možnost                     | Chování                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Datum**                   | Zobrazí se výběr data a času začátku přístupu. Pokud není nastaveno datum začátku přístupu, použije se datum okamžiku vytvoření přiřazení nebo datum zařazení uživatele do dané uživatelské skupiny (použije se pozdější datum). |
+| **Dle členství ve skupině** | Jako začátek přístupu bude nastaven okamžik, kdy se uživatel stal členem dané uživatelské skupiny, případně okamžik vytvoření přiřazení.                                                                                         |
+| **Dle parametru**           | Začátek přístupu bude určen hodnotou zvoleného parametru.                                                                                                                                                                        |
 
-### Pole Vyžadované splnění
+### Pole Vyžadované datum splnění
 
-Určuje délku nebo podmínku ukončení přístupu.
+Určuje termín, do kterého má uživatel dokončit vybranou aktivitu nebo sadu. Dostupné možnosti nastavení závisí na zvoleném typu začátku přístupu. Pokud není vyžadované datum splnění nastaveno, nebude do vytvořeného přístupu uložen žádný termín dokončení.
 
-| Možnost                     | Chování                                                                  |
-| --------------------------- | ------------------------------------------------------------------------ |
-| **Datumy**                  | Přístup trvá do pevného data nastaveného administrátorem.                |
-| **Počtem dní**              | Přístup trvá zadaný počet dní od začátku (hodnota musí být větší než 0). |
-| **Podle aktivity**          | Délka přístupu se přebírá z parametru „Počet dnů přístupu" na aktivitě.  |
-| **Nemá vyžadované splnění** | Přístup nemá časové omezení.                                             |
-| **Dle parametru**           | Délka přístupu je určena parametrem.                                     |
+| Typ začátku přístupu                               | Dostupné možnosti                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Datum**                                          | Nastavení konkrétního data a času; bez nastavení vyžadovaného data splnění (tlačítko **Nenastavovat**).                                                                                                                                                                                                                                                                            |
+| **Dle členství ve skupině** nebo **Dle parametru** | **Počtem dní** – datum splnění bude vypočítáno od začátku přístupu podle zadaného počtu dní. **Podle aktivity** – datum splnění bude vypočítáno podle nastavení parametru „Počet dní přístupu" vybrané aktivity nebo sady. **Nemá vyžadované datum splnění** – nebude nastaven žádný termín dokončení. **Dle parametru** – datum splnění bude určeno hodnotou zvoleného parametru. |
 
-### Checkbox Znovu nastavit i aktuálně splněné přístupy
+### Pole Periodicita
 
-Dostupný při vytváření nového pravidla.
+Pokud chcete, aby se vybraná aktivita, sada nebo složka nepřiřadila uživatelům skupiny pouze jednou, ale aby byly přístupy vytvářeny opakovaně, použijte funkcionalitu periodicity. Výchozí volbou je **Žádná perioda**.
 
-| Stav checkboxu | Chování                                                                        |
-| -------------- | ------------------------------------------------------------------------------ |
-| Zaškrtnuto     | Pravidlo se aplikuje i na uživatele, kteří aktivitu již mají splněnou.         |
-| Nezaškrtnuto   | Pravidlo se aplikuje pouze na uživatele bez aktivního nebo splněného přístupu. |
+| Možnost                    | Chování                                                                                                                                                         |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vlastní perioda**        | V modálu se zobrazí rozhraní pro nastavení periodicity.                                                                                                         |
+| **Perioda podle aktivity** | Použije se perioda nastavená na vybrané aktivitě nebo sadě. V modálu je zobrazen pouze textový souhrn nastavení opakování a vypočítané datum příštího spuštění. |
+
+Obě výše uvedená nastavení jsou zpřístupněna až po splnění určitých podmínek pro nastavení ostatních parametrů objektu přiřazení. Pokud jsou tyto podmínky později porušeny, nastavení periody se automaticky přepne zpět na volbu **Žádná** a její nastavení se smaže.
+
+V okamžiku, kdy povolíte jeden z typů periodicity, vytvoří se v nastavení modálu dvě sekce: **Nastavení dat pro aktuální přístup k aktivitě** (určuje parametry prvního vytvořeného přístupu) a **Nastavení dat pro budoucí přístupy k aktivitě** (určuje parametry všech dalších přístupů, které budou vytvářeny na základě nastavené periodicity). V této části dále nastavujete typ výpočtu (**Kalendářní**, **Od přiřazení**, **Od splnění**), délku aktivní části, která určuje délku trvání budoucích přístupů, a nastavení opakování, kde lze zvolit periodu **Denní**, **Týdenní**, **Měsíční** nebo **Roční**. Pole **Příští spuštění** průběžně zobrazuje termín následujícího vytvoření přístupu podle aktuální konfigurace. Pokud je perioda nastavena neplatně a nebylo by možné podle ní vytvořit přístup, zobrazí se chyba v části **Příští spuštění** a přiřazení nebude možné uložit.
+
+### Dodatečná nastavení
+
+V závislosti na tom, zda vytváříte nové přiřazení nebo upravujete již existující, je jako poslední položka modálu zobrazen checkbox s dodatečným nastavením:
+
+| Checkbox                                       | Zobrazení                       | Chování                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Znovu nastavit i aktuálně splněné přístupy** | Pouze u nového přiřazení.       | Pokud není zaškrtnuto (výchozí nastavení), vytvoří se přístupy pouze uživatelům, kteří aktuálně nemají k dané aktivitě nebo sadě platný přístup. Pokud je zaškrtnuto, vytvoří se přístupy všem uživatelům dané skupiny bez ohledu na aktuální stav jejich přístupů k dané aktivitě či sadě. |
+| **Nastavit pro všechna aktivní přiřazení**     | Pouze u upravovaného přiřazení. | Pokud není zaškrtnuto (výchozí nastavení), po uložení změn se tyto změny projeví pouze pro nově vytvářené přístupy. Pokud je zaškrtnuto, pak i všechny aktuální přístupy vytvořené na základě tohoto přiřazení jsou aktualizovány, aby odpovídaly novému nastavení.                         |
+
+Volba **Znovu nastavit i aktuálně splněné přístupy** se vztahuje pouze na přístupy vzniklé v rámci daného konkrétního přiřazení a skupiny (nikoliv na všechny přístupy uživatele). Pokud potřebujete upravit existující přístupy (nikoliv je ukončit), upravte samotné přiřazení a využijte volbu **Nastavit pro všechna aktivní přiřazení**. Tím dojde k hromadné úpravě již existujících přístupů.
 
 ______________________________________________________________________
 
@@ -128,12 +159,12 @@ Tlačítko **Ukončit** ukončí aktivní pravidlo přiřazení. Po ukončení:
 
 ### Smazat pravidlo
 
-Tlačítko **Smazat** (ikona koše) zobrazí dialog se dvěma volbami:
+Tlačítko **Smazat** (ikona koše) zobrazí dialog, ve kterém systém vyzve k volbě, jak naložit s již existujícími přístupy:
 
-| Volba dialogu           | Dopad na přístupy uživatelů                                                                                            |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Ano**                 | Pravidlo se smaže; existující přístupy uživatelů zůstávají beze změny.                                                 |
-| **Ano včetně přístupů** | Pravidlo se smaže a aktuální přístupy přejdou do stavu **Zrušeno**. Historické (již ukončené) přístupy jsou zachovány. |
+| Volba dialogu                                         | Dopad na přístupy uživatelů                                                                                                                                                                                                     |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ano** (smazat pouze přiřazení)                      | Smaže se samotné automatické přiřazení i jeho vazba na přístupy. Všechny aktivní existující přístupy (aktivní i dokončené) zůstávají beze změny. Ostatní nastavení existujících přístupů zůstávají zachována.                   |
+| **Ano včetně přístupů** (smazat přiřazení i přístupy) | Smaže se přiřazení i jeho vazba na přístupy. Všechny aktuální přístupy se přepnou do stavu **Zrušeno**. Budoucí přístupy se nevytvoří. Historické (již dokončené) přístupy zůstávají zachovány pro účely evidence a reportingu. |
 
 ______________________________________________________________________
 

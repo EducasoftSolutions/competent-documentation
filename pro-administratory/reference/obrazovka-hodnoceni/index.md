@@ -4,6 +4,8 @@ Obrazovka **Hodnocení** slouží ke správě hodnocení v administraci Competen
 
 Ovládání obrazovky je z velké části totožné s ovládáním [Obrazovky Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md) – levý strom, složkové zobrazení, vyhledávání, filtrování, akční ikony i kontextové menu fungují stejně. Tato stránka popisuje pouze rozdíly oproti Obrazovce Aktivity.
 
+Na obrázku vidíte přehled bez vytvořených hodnocení.
+
 ______________________________________________________________________
 
 ## Obsah obrazovky

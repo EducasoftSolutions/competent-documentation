@@ -149,6 +149,160 @@ Události v této kategorii se neodesílají okamžitě – e-mail je naplánov�
 
 ---
 
+## Proměnné v šablonách
+
+V textech šablon používáte proměnné ve tvaru `${nazev}`, které se při odeslání e-mailu nahradí reálnou hodnotou ze systému. Proměnnou vyberete v editoru šablony na záložce příslušného objektu, kliknutím ji vložíte na pozici kurzoru, nebo ji zapíšete přímo z klávesnice. Podrobný popis práce s proměnnými naleznete na stránce [Obrazovka Šablony e-mailů](obrazovka-sablony-emailu.md#promenne).
+
+Dostupné proměnné se liší podle skupiny šablony. Níže je úplný přehled objektů a proměnných.
+
+### Uživatel
+
+- `${firstName}` – křestní jméno
+- `${lastName}` – příjmení
+- `${email}` – email
+- `${customId}` – specifické ID
+- `${titleBefore}` – titul před jménem
+- `${titleAfter}` – titul za jménem
+- `${password}` – heslo
+- `${login}` – přihlašovací jméno
+- `${link}` – odkaz
+
+### Hodnotitel
+
+- `${evaluatorFirstName}` – křestní jméno hodnotitele
+- `${evaluatorLastName}` – příjmení hodnotitele
+- `${evaluatorTitleBefore}` – titul před jménem hodnotitele
+- `${evaluatorTitleAfter}` – titul za jménem hodnotitele
+- `${evaluatorEmail}` – email hodnotitele
+- `${evaluatorCustomId}` – ID hodnotitele
+- `${evaluatorLogin}` – přihlašovací jméno hodnotitele
+- `${link}` – odkaz
+
+### Aktivita
+
+- `${activityName}` – název aktivity
+- `${activityCustomId}` – specifické ID aktivity
+- `${activityState}` – stav aktivity
+- `${changeDescription}`
+- `${activitySchema}`
+- `${activityDescription}` – popis aktivity
+- `${activityCapacity}` – kapacita aktivity
+- `${activityId}` – ID aktivity
+- `${activityAdminDescriptionLink}`
+- `${activityAdminDescriptionLinkPart}`
+- `${activityPortalDescriptionLink}`
+- `${activityUrl}` – URL odkaz aktivity
+- `${activityLaunchUrl}`
+- `${activityType}` – typ aktivity
+- `${activityPrice}` – cena aktivity
+- `${activityRunCount}`
+- `${activityHasRuns}`
+- `${link}` – odkaz na administrátorský detail aktivity
+
+### Uživatel–aktivita
+
+Vazba uživatele na konkrétní aktivitu.
+
+- `${accessStartDay}` – den začátku přístupu
+- `${accessStart}` – začátek přístupu
+- `${accessEndDay}` – den konce přístupu
+- `${accessEnd}` – konec přístupu
+- `${completeUntilDay}` – den vyžadovaného data splnění
+- `${completeUntil}` – vyžadované datum splnění
+- `${optimalStartDay}` – den optimálního začátku
+- `${optimalStart}` – optimální počátek plnění
+- `${optimalEnd}` – optimální konec plnění
+- `${optimalEndDay}` – den optimálního konce
+- `${passed}` – splněnost přístupu
+- `${passedDate}` – datum splnění
+- `${passedDateDay}` – den data splnění
+- `${userActivityState}` – stav
+- `${link}` – odkaz na
+
+### Pokus
+
+- `${attemptPassed}` – splněnost pokusu
+- `${attemptScore}` – skóre pokusu
+- `${attemptStarted}` – začátek pokusu
+- `${attemptEvaluationType}` – typ vyhodnocení pokusu
+- `${attemptFinished}` – ukončení pokusu
+- `${attemptPassScore}` – kritéria splnění pokusu
+- `${attemptMaxScore}` – maximální skóre pokusu
+- `${attemptSpentTime}` – strávený čas pokusu
+- `${attemptResultDataType}`
+
+### Hodnotitel pokusu
+
+- `${attemptEvaluatorFirstName}` – křestní jméno hodnotitele pokusu
+- `${attemptEvaluatorLastName}` – příjmení hodnotitele pokusu
+- `${attemptEvaluatorTitleBefore}` – titul před jménem od hodnotitele pokusu
+- `${attemptEvaluatorTitleAfter}` – titul za jménem od hodnotitele pokusu
+- `${attemptEvaluatorEmail}` – email hodnotitele pokusu
+- `${attemptEvaluatorCustomId}` – specifické ID hodnotitele pokusu
+- `${attemptEvaluatorLogin}` – přihlašovací jméno hodnotitele pokusu
+- `${link}` – odkaz
+
+### Zpráva
+
+Zpráva v systému Competent.
+
+- `${messageSubject}` – předmět zprávy
+- `${messageBody}` – tělo zprávy
+- `${messageType}` – typ zprávy
+- `${messageState}` – stav zprávy
+- `${link}` – odkaz na zprávu
+
+### Běh aktivity a místo
+
+Termíny u termínových aktivit.
+
+- `${runName}` – název termínu
+- `${runEnd}` – konec termínu
+- `${runStart}` – začátek termínu
+- `${runState}` – stav termínu
+- `${runEndDay}` – den konce termínu
+- `${runStartDay}` – den začátku termínu
+- `${runCapacity}` – kapacita termínu
+- `${runPrice}` – cena termínu
+- `${link}` – odkaz na administrátorský detail termínů
+- `${placeName}` – název místa
+- `${placeAddress}` – adresa místa
+- `${placeCity}` – město
+- `${placeDescription}` – popis místa
+- `${placeDescriptionKey}`
+- `${placeFloor}` – podlaží místa
+- `${placeHouseNumber}` – číslo popisné
+- `${placeLandRegNumber}`
+- `${placeRoot}`
+- `${placeState}` – stát
+- `${placeZipCode}` – poštovní směrovací číslo
+
+### Workflow
+
+- `${action}` – akce
+- `${objectType}` – typ objektu
+- `${objectId}` – ID objektu
+- `${objectName}` – název objektu
+- `${triggerUserId}`
+
+### Ostatní proměnné
+
+- `${domain}` – doména
+- `${originalCompleteUntil}` – původní datum vyžadovaného splnění
+- `${extensionCounter}` – kolikrát bylo prodlouženo
+- `${accessHasRun}` – informace, zda má aktivita vypsaný běh (true / false)
+- `${objectDeleteInfo}`
+- `${inviteId}`
+- `${linkPart}`
+- `${linkFirstPass}`
+- `${linkRenewPass}`
+- `${token}`
+- `${linkType}`
+- `${emailTemplate.evaluatorMissing}`
+- `${emailTemplate.valueMissing}`
+
+---
+
 ## Pozor na
 
 !!! warning "Neověřené události"

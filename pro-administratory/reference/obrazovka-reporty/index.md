@@ -2,6 +2,10 @@
 
 Obrazovka **Reporty** je interaktivní přehled nad daty o přístupech uživatelů k aktivitám, postavený na tabulce s možností postupného rozpadu (drill-down). Obrazovka nabízí dva pohledy na data (podle uživatelů a podle aktivit) a nástroje pro export přehledu do souboru. Stránka popisuje jednotlivé prvky obrazovky; postup exportu je předmětem samostatného návodu.
 
+Grafické zobrazení reportu
+
+Tabulkové zobrazení reportu momentálně nefunguje správně. Pro spolehlivý výsledek používejte vždy [export reportu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/reporty/export-reportu/index.md).
+
 ______________________________________________________________________
 
 ## Záhlaví obrazovky Reporty

@@ -5,7 +5,9 @@ Záložka **Notifikace** v sekci **Nastavení** zobrazuje seznam globálních no
 Záložka se zobrazí jen uživatelům s oprávněním pro správu notifikací.
 
 !!! note "Globální vs. per-aktivitní notifikace"
-    Záložka **Notifikace** spravuje výhradně globální notifikace – pravidla, která platí pro celý systém bez ohledu na konkrétní aktivitu. Nastavení notifikací pro jednotlivou aktivitu se provádí v [detailu aktivity](detail-aktivity.md).
+    Záložka **Notifikace** spravuje výhradně globální notifikace – pravidla, která platí pro celý systém bez ohledu na konkrétní aktivitu.     Nastavení notifikací pro jednotlivou aktivitu se provádí v [detailu aktivity](detail-aktivity.md).
+
+![Záložka Notifikace se seznamem globálních pravidel](_media/tab-notifikace/01-notifikace.png)
 
 ---
 

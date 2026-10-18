@@ -56,6 +56,7 @@ Tím je postup dokončen.
 - **Jazyk je povinný.** Dokud jazyk nevyberete, formulář vytvoření nedokončí a u pole se zobrazí upozornění, že je povinné.
 - **Některé instalace mohou vyžadovat zařazení do skupiny.** V některých nastaveních Competent může být zařazení uživatele alespoň do jedné skupiny povinné – v takovém případě formulář bez skupiny vytvoření nedovolí.
 - **Zda systém uživatele po vytvoření informuje e-mailem, závisí na nastavení vaší instalace.**
+- **Podoba formuláře se může lišit podle nastavení Vaší instance.** Pole formuláře lze konfigurovat v Parametrech, proto se u Vás mohou zobrazit jiná pole nebo jiné pořadí než na obrázcích v tomto návodu.
 
 ## Související stránky
 

@@ -36,6 +36,10 @@ Po nastavení oprávnění uložení potvrďte tlačítkem **Vytvořit roli a za
 
 Tím je postup dokončen.
 
+Komplexní nastavení – doporučujeme součinnost s podporou
+
+Nastavení rolí a oprávnění je komplexní a nesprávná kombinace může uživatelům nechtěně odebrat nebo naopak přidat přístup. Pokud si nejste jistí, obraťte se na podporu Educasoftu, která Vám s nastavením pomůže.
+
 ## Pozor na
 
 - **Kliknutí na Vytvořit roli v kroku 2 roli zatím neuloží.** Otevře jen editor oprávnění pro nově zadaný název. Pokud editor po tomto kliknutí neočekávaně zůstane otevřený místo toho, aby se zavřel, jde o očekávané chování, ne o chybu.

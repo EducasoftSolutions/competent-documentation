@@ -6,6 +6,8 @@ v hierarchii a jakými stavy každá aktivita v průběhu svého životního cyk
 Je určena administrátorům, kteří chtějí pochopit model před tím, než začnou obsah
 vytvářet nebo konfigurovat.
 
+![Detail aktivity s taby pro správu vlastností, uživatelů, dokumentů a podmínek](../reference/_media/detail-aktivity/01-detail-prehled.png)
+
 ---
 
 ## Čtyři typy aktivit

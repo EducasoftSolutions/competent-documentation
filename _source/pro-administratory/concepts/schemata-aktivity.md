@@ -4,7 +4,10 @@ Schéma aktivity vyjadřuje časový charakter aktivity – určuje, zda probíh
 bez vázání na konkrétní datum a místo konání, nebo v předem stanovených termínech.
 Tato stránka vysvětluje, co obě varianty znamenají, jak ovlivňují přiřazování
 uživatelů a jak se schéma nastavuje. Je určena administrátorům, kteří chtějí
-pochopit model aktivit před jejich konfigurací nebo přiřazováním.
+ pochopit model aktivit před jejich konfigurací nebo přiřazováním.
+
+V praxi platí jednoduché pravidlo: beztermínová aktivita je aktivita typu
+E-learning, termínová aktivita je aktivita typu Školení.
 
 ---
 

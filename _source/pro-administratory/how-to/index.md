@@ -16,8 +16,7 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 - **[Nastavení podmínek přístupu k aktivitě](aktivity/podminky-pristupu.md)** – jak na záložce Podmínky omezit, kdo se k aktivitě může přihlásit nebo ji spustit.
 - **[Nastavení práv k aktivitě](aktivity/nastaveni-prav-k-aktivite.md)** – jak skupině nebo uživateli udělit přístup k aktivitě přes dialog Práva přístupu pro….
 - **[Přesun objektu](aktivity/presun-objektu.md)** – jak přesunout objekt ve stromu aktivit pomocí dialogu Přesunout do….
-- **[Jak filtrovat a přizpůsobit zobrazení aktivit](aktivity/filtry-a-vyhledavani.md)** – jak si v obrazovce aktivit přizpůsobit zobrazené typy položek a způsob jejich uspořádání.
-- **[Jak vyhledat aktivity v administraci](aktivity/vyhledavani-v-aktivitach.md)** – jak v obrazovce aktivit najít aktivitu nebo sadu pomocí textového vyhledávání a filtru podle štítků.
+- **[Jak vyhledat aktivity v administraci](aktivity/vyhledavani-v-aktivitach.md)** – jak v obrazovce aktivit najít aktivitu nebo sadu pomocí textového vyhledávání, filtru podle štítků a přizpůsobení zobrazení.
 
 ### Lidé
 

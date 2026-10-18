@@ -5,7 +5,7 @@ Sdílená aktivita zobrazí existující aktivitu na dalším místě Stromu akt
 ## Předpoklady
 
 - Máte administrátorský přístup k editaci Stromu aktivit.
-- V systému existuje Sada (případně Termínová sada), do které chcete sdílenou aktivitu umístit, a aktivita, kterou chcete sdílet.
+- V systému existuje Sada, do které chcete sdílenou aktivitu umístit, a aktivita, kterou chcete sdílet.
 
 ## Postup
 
@@ -13,9 +13,9 @@ Sdílená aktivita zobrazí existující aktivitu na dalším místě Stromu akt
 
 Ve stromu aktivit najděte Sadu, do které chcete sdílenou aktivitu přidat.
 
-### 2. Otevřete kontextové menu a zvolte Sdílená aktivita
+### 2. Otevřete burger menu a zvolte Sdílená aktivita
 
-U Sady klikněte na ikonu kontextového menu na konci řádku. V nabídce **Vytvoř novou položku** zvolte položku **Sdílená aktivita**.
+U Sady klikněte na burger menu na konci řádku. V nabídce **Vytvořit novou položku** zvolte položku **Sdílená aktivita**.
 
 ### 3. Otevřete seznam aktivit v panelu Aktivity
 
@@ -27,12 +27,12 @@ U požadované aktivity v seznamu klikněte na tlačítko **Přidat**.
 
 ### 5. Ověřte výsledek
 
-Sdílená aktivita se zobrazí na vybraném místě stromu i v seznamu obsahu Sady. Od běžné aktivity je odlišena světlejší (vyšisovanou) barvou textu i ikony; žádný textový popisek typu „sdíleno" se nezobrazuje.
+Sdílená aktivita se zobrazí na vybraném místě stromu i v seznamu obsahu Sady. Od běžné aktivity je odlišena nevyplněným symbolem aktivity ve stromu; žádný textový popisek typu „sdíleno" se nezobrazuje.
 
 ## Pozor na
 
-- Volba **Sdílená aktivita** je dostupná jen v kontextovém menu Sady – u Složky se v nabídce **Vytvoř novou položku** nezobrazuje.
-- V panelu **Aktivity** se k přidání nabízí pouze aktivity, které ještě nejsou sdílené na jiném místě stromu.
+- Volba **Sdílená aktivita** je dostupná jen v burger menu Sady – u Složky se v nabídce **Vytvořit novou položku** nezobrazuje.
+- V panelu **Aktivity** se k přidání nabízejí aktivity dostupné ve stromu. Nelze vybrat jinou sdílenou aktivitu – sdílet lze pouze běžnou aktivitu.
 
 ## Související stránky
 

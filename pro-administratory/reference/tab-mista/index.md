@@ -2,6 +2,8 @@
 
 Záložka **Místa** je součástí obrazovky **Nastavení** a slouží ke správě sdíleného číselníku míst v systému Competent. Místo představuje adresní záznam, který lze přiřazovat objektům v systému (například aktivitám). Správou míst na tomto místě zajistíte konzistentní adresní údaje napříč celou instalací.
 
+Místa se zadávají na termínu aktivity – ilustraci termínů najdete v [Detailu aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/#dalsi-taby-podle-typu-aktivity).
+
 ______________________________________________________________________
 
 ## Horní lišta

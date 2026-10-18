@@ -1,6 +1,6 @@
-# Vytvoření SCORM aktivity
+# Nastavení typu spuštění SCORM
 
-SCORM kurz v Competentu není samostatný typ aktivity, ale způsob jejího spuštění (launch type). Založíte běžnou e-learningovou aktivitu a v jejím detailu nastavíte **Typ spouštění** na **Scorm kurz**. Poté nahrajete ZIP balíček s SCORM kurzem.
+Neexistuje žádná samostatná „SCORM aktivita" – existuje pouze aktivita, jejíž typ spuštění je nastaven na SCORM. Aktivitu proto založte běžným postupem podle návodu [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md). SCORM je volba v poli **Typ spouštění** na záložce **Detaily**: vyberte hodnotu **Scorm kurz** a nahrajte ZIP balíček s kurzem.
 
 ## Než začnete
 
@@ -10,11 +10,9 @@ SCORM kurz v Competentu není samostatný typ aktivity, ale způsob jejího spu�
 
 ## Postup
 
-### 1. Vytvořte e-learningovou aktivitu
+### 1. Založte běžnou aktivitu
 
-Ve stromu aktivit klikněte v cílové složce na tlačítko **+** a zvolte **Aktivita → Elearning**. Vyplňte název (například „Školení BOZP") a potvrďte tlačítkem **Vytvořit**.
-
-Podrobně viz [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md).
+Aktivitu založte obvyklým způsobem jako e-learningovou aktivitu. Podrobný postup najdete v návodu [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md).
 
 ### 2. Otevřete detail aktivity
 

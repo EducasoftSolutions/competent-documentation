@@ -36,8 +36,6 @@ V záhlaví obrazovky jsou dále dostupné ikona **nastavení** (ozubené kolo) 
 
 Tab **Uživatelé ve skupině** zobrazuje grid všech členů skupiny s jejich rolemi.
 
-![Grid členů skupiny – sloupce Uživatelé, Email, Role a tři filtry rolí nad gridem](_media/detail-skupiny/02-grid-clenu.png)
-
 ### Sloupce gridu
 
 | Sloupec | Popis |

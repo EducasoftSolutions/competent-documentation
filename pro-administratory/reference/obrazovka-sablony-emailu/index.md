@@ -1,63 +1,158 @@
 # Obrazovka Šablony e-mailů
 
-Záložka **Šablony e-mailů** v sekci **Nastavení** zobrazuje přehled skupin e-mailových šablon a umožňuje jejich správu. Tato stránka popisuje prvky a pole obrazovky – postup úpravy obsahu šablon naleznete v [Úpravě šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md).
+Záložka **Šablony e-mailů** v sekci **Nastavení** slouží ke správě šablon e-mailových zpráv a notifikací, které systém odesílá uživatelům automaticky na základě událostí. Na této obrazovce určujete obsah jednotlivých šablon v různých jazycích a proměnné použité v textech. Šablony se dále použijí v tabech **Notifikace** a **Workflow** nebo u jednotlivých aktivit na obrazovce **Detail aktivity**. Postup úpravy obsahu šablon naleznete v návodu [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md).
 
 ______________________________________________________________________
 
 ## Seznam skupin šablon
 
-Po přechodu na tab **Šablony e-mailů** (Nastavení → Šablony e-mailů) se zobrazí tabulka se všemi skupinami e-mailových šablon. Tabulka nemá vyhledávací pole ani filtry.
+Po přechodu na tab **Šablony e-mailů** (Nastavení → Šablony e-mailů) se zobrazí seznam všech skupin e-mailových šablon. Seznam nemá vyhledávací pole ani filtry.
 
 ### Sloupce seznamu
 
 | Sloupec       | Popis                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------- |
-| Název skupiny | Název skupiny šablon. Kliknutím na řádek se otevře modal **Editovat skupinu šablon**.         |
-| Jazyky        | Jazykové varianty, ve kterých skupina existuje (například „CS, EN").                          |
+| Název skupiny | Název skupiny šablon. Kliknutím na řádek se otevře modál **Editovat skupinu šablon**.         |
+| Jazyky        | Jazyky, ve kterých je šablona dostupná (například „CS, EN").                                  |
 | Typ           | Typ šablony: **Základní** nebo **Agregovaná**.                                                |
 | Akce          | Ikona koše – smaže celou skupinu včetně všech jejích jazykových variant po potvrzení dialogu. |
 
-### Přidání nové skupiny a prázdný stav
-
-Tlačítko **„+"** v pravém horním rohu seznamu otevře modal **Nová skupina šablon** pro vytvoření nové skupiny.
+Tlačítko pro přidání nové šablony (**„+"**) je umístěno vpravo nahoře nad seznamem.
 
 Pokud zatím žádná skupina neexistuje, zobrazí se text „Zatím nebyly vytvořeny žádné šablony emailu" s odkazem **Vytvořit novou šablonu**.
 
 ______________________________________________________________________
 
-## Modal Editovat skupinu šablon
+## Modál Nová skupina šablon
 
-Kliknutím na řádek skupiny v seznamu se otevře modal **Editovat skupinu šablon**. Modal zobrazuje aktuálně uložené hodnoty skupiny a umožňuje přecházet mezi jazykovými variantami.
+Tlačítkem **„+"** vpravo nahoře otevřete modál **Nová skupina šablon** pro vytvoření nové skupiny.
+
+| Pole                 | Popis                                                                                                                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Název skupiny šablon | Název identifikující skupinu šablon v seznamu. Skupina obsahuje šablony pro tentýž e-mail v různých jazycích. Pokud vedete šablony pouze v jednom jazyku, obsahuje skupina právě jednu šablonu. |
+| Potvrdit             | Potvrdí název a otevře editační okno šablony.                                                                                                                                                   |
+
+______________________________________________________________________
+
+## Modál Editovat skupinu šablon
+
+Kliknutím na řádek skupiny v seznamu otevřete modál **Editovat skupinu šablon**. Při více jazykových verzích jde o editaci celé skupiny šablon. Modál zobrazuje aktuálně uložené hodnoty skupiny a umožňuje přecházet mezi jazykovými variantami.
+
+### Název skupiny
+
+Název skupiny je zobrazen v horním řádku pod záhlavím modálního okna. Upravíte jej tlačítkem **Upravit název**.
+
+### Typ šablony
+
+| Hodnota    | Popis                                                                                                                                                                                            |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Základní   | Šablona navázaná na konkrétní notifikační událost v tabu **Notifikace**. E-mailová zpráva se odešle pokaždé, když nastane daná událost (například přiřazení kurzu uživateli).                    |
+| Agregovaná | Šablona slučuje události stejného typu za určité časové období do jedné e-mailové zprávy. Časový interval odesílání se nastavuje až při přiřazení ke konkrétní notifikaci v tabu **Notifikace**. |
+
+Typ šablony má vliv na podobu těla e-mailu – viz [Tělo e-mailu podle typu šablony](#telo-e-mailu-podle-typu-sablony).
+
+### Jazyk
+
+Pole **Jazyk** určuje, kterou jazykovou variantu skupiny právě upravujete:
+
+- Pokud skupina již obsahuje jazyky, zobrazí se rozbalovací menu. Rozbalením a výběrem jazyka zvolíte variantu, se kterou budete dále pracovat. Aktuálně vybraný jazyk je vyznačen tmavým pozadím tlačítka a bílou barvou písma.
+- Tlačítky vedle rozbalovacího menu aktuální jazyk šablony smažete nebo přidáte nový.
+- Pokud skupina zatím neobsahuje žádný jazyk, rozbalovací menu se nezobrazí. Nejprve přidejte jazyk tlačítkem **Přidat jazyk**.
 
 ### Pole modálu
 
-| Pole                 | Popis                                                                                                                                       |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Název skupiny šablon | Název identifikující skupinu šablon v seznamu.                                                                                              |
-| Typ šablony          | Přepínač s hodnotami **Základní** a **Agregovaná**. U agregované šablony jsou navíc k dispozici pole **Hlavička** a **Patička** (viz níže). |
-| Jazyk                | Rozbalovací seznam jazykových variant skupiny. Přepnutím jazyka se načte obsah dané varianty (Předmět emailu, Popis, Tělo emailu).          |
-| Přidat jazyk         | Tlačítko pro přidání nové jazykové varianty skupiny. Dostupné v režimu prohlížení (mimo editaci).                                           |
-| Odebrat Jazyk        | Tlačítko pro odebrání aktuálně vybrané jazykové varianty. Dostupné v režimu prohlížení (mimo editaci).                                      |
-| Předmět emailu       | Předmět e-mailu pro danou jazykovou variantu. Může obsahovat proměnné ve tvaru `${nazev}`.                                                  |
-| Popis                | Interní popis skupiny šablon.                                                                                                               |
-| Tělo emailu          | Obsah e-mailu pro danou jazykovou variantu. Edituje se ve WYSIWYG editoru. Může obsahovat proměnné ve tvaru `${nazev}`.                     |
-| Hlavička             | Záhlaví obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                            |
-| Patička              | Zápatí obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                             |
-
-### Nápověda proměnných
-
-Pod polem **Tělo emailu** je nápověda **„Povolené proměnné pro tělo e-mailu:"**, která zobrazuje dostupné proměnné seřazené do záložek podle skupin.
-
-Kliknutím na proměnnou se vloží na pozici kurzoru v poli Tělo emailu ve tvaru `${nazev}` (například `${firstName}`, `${login}`, `${activityName}`, `${link}`). Úplný seznam proměnných je dostupný přímo v editoru; dostupné proměnné se liší podle skupiny.
+| Pole                 | Popis                                                                                                                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Název skupiny šablon | Název identifikující skupinu šablon v seznamu.                                                                                                                                              |
+| Typ šablony          | Přepínač s hodnotami **Základní** a **Agregovaná**. U agregované šablony jsou navíc k dispozici pole **Hlavička** a **Patička** (viz níže).                                                 |
+| Jazyk                | Rozbalovací seznam jazykových variant skupiny. Přepnutím jazyka se načte obsah dané varianty (Předmět emailu, Popis, Tělo emailu).                                                          |
+| Přidat jazyk         | Tlačítko pro přidání nové jazykové varianty skupiny. Dostupné v režimu prohlížení (mimo editaci).                                                                                           |
+| Odebrat Jazyk        | Tlačítko pro odebrání aktuálně vybrané jazykové varianty. Dostupné v režimu prohlížení (mimo editaci).                                                                                      |
+| Předmět emailu       | Předmět e-mailu pro danou jazykovou variantu. Vyplnění je podmínkou správného odesílání e-mailových zpráv. Může obsahovat proměnné ve tvaru `${nazev}`.                                     |
+| Popis                | Interní popis skupiny šablon. Zobrazí se pouze zde a informuje o tom, k čemu a kdy je šablona používána. Vyplnění není povinné.                                                             |
+| Tělo emailu          | Obsah e-mailu pro danou jazykovou variantu. Předmět a tělo e-mailu jsou informace, které se ve výsledku zobrazí uživateli, když obdrží e-mail. Může obsahovat proměnné ve tvaru `${nazev}`. |
+| Hlavička             | Záhlaví obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                                                                            |
+| Patička              | Zápatí obalující opakující se tělo. K dispozici pouze u **Agregované** šablony.                                                                                                             |
 
 ### Tlačítka modálu
 
-| Tlačítko        | Dostupnost       | Funkce                                                                                                                       |
-| --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Upravit šablonu | Režim prohlížení | Přepne modal do režimu editace; zpřístupní pole Předmět emailu a Tělo emailu (a Hlavičku + Patičku u agregované) pro úpravu. |
-| Uložit          | Režim editace    | Uloží provedené změny.                                                                                                       |
-| Zrušit          | Režim editace    | Zahodí neuložené změny a vrátí se do režimu prohlížení.                                                                      |
-| Zavřít          | Vždy             | Zavře modal bez uložení.                                                                                                     |
+| Tlačítko        | Dostupnost       | Funkce                                                                                                                                                                                            |
+| --------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Upravit šablonu | Režim prohlížení | Přepne modál do režimu editace; zpřístupní pole Předmět emailu a Tělo emailu (a Hlavičku + Patičku u agregované) pro úpravu. U již uložené a aktuálně vybrané šablony se zobrazuje vpravo nahoře. |
+| Uložit          | Režim editace    | Uloží provedené změny. Tlačítko je umístěno vpravo nahoře.                                                                                                                                        |
+| Zrušit          | Režim editace    | Zahodí neuložené změny a vrátí se do režimu prohlížení.                                                                                                                                           |
+| Zavřít          | Vždy             | Zavře modál bez uložení.                                                                                                                                                                          |
+
+______________________________________________________________________
+
+## Tělo e-mailu podle typu šablony
+
+### Základní typ šablony
+
+U základního typu je hlavní zapisovací oblastí pole **Tělo emailu**. Zapisujete do něj libovolný text pomocí WYSIWYG editoru nebo HTML formátování:
+
+- Pomocí **WYSIWYG editoru** text jednoduše formátujete podle potřeby. Mezi základní formáty patří tučné písmo, kurzíva, podtržení, zarovnání textu, barevné písmo nebo odrážky.
+- **HTML formátování** zapisujete pomocí řádkových a blokových tagů. Editor pro vložení HTML kódu zobrazíte kliknutím na ikonku **< >**.
+
+### Agregovaný typ šablony
+
+U agregovaného typu se zobrazí tři editační oblasti:
+
+| Oblast      | Popis                                                                                                                |
+| ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| Hlavička    | Text, který se v e-mailu zobrazí pouze jednou na začátku.                                                            |
+| Tělo emailu | Text odpovídající opakující se části zprávy. Tato část se v odeslaném e-mailu zopakuje pro každou proběhlou událost. |
+| Patička     | Text, který se zobrazí pouze jednou na konci e-mailu.                                                                |
+
+______________________________________________________________________
+
+## Proměnné
+
+V textech šablon využijete **proměnné**, které fungují jako zástupné symboly. Při odesílání e-mailu se nahradí reálnou hodnotou ze systému.
+
+Pod polem **Tělo emailu** je nápověda **„Povolené proměnné pro tělo e-mailu:"**, která zobrazuje dostupné proměnné seřazené do záložek podle skupin.
+
+Proměnné se dělí podle objektu, kterému v systému přísluší, tedy ze kterého se při generování e-mailu vyplňují data do šablony. Může jít o hlavní objekty (například Aktivita, Pokus) nebo o objekt popisující vztahy mezi těmito objekty (například Uživatel-aktivita). Pro výběr proměnné nejprve zvolte tab příslušného objektu. Kliknutím na název proměnné vložíte symbol na aktuální pozici kurzoru v poli Tělo emailu ve tvaru `${nazev}` (například `${firstName}`, `${login}`, `${activityName}`, `${link}`). Proměnnou lze do textu šablony zapsat i přímo z klávesnice.
+
+Úplný seznam proměnných je dostupný přímo v editoru; dostupné proměnné se liší podle skupiny. Přehled proměnných podle objektů naleznete na stránce [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/#promenne-v-sablonach).
+
+______________________________________________________________________
+
+## Podmínky v šablonách
+
+V e-mailových šablonách můžete používat jednoduché podmínky pro zobrazení různých částí textu podle typu aktivity nebo dostupných dat. Podmínky zapisujete syntaxí formátu Velocity. Můžete používat také vnořené podmínky.
+
+```
+#if(podminka)
+text, který se zobrazí při splnění podmínky
+#elseif(podminka2)
+text, který se zobrazí při splnění druhé podmínky
+#else
+text, který se zobrazí v opačném případě
+#end
+```
+
+Příklad použití:
+
+```
+Dobrý den,
+byla vám schválena žádost o aktivitu ${activityName} - je třeba ji splnit do ${completeUntilDay}
+#if($activitySchema == "MULTIPLE")
+Na aktivitu jsou vypsány termíny, které si můžete vybrat po přihlášení do systému.
+#else
+#if($activityHasRuns)
+Počet vypsaných termínů: ${activityRunCount}.
+#else
+Aktivita aktuálně nemá vypsané žádné termíny.
+#end
+Aktivitu můžete po přihlášení ihned spustit.
+#end
+S pozdravem
+```
+
+Systémová označení typů aktivit v podmínkách
+
+V podmínkách se používají systémová označení typů aktivit: `MULTIPLE` odpovídá aktivitě typu Školení, `TIMELESS` odpovídá aktivitě typu E-learning.
 
 ______________________________________________________________________
 
@@ -79,3 +174,4 @@ ______________________________________________________________________
 
 - [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
 - [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)

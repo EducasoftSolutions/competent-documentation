@@ -2,6 +2,8 @@
 
 Záložka **Štítky** je součástí obrazovky [Nastavení](obrazovka-nastaveni.md) a umožňuje spravovat štítky dostupné v systému Competent. Štítky slouží ke klasifikaci aktivit do skupin, podle kterých se v aktivitách orientujete a filtrujete je. Podrobný výklad najdete v části [Štítky: koncept](../concepts/stitky.md).
 
+![Záložka Štítky se seznamem štítků](_media/tab-stitky/01-stitky.png)
+
 ---
 
 ## Přístup k záložce

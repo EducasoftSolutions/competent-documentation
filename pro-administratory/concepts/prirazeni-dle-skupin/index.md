@@ -1,6 +1,6 @@
 # Přiřazení dle skupin: mechanismus a principy
 
-Přiřazení dle skupin je funkce systému Competent, která automaticky přiřazuje aktivity uživatelům na základě jejich členství ve skupině. Tato stránka vysvětluje, jak mechanismus funguje, jak reaguje na změny ve složení skupiny a jaký je vztah k přímému přiřazení uživatele k aktivitě. Je určena administrátorům, kteří chtějí pochopit princip před tím, než začnou pravidla přiřazení nastavovat nebo spravovat.
+Přiřazení dle skupin je funkce systému Competent, která automaticky přiřazuje aktivity uživatelům na základě jejich členství ve skupině. V systému vzniká objekt přiřazení, který propojí uživatelskou skupinu s aktivitou, sadou nebo složkou. Podle nastavení tohoto přiřazení pak systém automaticky vytváří přístupy k zadané aktivitě, sadě či složce pro uživatele dané skupiny. Tato stránka vysvětluje, jak mechanismus funguje, jak reaguje na změny ve složení skupiny a jaký je vztah k přímému přiřazení uživatele k aktivitě. Je určena administrátorům, kteří chtějí pochopit princip před tím, než začnou pravidla přiřazení nastavovat nebo spravovat.
 
 ______________________________________________________________________
 

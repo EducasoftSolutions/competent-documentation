@@ -16,8 +16,7 @@ Návody jsou určeny pro uživatele, kteří Competent znají a potřebují rych
 - **[Nastavení podmínek přístupu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/index.md)** – jak na záložce Podmínky omezit, kdo se k aktivitě může přihlásit nebo ji spustit.
 - **[Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md)** – jak skupině nebo uživateli udělit přístup k aktivitě přes dialog Práva přístupu pro….
 - **[Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)** – jak přesunout objekt ve stromu aktivit pomocí dialogu Přesunout do….
-- **[Jak filtrovat a přizpůsobit zobrazení aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/filtry-a-vyhledavani/index.md)** – jak si v obrazovce aktivit přizpůsobit zobrazené typy položek a způsob jejich uspořádání.
-- **[Jak vyhledat aktivity v administraci](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md)** – jak v obrazovce aktivit najít aktivitu nebo sadu pomocí textového vyhledávání a filtru podle štítků.
+- **[Jak vyhledat aktivity v administraci](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md)** – jak v obrazovce aktivit najít aktivitu nebo sadu pomocí textového vyhledávání, filtru podle štítků a přizpůsobení zobrazení.
 
 ### Lidé
 

@@ -6,12 +6,14 @@ ______________________________________________________________________
 
 ## Taby: přehled
 
-Detail hodnocení obsahuje dva taby:
+Detail hodnocení obsahuje dva základní taby:
 
 | Tab           | Popis                                                                                  |
 | ------------- | -------------------------------------------------------------------------------------- |
 | **Uživatelé** | Seznam uživatelů přiřazených k hodnocení; hlavní rozhraní pro správu těchto přiřazení. |
 | **Detaily**   | Formulář s vlastnostmi hodnocení – včetně parametrů specifických pro hodnocení.        |
+
+Podle konfigurace se mohou zobrazit další taby (na obrázku např. Termíny).
 
 Společné prvky hlavičky (stavová lišta, přepínání tabů) jsou popsány v [Detailu aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md).
 

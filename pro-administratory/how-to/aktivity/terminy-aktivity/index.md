@@ -5,6 +5,7 @@ Termín určuje, kdy a kde se aktivita koná, a kolik uživatelů se jí může 
 ## Předpoklady
 
 - Máte oprávnění upravovat aktivitu v administraci (jste přihlášeni jako administrátor).
+- Pracujete s aktivitou typu Školení (termínovou) – postup předpokládá aktivitu tohoto typu.
 - Aktivita je Termínová sada, nebo má schéma **S termíny**. Jen u těchto aktivit je záložka **Termíny** dostupná.
 - Aktivita nemusí mít žádné existující termíny ani přiřazené uživatele.
 

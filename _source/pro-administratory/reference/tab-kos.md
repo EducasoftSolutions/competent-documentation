@@ -2,6 +2,8 @@
 
 Záložka **Koš** je součástí obrazovky **Nastavení** a slouží k zobrazení objektů, které byly v systému smazány. Každý smazaný objekt lze buď obnovit – vrátit zpět do systému – nebo trvale odstranit.
 
+![Záložka Koš s tabulkou smazaných položek](_media/tab-kos/01-kos.png)
+
 ---
 
 ## Přístup k záložce
