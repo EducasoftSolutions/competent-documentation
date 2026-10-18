@@ -2,6 +2,8 @@
 
 Obrazovka **Lidé** je centrálním místem administrace pro správu uživatelů, skupin a rolí. Zobrazí se po kliknutí na položku **Lidé** v hlavním menu administrace. Obrazovka nabízí **přepínač pohledů** se třemi výchozími pohledy: **Uživatelé**, **Skupiny** a **Role**. Kliknutím na řádek v pohledu Uživatelé nebo Skupiny přejdete na příslušný detail.
 
+![Pohled Uživatelé na obrazovce Lidé s tabulkou uživatelů](_media/obrazovka-lide/01-prehled-uzivatelu.png)
+
 ---
 
 ## Přepínač pohledů

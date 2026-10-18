@@ -7,6 +7,8 @@ stavy účet prochází a jak uživatel souvisí s dalšími částmi systému. 
 administrátorům, kteří chtějí pochopit model před tím, než začnou uživatele
 spravovat nebo konfigurovat jejich přístupy.
 
+![Detail uživatele s taby pro aktivity, hodnocení, popis, skupiny, kvalifikace a vazby](../reference/_media/detail-uzivatele/01-detail-prehled.png)
+
 ---
 
 ## Co je uživatel

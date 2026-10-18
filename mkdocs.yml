@@ -77,7 +77,6 @@ plugins:
           - pro-administratory/how-to/aktivity/presun-objektu.md
           - pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
           - pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
-          - pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
           - pro-administratory/how-to/aktivity/prirazovani-stitku.md
           - pro-administratory/how-to/aktivity/sdileni-aktivity.md
           - pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
@@ -98,8 +97,8 @@ plugins:
           - pro-administratory/how-to/nastaveni/stitky.md
           - pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - pro-administratory/how-to/reporty/export-reportu.md
-          - pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
-          - pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
+# HIDDEN 2026-10-15:           - pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
+# HIDDEN 2026-10-15:           - pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
           - pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu.md
           - pro-administratory/reference/index.md
           - pro-administratory/reference/chybove-zpravy.md
@@ -109,8 +108,8 @@ plugins:
           - pro-administratory/reference/obrazovka-hodnoceni.md
           - pro-administratory/reference/obrazovka-zpravy.md
           - pro-administratory/reference/detail-hodnoceni.md
-          - pro-administratory/reference/obrazovka-kvalifikace.md
-          - pro-administratory/reference/detail-kvalifikace.md
+# HIDDEN 2026-10-15:           - pro-administratory/reference/obrazovka-kvalifikace.md
+# HIDDEN 2026-10-15:           - pro-administratory/reference/detail-kvalifikace.md
           - pro-administratory/reference/obrazovka-lide.md
           - pro-administratory/reference/detail-uzivatele.md
           - pro-administratory/reference/periodicke-nastaveni.md
@@ -119,9 +118,9 @@ plugins:
           - pro-administratory/reference/obrazovka-reporty.md
           - pro-administratory/reference/tab-mista.md
           - pro-administratory/reference/tab-stitky.md
-          - pro-administratory/reference/tab-parametry.md
+# HIDDEN 2026-10-15:           - pro-administratory/reference/tab-parametry.md
           - pro-administratory/reference/tab-prirazeni-dle-skupin.md
-          - pro-administratory/reference/tab-subtypy.md
+# HIDDEN 2026-10-15:           - pro-administratory/reference/tab-subtypy.md
           - pro-administratory/reference/prehled-roli-a-opravneni.md
           - pro-administratory/reference/obrazovka-sablony-emailu.md
           - pro-administratory/reference/prehled-notifikacnich-udalosti.md
@@ -171,9 +170,8 @@ nav:
           - Aktivity:
               - Vytvoření nového objektu: pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu.md
               - Přesun objektu: pro-administratory/how-to/aktivity/presun-objektu.md
-              - Vytvoření SCORM aktivity: pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
+              - Nastavení typu spuštění SCORM: pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity.md
               - Vyhledávání v aktivitách: pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach.md
-              - Filtry a vyhledávání: pro-administratory/how-to/aktivity/filtry-a-vyhledavani.md
               - Přiřazování štítků: pro-administratory/how-to/aktivity/prirazovani-stitku.md
               - Sdílení aktivity: pro-administratory/how-to/aktivity/sdileni-aktivity.md
               - Nastavení práv k aktivitě: pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite.md
@@ -197,37 +195,38 @@ nav:
               - Úprava šablony e-mailu: pro-administratory/how-to/nastaveni/uprava-sablony-emailu.md
           - Reporty:
               - Export reportu: pro-administratory/how-to/reporty/export-reportu.md
-          - Kvalifikace:
-              - Vytvoření a nastavení kvalifikace: pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
-              - Přiřazení kvalifikace uživateli: pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
+# HIDDEN 2026-10-15:           - Kvalifikace:
+# HIDDEN 2026-10-15:               - Vytvoření a nastavení kvalifikace: pro-administratory/how-to/kvalifikace/vytvoreni-kvalifikace.md
+# HIDDEN 2026-10-15:               - Přiřazení kvalifikace uživateli: pro-administratory/how-to/kvalifikace/prirazeni-kvalifikace.md
           - Certifikáty:
               - Nastavení šablony certifikátu: pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu.md
-      - Reference:
-          - Přehled: pro-administratory/reference/index.md
+      - Slovník pojmů:
+          - Přehled pojmů: pro-administratory/reference/index.md
           - Obrazovka Aktivity: pro-administratory/reference/obrazovka-aktivity.md
           - Detail aktivity: pro-administratory/reference/detail-aktivity.md
           - Detail sady: pro-administratory/reference/detail-sady.md
           - Obrazovka Hodnocení: pro-administratory/reference/obrazovka-hodnoceni.md
           - Obrazovka Zprávy: pro-administratory/reference/obrazovka-zpravy.md
           - Detail hodnocení: pro-administratory/reference/detail-hodnoceni.md
-          - Obrazovka Kvalifikace: pro-administratory/reference/obrazovka-kvalifikace.md
-          - Detail kvalifikace: pro-administratory/reference/detail-kvalifikace.md
+# HIDDEN 2026-10-15:           - Obrazovka Kvalifikace: pro-administratory/reference/obrazovka-kvalifikace.md
+# HIDDEN 2026-10-15:           - Detail kvalifikace: pro-administratory/reference/detail-kvalifikace.md
           - Obrazovka Lidé: pro-administratory/reference/obrazovka-lide.md
           - Detail uživatele: pro-administratory/reference/detail-uzivatele.md
           - Periodické nastavení: pro-administratory/reference/periodicke-nastaveni.md
           - Detail skupiny: pro-administratory/reference/detail-skupiny.md
           - Obrazovka Nastavení: pro-administratory/reference/obrazovka-nastaveni.md
+          - Záložky Nastavení:
+              - Tab Místa: pro-administratory/reference/tab-mista.md
+              - Tab Štítky: pro-administratory/reference/tab-stitky.md
+              - Tab Přiřazení dle skupin: pro-administratory/reference/tab-prirazeni-dle-skupin.md
+              - Tab Notifikace: pro-administratory/reference/tab-notifikace.md
+              - Tab Koš: pro-administratory/reference/tab-kos.md
+              - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
+              - Přehled notifikačních událostí: pro-administratory/reference/prehled-notifikacnich-udalosti.md
           - Obrazovka Reporty: pro-administratory/reference/obrazovka-reporty.md
-          - Tab Místa: pro-administratory/reference/tab-mista.md
-          - Tab Štítky: pro-administratory/reference/tab-stitky.md
-          - Tab Parametry: pro-administratory/reference/tab-parametry.md
-          - Tab Přiřazení dle skupin: pro-administratory/reference/tab-prirazeni-dle-skupin.md
-          - Tab Subtypy: pro-administratory/reference/tab-subtypy.md
+# HIDDEN 2026-10-15:           - Tab Parametry: pro-administratory/reference/tab-parametry.md
+# HIDDEN 2026-10-15:           - Tab Subtypy: pro-administratory/reference/tab-subtypy.md
           - Přehled rolí a oprávnění: pro-administratory/reference/prehled-roli-a-opravneni.md
-          - Obrazovka Šablony e-mailů: pro-administratory/reference/obrazovka-sablony-emailu.md
-          - Přehled notifikačních událostí: pro-administratory/reference/prehled-notifikacnich-udalosti.md
-          - Tab Notifikace: pro-administratory/reference/tab-notifikace.md
-          - Tab Koš: pro-administratory/reference/tab-kos.md
           - Obrazovka Soubory: pro-administratory/reference/obrazovka-soubory.md
           - Chybové zprávy: pro-administratory/reference/chybove-zpravy.md
       - Koncepty:

@@ -7,6 +7,8 @@ modul Zprávy pokrývá, jaké typy zpráv rozlišuje a proč se stejný stav zp
 může zobrazit dvěma různými způsoby. Popis samotné obrazovky a jejích polí
 najdete v referenci [Obrazovka Zprávy](../reference/obrazovka-zpravy.md).
 
+![Seznam zpráv s nadpisem Zprávy a tabulkou zpráv](../reference/_media/obrazovka-zpravy/01-prehled-zprav.png)
+
 ---
 
 ## Co je modul Zprávy
@@ -15,9 +17,13 @@ Modul **Zprávy** je vnitřní systém zpráv Competent. Kromě běžné komunik
 mezi uživateli pokrývá i systémová hlášení, komentáře k pokusům uživatele
 a žádosti o schválení (přístup k aktivitě, nová aktivita).
 
-Modul **není položkou hlavního menu**. Otevírá se výhradně přes **zvonek
-notifikací** v hlavičce aplikace, odkazem „Zobrazit všechny zprávy". Jde
-o jedinou cestu na obrazovku Zprávy.
+Žádosti o schválení se doručují do Zpráv určeným schvalovatelům. Schvalovatel
+žádost v detailu zprávy posoudí a rozhodne o jejím schválení nebo zamítnutí.
+O výsledku může být žadatel informován e-mailovou notifikací, pokud je nastavena.
+
+Modul **není položkou hlavního menu**. Otevírá se přes **zvonek notifikací**
+v hlavičce, odkazem **„Zobrazit všechny zprávy"**. Obrazovka nese název
+**Zprávy**.
 
 Dostupnost modulu je navíc podmíněná nastavením systému. Pokud je modul
 v daném prostředí vypnutý, zvonek notifikací se v hlavičce nezobrazuje
@@ -39,11 +45,11 @@ důsledek jiné akce v systému.
 
 | Typ | Vytvořitelný ručně | Vzniká |
 |-----|--------------------|--------|
-| **Uživatelská** | ano | ručně, přes Nová zpráva |
-| **Chyba** | ano | ručně, přes Nová zpráva |
-| **Úkol** | ano | ručně, přes Nová zpráva |
-| **Žádost o přístup** | ano | ručně, přes Nová zpráva |
-| **Žádost o novou aktivitu** | ano | ručně, přes Nová zpráva |
+| **Uživatelská** | ano | ručně, přes **Nová zpráva** |
+| **Chyba** | ano | ručně, přes **Nová zpráva** |
+| **Úkol** | ano | ručně, přes **Nová zpráva** |
+| **Žádost o přístup** | ano | ručně, přes **Nová zpráva** |
+| **Žádost o novou aktivitu** | ano | ručně, přes **Nová zpráva** |
 | **Systém** | ne | automaticky |
 | **Skupinová** | ne | automaticky |
 | **Komentář** | ne | automaticky |

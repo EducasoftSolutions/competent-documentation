@@ -4,6 +4,8 @@ Obrazovka **Detail uživatele** zobrazuje veškeré informace o konkrétním už
 
 Do Detailu uživatele se dostanete z přehledu **Lidé → pohled Uživatelé** kliknutím na řádek uživatele v tabulce.
 
+![Detail uživatele s hlavičkou a lištou tabů](_media/detail-uzivatele/01-detail-prehled.png)
+
 ---
 
 ## Hlavička detailu
@@ -24,9 +26,12 @@ Pod jménem je umístěna lišta tabů. V pravé části záhlaví se nacházej�
 
 ---
 
+!!! warning "Rozdíly mezi instancemi"
+    Detail uživatele se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
 ## Taby: přehled
 
-Detail uživatele obsahuje šest tabů:
+Detail uživatele standardně obsahuje šest tabů, jejich dostupnost a podoba se však mohou lišit podle instance klienta:
 
 | Tab | Obsah |
 |---|---|
@@ -42,6 +47,8 @@ Detail uživatele obsahuje šest tabů:
 ## Tab Aktivity
 
 Tab **Aktivity** zobrazuje přehled aktivit přiřazených uživateli.
+
+![Tab Aktivity v detailu uživatele s přehledem přiřazení](_media/detail-uzivatele/02-tab-aktivity.png)
 
 ### Filtry a přepínače
 

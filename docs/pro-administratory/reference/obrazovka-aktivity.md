@@ -2,6 +2,8 @@
 
 Obrazovka **Aktivity** je centrálním místem pro správu výukových objektů v administraci Competent. Zobrazí se po kliknutí na položku **Aktivity** v horním hlavním menu administrace. Obrazovka je rozdělena na **levý panel** (Strom aktivit) a **pravý panel** (obsah aktuální složky nebo sady).
 
+![Přehled obrazovky Aktivity se stromem aktivit v levém panelu a obsahem složky v pravém panelu](_media/obrazovka-aktivity/01-prehled-aktivit.png)
+
 ---
 
 ## Strom aktivit

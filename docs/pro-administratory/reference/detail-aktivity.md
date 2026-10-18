@@ -2,6 +2,9 @@
 
 Detail aktivity je obrazovka, která zobrazuje veškeré informace o konkrétní aktivitě: její základní vlastnosti, přiřazené uživatele, dokumenty a podmínky přístupu. Obrazovka je rozdělena na **hlavičku** se stavovou lištou a sadu **tabů**, přičemž každý tab pokrývá odlišnou oblast správy aktivity.
 
+!!! warning "Rozdíly mezi instancemi"
+    Detail aktivity se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
 ---
 
 ## Hlavička obrazovky
@@ -48,6 +51,8 @@ Některé aktivity mohou mít zobrazeny další taby – viz [Další taby (podl
 
 Tab Uživatelé zobrazuje seznam uživatelů, jimž byla aktivita přiřazena – včetně současných, minulých i budoucích přiřazení. U každého záznamu jsou dostupné informace o datu přiřazení, výsledku a stavu.
 
+![Tab Uživatelé v detailu aktivity se seznamem přiřazených uživatelů](_media/detail-aktivity/02-tab-uzivatele.png)
+
 ### Sloupce gridu
 
 | Sloupec | Popis a hodnoty filtru |
@@ -87,6 +92,8 @@ Každý řádek v gridu umožňuje následující operace:
 ## Tab Detaily
 
 Tab Detaily obsahuje formulář pro správu vlastností aktivity. Pole jsou logicky seskupena do několika oblastí.
+
+![Tab Detaily v detailu aktivity s formulářem vlastností](_media/detail-aktivity/01-detail-prehled.png)
 
 ### Základní identifikace
 
@@ -156,11 +163,15 @@ Sekce **Notifikace** slouží ke konfiguraci automaticky odesílaných zpráv sp
 
 Tab Dokumenty slouží ke správě příloh a studijních materiálů spojených s aktivitou. Podrobný popis funkcí tohoto tabu viz [Dokumenty v aktivitě](../concepts/dokumenty-v-aktivite.md).
 
+![Tab Dokumenty v detailu aktivity se seznamem příloh](_media/detail-aktivity/03-tab-dokumenty.png)
+
 ---
 
 ## Tab Podmínky
 
 Tab Podmínky slouží ke konfiguraci podmínek přístupu k aktivitě – například k nastavení požadavku na předchozí splnění jiné aktivity. Podrobný popis viz [Podmínky přístupu](../concepts/podminky-pristupu.md).
+
+![Tab Podmínky v detailu aktivity s konfigurací přístupu](_media/detail-aktivity/04-tab-podminky.png)
 
 ---
 
@@ -172,6 +183,7 @@ U některých typů aktivit se mohou vedle čtyř základních tabů zobrazit ta
 |---|---|
 | **iTrivio** | Pravděpodobně u aktivit s Typem spouštění nastaveným na iTrivio. |
 | **Termíny** | Pravděpodobně u aktivit se schématem **S termíny**. |
+| **Přiřazení dle skupin** | Zobrazeno na všech screenshotech detailu (tab **Přiřazení dle skupin** vedle Tabu Uživatelé). |
 
 !!! warning "Podmínky zobrazení"
     Přesné podmínky zobrazení tabů iTrivio a Termíny závisí na konfiguraci aktivity. Obsah těchto tabů není v současné dokumentaci popsán – doplníme po dokončení testovacích scénářů.

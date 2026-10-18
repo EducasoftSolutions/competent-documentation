@@ -13,7 +13,7 @@ Vstup do obrazovky Nastavení a do jednotlivých záložek je řízen oprávněn
 
 ---
 
-## Záložky obrazovky Nastavení
+## Přehled záložek
 
 Obrazovka Nastavení obsahuje panel s 12 záložkami. Přehled záložek v pořadí, v jakém se zobrazují v rozhraní:
 
@@ -44,5 +44,7 @@ Záložky Menu, Workflows a Superadmin slouží k pokročilejší konfiguraci sy
 - [Záložka Parametry](tab-parametry.md)
 - [Záložka Přiřazení dle skupin](tab-prirazeni-dle-skupin.md)
 - [Záložka Koš](tab-kos.md)
+- [Záložka Notifikace](tab-notifikace.md)
+- [Šablony e-mailů](obrazovka-sablony-emailu.md)
 - [Přehled rolí a oprávnění](prehled-roli-a-opravneni.md)
 - [Role: model a principy](../concepts/role.md)

@@ -43,9 +43,6 @@ Po nahrání se soubor zobrazí v panelu a je připravený k přiřazení.
 
 ![Nahraný soubor viditelný v panelu Knihovna souborů](_media/dokumenty-v-aktivite/04-dokumenty-soubor-nahran.png)
 
-!!! note "Soubor nahraný bez otevřené složky"
-    Pokud soubor nahrajete bez předem otevřené složky v panelu, zobrazí se informace, že nahraný soubor bude k dispozici pouze v této aktivitě a nebude dostupný v knihovně souborů.
-
 ### 4. Nastavte viditelnost dokumentu
 
 V dolní části panelu klikněte na sekci **Nastavit stavy**. Otevře se výběr stavů uživatelského přístupu, při kterých bude dokument uživateli viditelný.
@@ -56,7 +53,7 @@ Kliknutím do výběrového pole rozbalíte dostupné stavy přístupu.
 
 ![Rozbalený výběr stavů uživatelského přístupu](_media/dokumenty-v-aktivite/06-dokumenty-stavy-dropdown.png)
 
-Vyberte jeden nebo více stavů, při kterých má být dokument viditelný. Chcete-li dokument zobrazovat ve všech stavech přístupu, klikněte na **Vše**.
+Vyberte jeden nebo více stavů, při kterých má být dokument viditelný. Má-li být dokument viditelný ve všech stavech přístupu, vyberte pouze stav **Veřejný** – volbu **Vše** již nezaklikávejte.
 
 ![Vybrané stavy uživatelského přístupu](_media/dokumenty-v-aktivite/07-dokumenty-stavy-vybrane.png)
 

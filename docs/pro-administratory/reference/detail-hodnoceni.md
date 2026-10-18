@@ -2,16 +2,20 @@
 
 Obrazovka **Detail hodnocení** zobrazuje vlastnosti konkrétního hodnocení a seznam uživatelů, jimž bylo hodnocení přiřazeno. Rozložení obrazovky a základní ovládání jsou totožné s [Detailem aktivity](detail-aktivity.md) – tato stránka popisuje pouze prvky specifické pro hodnocení.
 
+![Detail hodnocení s taby Uživatelé, Detaily a Termíny](_media/detail-hodnoceni/01-detail-prehled.png)
+
 ---
 
 ## Taby: přehled
 
-Detail hodnocení obsahuje dva taby:
+Detail hodnocení obsahuje dva základní taby:
 
 | Tab | Popis |
 |---|---|
 | **Uživatelé** | Seznam uživatelů přiřazených k hodnocení; hlavní rozhraní pro správu těchto přiřazení. |
 | **Detaily** | Formulář s vlastnostmi hodnocení – včetně parametrů specifických pro hodnocení. |
+
+Podle konfigurace se mohou zobrazit další taby (na obrázku např. Termíny).
 
 Společné prvky hlavičky (stavová lišta, přepínání tabů) jsou popsány v [Detailu aktivity](detail-aktivity.md).
 

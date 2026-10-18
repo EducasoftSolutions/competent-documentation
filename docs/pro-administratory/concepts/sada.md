@@ -6,6 +6,8 @@ o sobě výukový obsah nenese – jejím smyslem je strukturovat a seskupit. Ta
 stránka vysvětluje, co Sada je, co může obsahovat, jak se liší od příbuzných
 konceptů a jak funguje mechanismus Částečného splnění.
 
+![Detail sady s taby pro správu obsahu a přiřazení](../reference/_media/detail-sady/01-detail-prehled.png)
+
 ---
 
 ## Co je Sada

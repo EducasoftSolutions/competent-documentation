@@ -14,10 +14,11 @@ Sdílená aktivita je **odkaz (reference) na zdrojovou aktivitu** – nikoli jej
 kopie ani duplikát. V systému Competent existuje vždy jen jedna zdrojová
 aktivita; sdílené aktivity jsou její výskyty zobrazené na dalších místech stromu.
 
-Veškerý obsah i nastavení (detail, výukový obsah, dokumenty, podmínky, přiřazení
-uživatelů) jsou shodné se zdrojovou aktivitou. Z pohledu studenta není mezi
-zdrojovou a sdílenou aktivitou žádný rozdíl – obě jsou dostupné a chovají se
-stejně.
+Veškerý obsah i nastavení jsou shodné se zdrojovou aktivitou. Údaje v těchto
+tabech jsou shodné jak u zdrojové, tak u sdílené aktivity: **Uživatelé**,
+**Detail**, **Obsah**, **iTrivio**, **Dokumenty** a **Podmínky**. Z pohledu
+studenta není mezi zdrojovou a sdílenou aktivitou žádný rozdíl – obě jsou
+dostupné a chovají se stejně.
 
 Klíčový důsledek tohoto modelu: **změny provedené na zdrojové aktivitě se
 automaticky projeví ve všech jejích sdílených výskytech.** Centrální správa
@@ -38,7 +39,7 @@ Podrobnosti o Sadě jako kontejneru naleznete na stránce
 ## Jak je sdílená aktivita odlišena ve stromu
 
 Ve Stromu aktivit je sdílená aktivita vizuálně odlišena od běžných aktivit
-**světlejším (šedým) zobrazením ikony i názvu**. Díky tomu lze na první pohled
+**nevyplněným symbolem aktivity**. Díky tomu lze na první pohled
 rozpoznat, zda se jedná o zdrojový objekt nebo o sdílený výskyt.
 
 Se sdíleným výskytem jsou ve Stromu aktivit záměrně **omezeny tyto operace**:
@@ -62,10 +63,9 @@ i ostatní výskyty zůstanou nedotčeny.
 Zdrojová aktivita je centrální místo správy. Veškeré úpravy obsahu nebo
 nastavení se provádějí zde a automaticky se projeví ve všech sdílených výskytech.
 
-V detailu zdrojové aktivity naleznete záložku **Sdílení** (zobrazuje se s počtem
-výskytů v závorce, například „Sdílení (1)"). Záložka uvádí přehled všech Sad,
-ve kterých je aktivita sdílena, a umožňuje příslušné Sady zobrazit přímo ve
-Stromu aktivit.
+V detailu zdrojové aktivity naleznete samostatný tab **Sdílení**. Tab uvádí
+přehled všech Sad, ve kterých je aktivita sdílena, a umožňuje příslušné Sady
+zobrazit přímo ve Stromu aktivit.
 
 Podrobný popis záložek a polí detailu aktivity naleznete v části
 [Detail aktivity](../reference/detail-aktivity.md).

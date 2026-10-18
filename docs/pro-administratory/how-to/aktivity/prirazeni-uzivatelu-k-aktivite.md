@@ -1,6 +1,6 @@
 # Přiřazení uživatelů k aktivitě
 
-Tento návod ukazuje, jak k aktivitě se schématem **Bez termínu** přiřadíte konkrétní uživatele (případně uživatelské skupiny), nastavíte jim data přístupu a volitelně zapnete periodické opakování. Přiřazení probíhá v detailu aktivity prostřednictvím panelu **Výběr účastníků** a **Nastavení plnění**.
+Tento návod ukazuje, jak k aktivitě se schématem **Bez termínu** přiřadíte konkrétní uživatele (případně uživatelské skupiny), nastavíte jim data přístupu a volitelně zapnete periodické opakování. Přiřazení probíhá v detailu aktivity prostřednictvím panelu **Výběr účastníků** a **Nastavení plnění**. Pokud potřebujete přiřadit aktivitu většímu počtu uživatelů najednou, můžete přiřazení automatizovat pomocí funkce [Přiřazení dle skupin](../../concepts/prirazeni-dle-skupin.md).
 
 ## Předpoklady
 
@@ -73,5 +73,6 @@ Tím je postup dokončen.
 
 ## Související stránky
 
+- [Přiřazení dle skupin](../../concepts/prirazeni-dle-skupin.md) – hromadné automatické přiřazení aktivit uživatelům na základě členství ve skupině.
 - [Periodické nastavení](../../reference/periodicke-nastaveni.md)
 - [Detail aktivity](../../reference/detail-aktivity.md)

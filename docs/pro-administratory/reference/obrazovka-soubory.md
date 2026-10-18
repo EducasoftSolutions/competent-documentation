@@ -2,6 +2,8 @@
 
 Obrazovka **Soubory** (správce souborů) slouží ke správě souborů a adresářů v systému Competent. Otevírá se z hlavního menu položkou **Soubory**. Tato stránka popisuje prvky a pole obrazovky – způsob práce se soubory naleznete v příslušných návodech.
 
+![Správce souborů s adresářovou strukturou a soubory](_media/obrazovka-soubory/01-spravce-souboru.png)
+
 ---
 
 ## Rozložení obrazovky

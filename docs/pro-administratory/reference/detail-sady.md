@@ -2,6 +2,23 @@
 
 Detail sady je obrazovka, která zobrazuje informace o aktivitě typu **Sada** – kontejneru sdružujícím více potomků (dílčích aktivit) do jednoho celku. Stránka popisuje, čím se Detail sady liší od detailu běžné aktivity; pro sdílené části odkazuje na [Detail aktivity](detail-aktivity.md).
 
+!!! warning "Rozdíly mezi instancemi"
+    Detail sady se může lišit podle instance klienta – některé parametry mohou být skryté či upravené na míru.
+
+![Detail sady s taby včetně Recenze](_media/detail-sady/01-detail-prehled.png)
+
+Na obrázku vidíte detail sady včetně tabu Recenze.
+
+---
+
+## Rozdíly oproti detailu aktivity
+
+Struktura detailu sady je velmi podobná [detailu aktivity](detail-aktivity.md), liší se pouze v polích a prvcích specifických pro sadu:
+
+- Navíc obsahuje tab **Obsah** pro správu potomků, který u běžné aktivity neexistuje.
+- Otevření detailu se liší – viz [Otevření detailu Sady](#otevreni-detailu-sady) níže.
+- Přiřazení uživatelů probíhá rozšířeným průvodcem s výběrem aktivit – viz [Přiřazení uživatelů k Sadě](#prirazeni-uzivatelu-k-sade) níže.
+
 ---
 
 ## Co je Sada
@@ -44,11 +61,15 @@ Prostá Sada **nemá** taby Termíny, Recenze ani Sdílení.
 
 Tab Uživatelé zobrazuje seznam uživatelů přiřazených k Sadě. Přiřazení k Sadě probíhá 3krokovým průvodcem, který je popsán v sekci [Přiřazení uživatelů k Sadě](#prirazeni-uzivatelu-k-sade) níže.
 
+![Tab Uživatelé v detailu sady se seznamem přiřazených uživatelů](_media/detail-sady/03-tab-uzivatele.png)
+
 ---
 
 ## Tab Obsah
 
 Tab **Obsah** je tab specifický pro Sadu – u běžné (koncové) aktivity neexistuje. Zobrazuje seznam potomků (dílčích aktivit) aktuálně zařazených do Sady.
+
+![Tab Obsah v detailu sady se seznamem potomků](_media/detail-sady/02-tab-obsah.png)
 
 ### Tlačítko Upravit obsah
 
