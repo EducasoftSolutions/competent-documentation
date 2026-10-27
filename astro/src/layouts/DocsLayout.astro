@@ -1,52 +1,266 @@
 ---
 /**
- * DocsLayout — the documentation shell (phase 1 placeholder).
+ * DocsLayout — 3-column documentation shell pro Competent docs.
  *
- * Forked from talkide-docs DocsLayout. Phase 1 renders a minimal shell:
- * header stub + sidebar (empty sections) + article slot. Full 3-column
- * shell (sticky header, TOC rail, breadcrumbs, search, theme toggle)
- * is wired in a later phase.
+ * html[data-theme=light] default (readability-first) + no-flash inline
+ * head script. Fonts: Satoshi (body, Fontshare API) + Space Grotesk
+ * (headings, Google Fonts latin-ext) — obojí s českou diakritikou,
+ * fallback Inter/system-ui.
+ *
+ * POZN.: Fontshare ITF licence zakazuje redistribuci font FILES — proto
+ * <link> na api.fontshare.com, NIKDY vendored woff2.
+ *
+ * Mermaid runtime: client-side render ```mermaid bloků (kopie patternu
+ * z talkide-docs). medium-zoom lightbox pro screenshoty (glightbox parity).
+ *
+ * Structure: canvas -> sticky <DocsHeader/> -> grid
+ *   [ DocsSidebar | <article> (breadcrumb + eyebrow + slot + pager) | DocsTOC ]
  */
 
 import '../styles/base.css';
 import '../styles/docs.css';
+import DocsHeader from '../components/DocsHeader.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
+import DocsTOC from '../components/DocsTOC.astro';
+import type { TocHeading } from '../components/DocsTOC.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import DocEyebrow from '../components/DocEyebrow.astro';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
 
 interface Props {
   title: string;
   description?: string;
+  breadcrumb?: Crumb[];
+  headings?: TocHeading[];
+  canonical?: string;
+  hideEyebrow?: boolean;
+  hideToc?: boolean;
+  eyebrowTitle?: string;
 }
 
 const {
   title,
-  description = 'Competent — uživatelská příručka (Astro preview)',
+  description = 'Oficiální dokumentace LMS Competent od Educasoftu — návody pro administrátory, slovník pojmů a koncepty.',
+  breadcrumb = [],
+  headings = [],
+  canonical,
+  hideEyebrow = false,
+  hideToc = false,
+  eyebrowTitle,
 } = Astro.props;
 
-const fullTitle = `${title} — Competent docs (Astro)`;
+const base = import.meta.env.BASE_URL;
+const siteOrigin = Astro.site ? Astro.site.origin : 'https://educasoftsolutions.github.io';
+const canonicalUrl = canonical ?? `${siteOrigin}${Astro.url.pathname}`;
+const fullTitle = `${title} — Competent dokumentace`;
 ---
 
 <!doctype html>
-<html lang="cs">
+<html lang="cs" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href={`${base}logo-educasoft.svg`} />
+
     <title>{fullTitle}</title>
+
+    <!--
+      Fonts — česká diakritika REQUIRED.
+      Satoshi (body 400/500/700) z Fontshare API; Space Grotesk (headings
+      500/700, latin-ext) z Google Fonts. Fallback: Inter, system-ui.
+    -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <!--
+      No-flash theme bootstrap — běží synchronně PŘED prvním paintem.
+      Čte 'competent-theme' z localStorage; default 'light'.
+    -->
+    <script is:inline>
+      (function () {
+        var STORAGE_KEY = 'competent-theme';
+        var saved = null;
+        try {
+          saved = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+          /* private mode */
+        }
+        var theme = saved === 'dark' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
   </head>
+
   <body>
-    <div class="docs-canvas">
-      <header class="docs-header-placeholder">
-        <span>Competent docs — Astro preview (fáze 1)</span>
-      </header>
-      <div class="docs-grid">
+    <div class="canvas">
+      <DocsHeader />
+
+      <div class="docs-shell">
         <DocsSidebar />
-        <main>
-          <article>
-            <h1>{title}</h1>
+
+        <main class="docs-content">
+          <article class="docs-article docs-prose" data-pagefind-body>
+            {breadcrumb.length > 0 && <Breadcrumb items={breadcrumb} />}
+            {!hideEyebrow && <DocEyebrow title={eyebrowTitle} />}
+
             <slot />
+
+            <slot name="pager" />
           </article>
         </main>
+
+        {!hideToc && <DocsTOC headings={headings} />}
       </div>
     </div>
+
+    <!--
+      Mermaid runtime — client-side inicializace diagramů (pattern talkide-docs).
+      Najde všechny pre[data-language="mermaid"] (Astro Shiki output),
+      nahradí je SVG voláním mermaid.render(). Reaguje na změnu data-theme.
+    -->
+    <script>
+      import mermaid from 'mermaid';
+
+      function getMermaidTheme(): string {
+        const htmlTheme = document.documentElement.getAttribute('data-theme');
+        return htmlTheme === 'dark' ? 'dark' : 'neutral';
+      }
+
+      function initMermaid() {
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: getMermaidTheme() as 'dark' | 'neutral',
+          securityLevel: 'loose',
+          fontFamily: "'Space Grotesk', 'Satoshi', system-ui, sans-serif",
+        });
+      }
+
+      async function renderMermaidDiagrams() {
+        // Astro Shiki generuje: <pre class="astro-code" data-language="mermaid"><code>…</code></pre>
+        const pres = Array.from(
+          document.querySelectorAll<HTMLElement>('pre[data-language="mermaid"]'),
+        );
+
+        for (let i = 0; i < pres.length; i++) {
+          const preEl = pres[i];
+          const codeEl = preEl.querySelector('code');
+          if (!codeEl) continue;
+
+          const content = codeEl.textContent ?? '';
+          const id = `mermaid-diagram-${i}-${Date.now()}`;
+
+          try {
+            const { svg } = await mermaid.render(id, content);
+            const wrapper = document.createElement('div');
+            wrapper.className = 'mermaid-diagram';
+            wrapper.setAttribute('data-mermaid-source', content);
+            wrapper.innerHTML = svg;
+            preEl.replaceWith(wrapper);
+          } catch (err) {
+            console.error('[mermaid] render error:', err);
+            // Nech původní <pre> pokud render selže
+          }
+        }
+      }
+
+      async function rerenderMermaidDiagrams() {
+        initMermaid();
+        const wrappers = Array.from(
+          document.querySelectorAll<HTMLElement>('.mermaid-diagram[data-mermaid-source]'),
+        );
+        for (let i = 0; i < wrappers.length; i++) {
+          const wrapper = wrappers[i];
+          const source = wrapper.getAttribute('data-mermaid-source') ?? '';
+          const id = `mermaid-rerender-${i}-${Date.now()}`;
+          try {
+            const { svg } = await mermaid.render(id, source);
+            wrapper.innerHTML = svg;
+          } catch (err) {
+            console.error('[mermaid] re-render error:', err);
+          }
+        }
+      }
+
+      async function runMermaid() {
+        initMermaid();
+        await renderMermaidDiagrams();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runMermaid);
+      } else {
+        runMermaid();
+      }
+
+      // Reaguj na změnu theme (ThemeToggle nastavuje data-theme na <html>)
+      const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (
+            mutation.type === 'attributes' &&
+            mutation.attributeName === 'data-theme'
+          ) {
+            rerenderMermaidDiagrams();
+            break;
+          }
+        }
+      });
+
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    </script>
+
+    <!--
+      medium-zoom lightbox pro screenshoty (glightbox parity z MkDocs).
+      Zoomuje všechny <article> obrázky kromě loga; pozadí ladí na brand.
+    -->
+    <script>
+      import mediumZoom from 'medium-zoom';
+
+      function initZoom() {
+        const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        mediumZoom('article.docs-prose img', {
+          background: dark ? 'rgba(13, 11, 20, 0.92)' : 'rgba(255, 255, 255, 0.92)',
+          margin: 24,
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initZoom);
+      } else {
+        initZoom();
+      }
+    </script>
   </body>
 </html>
+
+<style>
+  /* Mermaid SVG theming integrace */
+  :global(.mermaid-diagram svg) {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--r-md);
+  }
+
+  /* medium-zoom nad sticky headerem */
+  :global(.medium-zoom-overlay) {
+    z-index: 100;
+  }
+  :global(.medium-zoom-image--opened) {
+    z-index: 101;
+  }
+</style>

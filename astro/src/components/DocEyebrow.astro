@@ -1,0 +1,45 @@
+---
+/**
+ * DocEyebrow — štítek nad H1 stránky.
+ * Default: mono uppercase "Competent · Uživatelská příručka".
+ */
+interface Props {
+  /** Optional large page-title eyebrow; overrides the default label. */
+  title?: string;
+}
+
+const { title } = Astro.props;
+const defaultText = 'Competent · Uživatelská příručka';
+---
+
+{
+  title ? (
+    <span class="docs-eyebrow docs-eyebrow-title" data-pagefind-ignore>
+      {title}
+    </span>
+  ) : (
+    <span class="docs-eyebrow" data-pagefind-ignore>
+      {defaultText}
+    </span>
+  )
+}
+
+<style>
+  .docs-eyebrow {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--competent-purple-ink);
+    margin-bottom: 8px;
+  }
+  .docs-eyebrow-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
+</style>

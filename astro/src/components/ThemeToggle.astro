@@ -1,0 +1,94 @@
+---
+/**
+ * ThemeToggle — přepínač světlý/tmavý režim.
+ * Ukládá do localStorage 'competent-theme', default 'light'
+ * (readability-first: bílé pozadí je výchozí).
+ */
+---
+
+<button
+  type="button"
+  class="theme-toggle"
+  aria-label="Přepnout světlý/tmavý režim"
+  title="Přepnout světlý/tmavý režim"
+>
+  <svg
+    class="icon-sun"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+  </svg>
+  <svg
+    class="icon-moon"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+  </svg>
+</button>
+
+<script>
+  const STORAGE_KEY = 'competent-theme';
+  const btn = document.querySelector('.theme-toggle');
+
+  function currentTheme(): string {
+    return document.documentElement.getAttribute('data-theme') ?? 'light';
+  }
+
+  btn?.addEventListener('click', () => {
+    const next = currentTheme() === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    try {
+      localStorage.setItem(STORAGE_KEY, next);
+    } catch {
+      /* private mode — ignorovat */
+    }
+  });
+</script>
+
+<style>
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--line-2);
+    border-radius: 8px;
+    background: var(--bg-2);
+    color: var(--fg-2);
+    cursor: pointer;
+  }
+  .theme-toggle:hover {
+    border-color: var(--competent-purple-line);
+    color: var(--fg-1);
+  }
+  :global([data-theme='light']) .theme-toggle .icon-moon {
+    display: inline;
+  }
+  :global([data-theme='light']) .theme-toggle .icon-sun {
+    display: none;
+  }
+  :global([data-theme='dark']) .theme-toggle .icon-moon {
+    display: none;
+  }
+  :global([data-theme='dark']) .theme-toggle .icon-sun {
+    display: inline;
+  }
+</style>

@@ -2,6 +2,11 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import rehypeBaseImages from './src/plugins/rehype-base-images.mjs';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 //
@@ -13,4 +18,15 @@ export default defineConfig({
   base: '/competent-documentation/',
   outDir: 'dist',
   integrations: [mdx(), sitemap()],
+  markdown: {
+    // Prefix /images/* → base-prefixed (subpath deploy parity s MkDocs).
+    rehypePlugins: [rehypeBaseImages],
+  },
+  vite: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
+    },
+  },
 });

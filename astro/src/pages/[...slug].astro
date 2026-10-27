@@ -4,13 +4,17 @@
  * the `index` slug (the hub is served by index.astro to avoid a `/`
  * collision). Forked from talkide-docs [...slug].astro.
  *
- * PHASE 1: PrevNext pager + TOC + breadcrumbs NOT wired (empty
- * DOC_ORDER, no headings pipeline). Added in a later phase.
+ * PHASE 2+3: Admonition components + PrevNext pager + breadcrumbs +
+ * TOC headings wired. Breadcrumb section label derived from the
+ * entry's Diataxis section.
  */
 
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import DocsLayout from '../layouts/DocsLayout.astro';
+import Admonition from '../components/Admonition.astro';
+import PrevNext from '../components/PrevNext.astro';
+import type { TocHeading } from '../components/DocsTOC.astro';
 
 export const getStaticPaths = (async () => {
   const entries = await getCollection('docs');
@@ -18,15 +22,46 @@ export const getStaticPaths = (async () => {
   return entries
     .filter((e) => e.slug !== 'index')
     .map((entry) => ({
-      params: { slug: entry.slug },
+      params: { slug: entry.slug.replace(/\/index$/, '') },
       props: { entry },
     }));
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
+
+const SECTION_LABELS: Record<string, string> = {
+  tutorials: 'Návody',
+  'how-to': 'Návody',
+  reference: 'Slovník pojmů',
+  concepts: 'Koncepty',
+};
+
+const section = entry.data.section;
+const sectionLabel = SECTION_LABELS[section] ?? section;
+
+// "/" + slug + trailing slash → matches DOC_ORDER / sidebar routes.
+const slugParam = Astro.params.slug as string;
+const route = `/${slugParam}/`.replace(/\/index\/$/, '/');
+
+const tocHeadings: TocHeading[] = headings
+  .filter((h) => h.depth === 2 || h.depth === 3)
+  .map((h) => ({ depth: h.depth, slug: h.slug, text: h.text }));
+
+const breadcrumb = [{ label: sectionLabel }, { label: entry.data.title }];
 ---
 
-<DocsLayout title={entry.data.title} description={entry.data.description}>
-  <Content />
+<DocsLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  breadcrumb={breadcrumb}
+  headings={tocHeadings}
+  hideEyebrow={entry.data.hideEyebrow}
+  hideToc={entry.data.hideToc}
+>
+  <Content components={{ Admonition }} />
+
+  <Fragment slot="pager">
+    <PrevNext route={route} />
+  </Fragment>
 </DocsLayout>

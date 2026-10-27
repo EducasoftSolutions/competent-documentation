@@ -1,69 +1,146 @@
-/* Competent Docs — design tokens (PHASE 1 PLACEHOLDER).
+/* Competent Docs — Educasoft brand tokens (PHASE 3).
  *
- * TODO(phase-2): replace with real Educasoft/Competent brand tokens.
- * Forked structure from talkide-docs tokens.css (dark default, light
- * override). Values below are neutral placeholders, NOT brand colors.
+ * Readability first: bílé pozadí, ink body text, Competent purple pro
+ * nadpisy/link/accenty, cyan jako sekundární akcent, CTA green pro
+ * tlačítka/hover.
+ *
+ * Brand:
+ *   --competent-purple: #6D53ED (headings, links, accents)
+ *   --ink:              #112025 (body text)
+ *   --cyan:             #43DBFA (secondary accents)
+ *   --cta-green:        #37E17E (buttons, hover)
+ *
+ * Diataxis kategorie mapované na brand:
+ *   howto     → CTA green | reference → purple | concepts → cyan | tutorial → amber
  */
 
 :root,
-[data-theme="dark"] {
-  /* ── Surfaces ── */
-  --bg-0: #101012;      /* TODO brand: deepest */
-  --bg-1: #161618;      /* TODO brand: main canvas */
-  --bg-2: #1e1e22;      /* TODO brand: panels, cards */
-  --bg-3: #28282e;      /* TODO brand: raised surfaces */
-  --bg-4: #323239;      /* TODO brand: hover state */
+[data-theme="light"] {
+  /* ── Surfaces (white-first) ── */
+  --bg-0: #f4f3f7;
+  --bg-1: #ffffff;
+  --bg-2: #f6f5fa;
+  --bg-3: #efedf5;
+  --bg-4: #e4e1ee;
 
   /* ── Lines ── */
-  --line-1: rgba(255, 255, 255, 0.06);
-  --line-2: rgba(255, 255, 255, 0.10);
-  --line-3: rgba(255, 255, 255, 0.16);
+  --line-1: rgba(17, 32, 37, 0.08);
+  --line-2: rgba(17, 32, 37, 0.14);
+  --line-3: rgba(17, 32, 37, 0.24);
 
   /* ── Text ── */
-  --fg-1: #f2f2f0;
-  --fg-2: #c6c6c2;
-  --fg-3: #8e8e8a;
-  --fg-4: #5e5e5a;
+  --fg-1: #112025;
+  --fg-2: #3c4b50;
+  --fg-3: #6b7a7f;
+  --fg-4: #9aa7ab;
 
-  /* ── Accents (Diataxis categories) ── */
-  --amber:       oklch(0.78 0.15 70);   /* TODO brand: tutorial */
-  --amber-soft:  oklch(0.78 0.15 70 / 0.15);
-  --amber-line:  oklch(0.78 0.15 70 / 0.4);
+  /* ── Brand ── */
+  --competent-purple: #6d53ed;
+  --competent-purple-soft: rgba(109, 83, 237, 0.1);
+  --competent-purple-ink: #4f37c4;
+  --competent-purple-line: rgba(109, 83, 237, 0.4);
 
-  --indigo:      oklch(0.72 0.13 270);  /* TODO brand: reference */
-  --indigo-soft: oklch(0.72 0.13 270 / 0.14);
-  --indigo-line: oklch(0.72 0.13 270 / 0.4);
+  --ink: #112025;
 
-  --green:       oklch(0.78 0.13 150);  /* TODO brand: how-to */
-  --green-soft: oklch(0.78 0.13 150 / 0.14);
-  --green-line: oklch(0.78 0.13 150 / 0.4);
+  --cyan: #43dbfa;
+  --cyan-soft: rgba(67, 219, 250, 0.14);
+  --cyan-ink: #0d8fab;
 
-  --rose:        oklch(0.72 0.15 25);   /* TODO brand: concepts */
-  --rose-soft:  oklch(0.72 0.15 25 / 0.16);
-  --rose-line:  oklch(0.72 0.15 25 / 0.4);
+  --cta-green: #37e17e;
+  --cta-green-soft: rgba(55, 225, 126, 0.14);
+  --cta-green-ink: #128a47;
+
+  /* ── Danger (admonition danger) ── */
+  --danger: #dc2645;
+  --danger-soft: rgba(220, 38, 69, 0.1);
+  --danger-ink: #a31530;
+
+  /* ── Accents (Diataxis categories → brand) ── */
+  --amber: #b97e0c;
+  --amber-soft: rgba(185, 126, 12, 0.14);
+  --amber-line: rgba(185, 126, 12, 0.4);
+  --amber-ink: #8a5d06;
+
+  --indigo: var(--competent-purple);
+  --indigo-soft: var(--competent-purple-soft);
+  --indigo-line: var(--competent-purple-line);
+
+  --green: var(--cta-green-ink);
+  --green-soft: var(--cta-green-soft);
+  --green-line: rgba(55, 225, 126, 0.45);
+
+  --rose: var(--cyan-ink);
+  --rose-soft: var(--cyan-soft);
+  --rose-line: rgba(67, 219, 250, 0.5);
+
+  /* ── Links & headings ── */
+  --link: var(--competent-purple-ink);
+  --link-hover: var(--competent-purple);
+  --heading: var(--competent-purple-ink);
 
   /* ── Misc ── */
   --r-sm: 6px;
   --r-md: 10px;
+  --font-sans: 'Satoshi', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Satoshi', 'Inter', system-ui, sans-serif;
   --font-mono: ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
 }
 
-[data-theme="light"] {
+[data-theme="dark"] {
   /* ── Surfaces ── */
-  --bg-0: #eceae4;      /* TODO brand: deepest */
-  --bg-1: #f6f4ee;      /* TODO brand: main canvas */
-  --bg-2: #fbf9f3;      /* TODO brand: panels, cards */
-  --bg-3: #efeadd;      /* TODO brand: raised surfaces */
-  --bg-4: #e4ddcd;      /* TODO brand: hover state */
+  --bg-0: #0d0b14;
+  --bg-1: #14111d;
+  --bg-2: #1b1728;
+  --bg-3: #241e33;
+  --bg-4: #2e2640;
 
   /* ── Lines ── */
-  --line-1: rgba(60, 50, 30, 0.08);
-  --line-2: rgba(60, 50, 30, 0.14);
-  --line-3: rgba(60, 50, 30, 0.22);
+  --line-1: rgba(255, 255, 255, 0.07);
+  --line-2: rgba(255, 255, 255, 0.12);
+  --line-3: rgba(255, 255, 255, 0.2);
 
   /* ── Text ── */
-  --fg-1: #211d15;
-  --fg-2: #4a4436;
-  --fg-3: #7a7261;
-  --fg-4: #a39b88;
+  --fg-1: #f1eefb;
+  --fg-2: #c3bcd9;
+  --fg-3: #8f87a8;
+  --fg-4: #5f5878;
+
+  /* ── Brand (dark-mode lifts) ── */
+  --competent-purple: #8f78ff;
+  --competent-purple-soft: rgba(143, 120, 255, 0.14);
+  --competent-purple-ink: #b3a3ff;
+  --competent-purple-line: rgba(143, 120, 255, 0.45);
+
+  --cyan: #43dbfa;
+  --cyan-soft: rgba(67, 219, 250, 0.14);
+  --cyan-ink: #7fe7fc;
+
+  --cta-green: #37e17e;
+  --cta-green-soft: rgba(55, 225, 126, 0.14);
+  --cta-green-ink: #6ff2a4;
+
+  --danger: #ff5d7a;
+  --danger-soft: rgba(255, 93, 122, 0.12);
+  --danger-ink: #ff8ba0;
+
+  --amber: oklch(0.78 0.15 70);
+  --amber-soft: oklch(0.78 0.15 70 / 0.15);
+  --amber-line: oklch(0.78 0.15 70 / 0.4);
+  --amber-ink: oklch(0.85 0.12 70);
+
+  --indigo: var(--competent-purple);
+  --indigo-soft: var(--competent-purple-soft);
+  --indigo-line: var(--competent-purple-line);
+
+  --green: var(--cta-green-ink);
+  --green-soft: var(--cta-green-soft);
+  --green-line: rgba(55, 225, 126, 0.4);
+
+  --rose: var(--cyan-ink);
+  --rose-soft: var(--cyan-soft);
+  --rose-line: rgba(67, 219, 250, 0.4);
+
+  --link: var(--competent-purple-ink);
+  --link-hover: #c4b5ff;
+  --heading: #c9bcff;
 }

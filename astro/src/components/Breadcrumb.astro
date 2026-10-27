@@ -1,0 +1,78 @@
+---
+/**
+ * Breadcrumb — "Sekce / Stránka". Převzato z talkide-docs (české aria-label).
+ */
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  /** Ordered crumbs; the last one is the current page (no href). */
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="docs-breadcrumb" aria-label="Drobečková navigace" data-pagefind-ignore>
+  {items.map((crumb, i) => {
+    const isLast = i === items.length - 1;
+    return (
+      <>
+        {crumb.href && !isLast ? (
+          <a href={crumb.href} class="crumb-parent">{crumb.label}</a>
+        ) : (
+          <span class={isLast ? 'crumb-current' : 'crumb-parent'}>
+            {crumb.label}
+          </span>
+        )}
+        {!isLast && (
+          <span class="crumb-sep" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6"></path>
+            </svg>
+          </span>
+        )}
+      </>
+    );
+  })}
+</nav>
+
+<style>
+  .docs-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .crumb-parent {
+    color: var(--fg-3);
+    text-decoration: none;
+  }
+  a.crumb-parent:hover {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .crumb-current {
+    color: var(--fg-2);
+  }
+  .crumb-sep {
+    display: inline-flex;
+    color: var(--fg-4);
+  }
+</style>

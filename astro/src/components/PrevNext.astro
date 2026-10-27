@@ -1,0 +1,140 @@
+---
+/**
+ * PrevNext — pager na konci stránky. Prev/next z DOC_ORDER (pořadí
+ * sidebaru). Převzato z talkide-docs (české labely).
+ */
+
+import { DOCS_NAV, DOC_ORDER } from '../data/docNav';
+
+interface Props {
+  /** Current page route, e.g. "/pro-administratory/concepts/aktivita/". */
+  route: string;
+}
+
+const { route } = Astro.props;
+
+/** route → sidebar label. */
+const LABELS = new Map<string, string>();
+for (const section of DOCS_NAV) {
+  for (const item of section.items) {
+    LABELS.set(item.route, item.label);
+  }
+}
+
+const idx = DOC_ORDER.indexOf(route);
+
+const siteBase = import.meta.env.BASE_URL;
+function withBase(r: string): string {
+  return siteBase === '/' ? r : `${siteBase.slice(0, -1)}${r}`;
+}
+
+const prevRoute = idx > 0 ? DOC_ORDER[idx - 1] : null;
+const nextRoute = idx >= 0 && idx < DOC_ORDER.length - 1 ? DOC_ORDER[idx + 1] : null;
+---
+
+{
+  (prevRoute || nextRoute) && (
+    <nav class="pager" aria-label="Navigace mezi stránkami" data-pagefind-ignore>
+      {prevRoute ? (
+        <a class="pager-link prev" href={withBase(prevRoute)}>
+          <span class="pager-label">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+            Předchozí
+          </span>
+          <span class="pager-title">{LABELS.get(prevRoute) ?? prevRoute}</span>
+        </a>
+      ) : (
+        <span />
+      )}
+
+      {nextRoute ? (
+        <a class="pager-link next" href={withBase(nextRoute)}>
+          <span class="pager-label">
+            Další
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </span>
+          <span class="pager-title">{LABELS.get(nextRoute) ?? nextRoute}</span>
+        </a>
+      ) : (
+        <span />
+      )}
+    </nav>
+  )
+}
+
+<style>
+  .pager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line-1);
+  }
+
+  .pager-link {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    background: var(--bg-2);
+    border: 1px solid var(--line-1);
+    border-radius: 12px;
+    text-decoration: none;
+    transition:
+      border-color 0.16s ease,
+      background 0.16s ease;
+  }
+
+  .pager-link:hover {
+    border-color: var(--competent-purple-line);
+    background: var(--bg-3);
+  }
+
+  .pager-link.next {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .pager-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--fg-3);
+  }
+
+  .pager-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--fg-1);
+  }
+</style>

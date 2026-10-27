@@ -10,10 +10,22 @@
 import { DOCS_NAV, DOC_CATEGORIES } from '../data/docNav';
 
 const pathname = Astro.url.pathname;
+// BASE_URL končí lomítkem ("/competent-documentation/"); sidebar routes
+// jsou bez base — pro active-match ji z pathname odřízneme. Na root
+// deployi (BASE_URL="/") se nekyvne ničeho.
+const siteBase = import.meta.env.BASE_URL;
+const barePath =
+  siteBase !== '/' && pathname.startsWith(siteBase)
+    ? pathname.slice(siteBase.length - 1)
+    : pathname;
+
+function withBase(route: string): string {
+  return siteBase === '/' ? route : `${siteBase.slice(0, -1)}${route}`;
+}
 
 function isActive(route: string): boolean {
-  if (route === '/') return pathname === '/' || pathname === '';
-  const norm = pathname.endsWith('/') ? pathname : pathname + '/';
+  if (route === '/') return barePath === '/' || barePath === '';
+  const norm = barePath.endsWith('/') ? barePath : barePath + '/';
   return norm === route;
 }
 ---
@@ -31,7 +43,7 @@ function isActive(route: string): boolean {
           return (
             <li>
               <a
-                href={item.route}
+                href={withBase(item.route)}
                 class="docs-sidebar-link"
                 aria-current={active ? 'page' : undefined}
                 style={active ? `--docs-cat-color: ${catColor};` : undefined}

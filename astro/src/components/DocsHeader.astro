@@ -1,0 +1,91 @@
+---
+/**
+ * DocsHeader — sticky 56px top bar.
+ *
+ * LEFT: Educasoft logo (public/logo-educasoft.svg) · divider ·
+ *   "Competent — Uživatelská příručka"
+ * RIGHT: ThemeToggle (světlý/tmavý režim).
+ */
+import ThemeToggle from './ThemeToggle.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<header class="docs-header" aria-label="Navigace dokumentace" data-pagefind-ignore>
+  <div class="docs-header-left">
+    <a href={`${base}`} class="logo-link" aria-label="Competent dokumentace — úvod">
+      <img
+        src={`${base}logo-educasoft.svg`}
+        alt="Educasoft"
+        width="120"
+        height="28"
+        class="logo-img"
+      />
+    </a>
+    <div class="topbar-divider" aria-hidden="true"></div>
+    <span class="docs-product">Competent — Uživatelská příručka</span>
+  </div>
+
+  <div class="docs-header-right">
+    <ThemeToggle />
+  </div>
+</header>
+
+<style>
+  .docs-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: 56px;
+    padding: 0 20px;
+    background: var(--bg-1);
+    border-bottom: 1px solid var(--line-1);
+  }
+  .docs-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+  .logo-link {
+    display: inline-flex;
+    align-items: center;
+  }
+  .logo-img {
+    display: block;
+    height: 28px;
+    width: auto;
+  }
+  /* Logo je tmavé (#112025) — na dark theme invertovat do bílé. */
+  :global([data-theme='dark']) .logo-img {
+    filter: invert(1) brightness(1.6);
+  }
+  .topbar-divider {
+    width: 1px;
+    height: 16px;
+    background: var(--line-2);
+  }
+  .docs-product {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--fg-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .docs-header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  @media (max-width: 640px) {
+    .docs-product {
+      display: none;
+    }
+  }
+</style>
