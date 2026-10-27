@@ -8,6 +8,9 @@
  * Pořadí = pořadí v mkdocs.yml. HIDDEN stránky (kvalifikace how-to ×2,
  * obrazovka-kvalifikace, detail-kvalifikace, tab-parametry, tab-subtypy)
  * nejsou portovány → nejsou v nav.
+ *
+ * PHASE 4: každá ze 3 sekcí (Návody / Slovník pojmů / Koncepty) má hub
+ * "Přehled" jako první položku (hub .mdx v kolekci, HubList auto-seznam).
  */
 
 export type DocCategory = 'tutorial' | 'howto' | 'reference' | 'concepts';
@@ -33,6 +36,7 @@ export const DOCS_NAV: DocNavSection[] = [
   {
     section: 'Návody — Aktivity',
     items: [
+      { label: 'Přehled návodů', route: '/pro-administratory/how-to/' },
       R('Vytvoření nového objektu', '/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/', 'howto'),
       R('Přesun objektu', '/pro-administratory/how-to/aktivity/presun-objektu/', 'howto'),
       R('Nastavení typu spuštění SCORM', '/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/', 'howto'),
@@ -73,6 +77,7 @@ export const DOCS_NAV: DocNavSection[] = [
   {
     section: 'Slovník pojmů',
     items: [
+      { label: 'Přehled pojmů', route: '/pro-administratory/reference/' },
       R('Obrazovka Aktivity', '/pro-administratory/reference/obrazovka-aktivity/', 'reference'),
       R('Detail aktivity', '/pro-administratory/reference/detail-aktivity/', 'reference'),
       R('Detail sady', '/pro-administratory/reference/detail-sady/', 'reference'),
@@ -105,6 +110,7 @@ export const DOCS_NAV: DocNavSection[] = [
   {
     section: 'Koncepty',
     items: [
+      { label: 'Přehled konceptů', route: '/pro-administratory/concepts/' },
       R('Aktivita', '/pro-administratory/concepts/aktivita/', 'concepts'),
       R('Stavy aktivity', '/pro-administratory/concepts/stavy-aktivity/', 'concepts'),
       R('Schémata aktivity', '/pro-administratory/concepts/schemata-aktivity/', 'concepts'),

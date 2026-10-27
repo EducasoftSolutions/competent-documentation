@@ -14,6 +14,8 @@
  * - hideEyebrow: suppress the mono uppercase eyebrow above the H1.
  * - order:       optional manual ordering hint (sidebar order is the
  *                source of truth; this is a tie-breaker only).
+ * - sourcePath:  cesta k původnímu .md v docs/ (pro "Upravit na GitHubu",
+ *                mapuje mdx slug → zdrojový soubor).
  */
 
 import { defineCollection, z } from 'astro:content';
@@ -35,6 +37,7 @@ const docs = defineCollection({
     hideToc: z.boolean().default(false),
     hideEyebrow: z.boolean().default(false),
     order: z.number().optional(),
+    sourcePath: z.string().optional(),
   }),
 });
 

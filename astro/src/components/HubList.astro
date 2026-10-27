@@ -1,0 +1,88 @@
+---
+/**
+ * HubList — automatický seznam stránek sekce pro hub (index) stránky.
+ *
+ * Vypíše všechny DOC_ORDER routy pod daným prefixem (mimo samotný hub)
+ * jako odkaz + popisek z frontmatter description. Žádný ruční sync —
+ * nové stránky se v hubu objeví samy přidáním do DOCS_NAV.
+ */
+
+import { getCollection } from 'astro:content';
+import { DOC_ORDER, DOCS_NAV } from '../data/docNav';
+
+interface Props {
+  /** Route prefix sekce, např. "/pro-administratory/how-to/". */
+  prefix: string;
+}
+
+const { prefix } = Astro.props;
+
+const entries = await getCollection('docs');
+const byRoute = new Map(
+  entries.map((e) => ['/' + e.slug.replace(/\/index$/, '') + '/', e]),
+);
+
+const LABELS = new Map<string, string>();
+for (const section of DOCS_NAV) {
+  for (const item of section.items) {
+    LABELS.set(item.route, item.label);
+  }
+}
+
+const siteBase = import.meta.env.BASE_URL;
+function withBase(route: string): string {
+  return siteBase === '/' ? route : `${siteBase.slice(0, -1)}${route}`;
+}
+
+const routes = DOC_ORDER.filter((r) => r.startsWith(prefix) && r !== prefix);
+---
+
+<ul class="hub-list" data-pagefind-ignore>
+  {routes.map((route) => {
+    const entry = byRoute.get(route);
+    if (!entry) return null;
+    return (
+      <li class="hub-list-item">
+        <a class="hub-list-link" href={withBase(route)}>
+          {LABELS.get(route) ?? entry.data.title}
+        </a>
+        <p class="hub-list-desc">{entry.data.description}</p>
+      </li>
+    );
+  })}
+</ul>
+
+<style>
+  .hub-list {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .hub-list-item {
+    padding: 16px 18px;
+    background: var(--bg-2);
+    border: 1px solid var(--line-1);
+    border-radius: 12px;
+    transition: border-color 0.16s ease;
+  }
+  .hub-list-item:hover {
+    border-color: var(--competent-purple-line);
+  }
+  .hub-list-link {
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .hub-list-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .hub-list-desc {
+    margin: 4px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--fg-2);
+  }
+</style>
