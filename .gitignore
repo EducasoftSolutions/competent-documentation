@@ -8,3 +8,4 @@ __pycache__/
 *.pdf
 astro/node_modules/
 astro/dist/
+astro/.astro/
