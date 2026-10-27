@@ -145,7 +145,8 @@
 }
 
 .docs-article th {
-  background: var(--bg-2);
+  background: linear-gradient(to bottom, var(--cyan-soft), var(--bg-2));
+  border-top: 2px solid var(--cyan);
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--fg-1);
@@ -168,6 +169,7 @@
 .docs-article pre {
   background: var(--bg-2);
   border: 1px solid var(--line-2);
+  border-left: 3px solid var(--cyan);
   border-radius: var(--r-md);
   padding: 16px;
   overflow: auto;

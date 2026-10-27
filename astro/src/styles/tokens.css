@@ -44,7 +44,9 @@
 
   --cyan: #43dbfa;
   --cyan-soft: rgba(67, 219, 250, 0.14);
-  --cyan-ink: #0d8fab;
+  /* Cyan-ink: tmavší petrolej — #43DBFA na bílé má kontrast jen 1.6:1
+     (dekorace OK), pro text používat VŽDY --cyan-ink (5.9:1 na bílé). */
+  --cyan-ink: #0a6e86;
 
   --cta-green: #37e17e;
   --cta-green-soft: rgba(55, 225, 126, 0.14);
