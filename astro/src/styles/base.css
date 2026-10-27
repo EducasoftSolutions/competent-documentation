@@ -1,0 +1,33 @@
+/* Competent Docs — base styles (PHASE 1 PLACEHOLDER).
+ *
+ * TODO(phase-2): full reset, typography scale, focus states, fonts
+ * (Inter + JetBrains Mono per MkDocs theme parity).
+ */
+
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.docs-canvas {
+  min-height: 100vh;
+}

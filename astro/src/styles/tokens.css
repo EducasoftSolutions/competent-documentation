@@ -1,0 +1,69 @@
+/* Competent Docs — design tokens (PHASE 1 PLACEHOLDER).
+ *
+ * TODO(phase-2): replace with real Educasoft/Competent brand tokens.
+ * Forked structure from talkide-docs tokens.css (dark default, light
+ * override). Values below are neutral placeholders, NOT brand colors.
+ */
+
+:root,
+[data-theme="dark"] {
+  /* ── Surfaces ── */
+  --bg-0: #101012;      /* TODO brand: deepest */
+  --bg-1: #161618;      /* TODO brand: main canvas */
+  --bg-2: #1e1e22;      /* TODO brand: panels, cards */
+  --bg-3: #28282e;      /* TODO brand: raised surfaces */
+  --bg-4: #323239;      /* TODO brand: hover state */
+
+  /* ── Lines ── */
+  --line-1: rgba(255, 255, 255, 0.06);
+  --line-2: rgba(255, 255, 255, 0.10);
+  --line-3: rgba(255, 255, 255, 0.16);
+
+  /* ── Text ── */
+  --fg-1: #f2f2f0;
+  --fg-2: #c6c6c2;
+  --fg-3: #8e8e8a;
+  --fg-4: #5e5e5a;
+
+  /* ── Accents (Diataxis categories) ── */
+  --amber:       oklch(0.78 0.15 70);   /* TODO brand: tutorial */
+  --amber-soft:  oklch(0.78 0.15 70 / 0.15);
+  --amber-line:  oklch(0.78 0.15 70 / 0.4);
+
+  --indigo:      oklch(0.72 0.13 270);  /* TODO brand: reference */
+  --indigo-soft: oklch(0.72 0.13 270 / 0.14);
+  --indigo-line: oklch(0.72 0.13 270 / 0.4);
+
+  --green:       oklch(0.78 0.13 150);  /* TODO brand: how-to */
+  --green-soft: oklch(0.78 0.13 150 / 0.14);
+  --green-line: oklch(0.78 0.13 150 / 0.4);
+
+  --rose:        oklch(0.72 0.15 25);   /* TODO brand: concepts */
+  --rose-soft:  oklch(0.72 0.15 25 / 0.16);
+  --rose-line:  oklch(0.72 0.15 25 / 0.4);
+
+  /* ── Misc ── */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --font-mono: ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+}
+
+[data-theme="light"] {
+  /* ── Surfaces ── */
+  --bg-0: #eceae4;      /* TODO brand: deepest */
+  --bg-1: #f6f4ee;      /* TODO brand: main canvas */
+  --bg-2: #fbf9f3;      /* TODO brand: panels, cards */
+  --bg-3: #efeadd;      /* TODO brand: raised surfaces */
+  --bg-4: #e4ddcd;      /* TODO brand: hover state */
+
+  /* ── Lines ── */
+  --line-1: rgba(60, 50, 30, 0.08);
+  --line-2: rgba(60, 50, 30, 0.14);
+  --line-3: rgba(60, 50, 30, 0.22);
+
+  /* ── Text ── */
+  --fg-1: #211d15;
+  --fg-2: #4a4436;
+  --fg-3: #7a7261;
+  --fg-4: #a39b88;
+}

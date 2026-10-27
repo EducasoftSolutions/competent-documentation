@@ -1,0 +1,52 @@
+---
+/**
+ * DocsLayout — the documentation shell (phase 1 placeholder).
+ *
+ * Forked from talkide-docs DocsLayout. Phase 1 renders a minimal shell:
+ * header stub + sidebar (empty sections) + article slot. Full 3-column
+ * shell (sticky header, TOC rail, breadcrumbs, search, theme toggle)
+ * is wired in a later phase.
+ */
+
+import '../styles/base.css';
+import '../styles/docs.css';
+import DocsSidebar from '../components/DocsSidebar.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Competent — uživatelská příručka (Astro preview)',
+} = Astro.props;
+
+const fullTitle = `${title} — Competent docs (Astro)`;
+---
+
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <div class="docs-canvas">
+      <header class="docs-header-placeholder">
+        <span>Competent docs — Astro preview (fáze 1)</span>
+      </header>
+      <div class="docs-grid">
+        <DocsSidebar />
+        <main>
+          <article>
+            <h1>{title}</h1>
+            <slot />
+          </article>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

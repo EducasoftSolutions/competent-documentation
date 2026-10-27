@@ -1,0 +1,47 @@
+---
+/**
+ * DocsSidebar — static left nav. Section headers + items.
+ * Active state derives from Astro.url.pathname.
+ *
+ * PHASE 1: DOCS_NAV sections are empty (no migrated pages yet), so the
+ * sidebar renders section headers only. Items appear in phase 2.
+ */
+
+import { DOCS_NAV, DOC_CATEGORIES } from '../data/docNav';
+
+const pathname = Astro.url.pathname;
+
+function isActive(route: string): boolean {
+  if (route === '/') return pathname === '/' || pathname === '';
+  const norm = pathname.endsWith('/') ? pathname : pathname + '/';
+  return norm === route;
+}
+---
+
+<nav class="docs-sidebar" aria-label="Dokumentace — sekce">
+  {DOCS_NAV.map((section) => (
+    <div class="docs-sidebar-section">
+      <span class="docs-sidebar-label">{section.section}</span>
+      <ul class="docs-sidebar-list">
+        {section.items.map((item) => {
+          const active = isActive(item.route);
+          const catColor = item.category
+            ? DOC_CATEGORIES[item.category].color
+            : 'var(--amber)';
+          return (
+            <li>
+              <a
+                href={item.route}
+                class="docs-sidebar-link"
+                aria-current={active ? 'page' : undefined}
+                style={active ? `--docs-cat-color: ${catColor};` : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  ))}
+</nav>
