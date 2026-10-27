@@ -1,0 +1,108 @@
+---
+/**
+ * Admonition — MDX náhrada za MkDocs `!!! note|warning|tip|danger "Titulek"`.
+ *
+ * Převzato z talkide-docs (české labely). Paleta ladí na Educasoft tokeny:
+ *   note    → Competent purple #6D53ED
+ *   tip     → CTA green #37E17E
+ *   warning → amber
+ *   danger  → red (1 výskyt: slozky-aktivit — nevratné smazání)
+ */
+
+interface Props {
+  kind?: 'note' | 'warning' | 'tip' | 'danger';
+  title?: string;
+}
+
+const { kind = 'note', title } = Astro.props;
+
+const LABEL: Record<string, string> = {
+  note: 'Poznámka',
+  warning: 'Upozornění',
+  tip: 'Tip',
+  danger: 'Pozor',
+};
+
+const heading = title ?? LABEL[kind];
+---
+
+<aside class={`adm adm-${kind}`} role="note">
+  <p class="adm-title">{heading}</p>
+  <div class="adm-body">
+    <slot />
+  </div>
+</aside>
+
+<style>
+  .adm {
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid var(--line-2);
+    border-left-width: 3px;
+    background: var(--bg-2);
+    font-size: 0.92rem;
+    overflow: hidden;
+  }
+
+  .adm-title {
+    margin: 0;
+    padding: 8px 16px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: -0.01em;
+  }
+
+  .adm-body {
+    padding: 4px 16px 14px;
+    color: var(--fg-2);
+  }
+
+  .adm-body :global(p) {
+    margin: 8px 0;
+  }
+  .adm-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+  .adm-body :global(a) {
+    color: var(--fg-1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* note → Competent purple */
+  .adm-note {
+    border-left-color: var(--competent-purple);
+  }
+  .adm-note .adm-title {
+    background: var(--competent-purple-soft);
+    color: var(--competent-purple-ink);
+  }
+
+  /* tip → CTA green */
+  .adm-tip {
+    border-left-color: var(--cta-green);
+  }
+  .adm-tip .adm-title {
+    background: var(--cta-green-soft);
+    color: var(--cta-green-ink);
+  }
+
+  /* warning → amber */
+  .adm-warning {
+    border-left-color: var(--amber);
+  }
+  .adm-warning .adm-title {
+    background: var(--amber-soft);
+    color: var(--amber-ink);
+  }
+
+  /* danger → red */
+  .adm-danger {
+    border-left-color: var(--danger);
+  }
+  .adm-danger .adm-title {
+    background: var(--danger-soft);
+    color: var(--danger-ink);
+  }
+</style>
