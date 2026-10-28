@@ -48,11 +48,15 @@ const basePath = "/competent-documentation";
     }
 
     // — Pagefind lazy-load (ESM dynamic import, až při prvním otevření) —
+    // basePath MUSÍ končit /pagefind/ (fetch entry/chunk/fragment/WASM).
+    // baseUrl NECHÁVÁME default (pagefind ho odvodí z basePath → site-base)
+    // — explicitní baseUrl by zdvojilo výsledek (d.url už obsahuje base).
+    var pagefindDir = pagefindBase + 'pagefind/';
     var pagefindPromise = null;
     function loadPagefind() {
       if (!pagefindPromise) {
-        pagefindPromise = import(pagefindBase + 'pagefind/pagefind.js').then(function (pf) {
-          return pf.options({ basePath: basePath }).then(function () {
+        pagefindPromise = import(pagefindDir + 'pagefind.js').then(function (pf) {
+          return pf.options({ basePath: pagefindDir }).then(function () {
             return pf;
           });
         });
@@ -61,15 +65,13 @@ const basePath = "/competent-documentation";
     }
 
     // Preload indexu při hover/focus triggeru → první hledání bez lagu.
+    // (Vlastní binding viz bindTriggers níže — přímý querySelectorAll zde
+    // by minul trigger, protože inline script běží před headerem v DOM.)
     function preload() {
       loadPagefind().then(function (pf) {
         if (pf && pf.preload) pf.preload('a');
       }).catch(function () { /* offline — chyba se ukáže až při hledání */ });
     }
-    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
-      btn.addEventListener('mouseenter', preload, { once: true });
-      btn.addEventListener('focus', preload, { once: true });
-    });
 
     // — Stav —
     var results = [];       // pole { url, title, excerptHtml, section, subHtml }
@@ -188,7 +190,7 @@ const basePath = "/competent-documentation";
     function doSearch(query) {
       var queryId = ++lastQueryId;
       loadPagefind().then(function (pf) {
-        return pf.debouncedSearch(query, { basePath: basePath }, 0).then(function (search) {
+        return pf.debouncedSearch(query, 0).then(function (search) {
           if (!search || queryId !== lastQueryId) return null; // zastaralý dotaz
           return search.results.slice(0, 8);
         });
@@ -197,16 +199,18 @@ const basePath = "/competent-documentation";
         return Promise.all(top.map(function (r) { return r.data(); })).then(function (datas) {
           if (queryId !== lastQueryId) return;
           results = datas.map(function (d) {
+            // d.url už obsahuje site-base (pagefind fullUrl z baseUrl odvozeného
+            // z basePath) → NEPŘIDÁVAT basePath znovu (zdvojilo by
+            // /competent-documentation/competent-documentation/…).
             // sub_results: kotvy sekcí (H2/H3) jako vnořené odkazy.
             var subHtml = '';
             if (d.sub_results && d.sub_results.length > 0) {
               subHtml = d.sub_results.slice(0, 3).map(function (s) {
-                var subUrl = basePath + s.url;
-                return '<a class="search-sub-link" href="' + esc(subUrl) + '">↳ ' + esc(s.title) + '</a>';
+                return '<a class="search-sub-link" href="' + esc(s.url) + '">↳ ' + esc(s.title) + '</a>';
               }).join('');
             }
             return {
-              url: basePath + d.url,
+              url: d.url,
               title: d.meta && d.meta.title ? d.meta.title : d.url,
               excerptHtml: d.excerpt || '',
               section: sectionFor(d.url),
@@ -252,9 +256,27 @@ const basePath = "/competent-documentation";
     });
 
     // — Otevření/zavření modalu —
-    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
-      btn.addEventListener('click', openSearch);
+    // POZOR: inline <script> běží v <head>, tedy PŘED header triggerem v DOM.
+    // querySelectorAll v době běhu trigger ještě nevidí → click by nikdy
+    // nefungoval, Cmd+K ano (keydown je na document). Proto event delegation
+    // na document: funguje i pro trigger přidaný později v DOM.
+    function bindTriggers() {
+      document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
+        if (btn.__pfBound) return;
+        btn.__pfBound = true;
+        btn.addEventListener('click', openSearch);
+        btn.addEventListener('mouseenter', preload, { once: true });
+        btn.addEventListener('focus', preload, { once: true });
+      });
+    }
+    document.addEventListener('click', function (e) {
+      var t = e.target && e.target.closest ? e.target.closest('[data-search-trigger]') : null;
+      if (t) openSearch();
     });
+    bindTriggers();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bindTriggers);
+    }
 
     overlay.addEventListener('click', function (e) {
       if (e.target === overlay) closeSearch();
