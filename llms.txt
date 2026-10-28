@@ -1,99 +1,96 @@
-# Competent – Uživatelská příručka
+# Competent — Uživatelská příručka
 
-> Oficiální dokumentace LMS Competent od Educasoftu
+Oficiální dokumentace LMS Competent od Educasoftu. Návody pro administrátory krok za krokem, slovník pojmů (referenční přehledy obrazovek a záložek) a koncepty vysvětlující principy, na nichž systém stojí.
 
-Tato dokumentace popisuje administrátorský portál LMS Competent.
-Zahrnuje návody pro administrátory, referenci nastavení a konceptuální přehled.
+## Návody — Aktivity
 
+- [Přehled návodů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/): Návody pro administrátory Competent — konkrétní úkoly krok za krokem, od práce s aktivitami po správu uživatelů a nastavení.
+- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/): V administraci Competent zakládáte nové objekty (složku, aktivitu nebo sadu) ze stromu aktivit.
+- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/): V administraci Competent můžete přesouvat objekty (aktivity, sady, termínové sady, složky) ve stromu aktivit pomocí dialogu Přesunout do….
+- [Nastavení typu spuštění SCORM](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/): Neexistuje žádná samostatná „SCORM aktivita" – existuje pouze aktivita, jejíž typ spuštění je nastaven na SCORM.
+- [Vyhledávání v aktivitách](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/): V administraci Competent můžete v obrazovce aktivit rychle nalézt konkrétní aktivitu nebo sadu pomocí tří nástrojů: textového vyhledávání (podle názvu), filtru podle štítků a panelu zobrazení (podl…
+- [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/): Štítky pomáhají třídit aktivity podle volně zvolených kategorií (například „GDPR", „Onboarding", „Povinné") a usnadňují filtrování aktivit podle štítků.
+- [Sdílení aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/sdileni-aktivity/): Sdílená aktivita zobrazí existující aktivitu na dalším místě Stromu aktivit,
+- [Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/): Práva přístupu k aktivitě určují, které skupiny a uživatelé aktivitu vidí a co s ní mohou dělat.
+- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/): Tento návod ukazuje, jak k aktivitě se schématem Bez termínu přiřadíte konkrétní uživatele (případně uživatelské skupiny), nastavíte jim data přístupu a volitelně zapnete periodické opakování.
+- [Nastavení podmínek přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/): Podmínky přístupu umožňují omezit, kdo se může k aktivitě přihlásit nebo ji spustit.
+- [Přidání dokumentu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/): Záložka Dokumenty v detailu aktivity slouží k přiřazení souborů, které budou uživatelům dostupné ke stažení v závislosti na jejich aktuálním stavu přístupu k aktivitě.
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/): Pokus je jeden záznam o absolvování aktivity konkrétním uživatelem.
+- [Nastavení notifikací aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/): Kromě globálních notifikačních pravidel, která platí pro celý systém, můžete notifikaci nastavit i pro konkrétní aktivitu nebo sadu.
+- [Přidání termínu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/terminy-aktivity/): Termín určuje, kdy a kde se aktivita koná, a kolik uživatelů se jí může
+- [Přiřazení uživatele k termínové aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite/): Tento návod ukazuje, jak k aktivitě se schématem S termíny přiřadíte uživatele ke konkrétnímu termínu.
 
-## Úvod
+## Návody — Lidé
 
-- [Úvod](https://educasoftsolutions.github.io/competent-documentation/index.md)
+- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/): Nového uživatele vytvoříte v obrazovce Lidé, kde se evidují všichni uživatelé systému Competent.
+- [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/): Novou uživatelskou skupinu vytvoříte v obrazovce Lidé v zobrazení Skupiny.
+- [Vyhledávání a řazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/): V obrazovce Lidé najdete všechny uživatele evidované v Competent.
+- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/): Existujícího uživatele přidáte do existující uživatelské skupiny dvěma způsoby: z detailu skupiny, nebo z detailu konkrétního uživatele.
+- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/): Více uživatelů najednou založíte hromadným importem ze souboru XLS(X).
+- [Přiřazení role uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/): Globální role platí v celém systému a uživateli rozšiřují možnosti napříč aplikací.
+- [Vytvoření vlastní role](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-vlastni-role/): Kromě rolí, které jsou v Competent připravené předem, si můžete založit vlastní role s vlastní sadou oprávnění.
 
-## Pro administrátory
+## Návody — Nastavení, Reporty, Certifikáty
 
-- [Přehled](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/index.md)
-- [Přehled](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/index.md)
-- [Vytvoření nového objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/index.md)
-- [Přesun objektu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/index.md)
-- [Nastavení typu spuštění SCORM](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/index.md)
-- [Vyhledávání v aktivitách](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/index.md)
-- [Přiřazování štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/index.md)
-- [Sdílení aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/sdileni-aktivity/index.md)
-- [Nastavení práv k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/index.md)
-- [Přiřazení uživatelů k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/index.md)
-- [Nastavení podmínek přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/index.md)
-- [Přidání dokumentu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/index.md)
-- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/index.md)
-- [Nastavení notifikací aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/index.md)
-- [Přidání termínu k aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/terminy-aktivity/index.md)
-- [Přiřazení uživatele k termínové aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite/index.md)
-- [Vytvoření uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/index.md)
-- [Vytvoření uživatelské skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/index.md)
-- [Vyhledávání a řazení uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/index.md)
-- [Přiřazení uživatele do skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/index.md)
-- [Import uživatelů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/index.md)
-- [Přiřazení role uživateli](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/index.md)
-- [Vytvoření vlastní role](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/lide/vytvoreni-vlastni-role/index.md)
-- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/index.md)
-- [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/index.md)
-- [Export reportu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/reporty/export-reportu/index.md)
-- [Nastavení šablony certifikátu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/index.md)
-- [Přehled pojmů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/index.md)
-- [Chybové zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/chybove-zpravy/index.md)
-- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/index.md)
-- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/index.md)
-- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/index.md)
-- [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/index.md)
-- [Obrazovka Zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-zpravy/index.md)
-- [Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/index.md)
-- [Obrazovka Lidé](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-lide/index.md)
-- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/index.md)
-- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/index.md)
-- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/index.md)
-- [Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/index.md)
-- [Obrazovka Reporty](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-reporty/index.md)
-- [Tab Místa](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-mista/index.md)
-- [Tab Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-stitky/index.md)
-- [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/index.md)
-- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/index.md)
-- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/index.md)
-- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/index.md)
-- [Tab Notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-notifikace/index.md)
-- [Tab Koš](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-kos/index.md)
-- [Obrazovka Soubory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-soubory/index.md)
-- [Přehled](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/index.md)
-- [Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/index.md)
-- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/index.md)
-- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/index.md)
-- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/index.md)
-- [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/index.md)
-- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/index.md)
-- [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/index.md)
-- [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/index.md)
-- [Certifikát](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/index.md)
-- [Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/index.md)
-- [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/index.md)
-- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/index.md)
-- [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/index.md)
-- [Zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/zpravy/index.md)
-- [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/index.md)
-- [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/index.md)
-- [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/index.md)
-- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/index.md)
-- [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/index.md)
-- [Uživatel](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/index.md)
-- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/index.md)
-- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/index.md)
-- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/index.md)
-- [Workflow](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/workflow-aktivity/index.md)
-- [Jazyková podpora](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/jazykova-podpora/index.md)
+- [Vytvoření a správa štítků](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/stitky/): Na této stránce najdete postup, jak v sekci Nastavení > Štítky vytvořit nový štítek, upravit název existujícího a smazat štítek, který už není potřeba.
+- [Úprava šablony e-mailu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/): Na této stránce najdete postup, jak v sekci Nastavení upravit obsah e-mailové šablony: otevřít existující skupinu šablon, upravit předmět a tělo e-mailu ve WYSIWYG editoru, vložit do těla proměnnou…
+- [Export reportu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/reporty/export-reportu/): Souhrnný report přístupů uživatelů vyexportujete do souboru XLSX z obrazovky Reporty.
+- [Nastavení šablony certifikátu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/): Aby Competent mohl uživatelům vygenerovat certifikát, potřebuje mít k dispozici šablonu ve formátu ODT, kterou administrátor označí jako šablonu certifikátu a následně přiřadí ke konkrétní aktivitě…
 
-## Pro studenty
+## Slovník pojmů
 
-- [Pro studenty](https://educasoftsolutions.github.io/competent-documentation/pro-studenty/index.md)
+- [Přehled pojmů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/): Slovník pojmů Competent — referenční přehledy obrazovek, detailů, záložek nastavení a číselníků pro rychlé vyhledání konkrétní informace.
+- [Obrazovka Aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-aktivity/): Obrazovka Aktivity je centrálním místem pro správu výukových objektů v administraci Competent.
+- [Detail aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-aktivity/): Detail aktivity je obrazovka, která zobrazuje veškeré informace o konkrétní aktivitě: její základní vlastnosti, přiřazené uživatele, dokumenty a podmínky přístupu.
+- [Detail sady](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-sady/): Detail sady je obrazovka, která zobrazuje informace o aktivitě typu Sada – kontejneru sdružujícím více potomků (dílčích aktivit) do jednoho celku.
+- [Obrazovka Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/): Obrazovka Hodnocení slouží ke správě hodnocení v administraci Competent.
+- [Obrazovka Zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-zpravy/): Obrazovka Zprávy zobrazuje interní zprávy, žádosti o schválení a systémová oznámení na jednom místě.
+- [Detail hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-hodnoceni/): Obrazovka Detail hodnocení zobrazuje vlastnosti konkrétního hodnocení a seznam uživatelů, jimž bylo hodnocení přiřazeno.
+- [Obrazovka Lidé](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-lide/): Obrazovka Lidé je centrálním místem administrace pro správu uživatelů, skupin a rolí.
+- [Detail uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-uzivatele/): Obrazovka Detail uživatele zobrazuje veškeré informace o konkrétním uživateli: jeho aktivity a hodnocení, profilová data, členství ve skupinách, kvalifikace a vazby s ostatními uživateli.
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/periodicke-nastaveni/): Periodické nastavení je komponenta, která umožňuje nakonfigurovat automatické opakování přístupu uživatele k aktivitě nebo sadě.
+- [Detail skupiny](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/detail-skupiny/): Obrazovka Detail skupiny zobrazuje veškeré informace o konkrétní uživatelské skupině: seznam členů a jejich rolí, textový popis skupiny a hierarchické vazby na jiné skupiny.
+- [Obrazovka Nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/): Obrazovka Nastavení slouží ke konfiguraci systému Competent podle potřeb vaší organizace.
 
-## Slovník
+## Slovník pojmů — Záložky Nastavení
 
-- [Slovník](https://educasoftsolutions.github.io/competent-documentation/slovnik/index.md)
+- [Tab Místa](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-mista/): Záložka Místa je součástí obrazovky Nastavení a slouží ke správě sdíleného číselníku míst v systému Competent.
+- [Tab Štítky](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-stitky/): Záložka Štítky je součástí obrazovky Nastavení a umožňuje spravovat štítky dostupné v systému Competent.
+- [Tab Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/): Záložka Přiřazení dle Skupin je součástí obrazovky Nastavení v administraci Competent.
+- [Tab Notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-notifikace/): Záložka Notifikace v sekci Nastavení zobrazuje seznam globálních notifikačních pravidel platných pro celý systém.
+- [Tab Koš](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/tab-kos/): Záložka Koš je součástí obrazovky Nastavení a slouží k zobrazení objektů, které byly v systému smazány.
+- [Obrazovka Šablony e-mailů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/): Záložka Šablony e-mailů v sekci Nastavení slouží ke správě šablon e-mailových zpráv a notifikací, které systém odesílá uživatelům automaticky na základě událostí.
+- [Přehled notifikačních událostí](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/): Systém Competent podporuje 57 notifikačních událostí (spouštěčů), které lze přiřadit k notifikačním pravidlům.
+- [Obrazovka Reporty](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-reporty/): Obrazovka Reporty je interaktivní přehled nad daty o přístupech uživatelů k aktivitám, postavený na tabulce s možností postupného rozpadu (drill-down).
+- [Přehled rolí a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/): Tato stránka je referenční katalog rolí a kategorií oprávnění v systému Competent.
+- [Obrazovka Soubory](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/obrazovka-soubory/): Obrazovka Soubory (správce souborů) slouží ke správě souborů a adresářů v systému Competent.
+- [Chybové zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/reference/chybove-zpravy/): Chybová zpráva se zobrazí vždy, když systém nemůže provést požadovanou operaci – například z důvodu nedostatečných oprávnění, chybějících dat nebo neplatného stavu záznamu.
 
+## Koncepty
+
+- [Přehled konceptů](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/): Koncepty Competent — principy a mentální modely, na nichž systém stojí. Odpovědi na otázku proč to funguje právě takto.
+- [Aktivita](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/aktivita/): Aktivita je základní organizační jednotka vzdělávacího obsahu v systému Competent.
+- [Stavy aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stavy-aktivity/): Každá aktivita v systému Competent se nachází v jednom z deseti stavů.
+- [Schémata aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/schemata-aktivity/): Schéma aktivity vyjadřuje časový charakter aktivity – určuje, zda probíhá volně,
+- [Pokusy uživatele](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/): Systém Competent sleduje, jak každý uživatel plní každou aktivitu, které byl přiřazen.
+- [Přiřazení aktivity uživateli (přístup)](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/): Když přiřadíte aktivitu uživateli, systém vytvoří objekt nazývaný přístup
+- [Periodické nastavení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/): Periodické nastavení je mechanismus, díky kterému systém Competent automaticky
+- [Podmínky přístupu](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/podminky-pristupu/): Podmínky přístupu říkají systému Competent, **které jiné aktivity musí uživatel splnit,
+- [Dokumenty v aktivitě](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/): Systém Competent umožňuje ke každé aktivitě přiřadit soubory a studijní materiály – dokumenty – které jsou uživatelům dostupné ke stažení nebo zobrazení ve studentském zobrazení aktivity.
+- [Certifikát](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/certifikat/): Certifikát je listina potvrzující splnění aktivity.
+- [Kvalifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/kvalifikace/): Kvalifikace představuje způsobilost nebo osvědčení, které uživatel v systému Competent
+- [Sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sada/): Sada je typ aktivity v systému Competent, jehož úlohou je seskupovat dílčí
+- [Termínová sada](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/terminova-sada/): Termínová sada je v aktuální verzi Competentu funkce ve vývoji.
+- [Hodnocení](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/hodnoceni/): Hodnocení je objekt systému Competent, který sdílí datový model s aktivitou,
+- [Zprávy](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/zpravy/): Competent obsahuje interní systém zpráv, který slouží ke komunikaci mezi
+- [Složky aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/slozky-aktivit/): Složka je organizační kontejner v systému Competent, který pomáhá udržet přehlednost ve správě vzdělávacího obsahu.
+- [Sdílené aktivity](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/sdilene-aktivity/): Sdílená aktivita umožňuje zobrazit jednu a tutéž aktivitu na více místech ve
+- [Subtypy aktivit](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/subtypy-aktivit/): Každá aktivita v systému Competent patří nejen k určitému typu, ale také
+- [Role a oprávnění](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/role/): Competent řídí přístup uživatelů prostřednictvím rolí.
+- [Štítek](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/stitky/): Štítek je jednoduchá pojmenovaná značka, kterou administrátor přiřadí aktivitě
+- [Uživatel](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/uzivatel/): Uživatel je základní evidenční objekt systému Competent – každá osoba zavedená
+- [Uživatelská skupina](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/skupina/): Uživatelská skupina je jeden z hlavních objektů systému Competent.
+- [Přiřazení dle skupin](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/): Přiřazení dle skupin je funkce systému Competent, která automaticky přiřazuje
+- [E-mailové notifikace](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/emailove-notifikace/): Systém Competent odesílá e-maily automaticky – v reakci na události, jako je
+- [Workflow](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/workflow-aktivity/): Competent obsahuje subsystém Workflow, který umožňuje definovat pravidla
+- [Jazyková podpora](https://educasoftsolutions.github.io/competent-documentation/pro-administratory/concepts/jazykova-podpora/): Competent pracuje se dvěma zcela nezávislými jazykovými mechanismy: statickými
