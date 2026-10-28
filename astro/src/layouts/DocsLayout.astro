@@ -1,0 +1,535 @@
+---
+/**
+ * DocsLayout — 3-column documentation shell pro Competent docs.
+ *
+ * html[data-theme=light] default (readability-first) + no-flash inline
+ * head script. Fonts: Satoshi (body, Fontshare API) + Space Grotesk
+ * (headings, Google Fonts latin-ext) — obojí s českou diakritikou,
+ * fallback Inter/system-ui.
+ *
+ * POZN.: Fontshare ITF licence zakazuje redistribuci font FILES — proto
+ * <link> na api.fontshare.com, NIKDY vendored woff2.
+ *
+ * Mermaid runtime: client-side render ```mermaid bloků (kopie patternu
+ * z talkide-docs). medium-zoom lightbox pro screenshoty (glightbox parity).
+ *
+ * Structure: canvas -> sticky <DocsHeader/> -> grid
+ *   [ DocsSidebar | <article> (breadcrumb + eyebrow + slot + pager) | DocsTOC ]
+ *
+ * PHASE 4: Pagefind search (pattern talkide-docs). `<base>`-aware CSS/JS
+ * URL (subpath deploy /competent-documentation/). Search modal otevře
+ * header .icon-btn i Cmd/Ctrl+K. České překlady UI. Chrome ignorován
+ * přes data-pagefind-ignore; indexuje se jen <article data-pagefind-body>.
+ */
+
+import '../styles/base.css';
+import '../styles/docs.css';
+import DocsHeader from '../components/DocsHeader.astro';
+import DocsSidebar from '../components/DocsSidebar.astro';
+import DocsTOC from '../components/DocsTOC.astro';
+import type { TocHeading } from '../components/DocsTOC.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import DocEyebrow from '../components/DocEyebrow.astro';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  breadcrumb?: Crumb[];
+  headings?: TocHeading[];
+  canonical?: string;
+  hideEyebrow?: boolean;
+  hideToc?: boolean;
+  eyebrowTitle?: string;
+}
+
+const {
+  title,
+  description = 'Oficiální dokumentace LMS Competent od Educasoftu — návody pro administrátory, slovník pojmů a koncepty.',
+  breadcrumb = [],
+  headings = [],
+  canonical,
+  hideEyebrow = false,
+  hideToc = false,
+  eyebrowTitle,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const siteOrigin = Astro.site ? Astro.site.origin : 'https://educasoftsolutions.github.io';
+const canonicalUrl = canonical ?? `${siteOrigin}${Astro.url.pathname}`;
+const fullTitle = `${title} — Competent dokumentace`;
+---
+
+<!doctype html>
+<html lang="cs" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/png" href={`${base}e-symbol.png`} />
+
+    <title>{fullTitle}</title>
+
+    <!--
+      Fonts — česká diakritika REQUIRED.
+      Satoshi (body 400/500/700) z Fontshare API; Space Grotesk (headings
+      500/700, latin-ext) z Google Fonts. Fallback: Inter, system-ui.
+    -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <!--
+      No-flash theme bootstrap — běží synchronně PŘED prvním paintem.
+      Čte 'competent-theme' z localStorage; default 'light'.
+    -->
+    <script is:inline>
+      (function () {
+        var STORAGE_KEY = 'competent-theme';
+        var saved = null;
+        try {
+          saved = localStorage.getItem(STORAGE_KEY);
+        } catch (e) {
+          /* private mode */
+        }
+        var theme = saved === 'dark' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <!-- Pagefind UI: prebuilt CSS (async, non-render-blocking, base-aware) -->
+    <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
+  </head>
+
+  <body>
+    <!-- Search modal overlay (otevírá header tlačítko + Cmd/Ctrl+K) -->
+    <div id="search-overlay" class="search-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Hledat v dokumentaci" data-pagefind-ignore>
+      <div class="search-modal">
+        <div id="search-input-area"></div>
+        <button type="button" class="search-close" id="search-close" aria-label="Zavřít vyhledávání">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="canvas">
+      <DocsHeader />
+
+      <div class="docs-shell">
+        <DocsSidebar />
+
+        <main class="docs-content">
+          <article class="docs-article docs-prose" data-pagefind-body>
+            {breadcrumb.length > 0 && <Breadcrumb items={breadcrumb} />}
+            {!hideEyebrow && <DocEyebrow title={eyebrowTitle} />}
+
+            <slot />
+
+            <slot name="pager" />
+          </article>
+        </main>
+
+        {!hideToc && <DocsTOC headings={headings} />}
+      </div>
+    </div>
+
+    <!--
+      Pagefind UI: prebuilt JS načtený async po DOM. `bundlePath` je
+      base-aware (subpath deploy). České překlady UI (pagefind ships
+      with cs translations — viz pagefind docs "Using the UI").
+    -->
+    <script is:inline define:vars={{ pagefindBase: base }}>
+      (function (pagefindBase) {
+        var script = document.createElement('script');
+        script.src = pagefindBase + 'pagefind/pagefind-ui.js';
+        script.defer = true;
+        script.onload = function () {
+          if (typeof window.PagefindUI === 'undefined') return;
+          new window.PagefindUI({
+            element: '#search-input-area',
+            baseUrl: pagefindBase,
+            bundlePath: pagefindBase + 'pagefind/',
+            showSubResults: true,
+            resetStyles: false,
+            translations: {
+              placeholder: 'Hledat v dokumentaci…',
+              clear_search: 'Vymazat',
+              load_more: 'Načíst další výsledky',
+              search_label: 'Hledat v dokumentaci',
+              filters_label: 'Filtry',
+              zero_results: 'Pro „[SEARCH_TERM]" nebylo nic nalezeno',
+              many_results: '[COUNT] výsledků pro „[SEARCH_TERM]"',
+              one_result: '[COUNT] výsledek pro „[SEARCH_TERM]"',
+              alt_search:
+                'Žádné výsledky pro „[SEARCH_TERM]". Zobrazuji výsledky pro „[DIFFERENT_TERM]"',
+              search_suggestion:
+                'Žádné výsledky pro „[SEARCH_TERM]". Zkuste některé z těchto vyhledávání:',
+              searching: 'Hledám „[SEARCH_TERM]"…',
+            },
+          });
+        };
+        document.head.appendChild(script);
+      })(pagefindBase);
+    </script>
+
+    <!-- Search modal open/close + Cmd/Ctrl+K wiring (pattern talkide-docs) -->
+    <script is:inline>
+      (function () {
+        var overlay = document.getElementById('search-overlay');
+        var closeBtn = document.getElementById('search-close');
+
+        function openSearch() {
+          overlay.setAttribute('aria-hidden', 'false');
+          overlay.classList.add('is-open');
+          document.body.classList.add('search-open');
+          setTimeout(function () {
+            var inp = overlay.querySelector('input[type="text"], input:not([type])');
+            if (inp) inp.focus();
+          }, 60);
+        }
+
+        function closeSearch() {
+          overlay.setAttribute('aria-hidden', 'true');
+          overlay.classList.remove('is-open');
+          document.body.classList.remove('search-open');
+        }
+
+        var searchBtn = document.querySelector('.icon-btn[aria-label="Hledat v dokumentaci"]');
+        if (searchBtn) {
+          searchBtn.addEventListener('click', openSearch);
+        }
+
+        if (closeBtn) {
+          closeBtn.addEventListener('click', closeSearch);
+        }
+
+        overlay.addEventListener('click', function (e) {
+          if (e.target === overlay) closeSearch();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closeSearch();
+          }
+          if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+            e.preventDefault();
+            if (overlay.classList.contains('is-open')) {
+              closeSearch();
+            } else {
+              openSearch();
+            }
+          }
+        });
+      })();
+    </script>
+
+    <!--
+      Mermaid runtime — client-side inicializace diagramů (pattern talkide-docs).
+      Najde všechny pre[data-language="mermaid"] (Astro Shiki output),
+      nahradí je SVG voláním mermaid.render(). Reaguje na změnu data-theme.
+    -->
+    <script>
+      import mermaid from 'mermaid';
+
+      function getMermaidTheme(): string {
+        const htmlTheme = document.documentElement.getAttribute('data-theme');
+        return htmlTheme === 'dark' ? 'dark' : 'neutral';
+      }
+
+      function initMermaid() {
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: getMermaidTheme() as 'dark' | 'neutral',
+          securityLevel: 'loose',
+          fontFamily: "'Space Grotesk', 'Satoshi', system-ui, sans-serif",
+        });
+      }
+
+      async function renderMermaidDiagrams() {
+        // Astro Shiki generuje: <pre class="astro-code" data-language="mermaid"><code>…</code></pre>
+        const pres = Array.from(
+          document.querySelectorAll<HTMLElement>('pre[data-language="mermaid"]'),
+        );
+
+        for (let i = 0; i < pres.length; i++) {
+          const preEl = pres[i];
+          const codeEl = preEl.querySelector('code');
+          if (!codeEl) continue;
+
+          const content = codeEl.textContent ?? '';
+          const id = `mermaid-diagram-${i}-${Date.now()}`;
+
+          try {
+            const { svg } = await mermaid.render(id, content);
+            const wrapper = document.createElement('div');
+            wrapper.className = 'mermaid-diagram';
+            wrapper.setAttribute('data-mermaid-source', content);
+            wrapper.innerHTML = svg;
+            preEl.replaceWith(wrapper);
+          } catch (err) {
+            console.error('[mermaid] render error:', err);
+            // Nech původní <pre> pokud render selže
+          }
+        }
+      }
+
+      async function rerenderMermaidDiagrams() {
+        initMermaid();
+        const wrappers = Array.from(
+          document.querySelectorAll<HTMLElement>('.mermaid-diagram[data-mermaid-source]'),
+        );
+        for (let i = 0; i < wrappers.length; i++) {
+          const wrapper = wrappers[i];
+          const source = wrapper.getAttribute('data-mermaid-source') ?? '';
+          const id = `mermaid-rerender-${i}-${Date.now()}`;
+          try {
+            const { svg } = await mermaid.render(id, source);
+            wrapper.innerHTML = svg;
+          } catch (err) {
+            console.error('[mermaid] re-render error:', err);
+          }
+        }
+      }
+
+      async function runMermaid() {
+        initMermaid();
+        await renderMermaidDiagrams();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runMermaid);
+      } else {
+        runMermaid();
+      }
+
+      // Reaguj na změnu theme (ThemeToggle nastavuje data-theme na <html>)
+      const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (
+            mutation.type === 'attributes' &&
+            mutation.attributeName === 'data-theme'
+          ) {
+            rerenderMermaidDiagrams();
+            break;
+          }
+        }
+      });
+
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    </script>
+
+    <!--
+      medium-zoom lightbox pro screenshoty (glightbox parity z MkDocs).
+      Zoomuje všechny <article> obrázky kromě loga; pozadí ladí na brand.
+    -->
+    <script>
+      import mediumZoom from 'medium-zoom';
+
+      function initZoom() {
+        const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        mediumZoom('article.docs-prose img', {
+          background: dark ? 'rgba(13, 11, 20, 0.92)' : 'rgba(255, 255, 255, 0.92)',
+          margin: 24,
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initZoom);
+      } else {
+        initZoom();
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  /* ── Search modal overlay (pattern talkide-docs, Educasoft brand) ── */
+  .search-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(17, 32, 37, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .search-overlay.is-open {
+    display: flex;
+  }
+
+  [data-theme="dark"] .search-overlay {
+    background: rgba(13, 11, 20, 0.72);
+  }
+
+  .search-modal {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 20px;
+    background: var(--bg-2);
+    border: 1px solid var(--line-2);
+    border-radius: 14px;
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+
+  .search-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    color: var(--fg-3);
+    transition:
+      background 0.12s,
+      color 0.12s;
+  }
+  .search-close:hover {
+    background: var(--bg-4);
+    color: var(--fg-1);
+  }
+
+  /* ── Pagefind UI defaults → Educasoft brand tokeny ── */
+  #search-input-area {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--competent-purple);
+    --pagefind-ui-text: var(--fg-1);
+    --pagefind-ui-background: var(--bg-2);
+    --pagefind-ui-border: var(--line-2);
+    --pagefind-ui-tag: var(--bg-3);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 10px;
+    --pagefind-ui-image-border-radius: 8px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: var(--font-sans);
+    padding: 16px 16px 8px;
+  }
+
+  #search-input-area .pagefind-ui__form {
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  #search-input-area .pagefind-ui__search-input {
+    background: var(--bg-3) !important;
+    border: 1px solid var(--line-2) !important;
+    border-radius: 8px !important;
+    color: var(--fg-1) !important;
+    font-size: 15px !important;
+    padding: 10px 44px 10px 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #search-input-area .pagefind-ui__search-input:focus {
+    outline: none !important;
+    border-color: var(--competent-purple-line) !important;
+    box-shadow: 0 0 0 2px var(--competent-purple-soft) !important;
+  }
+  #search-input-area .pagefind-ui__search-input::placeholder {
+    color: var(--fg-4) !important;
+  }
+
+  #search-input-area .pagefind-ui__results-area {
+    margin-top: 8px;
+    max-height: 420px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  #search-input-area .pagefind-ui__result {
+    border-top: 1px solid var(--line-1) !important;
+    padding: 12px 8px !important;
+  }
+
+  #search-input-area .pagefind-ui__result-link {
+    color: var(--fg-1) !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+  }
+  #search-input-area .pagefind-ui__result-link:hover {
+    color: var(--competent-purple-ink) !important;
+    text-decoration: none !important;
+  }
+
+  #search-input-area .pagefind-ui__result-excerpt {
+    color: var(--fg-3) !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-top: 4px !important;
+  }
+
+  #search-input-area .pagefind-ui__result-excerpt mark {
+    background: var(--competent-purple-soft) !important;
+    color: var(--competent-purple-ink) !important;
+    border-radius: 3px !important;
+    padding: 0 2px !important;
+  }
+
+  #search-input-area .pagefind-ui__search-clear {
+    color: var(--fg-3) !important;
+  }
+  #search-input-area .pagefind-ui__search-clear:hover {
+    color: var(--fg-1) !important;
+  }
+
+  #search-input-area .pagefind-ui__button {
+    background: var(--bg-3) !important;
+    border: 1px solid var(--line-2) !important;
+    color: var(--fg-2) !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    padding: 7px 16px !important;
+    margin: 8px 0 12px !important;
+    cursor: pointer !important;
+    transition: background 0.12s !important;
+  }
+  #search-input-area .pagefind-ui__button:hover {
+    background: var(--bg-4) !important;
+    color: var(--fg-1) !important;
+  }
+
+  body.search-open {
+    overflow: hidden;
+  }
+
+  /* Mermaid SVG theming integrace */
+  :global(.mermaid-diagram svg) {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--r-md);
+  }
+
+  /* medium-zoom nad sticky headerem */
+  :global(.medium-zoom-overlay) {
+    z-index: 100;
+  }
+  :global(.medium-zoom-image--opened) {
+    z-index: 101;
+  }
+</style>

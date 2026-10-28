@@ -1,0 +1,27 @@
+{
+  "name": "competent-docs-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Competent documentation site (Astro) — phase 1 scaffold, forked from talkide-docs. MkDocs remains the live build until migration completes.",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "postbuild": "pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/sitemap": "3.1.6",
+    "astro": "^4.16.18",
+    "medium-zoom": "^1.1.2",
+    "mermaid": "^12.2.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

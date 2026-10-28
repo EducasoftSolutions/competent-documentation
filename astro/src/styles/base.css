@@ -1,0 +1,61 @@
+/* Competent Docs — base styles (PHASE 3, Educasoft brand).
+ *
+ * Reset + typografie: Satoshi body, Space Grotesk headings, JetBrains Mono
+ * kód. Fallback Inter/system-ui. Nadpisy + linky Competent purple.
+ */
+
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+  scroll-padding-top: 72px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--competent-purple-line);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--heading);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  scroll-margin-top: 72px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--competent-purple);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.canvas {
+  min-height: 100vh;
+}

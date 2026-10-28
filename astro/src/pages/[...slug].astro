@@ -1,0 +1,113 @@
+---
+/**
+ * Dynamic docs route — renders every `docs` collection entry EXCEPT
+ * the `index` slug (the hub is served by index.astro to avoid a `/`
+ * collision). Forked from talkide-docs [...slug].astro.
+ *
+ * PHASE 2+3: Admonition components + PrevNext pager + breadcrumbs +
+ * TOC headings wired. Breadcrumb section label derived from the
+ * entry's Diataxis section.
+ *
+ * PHASE 4: "Upravit na GitHubu" edit link (sourcePath → docs/ .md).
+ */
+
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import DocsLayout from '../layouts/DocsLayout.astro';
+import Admonition from '../components/Admonition.astro';
+import PrevNext from '../components/PrevNext.astro';
+import type { TocHeading } from '../components/DocsTOC.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('docs');
+
+  return entries
+    .filter((e) => e.slug !== 'index')
+    .map((entry) => ({
+      params: { slug: entry.slug.replace(/\/index$/, '') },
+      props: { entry },
+    }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content, headings } = await entry.render();
+
+const SECTION_LABELS: Record<string, string> = {
+  tutorials: 'Návody',
+  'how-to': 'Návody',
+  reference: 'Slovník pojmů',
+  concepts: 'Koncepty',
+};
+
+const section = entry.data.section;
+const sectionLabel = SECTION_LABELS[section] ?? section;
+
+// "/" + slug + trailing slash → matches DOC_ORDER / sidebar routes.
+const slugParam = Astro.params.slug as string;
+const route = `/${slugParam}/`.replace(/\/index\/$/, '/');
+
+const tocHeadings: TocHeading[] = headings
+  .filter((h) => h.depth === 2 || h.depth === 3)
+  .map((h) => ({ depth: h.depth, slug: h.slug, text: h.text }));
+
+const breadcrumb = [{ label: sectionLabel }, { label: entry.data.title }];
+
+/**
+ * "Upravit na GitHubu" — sourcePath (např. "pro-administratory/concepts/stitky.md")
+ * mapuje mdx slug → zdrojový .md v docs/ na main branchi.
+ * Fallback: slug + .md pod docs/pro-administratory/ (pro stránky bez sourcePath).
+ */
+const EDIT_BASE = 'https://github.com/EducasoftSolutions/competent-documentation/edit/main/docs/';
+const editPath =
+  entry.data.sourcePath ?? `pro-administratory/${slugParam.replace(/\/$/, '')}.md`;
+const editUrl = EDIT_BASE + editPath;
+---
+
+<DocsLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  breadcrumb={breadcrumb}
+  headings={tocHeadings}
+  hideEyebrow={entry.data.hideEyebrow}
+  hideToc={entry.data.hideToc}
+>
+  <Content components={{ Admonition }} />
+
+  <a class="edit-link" href={editUrl} data-pagefind-ignore>
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+    </svg>
+    Upravit na GitHubu
+  </a>
+
+  <Fragment slot="pager">
+    <PrevNext route={route} />
+  </Fragment>
+</DocsLayout>
+
+<style>
+  .edit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--fg-3);
+    text-decoration: none;
+  }
+  .edit-link:hover {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

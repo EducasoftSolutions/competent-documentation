@@ -1,0 +1,24 @@
+---
+/**
+ * Hub — / route.
+ *
+ * PHASE 1: renders the `index` collection entry as a plain page.
+ * Diataxis card grid + popular pages + search hint are added in
+ * a later phase (needs DOCS_NAV items + migrated content).
+ */
+
+import { getEntry } from 'astro:content';
+import DocsLayout from '../layouts/DocsLayout.astro';
+
+const entry = await getEntry('docs', 'index');
+
+if (!entry) {
+  throw new Error('Missing docs collection entry: index');
+}
+
+const { Content } = await entry.render();
+---
+
+<DocsLayout title={entry.data.title} description={entry.data.description}>
+  <Content />
+</DocsLayout>

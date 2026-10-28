@@ -1,0 +1,228 @@
+/* Competent Docs — docs-specific styles (PHASE 3, Educasoft brand).
+ *
+ * 3-column shell: sticky header (56px) + sidebar | article (max 760px)
+ * | TOC rail. Sidebar active = brand purple left border.
+ * CTA green pro tlačítkové prvky; screenshoty s border + radius,
+ * medium-zoom řeší lightbox.
+ */
+
+.docs-shell {
+  display: grid;
+  grid-template-columns: 264px minmax(0, 1fr) 220px;
+  gap: 32px;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+/* ── Sidebar ── */
+.docs-sidebar {
+  position: sticky;
+  top: 76px;
+  align-self: start;
+  max-height: calc(100vh - 96px);
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.docs-sidebar-section + .docs-sidebar-section {
+  margin-top: 4px;
+}
+
+.docs-sidebar-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-3);
+  margin: 18px 0 6px;
+}
+
+.docs-sidebar-section:first-child .docs-sidebar-label {
+  margin-top: 0;
+}
+
+.docs-sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.docs-sidebar-link {
+  display: block;
+  padding: 5px 8px 5px 12px;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--fg-2);
+  border-radius: 0 6px 6px 0;
+}
+
+.docs-sidebar-link:hover {
+  color: var(--fg-1);
+  background: var(--bg-2);
+  text-decoration: none;
+}
+
+.docs-sidebar-link[aria-current='page'] {
+  border-left-color: var(--competent-purple);
+  color: var(--fg-1);
+  font-weight: 500;
+  background: var(--competent-purple-soft);
+}
+
+/* ── Article ── */
+.docs-content {
+  min-width: 0;
+}
+
+.docs-article {
+  max-width: 760px;
+}
+
+.docs-article h1 {
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+.docs-article h2 {
+  font-size: 1.4rem;
+  margin: 40px 0 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line-1);
+}
+
+.docs-article h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.docs-article h3 {
+  font-size: 1.15rem;
+  margin: 28px 0 8px;
+}
+
+.docs-article p {
+  margin: 12px 0;
+}
+
+.docs-article ul,
+.docs-article ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.docs-article li + li {
+  margin-top: 4px;
+}
+
+/* Screenshoty: border + radius (lightbox řeší medium-zoom). */
+.docs-article img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  cursor: zoom-in;
+}
+
+/* Tabulky */
+.docs-article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.docs-article th,
+.docs-article td {
+  padding: 8px 12px;
+  border: 1px solid var(--line-2);
+  text-align: left;
+  vertical-align: top;
+}
+
+.docs-article th {
+  background: linear-gradient(to bottom, var(--cyan-soft), var(--bg-2));
+  border-top: 2px solid var(--cyan);
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--fg-1);
+}
+
+.docs-article tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+
+/* Kód */
+.docs-article code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--bg-2);
+  border: 1px solid var(--line-1);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.docs-article pre {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--cyan);
+  border-radius: var(--r-md);
+  padding: 16px;
+  overflow: auto;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.docs-article pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* CTA tlačítkový styl (pro budoucí CTA prvky, pager hover). */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--r-md);
+  background: var(--cta-green);
+  color: #0c2317;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-cta:hover {
+  filter: brightness(1.06);
+  color: #0c2317;
+  text-decoration: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .docs-shell {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+  .docs-toc {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .docs-shell {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 20px 16px 48px;
+  }
+  .docs-sidebar {
+    position: static;
+    max-height: none;
+  }
+  .docs-article h1 {
+    font-size: 1.6rem;
+  }
+}
