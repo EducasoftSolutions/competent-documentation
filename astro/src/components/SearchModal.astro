@@ -1,0 +1,538 @@
+---
+/**
+ * SearchModal — vlastní vyhledávací modal nad Pagefind Search API.
+ *
+ * Nahrazuje legacy Pagefind DEFAULT UI (pagefind-ui.js, "předpotopní"
+ * vzhled) plně brandovaným UI: Space Grotesk nadpisy, Satoshi body,
+ * purple aktivní výsledek, cyan focus ring, dark-mode aware (tokeny
+ * z tokens.css — není potřeba žádný JS pro theme).
+ *
+ * Index se NEMĚNÍ — používá stejný pagefind bundle (postbuild generuje
+ * pagefind.js + index). Načítá se dynamickým importem (ESM) až při
+ * prvním otevření modalu + basePath pro subpath deploy.
+ *
+ * Chování:
+ * - Otevření: header [data-search-trigger] + Cmd/Ctrl+K.
+ * - Debounce 200 ms, preload indexu při hover/focus triggeru.
+ * - Výsledky: titulek (Space Grotesk), excerpt s <mark> z pagefind
+ *   (excerpt() vrací zvýrazněné HTML), section breadcrumb z URL
+ *   (Návody / Slovník pojmů / Koncepty — stejné labely jako sidebar).
+ * - Klávesnice: Esc zavře, ↑/↓ navigace, Enter otevře aktivní.
+ * - Odkazy: base-aware (subpath /competent-documentation/).
+ * - ARIA: role=dialog, listbox/option, aria-activedescendant, live region.
+ */
+const base = import.meta.env.BASE_URL;
+// Normalizovaný base BEZ trailing slash pro skládání URL výsledků.
+const basePath = base === '/' ? '' : base.replace(/\/$/, '');
+---
+
+<div
+  id="search-overlay"
+  class="search-overlay"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Hledat v dokumentaci"
+  data-pagefind-ignore
+>
+  <div class="search-modal">
+    <div class="search-box">
+      <svg
+        class="search-box-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="M21 21l-4.3-4.3"></path>
+      </svg>
+      <input
+        id="search-input"
+        type="text"
+        role="combobox"
+        aria-expanded="false"
+        aria-controls="search-results"
+        aria-autocomplete="list"
+        placeholder="Hledat v dokumentaci…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Hledat v dokumentaci"
+      />
+      <kbd class="search-box-kbd" aria-hidden="true">esc</kbd>
+    </div>
+    <div id="search-status" class="search-status" role="status" aria-live="polite"></div>
+    <ul id="search-results" class="search-results" role="listbox" aria-label="Výsledky hledání"></ul>
+    <footer class="search-footer" aria-hidden="true">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigace</span>
+      <span><kbd>↵</kbd> otevřít</span>
+      <span><kbd>esc</kbd> zavřít</span>
+    </footer>
+  </div>
+</div>
+
+<script is:inline define:vars={{ pagefindBase: base, basePath }}>
+  (function (pagefindBase, basePath) {
+    'use strict';
+
+    var overlay = document.getElementById('search-overlay');
+    var input = document.getElementById('search-input');
+    var statusEl = document.getElementById('search-status');
+    var listEl = document.getElementById('search-results');
+
+    // Section breadcrumb z URL — stejné labely jako [...slug].astro.
+    var SECTION_LABELS = [
+      { match: '/how-to/', label: 'Návody' },
+      { match: '/reference/', label: 'Slovník pojmů' },
+      { match: '/concepts/', label: 'Koncepty' },
+      { match: '/tutorials/', label: 'Návody' },
+    ];
+    function sectionFor(url) {
+      for (var i = 0; i < SECTION_LABELS.length; i++) {
+        if (url.indexOf(SECTION_LABELS[i].match) !== -1) return SECTION_LABELS[i].label;
+      }
+      return 'Dokumentace';
+    }
+
+    // — Pagefind lazy-load (ESM dynamic import, až při prvním otevření) —
+    var pagefindPromise = null;
+    function loadPagefind() {
+      if (!pagefindPromise) {
+        pagefindPromise = import(pagefindBase + 'pagefind/pagefind.js').then(function (pf) {
+          return pf.options({ basePath: basePath }).then(function () {
+            return pf;
+          });
+        });
+      }
+      return pagefindPromise;
+    }
+
+    // Preload indexu při hover/focus triggeru → první hledání bez lagu.
+    function preload() {
+      loadPagefind().then(function (pf) {
+        if (pf && pf.preload) pf.preload('a');
+      }).catch(function () { /* offline — chyba se ukáže až při hledání */ });
+    }
+    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
+      btn.addEventListener('mouseenter', preload, { once: true });
+      btn.addEventListener('focus', preload, { once: true });
+    });
+
+    // — Stav —
+    var results = [];       // pole { url, title, excerptHtml, section, subHtml }
+    var activeIndex = -1;   // -1 = nic aktivního
+    var debounceTimer = null;
+    var lastQueryId = 0;    // ochrana proti race (starší promise nesmí přepsat novější)
+
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function openSearch() {
+      overlay.setAttribute('aria-hidden', 'false');
+      overlay.classList.add('is-open');
+      document.body.classList.add('search-open');
+      loadPagefind().catch(function () {
+        setStatus('Vyhledávání se nepodařilo načíst. Zkuste to prosím znovu.', true);
+      });
+      setTimeout(function () { input.focus(); }, 60);
+    }
+
+    function closeSearch() {
+      overlay.setAttribute('aria-hidden', 'true');
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('search-open');
+      input.value = '';
+      renderEmpty();
+    }
+
+    function setStatus(text, isError) {
+      statusEl.textContent = text;
+      statusEl.classList.toggle('is-error', !!isError);
+    }
+
+    function renderEmpty() {
+      results = [];
+      activeIndex = -1;
+      listEl.innerHTML = '';
+      listEl.classList.remove('has-results');
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      setStatus('', false);
+    }
+
+    function renderResults(query) {
+      listEl.innerHTML = '';
+      activeIndex = results.length > 0 ? 0 : -1;
+
+      if (results.length === 0) {
+        listEl.classList.remove('has-results');
+        input.setAttribute('aria-expanded', 'false');
+        setStatus('Pro „' + query + '“ nebylo nic nalezeno', false);
+        return;
+      }
+
+      listEl.classList.add('has-results');
+      input.setAttribute('aria-expanded', 'true');
+      var countText = results.length === 1
+        ? '1 výsledek pro „' + query + '“'
+        : results.length + ' výsledky pro „' + query + '“';
+      setStatus(countText, false);
+
+      results.forEach(function (r, i) {
+        var li = document.createElement('li');
+        li.className = 'search-result';
+        li.setAttribute('role', 'option');
+        li.id = 'search-result-' + i;
+        var a = document.createElement('a');
+        a.className = 'search-result-link';
+        a.href = r.url;
+        a.tabIndex = -1;
+        // Titulek escapovaný (z frontmatter), excerpt je bezpečné HTML z pagefind.
+        a.innerHTML =
+          '<span class="search-result-crumb">' + esc(r.section) + '</span>' +
+          '<span class="search-result-title">' + esc(r.title) + '</span>' +
+          '<span class="search-result-excerpt">' + r.excerptHtml + '</span>' +
+          (r.subHtml ? '<span class="search-result-sub">' + r.subHtml + '</span>' : '');
+        a.addEventListener('click', function () { closeSearch(); });
+        // Hover myší synchronizuje keyboard-aktivní výsledek.
+        a.addEventListener('mousemove', function () { setActive(i); });
+        li.appendChild(a);
+        listEl.appendChild(li);
+      });
+      setActive(0);
+    }
+
+    function setActive(i) {
+      var items = listEl.querySelectorAll('.search-result');
+      items.forEach(function (el, j) {
+        el.classList.toggle('is-active', j === i);
+      });
+      activeIndex = i;
+      if (i >= 0 && items[i]) {
+        input.setAttribute('aria-activedescendant', 'search-result-' + i);
+        // Scroll aktivního do viditelné oblasti seznamu.
+        var el = items[i];
+        var listRect = listEl.getBoundingClientRect();
+        var elRect = el.getBoundingClientRect();
+        if (elRect.bottom > listRect.bottom) {
+          listEl.scrollTop += elRect.bottom - listRect.bottom + 4;
+        } else if (elRect.top < listRect.top) {
+          listEl.scrollTop -= listRect.top - elRect.top + 4;
+        }
+      } else {
+        input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function openActive() {
+      if (activeIndex >= 0 && results[activeIndex]) {
+        window.location.href = results[activeIndex].url;
+        closeSearch();
+      }
+    }
+
+    function doSearch(query) {
+      var queryId = ++lastQueryId;
+      loadPagefind().then(function (pf) {
+        return pf.debouncedSearch(query, { basePath: basePath }, 0).then(function (search) {
+          if (!search || queryId !== lastQueryId) return null; // zastaralý dotaz
+          return search.results.slice(0, 8);
+        });
+      }).then(function (top) {
+        if (!top || queryId !== lastQueryId) return;
+        return Promise.all(top.map(function (r) { return r.data(); })).then(function (datas) {
+          if (queryId !== lastQueryId) return;
+          results = datas.map(function (d) {
+            // sub_results: kotvy sekcí (H2/H3) jako vnořené odkazy.
+            var subHtml = '';
+            if (d.sub_results && d.sub_results.length > 0) {
+              subHtml = d.sub_results.slice(0, 3).map(function (s) {
+                var subUrl = basePath + s.url;
+                return '<a class="search-sub-link" href="' + esc(subUrl) + '">↳ ' + esc(s.title) + '</a>';
+              }).join('');
+            }
+            return {
+              url: basePath + d.url,
+              title: d.meta && d.meta.title ? d.meta.title : d.url,
+              excerptHtml: d.excerpt || '',
+              section: sectionFor(d.url),
+              subHtml: subHtml,
+            };
+          });
+          renderResults(query);
+        });
+      }).catch(function () {
+        if (queryId !== lastQueryId) return;
+        setStatus('Vyhledávání se nepodařilo načíst. Zkuste to prosím znovu.', true);
+      });
+    }
+
+    function onInput() {
+      var q = input.value.trim();
+      if (debounceTimer) clearTimeout(debounceTimer);
+      if (q.length === 0) {
+        ++lastQueryId; // zruš probíhající hledání
+        renderEmpty();
+        return;
+      }
+      setStatus('Hledám „' + q + '“…', false);
+      debounceTimer = setTimeout(function () { doSearch(q); }, 200);
+    }
+
+    input.addEventListener('input', onInput);
+
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (results.length > 0) setActive((activeIndex + 1) % results.length);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (results.length > 0) setActive((activeIndex - 1 + results.length) % results.length);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        openActive();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        closeSearch();
+      }
+    });
+
+    // — Otevření/zavření modalu —
+    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
+      btn.addEventListener('click', openSearch);
+    });
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeSearch();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      // Esc mimo input (focus mohl utéct) — input Esc řeší vlastní handler.
+      if (e.key === 'Escape' && overlay.classList.contains('is-open') && document.activeElement !== input) {
+        closeSearch();
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (overlay.classList.contains('is-open')) {
+          closeSearch();
+        } else {
+          openSearch();
+        }
+      }
+    });
+  })(pagefindBase, basePath);
+</script>
+
+<style>
+  /* ── Overlay + modal shell ── */
+  .search-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(17, 32, 37, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 20px 20px;
+  }
+  .search-overlay.is-open {
+    display: flex;
+  }
+  [data-theme='dark'] .search-overlay {
+    background: rgba(13, 11, 20, 0.72);
+  }
+
+  .search-modal {
+    width: 100%;
+    max-width: 640px;
+    max-height: min(70vh, 600px);
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-1);
+    border: 1px solid var(--line-2);
+    border-radius: 14px;
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+
+  /* ── Input box ── */
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line-1);
+  }
+  .search-box-icon {
+    flex: none;
+    color: var(--competent-purple);
+  }
+  #search-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    color: var(--fg-1);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    outline: none;
+  }
+  #search-input::placeholder {
+    color: var(--fg-4);
+  }
+  #search-input:focus-visible {
+    outline: none;
+  }
+  /* Cyan focus ring kolem celého boxu při focusu inputu. */
+  .search-box:focus-within {
+    box-shadow: inset 0 0 0 2px var(--cyan);
+    border-bottom-color: transparent;
+  }
+  .search-box-kbd {
+    flex: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1;
+    padding: 4px 6px;
+    border: 1px solid var(--line-2);
+    border-radius: 5px;
+    background: var(--bg-2);
+    color: var(--fg-4);
+    text-transform: uppercase;
+  }
+
+  /* ── Status řádek (počet výsledků / stavy) ── */
+  .search-status {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--fg-3);
+    padding: 8px 16px 0;
+  }
+  .search-status:empty {
+    display: none;
+  }
+  .search-status.is-error {
+    color: var(--danger);
+  }
+
+  /* ── Výsledky ── */
+  .search-results {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .search-results:not(.has-results) {
+    padding: 0;
+  }
+  .search-result-link {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  /* Purple aktivní výsledek (hover i keyboard). */
+  .search-result.is-active .search-result-link {
+    background: var(--competent-purple-soft);
+    border-color: var(--competent-purple-line);
+  }
+  .search-result-crumb {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--competent-purple-ink);
+    margin-bottom: 2px;
+  }
+  .search-result-title {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--fg-1);
+  }
+  .search-result.is-active .search-result-title {
+    color: var(--competent-purple-ink);
+  }
+  .search-result-excerpt {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--fg-3);
+    margin-top: 4px;
+  }
+  /* Zvýraznění shody — pagefind <mark> do brandu. */
+  .search-result-excerpt mark {
+    background: var(--competent-purple-soft);
+    color: var(--competent-purple-ink);
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+  [data-theme='dark'] .search-result-excerpt mark {
+    background: rgba(143, 120, 255, 0.28);
+    color: #d6cbff;
+  }
+  /* Vnořené kotvy sekcí (sub_results H2/H3). */
+  .search-result-sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin-top: 6px;
+  }
+  .search-sub-link {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--cyan-ink);
+    text-decoration: none;
+  }
+  .search-sub-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Footer nápověda ── */
+  .search-footer {
+    display: flex;
+    gap: 16px;
+    padding: 10px 16px;
+    border-top: 1px solid var(--line-1);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--fg-4);
+  }
+  .search-footer kbd {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 2px 5px;
+    border: 1px solid var(--line-2);
+    border-radius: 4px;
+    background: var(--bg-2);
+    margin-right: 4px;
+  }
+  @media (max-width: 640px) {
+    .search-footer {
+      display: none;
+    }
+    .search-overlay {
+      padding-top: 48px;
+    }
+  }
+
+  body.search-open {
+    overflow: hidden;
+  }
+</style>
