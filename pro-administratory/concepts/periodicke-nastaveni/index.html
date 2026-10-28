@@ -17,10 +17,265 @@
         var theme = saved === 'dark' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', theme);
       })();
-    </script><!-- Pagefind UI: prebuilt CSS (async, non-render-blocking, base-aware) --><link rel="stylesheet" href="/competent-documentation/pagefind/pagefind-ui.css"><link rel="stylesheet" href="/competent-documentation/_astro/_slug_.BgLHRgyV.css">
+    </script><!-- Pagefind UI: prebuilt CSS se už nenačítá (vlastní SearchModal UI).
+         pagefind-ui.css zůstává v dist/ jako build artefakt pagefind indexeru,
+         ale žádná stránka ho nereferencuje. --><link rel="stylesheet" href="/competent-documentation/_astro/_slug_.D676K_Y4.css">
 <style>.adm[data-astro-cid-fjubpvhp]{margin:20px 0;border-radius:12px;border:1px solid var(--line-2);border-left-width:3px;background:var(--bg-2);font-size:.92rem;overflow:hidden}.adm-title[data-astro-cid-fjubpvhp]{margin:0;padding:8px 16px;font-family:var(--font-display);font-weight:600;font-size:.82rem;letter-spacing:-.01em}.adm-body[data-astro-cid-fjubpvhp]{padding:4px 16px 14px;color:var(--fg-2)}.adm-body[data-astro-cid-fjubpvhp] p{margin:8px 0}.adm-body[data-astro-cid-fjubpvhp] p:last-child{margin-bottom:0}.adm-body[data-astro-cid-fjubpvhp] a{color:var(--fg-1);text-decoration:underline;text-underline-offset:2px}.adm-note[data-astro-cid-fjubpvhp]{border-left-color:var(--competent-purple)}.adm-note[data-astro-cid-fjubpvhp] .adm-title[data-astro-cid-fjubpvhp]{background:var(--competent-purple-soft);color:var(--competent-purple-ink)}.adm-tip[data-astro-cid-fjubpvhp]{border-left-color:var(--cta-green)}.adm-tip[data-astro-cid-fjubpvhp] .adm-title[data-astro-cid-fjubpvhp]{background:var(--cta-green-soft);color:var(--cta-green-ink)}.adm-warning[data-astro-cid-fjubpvhp]{border-left-color:var(--amber)}.adm-warning[data-astro-cid-fjubpvhp] .adm-title[data-astro-cid-fjubpvhp]{background:var(--amber-soft);color:var(--amber-ink)}.adm-danger[data-astro-cid-fjubpvhp]{border-left-color:var(--danger)}.adm-danger[data-astro-cid-fjubpvhp] .adm-title[data-astro-cid-fjubpvhp]{background:var(--danger-soft);color:var(--danger-ink)}
 .pager[data-astro-cid-oerjsknp]{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px;padding-top:28px;border-top:1px solid var(--line-1)}.pager-link[data-astro-cid-oerjsknp]{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--bg-2);border:1px solid var(--line-1);border-radius:12px;text-decoration:none;transition:border-color .16s ease,background .16s ease}.pager-link[data-astro-cid-oerjsknp]:hover{border-color:var(--cyan);background:var(--cyan-soft)}.pager-link[data-astro-cid-oerjsknp].next{text-align:right;align-items:flex-end}.pager-label[data-astro-cid-oerjsknp]{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--fg-3)}.pager-title[data-astro-cid-oerjsknp]{font-size:14px;font-weight:500;color:var(--fg-1)}.edit-link[data-astro-cid-fzx4jmue]{display:inline-flex;align-items:center;gap:6px;margin-top:32px;font-size:13px;color:var(--fg-3);text-decoration:none}.edit-link[data-astro-cid-fzx4jmue]:hover{color:var(--link);text-decoration:underline;text-underline-offset:2px}
-</style><script type="module" src="/competent-documentation/_astro/hoisted.D7m7v48Y.js"></script></head> <body data-astro-cid-mw7aashj> <!-- Search modal overlay (otevírá header tlačítko + Cmd/Ctrl+K) --> <div id="search-overlay" class="search-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Hledat v dokumentaci" data-pagefind-ignore data-astro-cid-mw7aashj> <div class="search-modal" data-astro-cid-mw7aashj> <div id="search-input-area" data-astro-cid-mw7aashj></div> <button type="button" class="search-close" id="search-close" aria-label="Zavřít vyhledávání" data-astro-cid-mw7aashj> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-mw7aashj> <path d="M18 6L6 18M6 6l12 12" data-astro-cid-mw7aashj></path> </svg> </button> </div> </div> <div class="canvas" data-astro-cid-mw7aashj> <header class="docs-header" aria-label="Navigace dokumentace" data-pagefind-ignore data-astro-cid-l4ysfnjo> <div class="docs-header-left" data-astro-cid-l4ysfnjo> <a href="/competent-documentation/" class="logo-link" aria-label="Competent dokumentace — úvod" data-astro-cid-l4ysfnjo> <img src="/competent-documentation/logo-educasoft.svg" alt="Educasoft" width="120" height="28" class="logo-img" data-astro-cid-l4ysfnjo> </a> <div class="topbar-divider" aria-hidden="true" data-astro-cid-l4ysfnjo></div> <span class="docs-product" data-astro-cid-l4ysfnjo>Competent — Uživatelská příručka</span> </div> <div class="docs-header-right" data-astro-cid-l4ysfnjo> <button type="button" class="icon-btn" aria-label="Hledat v dokumentaci" title="Hledat v dokumentaci" data-astro-cid-l4ysfnjo> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-l4ysfnjo> <circle cx="11" cy="11" r="7" data-astro-cid-l4ysfnjo></circle> <path d="M21 21l-4.3-4.3" data-astro-cid-l4ysfnjo></path> </svg> </button> <button type="button" class="theme-toggle" aria-label="Přepnout světlý/tmavý režim" title="Přepnout světlý/tmavý režim" data-astro-cid-x3pjskd3> <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-x3pjskd3> <circle cx="12" cy="12" r="4" data-astro-cid-x3pjskd3></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" data-astro-cid-x3pjskd3></path> </svg> <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-x3pjskd3> <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" data-astro-cid-x3pjskd3></path> </svg> </button>   </div> </header>  <div class="docs-shell" data-astro-cid-mw7aashj> <nav class="docs-sidebar" aria-label="Dokumentace — sekce"> <div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Aktivity</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/" class="docs-sidebar-link"> Přehled návodů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/" class="docs-sidebar-link"> Vytvoření nového objektu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/" class="docs-sidebar-link"> Přesun objektu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/" class="docs-sidebar-link"> Nastavení typu spuštění SCORM </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/" class="docs-sidebar-link"> Vyhledávání v aktivitách </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/" class="docs-sidebar-link"> Přiřazování štítků </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/sdileni-aktivity/" class="docs-sidebar-link"> Sdílení aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/" class="docs-sidebar-link"> Nastavení práv k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/" class="docs-sidebar-link"> Přiřazení uživatelů k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/" class="docs-sidebar-link"> Nastavení podmínek přístupu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/" class="docs-sidebar-link"> Přidání dokumentu k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/" class="docs-sidebar-link"> Pokusy uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/" class="docs-sidebar-link"> Nastavení notifikací aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/terminy-aktivity/" class="docs-sidebar-link"> Přidání termínu k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite/" class="docs-sidebar-link"> Přiřazení uživatele k termínové aktivitě </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Lidé</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/" class="docs-sidebar-link"> Vytvoření uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/" class="docs-sidebar-link"> Vytvoření uživatelské skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/" class="docs-sidebar-link"> Vyhledávání a řazení uživatelů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/" class="docs-sidebar-link"> Přiřazení uživatele do skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/" class="docs-sidebar-link"> Import uživatelů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/" class="docs-sidebar-link"> Přiřazení role uživateli </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-vlastni-role/" class="docs-sidebar-link"> Vytvoření vlastní role </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Nastavení, Reporty, Certifikáty</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/nastaveni/stitky/" class="docs-sidebar-link"> Vytvoření a správa štítků </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/" class="docs-sidebar-link"> Úprava šablony e-mailu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/reporty/export-reportu/" class="docs-sidebar-link"> Export reportu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/" class="docs-sidebar-link"> Nastavení šablony certifikátu </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Slovník pojmů</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/reference/" class="docs-sidebar-link"> Přehled pojmů </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-aktivity/" class="docs-sidebar-link"> Obrazovka Aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-aktivity/" class="docs-sidebar-link"> Detail aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-sady/" class="docs-sidebar-link"> Detail sady </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/" class="docs-sidebar-link"> Obrazovka Hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-zpravy/" class="docs-sidebar-link"> Obrazovka Zprávy </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-hodnoceni/" class="docs-sidebar-link"> Detail hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-lide/" class="docs-sidebar-link"> Obrazovka Lidé </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-uzivatele/" class="docs-sidebar-link"> Detail uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/periodicke-nastaveni/" class="docs-sidebar-link"> Periodické nastavení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-skupiny/" class="docs-sidebar-link"> Detail skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/" class="docs-sidebar-link"> Obrazovka Nastavení </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Slovník pojmů — Záložky Nastavení</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/reference/tab-mista/" class="docs-sidebar-link"> Tab Místa </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-stitky/" class="docs-sidebar-link"> Tab Štítky </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/" class="docs-sidebar-link"> Tab Přiřazení dle skupin </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-notifikace/" class="docs-sidebar-link"> Tab Notifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-kos/" class="docs-sidebar-link"> Tab Koš </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/" class="docs-sidebar-link"> Obrazovka Šablony e-mailů </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/" class="docs-sidebar-link"> Přehled notifikačních událostí </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-reporty/" class="docs-sidebar-link"> Obrazovka Reporty </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/" class="docs-sidebar-link"> Přehled rolí a oprávnění </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-soubory/" class="docs-sidebar-link"> Obrazovka Soubory </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/chybove-zpravy/" class="docs-sidebar-link"> Chybové zprávy </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Koncepty</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/concepts/" class="docs-sidebar-link"> Přehled konceptů </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/aktivita/" class="docs-sidebar-link"> Aktivita </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/stavy-aktivity/" class="docs-sidebar-link"> Stavy aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/schemata-aktivity/" class="docs-sidebar-link"> Schémata aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/" class="docs-sidebar-link"> Pokusy uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/" class="docs-sidebar-link"> Přiřazení aktivity uživateli (přístup) </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/" class="docs-sidebar-link" aria-current="page" style="--docs-cat-color: var(--rose);"> Periodické nastavení </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/podminky-pristupu/" class="docs-sidebar-link"> Podmínky přístupu </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/" class="docs-sidebar-link"> Dokumenty v aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/certifikat/" class="docs-sidebar-link"> Certifikát </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/kvalifikace/" class="docs-sidebar-link"> Kvalifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/sada/" class="docs-sidebar-link"> Sada </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/terminova-sada/" class="docs-sidebar-link"> Termínová sada </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/hodnoceni/" class="docs-sidebar-link"> Hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/zpravy/" class="docs-sidebar-link"> Zprávy </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/slozky-aktivit/" class="docs-sidebar-link"> Složky aktivit </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/sdilene-aktivity/" class="docs-sidebar-link"> Sdílené aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/subtypy-aktivit/" class="docs-sidebar-link"> Subtypy aktivit </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/role/" class="docs-sidebar-link"> Role a oprávnění </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/stitky/" class="docs-sidebar-link"> Štítek </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/uzivatel/" class="docs-sidebar-link"> Uživatel </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/skupina/" class="docs-sidebar-link"> Uživatelská skupina </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/" class="docs-sidebar-link"> Přiřazení dle skupin </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/emailove-notifikace/" class="docs-sidebar-link"> E-mailové notifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/workflow-aktivity/" class="docs-sidebar-link"> Workflow </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/jazykova-podpora/" class="docs-sidebar-link"> Jazyková podpora </a> </li> </ul> </div> </nav> <main class="docs-content" data-astro-cid-mw7aashj> <article class="docs-article docs-prose" data-pagefind-body data-astro-cid-mw7aashj> <nav class="docs-breadcrumb" aria-label="Drobečková navigace" data-pagefind-ignore data-astro-cid-qaanghzh> <span class="crumb-parent" data-astro-cid-qaanghzh> Koncepty </span><span class="crumb-sep" aria-hidden="true" data-astro-cid-qaanghzh> <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qaanghzh> <path d="M9 18l6-6-6-6" data-astro-cid-qaanghzh></path> </svg> </span><span class="crumb-current" data-astro-cid-qaanghzh> Periodické nastavení </span> </nav>  <span class="docs-eyebrow" data-pagefind-ignore data-astro-cid-c3l52xim>Competent · Uživatelská příručka</span>  <h1 id="periodické-nastavení">Periodické nastavení</h1>
+</style><script type="module" src="/competent-documentation/_astro/hoisted.D7m7v48Y.js"></script></head> <body data-astro-cid-mw7aashj> <!-- Vlastní search modal (Pagefind Search API + Educasoft brand UI) --> <div id="search-overlay" class="search-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Hledat v dokumentaci" data-pagefind-ignore data-astro-cid-qk3db3zz> <div class="search-modal" data-astro-cid-qk3db3zz> <div class="search-box" data-astro-cid-qk3db3zz> <svg class="search-box-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="7" data-astro-cid-qk3db3zz></circle> <path d="M21 21l-4.3-4.3" data-astro-cid-qk3db3zz></path> </svg> <input id="search-input" type="text" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" placeholder="Hledat v dokumentaci…" autocomplete="off" spellcheck="false" aria-label="Hledat v dokumentaci" data-astro-cid-qk3db3zz> <kbd class="search-box-kbd" aria-hidden="true" data-astro-cid-qk3db3zz>esc</kbd> </div> <div id="search-status" class="search-status" role="status" aria-live="polite" data-astro-cid-qk3db3zz></div> <ul id="search-results" class="search-results" role="listbox" aria-label="Výsledky hledání" data-astro-cid-qk3db3zz></ul> <footer class="search-footer" aria-hidden="true" data-astro-cid-qk3db3zz> <span data-astro-cid-qk3db3zz><kbd data-astro-cid-qk3db3zz>↑</kbd><kbd data-astro-cid-qk3db3zz>↓</kbd> navigace</span> <span data-astro-cid-qk3db3zz><kbd data-astro-cid-qk3db3zz>↵</kbd> otevřít</span> <span data-astro-cid-qk3db3zz><kbd data-astro-cid-qk3db3zz>esc</kbd> zavřít</span> </footer> </div> </div> <script>(function(){const pagefindBase = "/competent-documentation/";
+const basePath = "/competent-documentation";
+
+  (function (pagefindBase, basePath) {
+    'use strict';
+
+    var overlay = document.getElementById('search-overlay');
+    var input = document.getElementById('search-input');
+    var statusEl = document.getElementById('search-status');
+    var listEl = document.getElementById('search-results');
+
+    // Section breadcrumb z URL — stejné labely jako [...slug].astro.
+    var SECTION_LABELS = [
+      { match: '/how-to/', label: 'Návody' },
+      { match: '/reference/', label: 'Slovník pojmů' },
+      { match: '/concepts/', label: 'Koncepty' },
+      { match: '/tutorials/', label: 'Návody' },
+    ];
+    function sectionFor(url) {
+      for (var i = 0; i < SECTION_LABELS.length; i++) {
+        if (url.indexOf(SECTION_LABELS[i].match) !== -1) return SECTION_LABELS[i].label;
+      }
+      return 'Dokumentace';
+    }
+
+    // — Pagefind lazy-load (ESM dynamic import, až při prvním otevření) —
+    var pagefindPromise = null;
+    function loadPagefind() {
+      if (!pagefindPromise) {
+        pagefindPromise = import(pagefindBase + 'pagefind/pagefind.js').then(function (pf) {
+          return pf.options({ basePath: basePath }).then(function () {
+            return pf;
+          });
+        });
+      }
+      return pagefindPromise;
+    }
+
+    // Preload indexu při hover/focus triggeru → první hledání bez lagu.
+    function preload() {
+      loadPagefind().then(function (pf) {
+        if (pf && pf.preload) pf.preload('a');
+      }).catch(function () { /* offline — chyba se ukáže až při hledání */ });
+    }
+    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
+      btn.addEventListener('mouseenter', preload, { once: true });
+      btn.addEventListener('focus', preload, { once: true });
+    });
+
+    // — Stav —
+    var results = [];       // pole { url, title, excerptHtml, section, subHtml }
+    var activeIndex = -1;   // -1 = nic aktivního
+    var debounceTimer = null;
+    var lastQueryId = 0;    // ochrana proti race (starší promise nesmí přepsat novější)
+
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function openSearch() {
+      overlay.setAttribute('aria-hidden', 'false');
+      overlay.classList.add('is-open');
+      document.body.classList.add('search-open');
+      loadPagefind().catch(function () {
+        setStatus('Vyhledávání se nepodařilo načíst. Zkuste to prosím znovu.', true);
+      });
+      setTimeout(function () { input.focus(); }, 60);
+    }
+
+    function closeSearch() {
+      overlay.setAttribute('aria-hidden', 'true');
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('search-open');
+      input.value = '';
+      renderEmpty();
+    }
+
+    function setStatus(text, isError) {
+      statusEl.textContent = text;
+      statusEl.classList.toggle('is-error', !!isError);
+    }
+
+    function renderEmpty() {
+      results = [];
+      activeIndex = -1;
+      listEl.innerHTML = '';
+      listEl.classList.remove('has-results');
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      setStatus('', false);
+    }
+
+    function renderResults(query) {
+      listEl.innerHTML = '';
+      activeIndex = results.length > 0 ? 0 : -1;
+
+      if (results.length === 0) {
+        listEl.classList.remove('has-results');
+        input.setAttribute('aria-expanded', 'false');
+        setStatus('Pro „' + query + '“ nebylo nic nalezeno', false);
+        return;
+      }
+
+      listEl.classList.add('has-results');
+      input.setAttribute('aria-expanded', 'true');
+      var countText = results.length === 1
+        ? '1 výsledek pro „' + query + '“'
+        : results.length + ' výsledky pro „' + query + '“';
+      setStatus(countText, false);
+
+      results.forEach(function (r, i) {
+        var li = document.createElement('li');
+        li.className = 'search-result';
+        li.setAttribute('role', 'option');
+        li.id = 'search-result-' + i;
+        var a = document.createElement('a');
+        a.className = 'search-result-link';
+        a.href = r.url;
+        a.tabIndex = -1;
+        // Titulek escapovaný (z frontmatter), excerpt je bezpečné HTML z pagefind.
+        a.innerHTML =
+          '<span class="search-result-crumb">' + esc(r.section) + '</span>' +
+          '<span class="search-result-title">' + esc(r.title) + '</span>' +
+          '<span class="search-result-excerpt">' + r.excerptHtml + '</span>' +
+          (r.subHtml ? '<span class="search-result-sub">' + r.subHtml + '</span>' : '');
+        a.addEventListener('click', function () { closeSearch(); });
+        // Hover myší synchronizuje keyboard-aktivní výsledek.
+        a.addEventListener('mousemove', function () { setActive(i); });
+        li.appendChild(a);
+        listEl.appendChild(li);
+      });
+      setActive(0);
+    }
+
+    function setActive(i) {
+      var items = listEl.querySelectorAll('.search-result');
+      items.forEach(function (el, j) {
+        el.classList.toggle('is-active', j === i);
+      });
+      activeIndex = i;
+      if (i >= 0 && items[i]) {
+        input.setAttribute('aria-activedescendant', 'search-result-' + i);
+        // Scroll aktivního do viditelné oblasti seznamu.
+        var el = items[i];
+        var listRect = listEl.getBoundingClientRect();
+        var elRect = el.getBoundingClientRect();
+        if (elRect.bottom > listRect.bottom) {
+          listEl.scrollTop += elRect.bottom - listRect.bottom + 4;
+        } else if (elRect.top < listRect.top) {
+          listEl.scrollTop -= listRect.top - elRect.top + 4;
+        }
+      } else {
+        input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    function openActive() {
+      if (activeIndex >= 0 && results[activeIndex]) {
+        window.location.href = results[activeIndex].url;
+        closeSearch();
+      }
+    }
+
+    function doSearch(query) {
+      var queryId = ++lastQueryId;
+      loadPagefind().then(function (pf) {
+        return pf.debouncedSearch(query, { basePath: basePath }, 0).then(function (search) {
+          if (!search || queryId !== lastQueryId) return null; // zastaralý dotaz
+          return search.results.slice(0, 8);
+        });
+      }).then(function (top) {
+        if (!top || queryId !== lastQueryId) return;
+        return Promise.all(top.map(function (r) { return r.data(); })).then(function (datas) {
+          if (queryId !== lastQueryId) return;
+          results = datas.map(function (d) {
+            // sub_results: kotvy sekcí (H2/H3) jako vnořené odkazy.
+            var subHtml = '';
+            if (d.sub_results && d.sub_results.length > 0) {
+              subHtml = d.sub_results.slice(0, 3).map(function (s) {
+                var subUrl = basePath + s.url;
+                return '<a class="search-sub-link" href="' + esc(subUrl) + '">↳ ' + esc(s.title) + '</a>';
+              }).join('');
+            }
+            return {
+              url: basePath + d.url,
+              title: d.meta && d.meta.title ? d.meta.title : d.url,
+              excerptHtml: d.excerpt || '',
+              section: sectionFor(d.url),
+              subHtml: subHtml,
+            };
+          });
+          renderResults(query);
+        });
+      }).catch(function () {
+        if (queryId !== lastQueryId) return;
+        setStatus('Vyhledávání se nepodařilo načíst. Zkuste to prosím znovu.', true);
+      });
+    }
+
+    function onInput() {
+      var q = input.value.trim();
+      if (debounceTimer) clearTimeout(debounceTimer);
+      if (q.length === 0) {
+        ++lastQueryId; // zruš probíhající hledání
+        renderEmpty();
+        return;
+      }
+      setStatus('Hledám „' + q + '“…', false);
+      debounceTimer = setTimeout(function () { doSearch(q); }, 200);
+    }
+
+    input.addEventListener('input', onInput);
+
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (results.length > 0) setActive((activeIndex + 1) % results.length);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (results.length > 0) setActive((activeIndex - 1 + results.length) % results.length);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        openActive();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        closeSearch();
+      }
+    });
+
+    // — Otevření/zavření modalu —
+    document.querySelectorAll('[data-search-trigger]').forEach(function (btn) {
+      btn.addEventListener('click', openSearch);
+    });
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeSearch();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      // Esc mimo input (focus mohl utéct) — input Esc řeší vlastní handler.
+      if (e.key === 'Escape' && overlay.classList.contains('is-open') && document.activeElement !== input) {
+        closeSearch();
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (overlay.classList.contains('is-open')) {
+          closeSearch();
+        } else {
+          openSearch();
+        }
+      }
+    });
+  })(pagefindBase, basePath);
+})();</script>  <div class="canvas" data-astro-cid-mw7aashj> <header class="docs-header" aria-label="Navigace dokumentace" data-pagefind-ignore data-astro-cid-l4ysfnjo> <div class="docs-header-left" data-astro-cid-l4ysfnjo> <a href="/competent-documentation/" class="logo-link" aria-label="Competent dokumentace — úvod" data-astro-cid-l4ysfnjo> <img src="/competent-documentation/logo-educasoft.svg" alt="Educasoft" width="120" height="28" class="logo-img" data-astro-cid-l4ysfnjo> </a> <div class="topbar-divider" aria-hidden="true" data-astro-cid-l4ysfnjo></div> <span class="docs-product" data-astro-cid-l4ysfnjo>Competent — Uživatelská příručka</span> </div> <div class="docs-header-right" data-astro-cid-l4ysfnjo> <button type="button" class="search-trigger" aria-label="Hledat v dokumentaci" title="Hledat v dokumentaci" data-search-trigger data-astro-cid-l4ysfnjo> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-l4ysfnjo> <circle cx="11" cy="11" r="7" data-astro-cid-l4ysfnjo></circle> <path d="M21 21l-4.3-4.3" data-astro-cid-l4ysfnjo></path> </svg> <span class="search-trigger-text" data-astro-cid-l4ysfnjo>Hledat…</span> <kbd class="search-trigger-kbd" aria-hidden="true" data-astro-cid-l4ysfnjo>⌘K</kbd> </button> <button type="button" class="theme-toggle" aria-label="Přepnout světlý/tmavý režim" title="Přepnout světlý/tmavý režim" data-astro-cid-x3pjskd3> <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-x3pjskd3> <circle cx="12" cy="12" r="4" data-astro-cid-x3pjskd3></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" data-astro-cid-x3pjskd3></path> </svg> <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-x3pjskd3> <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" data-astro-cid-x3pjskd3></path> </svg> </button>   </div> </header>  <div class="docs-shell" data-astro-cid-mw7aashj> <nav class="docs-sidebar" aria-label="Dokumentace — sekce"> <div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Aktivity</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/" class="docs-sidebar-link"> Přehled návodů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-noveho-objektu/" class="docs-sidebar-link"> Vytvoření nového objektu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/presun-objektu/" class="docs-sidebar-link"> Přesun objektu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vytvoreni-scorm-aktivity/" class="docs-sidebar-link"> Nastavení typu spuštění SCORM </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/vyhledavani-v-aktivitach/" class="docs-sidebar-link"> Vyhledávání v aktivitách </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazovani-stitku/" class="docs-sidebar-link"> Přiřazování štítků </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/sdileni-aktivity/" class="docs-sidebar-link"> Sdílení aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-prav-k-aktivite/" class="docs-sidebar-link"> Nastavení práv k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatelu-k-aktivite/" class="docs-sidebar-link"> Přiřazení uživatelů k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/podminky-pristupu/" class="docs-sidebar-link"> Nastavení podmínek přístupu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/dokumenty-v-aktivite/" class="docs-sidebar-link"> Přidání dokumentu k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/pokusy-uzivatele/" class="docs-sidebar-link"> Pokusy uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/nastaveni-notifikaci-aktivity/" class="docs-sidebar-link"> Nastavení notifikací aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/terminy-aktivity/" class="docs-sidebar-link"> Přidání termínu k aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/aktivity/prirazeni-uzivatele-terminove-aktivite/" class="docs-sidebar-link"> Přiřazení uživatele k termínové aktivitě </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Lidé</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatele/" class="docs-sidebar-link"> Vytvoření uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-uzivatelske-skupiny/" class="docs-sidebar-link"> Vytvoření uživatelské skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vyhledavani-a-razeni-uzivatelu/" class="docs-sidebar-link"> Vyhledávání a řazení uživatelů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/prirazeni-uzivatele-do-skupiny/" class="docs-sidebar-link"> Přiřazení uživatele do skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/import-uzivatelu/" class="docs-sidebar-link"> Import uživatelů </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/prirazeni-role-uzivateli/" class="docs-sidebar-link"> Přiřazení role uživateli </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/lide/vytvoreni-vlastni-role/" class="docs-sidebar-link"> Vytvoření vlastní role </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Návody — Nastavení, Reporty, Certifikáty</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/how-to/nastaveni/stitky/" class="docs-sidebar-link"> Vytvoření a správa štítků </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/nastaveni/uprava-sablony-emailu/" class="docs-sidebar-link"> Úprava šablony e-mailu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/reporty/export-reportu/" class="docs-sidebar-link"> Export reportu </a> </li><li> <a href="/competent-documentation/pro-administratory/how-to/certifikaty/nastaveni-sablony-certifikatu/" class="docs-sidebar-link"> Nastavení šablony certifikátu </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Slovník pojmů</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/reference/" class="docs-sidebar-link"> Přehled pojmů </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-aktivity/" class="docs-sidebar-link"> Obrazovka Aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-aktivity/" class="docs-sidebar-link"> Detail aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-sady/" class="docs-sidebar-link"> Detail sady </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-hodnoceni/" class="docs-sidebar-link"> Obrazovka Hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-zpravy/" class="docs-sidebar-link"> Obrazovka Zprávy </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-hodnoceni/" class="docs-sidebar-link"> Detail hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-lide/" class="docs-sidebar-link"> Obrazovka Lidé </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-uzivatele/" class="docs-sidebar-link"> Detail uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/periodicke-nastaveni/" class="docs-sidebar-link"> Periodické nastavení </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/detail-skupiny/" class="docs-sidebar-link"> Detail skupiny </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-nastaveni/" class="docs-sidebar-link"> Obrazovka Nastavení </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Slovník pojmů — Záložky Nastavení</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/reference/tab-mista/" class="docs-sidebar-link"> Tab Místa </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-stitky/" class="docs-sidebar-link"> Tab Štítky </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-prirazeni-dle-skupin/" class="docs-sidebar-link"> Tab Přiřazení dle skupin </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-notifikace/" class="docs-sidebar-link"> Tab Notifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/tab-kos/" class="docs-sidebar-link"> Tab Koš </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-sablony-emailu/" class="docs-sidebar-link"> Obrazovka Šablony e-mailů </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/prehled-notifikacnich-udalosti/" class="docs-sidebar-link"> Přehled notifikačních událostí </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-reporty/" class="docs-sidebar-link"> Obrazovka Reporty </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/prehled-roli-a-opravneni/" class="docs-sidebar-link"> Přehled rolí a oprávnění </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/obrazovka-soubory/" class="docs-sidebar-link"> Obrazovka Soubory </a> </li><li> <a href="/competent-documentation/pro-administratory/reference/chybove-zpravy/" class="docs-sidebar-link"> Chybové zprávy </a> </li> </ul> </div><div class="docs-sidebar-section"> <span class="docs-sidebar-label">Koncepty</span> <ul class="docs-sidebar-list"> <li> <a href="/competent-documentation/pro-administratory/concepts/" class="docs-sidebar-link"> Přehled konceptů </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/aktivita/" class="docs-sidebar-link"> Aktivita </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/stavy-aktivity/" class="docs-sidebar-link"> Stavy aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/schemata-aktivity/" class="docs-sidebar-link"> Schémata aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/pokusy-uzivatele/" class="docs-sidebar-link"> Pokusy uživatele </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/prirazeni-aktivity-uzivateli-pristup/" class="docs-sidebar-link"> Přiřazení aktivity uživateli (přístup) </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/periodicke-nastaveni/" class="docs-sidebar-link" aria-current="page" style="--docs-cat-color: var(--rose);"> Periodické nastavení </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/podminky-pristupu/" class="docs-sidebar-link"> Podmínky přístupu </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/dokumenty-v-aktivite/" class="docs-sidebar-link"> Dokumenty v aktivitě </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/certifikat/" class="docs-sidebar-link"> Certifikát </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/kvalifikace/" class="docs-sidebar-link"> Kvalifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/sada/" class="docs-sidebar-link"> Sada </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/terminova-sada/" class="docs-sidebar-link"> Termínová sada </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/hodnoceni/" class="docs-sidebar-link"> Hodnocení </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/zpravy/" class="docs-sidebar-link"> Zprávy </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/slozky-aktivit/" class="docs-sidebar-link"> Složky aktivit </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/sdilene-aktivity/" class="docs-sidebar-link"> Sdílené aktivity </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/subtypy-aktivit/" class="docs-sidebar-link"> Subtypy aktivit </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/role/" class="docs-sidebar-link"> Role a oprávnění </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/stitky/" class="docs-sidebar-link"> Štítek </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/uzivatel/" class="docs-sidebar-link"> Uživatel </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/skupina/" class="docs-sidebar-link"> Uživatelská skupina </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/prirazeni-dle-skupin/" class="docs-sidebar-link"> Přiřazení dle skupin </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/emailove-notifikace/" class="docs-sidebar-link"> E-mailové notifikace </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/workflow-aktivity/" class="docs-sidebar-link"> Workflow </a> </li><li> <a href="/competent-documentation/pro-administratory/concepts/jazykova-podpora/" class="docs-sidebar-link"> Jazyková podpora </a> </li> </ul> </div> </nav> <main class="docs-content" data-astro-cid-mw7aashj> <article class="docs-article docs-prose" data-pagefind-body data-astro-cid-mw7aashj> <nav class="docs-breadcrumb" aria-label="Drobečková navigace" data-pagefind-ignore data-astro-cid-qaanghzh> <span class="crumb-parent" data-astro-cid-qaanghzh> Koncepty </span><span class="crumb-sep" aria-hidden="true" data-astro-cid-qaanghzh> <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qaanghzh> <path d="M9 18l6-6-6-6" data-astro-cid-qaanghzh></path> </svg> </span><span class="crumb-current" data-astro-cid-qaanghzh> Periodické nastavení </span> </nav>  <span class="docs-eyebrow" data-pagefind-ignore data-astro-cid-c3l52xim>Competent · Uživatelská příručka</span>  <h1 id="periodické-nastavení">Periodické nastavení</h1>
 <p>Periodické nastavení je mechanismus, díky kterému systém Competent automaticky
 obnovuje přístup uživatele k beztermínové aktivitě nebo sadě poté, co předchozí
 přístup skončí. Typické využití jsou zákonem vyžadovaná opakovaná školení –
@@ -115,91 +370,6 @@ Předchozí
 </span><span class="pager-title" data-astro-cid-oerjsknp>Přiřazení aktivity uživateli (přístup)</span></a><a class="pager-link next" href="/competent-documentation/pro-administratory/concepts/podminky-pristupu/" data-astro-cid-oerjsknp><span class="pager-label" data-astro-cid-oerjsknp>
 Další
 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-oerjsknp><path d="M9 18l6-6-6-6" data-astro-cid-oerjsknp></path></svg></span><span class="pager-title" data-astro-cid-oerjsknp>Podmínky přístupu</span></a></nav>  </article> </main> <aside class="docs-toc" aria-label="Na této stránce" data-pagefind-ignore data-astro-cid-kb6rcyzi><span class="docs-toc-label" data-astro-cid-kb6rcyzi>Na této stránce</span><ul class="docs-toc-list" data-astro-cid-kb6rcyzi><li data-astro-cid-kb6rcyzi><a href="#jak-periodické-nastavení-funguje" class="docs-toc-link lvl-2" data-toc-slug="jak-periodické-nastavení-funguje" data-astro-cid-kb6rcyzi>Jak periodické nastavení funguje</a></li><li data-astro-cid-kb6rcyzi><a href="#tři-typy-výpočtu-periody" class="docs-toc-link lvl-2" data-toc-slug="tři-typy-výpočtu-periody" data-astro-cid-kb6rcyzi>Tři typy výpočtu periody</a></li><li data-astro-cid-kb6rcyzi><a href="#parametry-typů-od-přiřazení-a-od-splnění" class="docs-toc-link lvl-3" data-toc-slug="parametry-typů-od-přiřazení-a-od-splnění" data-astro-cid-kb6rcyzi>Parametry typů Od přiřazení a Od splnění</a></li><li data-astro-cid-kb6rcyzi><a href="#upřesnění-ke-kalendářnímu-typu" class="docs-toc-link lvl-3" data-toc-slug="upřesnění-ke-kalendářnímu-typu" data-astro-cid-kb6rcyzi>Upřesnění ke Kalendářnímu typu</a></li><li data-astro-cid-kb6rcyzi><a href="#periodicita-sad" class="docs-toc-link lvl-2" data-toc-slug="periodicita-sad" data-astro-cid-kb6rcyzi>Periodicita sad</a></li><li data-astro-cid-kb6rcyzi><a href="#zrušení-periody" class="docs-toc-link lvl-2" data-toc-slug="zrušení-periody" data-astro-cid-kb6rcyzi>Zrušení periody</a></li><li data-astro-cid-kb6rcyzi><a href="#pozor-na" class="docs-toc-link lvl-2" data-toc-slug="pozor-na" data-astro-cid-kb6rcyzi>Pozor na</a></li><li data-astro-cid-kb6rcyzi><a href="#související-stránky" class="docs-toc-link lvl-2" data-toc-slug="související-stránky" data-astro-cid-kb6rcyzi>Související stránky</a></li></ul></aside> </div> </div> <!--
-      Pagefind UI: prebuilt JS načtený async po DOM. `bundlePath` je
-      base-aware (subpath deploy). České překlady UI (pagefind ships
-      with cs translations — viz pagefind docs "Using the UI").
-    --> <script>(function(){const pagefindBase = "/competent-documentation/";
-
-      (function (pagefindBase) {
-        var script = document.createElement('script');
-        script.src = pagefindBase + 'pagefind/pagefind-ui.js';
-        script.defer = true;
-        script.onload = function () {
-          if (typeof window.PagefindUI === 'undefined') return;
-          new window.PagefindUI({
-            element: '#search-input-area',
-            baseUrl: pagefindBase,
-            bundlePath: pagefindBase + 'pagefind/',
-            showSubResults: true,
-            resetStyles: false,
-            translations: {
-              placeholder: 'Hledat v dokumentaci…',
-              clear_search: 'Vymazat',
-              load_more: 'Načíst další výsledky',
-              search_label: 'Hledat v dokumentaci',
-              filters_label: 'Filtry',
-              zero_results: 'Pro „[SEARCH_TERM]" nebylo nic nalezeno',
-              many_results: '[COUNT] výsledků pro „[SEARCH_TERM]"',
-              one_result: '[COUNT] výsledek pro „[SEARCH_TERM]"',
-              alt_search:
-                'Žádné výsledky pro „[SEARCH_TERM]". Zobrazuji výsledky pro „[DIFFERENT_TERM]"',
-              search_suggestion:
-                'Žádné výsledky pro „[SEARCH_TERM]". Zkuste některé z těchto vyhledávání:',
-              searching: 'Hledám „[SEARCH_TERM]"…',
-            },
-          });
-        };
-        document.head.appendChild(script);
-      })(pagefindBase);
-    })();</script> <!-- Search modal open/close + Cmd/Ctrl+K wiring (pattern talkide-docs) --> <script>
-      (function () {
-        var overlay = document.getElementById('search-overlay');
-        var closeBtn = document.getElementById('search-close');
-
-        function openSearch() {
-          overlay.setAttribute('aria-hidden', 'false');
-          overlay.classList.add('is-open');
-          document.body.classList.add('search-open');
-          setTimeout(function () {
-            var inp = overlay.querySelector('input[type="text"], input:not([type])');
-            if (inp) inp.focus();
-          }, 60);
-        }
-
-        function closeSearch() {
-          overlay.setAttribute('aria-hidden', 'true');
-          overlay.classList.remove('is-open');
-          document.body.classList.remove('search-open');
-        }
-
-        var searchBtn = document.querySelector('.icon-btn[aria-label="Hledat v dokumentaci"]');
-        if (searchBtn) {
-          searchBtn.addEventListener('click', openSearch);
-        }
-
-        if (closeBtn) {
-          closeBtn.addEventListener('click', closeSearch);
-        }
-
-        overlay.addEventListener('click', function (e) {
-          if (e.target === overlay) closeSearch();
-        });
-
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
-            closeSearch();
-          }
-          if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-            e.preventDefault();
-            if (overlay.classList.contains('is-open')) {
-              closeSearch();
-            } else {
-              openSearch();
-            }
-          }
-        });
-      })();
-    </script> <!--
       Mermaid runtime — client-side inicializace diagramů (pattern talkide-docs).
       Najde všechny pre[data-language="mermaid"] (Astro Shiki output),
       nahradí je SVG voláním mermaid.render(). Reaguje na změnu data-theme.
