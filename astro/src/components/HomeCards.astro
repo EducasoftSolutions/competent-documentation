@@ -1,0 +1,94 @@
+---
+/**
+ * HomeCards — tři rozcestníkové karty homepage (Diataxis sekce
+ * administrátorské dokumentace). Jednoduché linkované karty;
+ * barva horní linky mapuje kategorii (Návody → green,
+ * Slovník pojmů → purple, Koncepty → cyan) podle tokens.css.
+ */
+
+interface Card {
+  title: string;
+  desc: string;
+  route: string;
+  accent: string;
+}
+
+const siteBase = import.meta.env.BASE_URL;
+function withBase(route: string): string {
+  return siteBase === '/' ? route : `${siteBase.slice(0, -1)}${route}`;
+}
+
+const CARDS: Card[] = [
+  {
+    title: 'Návody',
+    desc: 'Postupy krok za krokem, které Vás provedou konkrétními úkoly — od práce s aktivitami po správu uživatelů a nastavení.',
+    route: '/pro-administratory/how-to/',
+    accent: 'var(--green)',
+  },
+  {
+    title: 'Slovník pojmů',
+    desc: 'Popis obrazovek, detailů a prvků systému pro rychlé dohledání konkrétní informace.',
+    route: '/pro-administratory/reference/',
+    accent: 'var(--indigo)',
+  },
+  {
+    title: 'Koncepty',
+    desc: 'Principy a modely, na nichž Competent stojí — odpovědi na otázku, proč systém funguje právě takto.',
+    route: '/pro-administratory/concepts/',
+    accent: 'var(--rose)',
+  },
+];
+---
+
+<div class="home-cards" data-pagefind-ignore>
+  {CARDS.map((card) => (
+    <a class="home-card" href={withBase(card.route)} style={`--card-accent: ${card.accent}`}>
+      <span class="home-card-title">{card.title}</span>
+      <span class="home-card-desc">{card.desc}</span>
+    </a>
+  ))}
+</div>
+
+<style>
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 28px 0 0;
+    padding: 0;
+  }
+  .home-card {
+    display: block;
+    padding: 20px 18px 18px;
+    background: var(--bg-1);
+    border: 1px solid var(--line-1);
+    border-top: 3px solid var(--card-accent);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.16s ease, transform 0.16s ease;
+  }
+  .home-card:hover {
+    border-color: var(--competent-purple-line);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .home-card-title {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 6px;
+  }
+  .home-card-desc {
+    display: block;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--fg-2);
+  }
+  @media (max-width: 720px) {
+    .home-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
